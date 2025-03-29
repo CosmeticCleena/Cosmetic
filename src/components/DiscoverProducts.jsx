@@ -3,7 +3,7 @@ import FeaturedProductCard from "./FeaturedProductCard";
 
 const DiscoverProducts = () => {
   return (
-    <div className="w-full md:py-[60px] md:px-[120px] py-8 px-4 font-magnificent mb-32">
+    <div className="w-full md:py-[60px] md:px-[120px] py-8 px-4 font-magnificent mb-32 flex flex-col justify-center">
       <div className="text-center mb-10">
         <p className="text-[22px]">Khám phá</p>
         <p className="text-[40px] leading-tight">
@@ -15,23 +15,21 @@ const DiscoverProducts = () => {
           NĂM 2025
         </p>
       </div>
-      <div className="flex flex-col md:flex-row gap-[30px]">
+      {/* Sử dụng breakpoint lớn hơn xl để chuyển sang cột sớm hơn */}
+      <div className="flex flex-col xl:flex-row gap-[30px]">
         <img
           src={DiscoverProduct}
           alt="DiscoverProduct"
-          className="md:block hidden"
+          className="block w-full xl:w-auto mb-6 xl:mb-0"
         />
         <div className="flex flex-col items-center w-full">
-          {/* Tạo một wrapper div mà chúng ta có thể điều chỉnh để bao bọc FeaturedProductCard */}
           <div className="w-full flex justify-center">
-            {/* Trên mobile - áp dụng scale transform để mở rộng card */}
-            <div className="md:transform-none md:w-auto w-full flex justify-center md:scale-100 scale-110 transform-gpu">
+            <div className="xl:transform-none xl:w-auto w-full flex justify-center xl:scale-100 scale-110 transform-gpu">
               <FeaturedProductCard isAddToCart={false} />
             </div>
           </div>
 
-          {/* Đảm bảo slider dots có đủ margin-top và z-index để hiển thị dưới card */}
-          <div className="flex gap-[14px] mt-8 md:mt-6 relative z-10">
+          <div className="flex gap-[14px] mt-8 xl:mt-6 relative z-10">
             <div className="w-[7px] h-[8px] bg-[#D1AE62] rounded-3xl cursor-pointer"></div>
             <div className="w-[7px] h-[8px] bg-[#0A0A0A] rounded-3xl cursor-pointer"></div>
             <div className="w-[7px] h-[8px] bg-[#0A0A0A] rounded-3xl cursor-pointer"></div>
