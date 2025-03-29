@@ -7,7 +7,10 @@ import ProductHighlight2Img from "../assets/images/ProductHighlight2.svg";
 import Footer from "../components/Footer";
 import FeatureProducts from "../components/FeaturedProducts";
 import SignatureProducts from "../components/SignatureProducts";
+import BannerImg1 from "../assets/images/Banner_1.svg";
+import BannerImg2 from "../assets/images/Banner_2.svg";
 import Banner from "../components/Banner";
+import QuoteArrow from "../assets/icons/Quote-Arrows.svg";
 import DiscoverProducts from "../components/DiscoverProducts";
 
 const Home = () => {
@@ -47,8 +50,48 @@ const Home = () => {
         </p>
       </ProductHighlight>
       <SignatureProducts />
-      <Banner />
+      <Banner imgSrc={BannerImg1}>
+        <p className="text-[#D1AE62] text-3xl font-magnificent text-start md:text-center">
+          Lumia không chỉ đơn thuần là một thương hiệu mỹ phẩm
+        </p>
+        <p className="text-center mb-4 text-[#FFFFFF] md:w-[50%] md:mx-auto">
+          Lumia không chỉ đơn thuần là một thương hiệu mỹ phẩm, mà còn là người
+          bạn đồng hành trên hành trình chăm sóc và yêu thương làn da của bạn.
+          Chúng tôi hiểu rằng mỗi loại da đều có nhu cầu riêng, vì vậy Lumia
+          mang đến những sản phẩm được nghiên cứu kỹ lưỡng, giúp cung cấp độ ẩm,
+          phục hồi và bảo vệ làn da khỏi tác động của môi trường. Với sự kết hợp
+          giữa khoa học hiện đại và nguồn nguyên liệu thiên nhiên, Lumia giúp
+          bạn tự tin hơn mỗi ngày với làn da khỏe mạnh, căng tràn sức sống. Hãy
+          để Lumia trở thành bí quyết làm đẹp không thể thiếu của bạn!
+        </p>
+        <button className="w-[200px] h-[56px] bg-[#D1AE62] text-white mx-auto rounded-md">
+          Khám Phá Ngay
+        </button>
+      </Banner>
       <DiscoverProducts />
+      <Banner imgSrc={BannerImg2}>
+        <img
+          src={QuoteArrow}
+          alt="Quote Arrow"
+          className="w-[60px] h-[50px] mx-auto"
+        />
+        <p className="text-white text-3xl font-magnificent text-center">
+          DƯỠNG DA KHOA HỌC
+        </p>
+        <p className="text-center mb-4 text-[#FFFFFF] md:w-[50%] md:mx-auto">
+          Sản phẩm dưỡng da khoa học dựa trên những thành phần/hoạt chất đã được
+          nghiên cứu chứng minh có tác dụng cải thiện làn da hiệu quả. Tuân thủ
+          nghiêm ngặt các quy định an toàn của pháp luật.
+        </p>
+        <div className="flex items-center justify-center gap-4 py-4">
+          <div className="h-3 w-3 rounded-full bg-[#6A6E4E] opacity-70"></div>
+          <div className="h-3 w-3 rounded-full bg-white"></div>
+          <div className="h-3 w-3 rounded-full bg-white"></div>
+          <div className="h-3 w-3 rounded-full bg-white"></div>
+          <div className="h-3 w-3 rounded-full bg-white"></div>
+          <div className="h-3 w-3 rounded-full bg-white"></div>
+        </div>
+      </Banner>
       <FeatureProducts />
       <Footer />
     </>
