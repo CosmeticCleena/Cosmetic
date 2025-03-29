@@ -1,10 +1,10 @@
 import React from "react";
 import FeatureProduct from "../assets/images/FeatureProduct.svg";
 
-const FeaturedProductCard = () => {
+const FeaturedProductCard = ({ isAddToCart }) => {
   return (
     <div
-      className={`max-w-[380px] max-h-[518px] bg-[#E6E6E6] hover:bg-[#FCF7E1] rounded-[20px] p-4`}
+      className={`max-w-[380px] max-h-[518px] bg-[#E6E6E6] hover:bg-[#FCF7E1] rounded-[20px] p-4 shadow-2xl`}
     >
       <div className="relative">
         <div className="bg-[#967031] absolute top-2 left-2 rounded-3xl text-white text-[10px] w-[20px] h-[12px] flex items-center justify-center p-5">
@@ -32,7 +32,11 @@ const FeaturedProductCard = () => {
         </div>
       </div>
 
-      <button className="bg-[#D1AE62] text-white h-10 w-full rounded-[8px] transition-colors hover:bg-[#C09C50]">
+      <button
+        className={`${
+          isAddToCart ? "hover:bg-[#C09C50] bg-[#C09C50]" : "md:hidden hidden"
+        } text-white h-10 w-full rounded-[8px] transition-colors`}
+      >
         Thêm vào giỏ hàng
       </button>
     </div>

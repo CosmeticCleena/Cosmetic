@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import FeatureProducts from "../components/FeaturedProducts";
 import SignatureProducts from "../components/SignatureProducts";
 import Banner from "../components/Banner";
+import DiscoverProducts from "../components/DiscoverProducts";
 
 const Home = () => {
   return (
@@ -47,6 +48,7 @@ const Home = () => {
       </ProductHighlight>
       <SignatureProducts />
       <Banner />
+      <DiscoverProducts />
       <FeatureProducts />
       <Footer />
     </>
