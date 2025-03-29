@@ -14,30 +14,30 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center justify-between">
           <ul className="flex items-center gap-4 mr-8 font-magnificent">
-            <li className="text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980] whitespace-nowrap">
+            <li className="text-transparent bg-clip-text bg-gradient-to-r cursor-pointer from-[#B08B3B] to-[#EAC980] whitespace-nowrap">
               Giới thiệu
             </li>
-            <li className="whitespace-nowrap">Về chúng tôi</li>
-            <li className="whitespace-nowrap">Sản phẩm</li>
-            <li className="whitespace-nowrap">Liên hệ</li>
+            <li className="whitespace-nowrap cursor-pointer">Về chúng tôi</li>
+            <li className="whitespace-nowrap cursor-pointer">Sản phẩm</li>
+            <li className="whitespace-nowrap cursor-pointer">Liên hệ</li>
           </ul>
 
           <div className="flex items-center gap-3">
-            <div className="w-5 h-5 flex items-center justify-center">
+            <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
               <img
                 src={SearchIcon}
                 alt="search-icon"
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="w-5 h-5 flex items-center justify-center">
+            <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
               <img
                 src={User}
                 alt="user-icon"
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="w-5 h-5 flex items-center justify-center">
+            <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
               <img
                 src={Cart}
                 alt="cart-icon"
@@ -48,8 +48,8 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation - only hamburger menu */}
-        <div className="md:hidden">
-          <div className="w-6 h-6 flex items-center justify-center">
+        <div className="md:hidden cursor-pointer">
+          <div className="w-6 h-6 flex items-center justify-center ">
             <img
               src={hamburgerMenu}
               alt="menu"
