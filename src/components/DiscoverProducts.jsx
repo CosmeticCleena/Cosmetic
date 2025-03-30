@@ -26,7 +26,15 @@ const DiscoverProducts = () => {
           <div className="w-full flex justify-center">
             {/* Trên mobile - áp dụng scale transform để mở rộng card */}
             <div className="md:transform-none md:w-auto w-full flex justify-center md:scale-100 scale-110 transform-gpu">
-              <FeaturedProductCard isAddToCart={false} />
+              <FeaturedProductCard
+                isAddToCart={false}
+                data={{
+                  id: 1,
+                  product_name: "Brightening and Regenerating Cream",
+                  description: "Lorm, Typing, Institute",
+                  price: "$00.00",
+                }}
+              />
             </div>
           </div>
 
