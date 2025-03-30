@@ -34,7 +34,7 @@ const Home = () => {
         <div className="relative text-white md:text-black z-20 h-full w-full flex">
           <div className="absolute w-full md:w-[40%] top-[30%]  md:top-[40%] left-[5%] lg:left-[10%]">
             <h1 className="font-magnificent text-4xl font-light capitalize mb-6">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+              Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </h1>
             <p className="text-xl mb-8">
