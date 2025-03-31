@@ -11,7 +11,7 @@ const ProductHighlight = ({ isReverse = false, imgSrc, children }) => {
       <div className="basis-1/2 flex items-center">
         <img
           src={imgSrc}
-          className="w-full min-h-[500px] h-auto max-h-[700px] object-cover rounded-lg"
+          className="w-full min-h-[500px] h-auto max-h-[700px] object-cover rounded-lg backdrop-brightness-125"
           alt="Mỹ phẩm"
         />
       </div>

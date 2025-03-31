@@ -1,0 +1,21 @@
+{
+    "title": "Đánh giá của khách hàng về sản phẩm của chúng tôi",
+    "review": [
+        {
+            "rating": 5,
+            "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500 Lorem Ipsum has been the industry's standard dummy text ever.",
+            "author": "Lorem Ipsum",
+            "reviewImg": "reviewImg1",
+            "userAva": "userAva1"
+        },
+        {
+            "rating": 4,
+            "text": "Tung dao",
+            "author": "Lorem Ipsum",
+            "reviewImg": "reviewImg1",
+            "userAva": "userAva1"
+        }
+    ]
+}
+   
+  
