@@ -120,7 +120,7 @@ const Footer = () => {
       <div className="bg-[#351D13] max-h-[85px] px-[108px] flex md:flex-row flex-col justify-between text-[#CBCBCB] text-[12px]">
         <div className="py-[8px] flex gap-1 items-center">
           <img className="relative right-1" src={copyright} alt="copyright" />
-          <span>2023 Beautya. All Rights Reserved.</span>
+          <span>2025 Beautya. All Rights Reserved.</span>
         </div>
         <div className="py-[8px] flex gap-4">
           <span>Terms & Conditions</span>
