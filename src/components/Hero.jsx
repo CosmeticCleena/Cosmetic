@@ -2,25 +2,21 @@ import React from "react";
 import HeroBg from "../assets/images/Hero.svg";
 import LinearImage from "./LinearImage";
 import { useState } from "react";
+import HeroData from "../configs/Hero.json";
 
 const Hero = () => {
   const [displayImg, setDisplayImg] = useState();
   return (
-    <LinearImage leftColor="from-white" imgSrc={HeroBg}>
+    <LinearImage leftColor="from-white/50" imgSrc={HeroBg} isLinear={true}>
       <div className="relative z-20 h-full flex items-center">
         <div className="absolute w-[90%] lg:w-full max-w-md top-[40%] left-[5%] lg:left-[10%]">
           <h1 className="font-magnificent text-5xl lg:text-6xl font-light tracking-tight text-gray-900 mb-6">
-            Dòng mỹ phẩm
-            <br />
-            cao cấp
+            {HeroData.title}
           </h1>
-          <p className="text-xl mb-8">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has
-          </p>
+          <p className="text-xl mb-8">{HeroData.description}</p>
           <div>
             <button className="bg-gradient-to-r from-[#B08B3B] to-[#EAC980] text-md px-8 py-3 transition duration-300">
-              Khám phá ngay
+              {HeroData.buttonText}
             </button>
           </div>
         </div>

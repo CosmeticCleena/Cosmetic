@@ -3,7 +3,7 @@ import FeaturedProductCard from "./FeaturedProductCard";
 
 const DiscoverProducts = () => {
   return (
-    <div className="w-full md:w-[75%] md:mx-auto font-magnificent mb-6 flex flex-col justify-center">
+    <div className="w-full md:w-[75%] md:mx-auto font-magnificent flex flex-col justify-center mt-20">
       <div className="text-center mb-10">
         <p className="text-[22px]">Khám phá</p>
         <p className="text-[40px] leading-tight">
