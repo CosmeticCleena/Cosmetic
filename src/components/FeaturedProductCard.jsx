@@ -22,8 +22,8 @@ const FeaturedProductCard = ({ isAddToCart, data }) => {
       </div>
 
       {/* Fixed spacing between image and content */}
-      <div className="mt-4 mb-3 min-h-[120px] flex justify-between">
-        <div className="text-[#1A1A1A] flex flex-col gap-2 max-w-[203px]">
+      <div className="mt-4 mb-3 min-h-[120px] flex flex-col md:flex-row justify-between">
+        <div className="text-[#1A1A1A] flex flex-col gap-2 max-w-full md:max-w-[203px]">
           {/* product name */}
           <p className="font-medium">{productName}</p>
           {/* description */}
@@ -33,15 +33,15 @@ const FeaturedProductCard = ({ isAddToCart, data }) => {
             <div className="w-[17px] h-[18px] bg-[#D9D9D9] rounded-3xl"></div>
           </div>
         </div>
-        <div className="text-[#79541F] font-medium self-center">
-          <span>{price}</span>
+        <div className="text-[#79541F] font-medium md:self-center mt-2 md:mt-0">
+          <span className="text-right block">{price}</span>
         </div>
       </div>
 
       <button
         className={`${
           isAddToCart ? "hover:bg-[#C09C50] bg-[#C09C50]" : "md:hidden hidden"
-        } text-white h-10 w-full rounded-[8px] transition-colors`}
+        } text-white h-10 w-full rounded-[8px] transition-colors text-sm overflow-hidden whitespace-normal`}
       >
         Thêm vào giỏ hàng
       </button>
