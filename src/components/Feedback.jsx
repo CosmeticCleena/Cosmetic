@@ -4,7 +4,7 @@ import UserFeedbackImg from "../assets/images/UserFeedbackImg.svg";
 
 const Feedback = () => {
   return (
-    <div className="w-[75%] mx-auto flex flex-col md:flex-row mt-16 gap-4">
+    <div className="w-[75%] mx-auto flex flex-col md:flex-row mt-20 gap-4">
       <div className="flex flex-col basis-[60%] space-x-4">
         <h1 className="font-magnificent text-3xl">
           Đánh giá của khách hàng về sản phẩm của chúng tôi

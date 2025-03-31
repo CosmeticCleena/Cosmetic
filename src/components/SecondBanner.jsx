@@ -12,7 +12,7 @@ const SecondBanner = () => {
     setActiveIndex(index);
   };
   return (
-    <Banner imgSrc={BannerImg2}>
+    <Banner imgSrc={BannerImg2} mt="mt-20">
       <img
         src={QuoteArrow}
         alt="Quote Arrow"

@@ -4,7 +4,7 @@ import FEATURED_PRODUCTS from "../configs/FeaturedProducts.json";
 
 const FeaturedProducts = () => {
   return (
-    <div className="w-full md:w-[75%] md:mx-auto bg-white py-[60px] font-magnificent">
+    <div className="w-full md:w-[75%] md:mx-auto bg-white font-magnificent mt-20 mb-20">
       <h1 className="text-[40px] text-center mb-8">CÁC SẢN PHẨM NỔI BẬT</h1>
       <div className="md:flex grid grid-cols-2 gap-[30px] justify-center p-4 md:p-0">
         {FEATURED_PRODUCTS.map((product, index) => {
