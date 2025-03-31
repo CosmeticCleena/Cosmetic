@@ -1,4 +1,4 @@
-import React, { act } from "react";
+import React from "react";
 import { useState } from "react";
 import AvatarFeedbackImg from "../assets/images/AvatarFeedback.svg";
 import UserFeedbackImg from "../assets/images/UserFeedbackImg.svg";
