@@ -32,9 +32,11 @@ const Footer = () => {
           <span>Recyclable packaging</span>
         </div>
       </div>
-      <div className="footer-middle pb-4 md:pb-0 bg-[#6B4128] max-h-[963px] md:h-[415px] text-[#FFFFFF] z-[-1] relative">
-        <div className="flex flex-col md:flex-row px md:px-[108px] justify-between pt-16">
-          <div className="flex flex-col  gap-3 md:gap-4 font-lato md:mx-0 mx-[3em]">
+      <div className="footer-middle pb-4 md:pb-0 bg-[#6B4128] max-h-[963px] md:h-[415px] text-[#FFFFFF] relative overflow-hidden">
+        {/* Changed to overflow-hidden to ensure the background stays contained */}
+        <div className="flex flex-col md:flex-row px md:px-[108px] justify-between pt-16 relative z-10">
+          {/* Added z-10 to ensure content stays above background */}
+          <div className="flex flex-col gap-3 md:gap-4 font-lato md:mx-0 mx-[3em]">
             <h1 className="text-[24px] font-magnificent">How Can We Help?</h1>
             <span>Beautya Branches</span>
             <span>Contact Us</span>
@@ -48,7 +50,8 @@ const Footer = () => {
             <span>Women Skincare</span>
             <span>Gifts & Sets</span>
           </div>
-          <div className="flex flex-col gap-4 md:w-1/2 font-lato mx-[3em] mt-10 md:mt-0">
+          <div className="flex flex-col gap-4 md:w-1/2 font-lato mx-[3em] mt-10 md:mt-0 relative z-10">
+            {/* Added z-10 to ensure form elements are interactive */}
             <span className="text-[24px] font-magnificent">
               Keep in touch with Lumia
             </span>
@@ -56,7 +59,7 @@ const Footer = () => {
               Join the Beautya newsletter and be first to hear about news,
               offers and skincare Advice
             </span>
-            <div className="flex flex-col md:flex-row  gap-2 w-full text-[#CBCBCB] items-center">
+            <div className="flex flex-col md:flex-row gap-2 w-full text-[#CBCBCB] items-center">
               <input
                 className="bg-transparent border-b w-full p-3 focus:outline-none text-[24px]"
                 placeholder="Email Address"
@@ -68,7 +71,7 @@ const Footer = () => {
             </div>
             <div className="flex gap-2">
               <input
-                className="relative bottom-3 w-4 "
+                className="relative bottom-3 w-4"
                 id="email-check"
                 name="email-check"
                 type="checkbox"
@@ -79,7 +82,7 @@ const Footer = () => {
                 includes our Financial Incentive Notice for CA residents.
               </label>
               <label className="md:hidden relative" htmlFor="email-check">
-                I agree to Beautya’s Terms and Conditions and Privacy and
+                I agree to Beautya's Terms and Conditions and Privacy and
                 Policy.
               </label>
             </div>
@@ -87,7 +90,8 @@ const Footer = () => {
         </div>
 
         {/* Background Logo Positioned Absolutely */}
-        <div className="absolute bottom-0 top-10 right-0 opacity-100 z-[-1]">
+        <div className="absolute bottom-0 top-0 right-0 opacity-100 z-0 pointer-events-none">
+          {/* Changed z-index to 0 and added pointer-events-none */}
           <img
             src={BGLogo}
             alt="Background Logo"

@@ -23,8 +23,8 @@ const DiscoverProducts = () => {
           className="block w-full xl:w-auto mb-6 xl:mb-0"
         />
         <div className="flex flex-col items-center w-full">
-          <div className="w-full flex justify-center">
-            {/* Trên mobile - áp dụng scale transform để mở rộng card */}
+          <div className="w-full flex justify-center px-4 md:px-6">
+            {/* Trên mobile - áp dụng scale transform để mở rộng card và thêm padding */}
             <div className="md:transform-none md:w-auto w-full flex justify-center md:scale-100 scale-110 transform-gpu">
               <FeaturedProductCard
                 isAddToCart={false}
