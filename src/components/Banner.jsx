@@ -1,8 +1,10 @@
 import React from "react";
 
-const Banner = ({ children, imgSrc }) => {
+const Banner = ({ children, imgSrc, mt = "" }) => {
   return (
-    <div className="w-full relative py-20 md:w-[75%] md:mx-auto md:mt-8 md:rounded-3xl overflow-hidden">
+    <div
+      className={`w-full relative py-20 md:w-[75%] md:mx-auto ${mt} md:mt-20 md:rounded-3xl overflow-hidden`}
+    >
       <div className="w-full absolute inset-0 z-0">
         <img src={imgSrc} alt="Banner" className="w-full h-full object-cover" />
       </div>

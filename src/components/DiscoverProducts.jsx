@@ -3,7 +3,7 @@ import FeaturedProductCard from "./FeaturedProductCard";
 
 const DiscoverProducts = () => {
   return (
-    <div className="w-full md:py-[60px] md:px-[120px] py-8 px-4 font-magnificent mb-6 flex flex-col justify-center">
+    <div className="w-full md:w-[75%] md:mx-auto font-magnificent flex flex-col justify-center mt-20">
       <div className="text-center mb-10">
         <p className="text-[22px]">Khám phá</p>
         <p className="text-[40px] leading-tight">
@@ -37,7 +37,6 @@ const DiscoverProducts = () => {
               />
             </div>
           </div>
-
           <div className="flex gap-[14px] mt-8 xl:mt-6 relative z-10">
             <div className="w-[7px] h-[8px] bg-[#D1AE62] rounded-3xl cursor-pointer"></div>
             <div className="w-[7px] h-[8px] bg-[#0A0A0A] rounded-3xl cursor-pointer"></div>
