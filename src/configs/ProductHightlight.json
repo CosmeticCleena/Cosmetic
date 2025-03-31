@@ -1,0 +1,21 @@
+[
+    {
+      "imgSrc": "ProductHighlight1Img",
+      "content": {
+        "title": "Khám phá ngay <span class=\"text-[#D1AE62]\">bộ sưu tậu mỹ phẩm cao cấp</span> từ <span class=\"text-[#D1AE62]\">Lumia</span> – Nâng niu làn da, tôn vinh nét đẹp tự nhiên",
+        "description": "Lumia mang đến những sản phẩm mỹ phẩm cao cấp giúp bạn chăm sóc làn da khỏe mạnh và rạng rỡ. Với thành phần tự nhiên và công nghệ tiên tiến, chúng tôi cam kết mang lại vẻ đẹp bền vững cho mọi làn da.",
+        "button": {
+          "text": "KHÁM PHÁ NGAY",
+          "style": "bg-[#D1AE62] text-white px-5 py-3 w-full md:w-auto"
+        }
+      }
+    },
+    {
+      "imgSrc": "ProductHighlight2Img",
+      "isReverse": true,
+      "content": {
+        "title": "Lumia – Chăm sóc làn da bạn theo cách tự nhiên nhất.",
+        "description": "Chúng tôi tin rằng làn da khỏe mạnh bắt nguồn từ những thành phần tinh khiết nhất, vì vậy Lumia cam kết mang đến các công thức giàu dưỡng chất, an toàn và lành tính. Với sự kết hợp giữa công nghệ tiên tiến và chiết xuất thiên nhiên, mỗi sản phẩm của Lumia không chỉ giúp nuôi dưỡng làn da từ sâu bên trong mà còn mang lại sự tươi trẻ, rạng rỡ dài lâu. Hãy để Lumia đồng hành cùng bạn trên hành trình chăm sóc làn da mỗi ngày."
+      }
+    }
+  ]
