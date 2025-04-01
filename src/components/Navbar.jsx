@@ -8,12 +8,12 @@ import Cart from "../assets/icons/Cart.svg";
 const Navbar = () => {
   return (
     <nav className="h-[96px] w-full">
-      <div className="px-4 md:px-[120px] pt-2 pb-2 flex items-center justify-between">
+      <div className="px-4 md:px-[60px] xl:px-[120px] pt-2 pb-2 flex items-center justify-between">
         <img className="w-[150px] md:w-[200px]" src={LumiaLogo} alt="logo" />
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center justify-between">
-          <ul className="flex items-center gap-4 mr-8 font-magnificent">
+        <div className="hidden md:flex items-center">
+          <ul className="flex items-center gap-4 mr-2 font-magnificent">
             <li className="text-transparent bg-clip-text bg-gradient-to-r cursor-pointer from-[#B08B3B] to-[#EAC980] whitespace-nowrap">
               Giới thiệu
             </li>
@@ -21,35 +21,36 @@ const Navbar = () => {
             <li className="whitespace-nowrap cursor-pointer">Sản phẩm</li>
             <li className="whitespace-nowrap cursor-pointer">Liên hệ</li>
           </ul>
+        </div>
 
-          <div className="flex items-center gap-3">
-            <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
-              <img
-                src={SearchIcon}
-                alt="search-icon"
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
-              <img
-                src={User}
-                alt="user-icon"
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
-              <img
-                src={Cart}
-                alt="cart-icon"
-                className="w-full h-full object-contain"
-              />
-            </div>
+        {/* Icon Menu - Only on Desktop (not on any tablets) */}
+        <div className="hidden xl:flex items-center gap-3">
+          <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
+            <img
+              src={SearchIcon}
+              alt="search-icon"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
+            <img
+              src={User}
+              alt="user-icon"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
+            <img
+              src={Cart}
+              alt="cart-icon"
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
 
-        {/* Mobile Navigation - only hamburger menu */}
-        <div className="md:hidden cursor-pointer">
-          <div className="w-6 h-6 flex items-center justify-center ">
+        {/* Hamburger Menu - On Mobile and ALL Tablets */}
+        <div className="flex xl:hidden cursor-pointer">
+          <div className="w-6 h-6 flex items-center justify-center">
             <img
               src={hamburgerMenu}
               alt="menu"
