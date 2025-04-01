@@ -81,21 +81,20 @@ const Footer = () => {
                 Subscribe
               </button>
             </div>
-            <div className="flex gap-2">
+
+            <div className="flex items-start gap-2 mt-2">
               <input
-                className="relative bottom-3 w-4 min-w-4"
-                /* Added min-w-4 to prevent shrinking */
+                className="mt-1 w-4 min-w-4 h-4"
                 id="email-check"
                 name="email-check"
                 type="checkbox"
               />
-              <label className="hidden md:block" htmlFor="email-check">
-                {/* Changed md:flex to md:block for better visibility */}
+              <label className="hidden md:block text-sm" htmlFor="email-check">
                 By submitting your email, you agree to receive advertising
                 emails from Beautya. Please review our Privacy Policy, which
                 includes our Financial Incentive Notice for CA residents.
               </label>
-              <label className="md:hidden relative" htmlFor="email-check">
+              <label className="md:hidden text-sm" htmlFor="email-check">
                 I agree to Beautya's Terms and Conditions and Privacy and
                 Policy.
               </label>
