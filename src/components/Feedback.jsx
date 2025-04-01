@@ -77,6 +77,7 @@ const Feedback = () => {
                       : "bg-[#E8EEDF]";
                   return (
                     <button
+                      key={index}
                       className={`h-2 w-2 rounded-full  transition-all duration-300 ${isActive}`}
                       onClick={() => handleDotClick(index)}
                     ></button>

@@ -30,6 +30,7 @@ const SecondBanner = () => {
             index === activeIndex ? "bg-[#6A6E4E] opacity-70" : "bg-white";
           return (
             <button
+              key={index}
               className={`h-3 w-3 rounded-full ${isActive}`}
               onClick={() => handleDotClick(index)}
             ></button>
