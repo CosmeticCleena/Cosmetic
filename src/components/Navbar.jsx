@@ -1,11 +1,19 @@
+import { useState } from "react";
 import React from "react";
 import LumiaLogo from "../assets/images/LumiaLogo.svg";
 import SearchIcon from "../assets/icons/SearchIcon.svg";
 import hamburgerMenu from "../assets/icons/hamburgerMenu.svg";
 import User from "../assets/icons/User.svg";
 import Cart from "../assets/icons/Cart.svg";
+import SideBarMobile from "./SidebarMobile";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="h-[96px] w-full">
       <div className="px-4 md:px-[60px] xl:px-[120px] pt-2 pb-2 flex items-center justify-between">
@@ -46,8 +54,6 @@ const Navbar = () => {
               className="w-full h-full object-contain"
             />
           </div>
-        </div>
-
         {/* Hamburger Menu - On Mobile and ALL Tablets */}
         <div className="flex xl:hidden cursor-pointer">
           <div className="w-6 h-6 flex items-center justify-center">

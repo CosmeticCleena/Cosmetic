@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Women Make Up",
+        "submenu": []
+    },
+    {
+        "name": "Women Skincare",
+        "submenu": [
+            {
+                "name": "Shop all skincare",
+                "submenu": []
+            },
+            {
+                "name": "By Category",
+                "submenu": []
+            },
+            {
+                "name": "By Skin Condition",
+                "submenu": []
+            },
+            {
+                "name": "Collection",
+                "submenu": []
+            },
+            {
+                "name": "New",
+                "submenu": []
+            },
+            {
+                "name": "Best sellers",
+                "submenu": []
+            },
+            {
+                "name": "Travel size",
+                "submenu": []
+            },
+            {
+                "name": "Professional treatments",
+                "submenu": []
+            },
+            {
+                "name": "Daily defense",
+                "submenu": []
+            },
+            {
+                "name": "Virtual Skincare Analysis",
+                "submenu": []
+            }
+        ]
+    },
+    {
+        "name": "Gifts & sets",
+        "submenu": []
+    },
+    {
+        "name": "Branches",
+        "submenu": []
+    },
+    {
+        "name": "Our Brand",
+        "submenu": []
+    }
+]
