@@ -6,34 +6,45 @@ import hamburgerMenu from "../assets/icons/hamburgerMenu.svg";
 import User from "../assets/icons/User.svg";
 import Cart from "../assets/icons/Cart.svg";
 import SideBarMobile from "./SidebarMobile";
+import ProductDropdown from "./ProductDropdown";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [productDropdownOpen, setProductDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    if (!isOpen) {
+      setProductDropdownOpen(false);
+    }
   };
 
   return (
     <>
-      <nav className="w-full fixed md:relative z-50 top-2 bg-white">
+      <nav className="w-full fixed top-2 z-50 md:top-14 bg-white">
         <div className="px-4 md:px-[60px] xl:px-[120px] pt-2 pb-2 flex items-center justify-between">
           <img className="w-[150px] md:w-[200px]" src={LumiaLogo} alt="logo" />
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center">
-            <ul className="flex items-center gap-4 mr-2 font-magnificent">
+          {/* Full Menu with Navigation + Icons - On Tablet & Desktop */}
+          <div className="hidden md:flex items-center gap-3">
+            <ul className="flex items-center gap-4 relative right-[5rem] font-magnificent">
               <li className="text-transparent bg-clip-text bg-gradient-to-r cursor-pointer from-[#B08B3B] to-[#EAC980] whitespace-nowrap">
                 Giới thiệu
               </li>
               <li className="whitespace-nowrap cursor-pointer">Về chúng tôi</li>
-              <li className="whitespace-nowrap cursor-pointer">Sản phẩm</li>
+              <li
+                className="whitespace-nowrap cursor-pointer relative"
+                onClick={() => {
+                  setProductDropdownOpen(true);
+                }}
+                onMouseEnter={() => {
+                  setProductDropdownOpen(true);
+                }}
+              >
+                Sản phẩm
+              </li>
               <li className="whitespace-nowrap cursor-pointer">Liên hệ</li>
             </ul>
-          </div>
-
-          {/* Icon Menu - Only on Desktop (not on any tablets) */}
-          <div className="hidden xl:flex items-center gap-3">
             <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
               <img
                 src={SearchIcon}
@@ -57,8 +68,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Hamburger Menu - On Mobile and ALL Tablets */}
-          <div className="flex xl:hidden cursor-pointer">
+          {/* Hamburger Menu - Mobile Only (smaller than md) */}
+          <div className="flex md:hidden cursor-pointer">
             <div className="w-6 h-6 flex items-center justify-center">
               <img
                 src={hamburgerMenu}
@@ -68,6 +79,14 @@ const Navbar = () => {
               />
             </div>
           </div>
+        </div>
+
+        {/* Position the dropdown immediately after the navbar */}
+        <div className="relative">
+          <ProductDropdown
+            isVisible={productDropdownOpen && !isOpen}
+            setProductDropdownOpen={setProductDropdownOpen}
+          />
         </div>
       </nav>
       <SideBarMobile isOpen={isOpen} />

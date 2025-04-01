@@ -4,7 +4,7 @@ import rightArrow from "../assets/icons/Farword-Arrow.svg";
 
 const Topbar = () => {
   return (
-    <div className="w-full fixed md:relative z-[60] top-0 px-[20px] py-[4px] sm:px-[30px] md:px-[40px] lg:px-[60px] xl:px-[465px] md:py-[14px] bg-black text-white flex items-center justify-center h-[16px] md:h-[55px]">
+    <div className="w-full fixed  z-[60] top-0 px-[20px] py-[4px] sm:px-[30px] md:px-[40px] lg:px-[60px] xl:px-[465px] md:py-[14px] bg-black text-white flex items-center justify-center h-[16px] md:h-[55px]">
       <div className="flex items-center justify-between w-full">
         <img
           className="w-3 md:w-5 flex-shrink-0"
