@@ -31,7 +31,7 @@ const Home = () => {
         isLinear={false}
         height="h-[550px]"
       >
-        <div className="absolute w-[90%] md:w-[40%] top-[20%] md:top-[40%] left-[5%] lg:left-[10%]">
+        <div className="absolute w-[90%] md:w-[50%] lg:w-[40%] top-1/4 md:top-[20%] lg:top-[40%] left-[5%] lg:left-[10%]">
           <div className="absolute inset-0 bg-black opacity-20 rounded-lg"></div>
 
           <div className="relative z-10 p-4">
