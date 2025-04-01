@@ -13,7 +13,8 @@ import socialMediaIcons from "../assets/icons/socialMediaIcons.svg";
 
 const Footer = () => {
   return (
-    <div className="w-full mx-auto">
+    <div className="w-full mx-auto relative">
+      {/* Top section - features */}
       <div className="grid grid-cols-2 p-5 footer-top gap-16 bg-[#F9F6ED] text-[#9E6A30] h-max-[104px] md:flex items-center justify-between md:px-[108px] text-[16px]">
         <div className="flex gap-[8px] items-center">
           <img src={bunnyVector} alt="" />
@@ -32,10 +33,19 @@ const Footer = () => {
           <span>Recyclable packaging</span>
         </div>
       </div>
-      <div className="footer-middle pb-4 md:pb-0 bg-[#6B4128] max-h-[963px] md:h-[415px] text-[#FFFFFF] relative overflow-hidden">
-        {/* Changed to overflow-hidden to ensure the background stays contained */}
-        <div className="flex flex-col md:flex-row px md:px-[108px] justify-between pt-16 relative z-10">
-          {/* Added z-10 to ensure content stays above background */}
+
+      {/* Middle section - main footer content */}
+      <div className="footer-middle pb-4 md:pb-0 bg-[#6B4128] max-h-[963px] md:h-[415px] text-[#FFFFFF] relative">
+        {/* Background Logo Positioned Absolutely */}
+        <div className="absolute bottom-0 top-0 right-0 opacity-100 z-0">
+          <img
+            src={BGLogo}
+            alt="Background Logo"
+            className="w-[325px] h-auto"
+          />
+        </div>
+
+        <div className="flex flex-col md:flex-row px-4 md:px-[108px] justify-between pt-16 relative z-10">
           <div className="flex flex-col gap-3 md:gap-4 font-lato md:mx-0 mx-[3em]">
             <h1 className="text-[24px] font-magnificent">How Can We Help?</h1>
             <span>Beautya Branches</span>
@@ -50,18 +60,20 @@ const Footer = () => {
             <span>Women Skincare</span>
             <span>Gifts & Sets</span>
           </div>
-          <div className="flex flex-col gap-4 md:w-1/2 font-lato mx-[3em] mt-10 md:mt-0 relative z-10">
-            {/* Added z-10 to ensure form elements are interactive */}
+          <div className="flex flex-col gap-4 md:w-1/2 w-full font-lato px-3 sm:px-[3em] mt-10 md:mt-0 relative z-10">
+            {/* Changed mx-[3em] to px-3 sm:px-[3em] and added w-full for better tablet support */}
             <span className="text-[24px] font-magnificent">
               Keep in touch with Lumia
             </span>
-            <span className="text-[16px] w-[90%]">
+            <span className="text-[16px] w-full sm:w-[90%]">
+              {/* Changed w-[90%] to w-full sm:w-[90%] for better mobile/tablet support */}
               Join the Beautya newsletter and be first to hear about news,
               offers and skincare Advice
             </span>
             <div className="flex flex-col md:flex-row gap-2 w-full text-[#CBCBCB] items-center">
               <input
-                className="bg-transparent border-b w-full p-3 focus:outline-none text-[24px]"
+                className="bg-transparent border-b w-full p-3 focus:outline-none text-[24px] block"
+                /* Added block to ensure visibility */
                 placeholder="Email Address"
                 type="text"
               />
@@ -71,12 +83,14 @@ const Footer = () => {
             </div>
             <div className="flex gap-2">
               <input
-                className="relative bottom-3 w-4"
+                className="relative bottom-3 w-4 min-w-4"
+                /* Added min-w-4 to prevent shrinking */
                 id="email-check"
                 name="email-check"
                 type="checkbox"
               />
-              <label className="hidden md:flex" htmlFor="email-check">
+              <label className="hidden md:block" htmlFor="email-check">
+                {/* Changed md:flex to md:block for better visibility */}
                 By submitting your email, you agree to receive advertising
                 emails from Beautya. Please review our Privacy Policy, which
                 includes our Financial Incentive Notice for CA residents.
@@ -88,18 +102,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* Background Logo Positioned Absolutely */}
-        <div className="absolute bottom-0 top-0 right-0 opacity-100 z-0 pointer-events-none">
-          {/* Changed z-index to 0 and added pointer-events-none */}
-          <img
-            src={BGLogo}
-            alt="Background Logo"
-            className="w-[325px] h-auto"
-          />
-        </div>
       </div>
-      <div className="flex-col md:flex-row bg-[#5C3827] max-h-[160px] text-white px-[30px] md:px-[108px] flex justify-between">
+
+      {/* Location and social media section */}
+      <div className="flex-col md:flex-row bg-[#5C3827] text-white px-[30px] md:px-[108px] flex justify-between relative z-20">
+        {/* Added z-20 to ensure this is above the BGLogo */}
         <div className="py-[8px] flex flex-col items-start md:flex-row gap-4 pr-4 md:items-center text-[16px] mx-[1em]">
           <div className="flex gap-3">
             <img src={Location} alt="Location" />
@@ -112,17 +119,20 @@ const Footer = () => {
           </div>
         </div>
         <img
-          className="icons py-[8px] w-[60%] md:w-[20%] mx-[0.5em]"
+          className="icons py-[8px] w-[60%] md:w-[20%] mx-auto md:mx-[0.5em]"
           src={socialMediaIcons}
           alt="socialMediaIcons"
         />
       </div>
-      <div className="bg-[#351D13] max-h-[85px] px-[108px] flex md:flex-row flex-col justify-between text-[#CBCBCB] text-[12px]">
-        <div className="py-[8px] flex gap-1 items-center">
+
+      {/* Copyright section */}
+      <div className="bg-[#351D13] flex flex-col md:flex-row justify-between text-[#CBCBCB] text-[12px] px-4 md:px-[108px] relative z-20">
+        {/* Added z-20 to ensure this is above the BGLogo */}
+        <div className="py-[8px] flex gap-1 items-center justify-center md:justify-start">
           <img className="relative right-1" src={copyright} alt="copyright" />
-          <span>2025 Beautya. All Rights Reserved.</span>
+          <span>2023 Beautya. All Rights Reserved.</span>
         </div>
-        <div className="py-[8px] flex gap-4">
+        <div className="py-[8px] flex gap-4 justify-center md:justify-start flex-wrap">
           <span>Terms & Conditions</span>
           <span>Privacy Policy</span>
         </div>
