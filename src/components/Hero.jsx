@@ -8,8 +8,8 @@ const Hero = () => {
   const [displayImg, setDisplayImg] = useState();
   return (
     <LinearImage leftColor="from-white/50" imgSrc={HeroBg} isLinear={true}>
-      <div className="relative z-20 h-full flex items-center">
-        <div className="absolute w-[90%] lg:w-full max-w-md top-[40%] left-[5%] lg:left-[10%]">
+      <div className="relative z-20 h-full w-full flex items-center">
+        <div className="absolute w-[90%] md:w-[40%] text-center md:text-start top-[40%] left-[5%] lg:left-[10%]">
           <h1 className="font-magnificent text-5xl lg:text-6xl font-light tracking-tight text-gray-900 mb-6">
             {HeroData.title}
           </h1>
