@@ -15,12 +15,14 @@ const SidebarMobile = ({ isOpen }) => {
     setCurrentMenu((prev) => prev.slice(1));
   };
 
-  const menuData =
-    currentMenu.length > 0
-      ? SIDEBAR_DATA.find(
-          (item) => item.name === currentMenu[currentMenu.length - 1]
-        ).submenu
-      : SIDEBAR_DATA;
+  function getMenuData() {
+    return currentMenu.reduce((acc, item) => {
+      const subMenu = acc.find((sub) => sub.name === item)?.submenu;
+      return subMenu ? subMenu : acc;
+    }, SIDEBAR_DATA);
+  }
+
+  const menuData = currentMenu.length > 0 ? getMenuData() : SIDEBAR_DATA;
 
   return (
     <aside
