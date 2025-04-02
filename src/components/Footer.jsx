@@ -129,7 +129,7 @@ const Footer = () => {
         {/* Added z-20 to ensure this is above the BGLogo */}
         <div className="py-[8px] flex gap-1 items-center justify-center md:justify-start">
           <img className="relative right-1" src={copyright} alt="copyright" />
-          <span>2023 Beautya. All Rights Reserved.</span>
+          <span>2025 Beautya. All Rights Reserved.</span>
         </div>
         <div className="py-[8px] flex gap-4 justify-center md:justify-start flex-wrap">
           <span>Terms & Conditions</span>
