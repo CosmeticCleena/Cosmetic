@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import AvatarFeedbackImg from "../assets/images/AvatarFeedback.svg";
-import UserFeedbackImg from "../assets/images/UserFeedbackImg.svg";
-import FeedbackData from "../configs/Feedbacks.json";
+import AvatarFeedbackImg from "../../assets/images/AvatarFeedback.svg";
+import UserFeedbackImg from "../../assets/images/UserFeedbackImg.svg";
+import FeedbackData from "../../configs/Feedbacks.json";
 
 const imgSrc = [
   {

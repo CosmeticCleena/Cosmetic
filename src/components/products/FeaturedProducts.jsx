@@ -1,6 +1,6 @@
 import React from "react";
 import FeaturedProductCard from "./FeaturedProductCard";
-import FEATURED_PRODUCTS from "../configs/FeaturedProducts.json";
+import FEATURED_PRODUCTS from "../../configs/FeaturedProducts.json";
 
 const FeaturedProducts = () => {
   return (

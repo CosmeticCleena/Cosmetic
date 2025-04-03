@@ -1,8 +1,7 @@
 import React, { useState, useRef } from "react";
-import ProductDropdownImage from "../assets/images/ProductDropdown.svg";
-import RightArrowNav from "../assets/icons/RightArrowNav.svg";
-import PRODUCT_DROPDOWN_DATA from "../configs/ProductDropdown.json";
-
+import RightArrowNav from "../../assets/icons/RightArrowNav.svg";
+import PRODUCT_DROPDOWN_DATA from "../../configs/ProductDropdown.json";
+import ProductDropdownImage from "../../assets/images/ProductDropdown.svg";
 const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
   const [hoveredItem, setHoveredItem] = useState(null);
   const submenuRefs = useRef({});

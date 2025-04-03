@@ -1,13 +1,16 @@
 import React from "react";
-import HeroBg from "../assets/images/Hero.svg";
-import LinearImage from "./LinearImage";
-import { useState } from "react";
-import HeroData from "../configs/Hero.json";
+import HeroBg from "../../assets/images/Hero.svg";
+import LinearImage from "../common/LinearImage";
+import HeroData from "../../configs/Hero.json";
 
 const Hero = () => {
-  const [displayImg, setDisplayImg] = useState();
   return (
-    <LinearImage leftColor="from-white/50" imgSrc={HeroBg} isLinear={true}>
+    <LinearImage
+      leftColor="from-white/50"
+      imgSrc={HeroBg}
+      isLinear={true}
+      height="h-screen"
+    >
       <div className="relative z-20 h-full w-full flex items-center">
         <div className="absolute w-[90%] md:w-[40%] text-center md:text-start top-[40%] left-[5%] lg:left-[10%]">
           <h1 className="font-magnificent text-5xl lg:text-6xl font-light tracking-tight text-gray-900 mb-6">

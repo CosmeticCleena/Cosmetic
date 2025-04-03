@@ -1,4 +1,4 @@
-import DiscoverProduct from "../assets/images/DiscoverProduct.svg";
+import DiscoverProduct from "../../assets/images/DiscoverProduct.svg";
 import FeaturedProductCard from "./FeaturedProductCard";
 
 const DiscoverProducts = () => {
