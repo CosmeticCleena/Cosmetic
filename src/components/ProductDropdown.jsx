@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import ProductDropdownImage from "../assets/images/ProductDropdown.svg";
+import RightArrowNav from "../assets/icons/RightArrowNav.svg";
+import PRODUCT_DROPDOWN_DATA from "../configs/ProductDropdown.json";
+
 const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
+  const [hoveredItem, setHoveredItem] = useState(null);
+  const submenuRefs = useRef({});
+
+  // Handle mouse enter on submenu item with nested menu
+  const handleItemMouseEnter = (uniqueId) => {
+    setHoveredItem(uniqueId);
+  };
+
+  // Handle mouse leave from submenu
+  const handleSubmenuMouseLeave = (e, uniqueId) => {
+    // Check if the mouse is moving to the nested submenu
+    const submenuRef = submenuRefs.current[uniqueId];
+    if (submenuRef && submenuRef.contains(e.relatedTarget)) {
+      // Don't close the submenu if moving to it
+      return;
+    }
+    setHoveredItem(null);
+  };
+
   if (!isVisible) return null;
 
   return (
@@ -11,75 +33,88 @@ const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
       {/* Dropdown menu - positioned to be visible above the darkened overlay */}
       <div
         onMouseLeave={() => {
-          console.log("leave");
           setProductDropdownOpen(false);
+          setHoveredItem(null);
         }}
-        className="hidden md:flex absolute left-0 right-0  bg-white z-50 shadow-lg"
+        className="hidden md:flex absolute left-0 right-0 bg-white z-50 shadow-lg"
       >
         <div className="container mx-auto px-4 md:px-[60px] xl:px-[120px] py-6">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            {/* Now section */}
-            <div className="text-[14px] font-magnificent">
-              <h3 className="font-magnificent text-[16px] mb-4">Now</h3>
-              <ul className="space-y-2">
-                <li className="cursor-pointer">Best Sellers</li>
-                <li className="cursor-pointer">Travel Size</li>
-                <li className="cursor-pointer">Professional Treatments</li>
-                <li className="cursor-pointer">Daily Defense</li>
-                <li className="cursor-pointer">Virtual Skincare Analysis</li>
-              </ul>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
+            {/* Map through main menu items */}
+            {PRODUCT_DROPDOWN_DATA.map((item, index) => {
+              const hasSubMenu = item.submenu && item.submenu.length > 0;
 
-            {/* By Category section */}
-            <div className="text-[14px]">
-              <h3 className="font-magnificent text-[16px] mb-4 ">
-                By Category
-              </h3>
-              <ul className="space-y-2">
-                <li className=" cursor-pointer">Cleansers</li>
-                <li className=" cursor-pointer">Exfoliators</li>
-                <li className=" cursor-pointer">Toners</li>
-                <li className=" cursor-pointer">Retinols</li>
-                <li className="cursor-pointer">Peels And Masques</li>
-                <li className=" cursor-pointer">Moisturizer</li>
-                <li className=" cursor-pointer">Night Cream</li>
-                <li className=" cursor-pointer">Facial Oil</li>
-                <li className=" cursor-pointer">Sunscreen</li>
-                <li className=" cursor-pointer">Eye Care</li>
-              </ul>
-            </div>
+              return (
+                <div key={index} className="text-[14px] font-magnificent">
+                  <h3 className="font-magnificent text-[16px] mb-4">
+                    {item.name}
+                  </h3>
 
-            {/* By Skin Condition section */}
-            <div className="text-[14px]">
-              <h3 className="font-magnificent text-[16px] mb-4 ">
-                By Skin Condition
-              </h3>
-              <ul className="space-y-2">
-                <li className=" cursor-pointer">Brightening</li>
-                <li className=" cursor-pointer">Hydration</li>
-                <li className=" cursor-pointer">Acne</li>
-                <li className=" cursor-pointer">Anti-Ageing</li>
-                <li className=" cursor-pointer">Redness</li>
-                <li className=" cursor-pointer">Sensitive Skin</li>
-                <li className=" cursor-pointer">Sun Protection</li>
-              </ul>
-            </div>
+                  {/* Always show first-level submenu items */}
+                  {hasSubMenu && (
+                    <ul className="space-y-2">
+                      {item.submenu.map((subItem, subIndex) => {
+                        const subItemUniqueId = `main-${item.name}-sub-${subIndex}`;
+                        const hasNestedSubmenu =
+                          subItem.hasNestedMenu &&
+                          subItem.submenu &&
+                          subItem.submenu.length > 0;
 
-            {/* Collection section */}
-            <div className="text-[14px]">
-              <h3 className="font-magnificent text-[16px] mb-4">Collection</h3>
-              <ul className="space-y-2">
-                <li className=" cursor-pointer">Beautya Cleansing</li>
-                <li className=" cursor-pointer">Beautya Prestige</li>
-                <li className=" cursor-pointer">Beautya Light -In -White</li>
-                <li className=" cursor-pointer">Capture Totale</li>
-                <li className=" cursor-pointer">Capture Youth</li>
-                <li className=" cursor-pointer">Capture Dreamskin</li>
-                <li className=" cursor-pointer">One Essential</li>
-                <li className=" cursor-pointer">Professional Solution</li>
-                <li className=" cursor-pointer">Beautya Hydra Life</li>
-              </ul>
-            </div>
+                        return (
+                          <li key={subIndex} className="relative">
+                            <div
+                              className="cursor-pointer hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#B08B3B] hover:to-[#EAC980] flex items-center"
+                              onMouseEnter={() =>
+                                handleItemMouseEnter(subItemUniqueId)
+                              }
+                              onMouseLeave={(e) =>
+                                handleSubmenuMouseLeave(e, subItemUniqueId)
+                              }
+                            >
+                              {subItem.name}
+                              {hasNestedSubmenu && (
+                                <img
+                                  src={RightArrowNav}
+                                  alt=">"
+                                  className="ml-1 w-5 h-5 inline-block transform rotate-90" // Changed to rotate-90 to point down
+                                />
+                              )}
+                            </div>
+
+                            {/* Show nested submenu BELOW instead of to the right */}
+                            {hoveredItem === subItemUniqueId &&
+                              hasNestedSubmenu && (
+                                <div
+                                  ref={(el) =>
+                                    (submenuRefs.current[subItemUniqueId] = el)
+                                  }
+                                  className="absolute left-0 top-full bg-white shadow-md p-2 z-50 min-w-[200px]" // Changed positioning
+                                  style={{
+                                    marginTop: "5px", // Add some spacing from parent
+                                  }}
+                                >
+                                  {subItem.submenu.map(
+                                    (nestedItem, nestedIndex) => (
+                                      <div
+                                        key={nestedIndex}
+                                        className="p-2 hover:bg-gray-100 cursor-pointer whitespace-nowrap"
+                                      >
+                                        {nestedItem.name}
+                                      </div>
+                                    )
+                                  )}
+                                </div>
+                              )}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                </div>
+              );
+            })}
+
+            {/* Product image and description */}
             <div className="max-w-[288px] text-[14px] space-y-2">
               <img className="w-full" src={ProductDropdownImage} alt="" />
               <p className="font-semibold">
