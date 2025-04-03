@@ -1,7 +1,7 @@
 import React from "react";
-import BannerData from "../configs/Banners.json";
-import BannerImg1 from "../assets/images/Banner_1.svg";
-import Banner from "../components/Banner";
+import BannerData from "../../configs/Banners.json";
+import BannerImg1 from "../../assets/images/Banner_1.svg";
+import Banner from "../common/Banner";
 
 const banner = BannerData[0];
 const FirstBanner = () => {

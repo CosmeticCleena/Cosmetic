@@ -1,6 +1,6 @@
 import React from "react";
-import RightArrow from "../assets/icons/RightArrow.svg";
-import SignatureProductImg from "../assets/images/SignatureProduct.svg";
+import RightArrow from "../../assets/icons/RightArrow.svg";
+import SignatureProductImg from "../../assets/images/SignatureProduct.svg";
 
 const SignatureProduct = ({ title, description }) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import SignatureImg from "../assets/images/SignatureBg.svg";
-import SIGNATURE_PRODUCTS from "../configs/SignatureProducts.json";
+import SignatureImg from "../../assets/images/SignatureBg.svg";
+import SIGNATURE_PRODUCTS from "../../configs/SignatureProducts.json";
 import SignatureProduct from "./SignatureProduct";
 
 const SignatureProducts = () => {

@@ -1,15 +1,15 @@
 import React from "react";
-import bunnyVector from "../assets/icons/bunnyVector.svg";
-import Leaf from "../assets/icons/Leaf.svg";
-import Wheat from "../assets/icons/Wheat.svg";
-import LightBall from "../assets/icons/LightBall.svg";
-import Location from "../assets/icons/Location.svg";
-import Telephone from "../assets/icons/Telephone.svg";
-import indicator from "../assets/icons/indicator.svg";
-import copyright from "../assets/icons/copyright.svg";
+import bunnyVector from "../../assets/icons/bunnyVector.svg";
+import Leaf from "../../assets/icons/Leaf.svg";
+import Wheat from "../../assets/icons/Wheat.svg";
+import LightBall from "../../assets/icons/LightBall.svg";
+import Location from "../../assets/icons/Location.svg";
+import Telephone from "../../assets/icons/Telephone.svg";
+import indicator from "../../assets/icons/indicator.svg";
+import copyright from "../../assets/icons/copyright.svg";
 
-import BGLogo from "../assets/icons/BGLogo.svg";
-import socialMediaIcons from "../assets/icons/socialMediaIcons.svg";
+import BGLogo from "../../assets/icons/BGLogo.svg";
+import socialMediaIcons from "../../assets/icons/socialMediaIcons.svg";
 
 const Footer = () => {
   return (

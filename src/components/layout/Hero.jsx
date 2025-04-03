@@ -1,11 +1,9 @@
 import React from "react";
-import HeroBg from "../assets/images/Hero.svg";
-import LinearImage from "./LinearImage";
-import { useState } from "react";
-import HeroData from "../configs/Hero.json";
+import HeroBg from "../../assets/images/Hero.svg";
+import LinearImage from "../common/LinearImage";
+import HeroData from "../../configs/Hero.json";
 
 const Hero = () => {
-  const [displayImg, setDisplayImg] = useState();
   return (
     <LinearImage
       leftColor="from-white/50"

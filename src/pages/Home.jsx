@@ -1,15 +1,15 @@
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
+import Hero from "../components/layout/Hero";
+import Navbar from "../components/layout/Navbar";
 import HeroBg from "../assets/images/Hero.svg";
-import LinearImage from "../components/LinearImage";
-import ProductHighlights from "../components/ProductHighlights";
-import Footer from "../components/Footer";
-import FeatureProducts from "../components/FeaturedProducts";
-import SignatureProducts from "../components/SignatureProducts";
-import FirstBanner from "../components/FirstBanner";
-import SecondBanner from "../components/SecondBanner";
-import DiscoverProducts from "../components/DiscoverProducts";
-import Feedback from "../components/Feedback";
+import LinearImage from "../components/common/LinearImage";
+import ProductHighlights from "../components/products/ProductHighlights";
+import Footer from "../components/layout/Footer";
+import FeatureProducts from "../components/products/FeaturedProducts";
+import SignatureProducts from "../components/products/SignatureProducts";
+import FirstBanner from "../components/layout/FirstBanner";
+import SecondBanner from "../components/layout/SecondBanner";
+import DiscoverProducts from "../components/products/DiscoverProducts";
+import Feedback from "../components/layout/Feedback";
 
 const Home = () => {
   return (
