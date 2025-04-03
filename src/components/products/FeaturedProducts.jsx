@@ -8,7 +8,7 @@ const FeaturedProducts = () => {
       <h1 className="text-[40px] text-center mb-8">
         CÁC SẢN PHẨM <div>NỔI BẬT</div>
       </h1>
-      <div className="flex flex-col items-center md:flex-row md:items-center gap-[30px] p-4 md:p-0">
+      <div className="flex flex-col items-center md:flex-row md:justify-between   gap-[30px] p-4 md:p-0">
         {FEATURED_PRODUCTS.map((product, index) => {
           return (
             <FeaturedProductCard
