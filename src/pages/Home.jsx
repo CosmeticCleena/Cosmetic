@@ -1,6 +1,5 @@
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
-import TopBar from "../components/Topbar";
 import HeroBg from "../assets/images/Hero.svg";
 import LinearImage from "../components/LinearImage";
 import ProductHighlights from "../components/ProductHighlights";
@@ -15,7 +14,6 @@ import Feedback from "../components/Feedback";
 const Home = () => {
   return (
     <>
-      <TopBar />
       <Navbar />
       <Hero />
       <ProductHighlights />

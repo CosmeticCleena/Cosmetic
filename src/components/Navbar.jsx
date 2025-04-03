@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full fixed top-2 z-50 md:top-14 bg-white">
+      <nav className="w-full fixed top-0 z-50 bg-white">
         <div className="px-4 md:px-[60px] xl:px-[120px] pt-2 pb-2 flex items-center justify-between">
           <img className="w-[150px] md:w-[200px]" src={LumiaLogo} alt="logo" />
 
