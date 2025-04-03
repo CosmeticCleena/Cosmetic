@@ -1,12 +1,12 @@
 import { useState } from "react";
 import React from "react";
-import LumiaLogo from "../assets/images/LumiaLogo.svg";
-import SearchIcon from "../assets/icons/SearchIcon.svg";
-import hamburgerMenu from "../assets/icons/hamburgerMenu.svg";
-import User from "../assets/icons/User.svg";
-import Cart from "../assets/icons/Cart.svg";
-import SideBarMobile from "./SidebarMobile";
-import ProductDropdown from "./ProductDropdown";
+import LumiaLogo from "../../assets/images/LumiaLogo.svg";
+import SearchIcon from "../../assets/icons/SearchIcon.svg";
+import hamburgerMenu from "../../assets/icons/hamburgerMenu.svg";
+import User from "../../assets/icons/User.svg";
+import Cart from "../../assets/icons/Cart.svg";
+import SideBarMobile from "../layout/SidebarMobile";
+import ProductDropdown from "../products/ProductDropdown";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

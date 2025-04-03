@@ -1,8 +1,8 @@
 import React from "react";
-import BannerImg2 from "../assets/images/Banner_2.svg";
-import Banner from "../components/Banner";
-import BannerData from "../configs/Banners.json";
-import QuoteArrow from "../assets/icons/Quote-Arrows.svg";
+import BannerImg2 from "../../assets/images/Banner_2.svg";
+import Banner from "../common/Banner";
+import BannerData from "../../configs/Banners.json";
+import QuoteArrow from "../../assets/icons/Quote-Arrows.svg";
 import { useState } from "react";
 
 const banner = BannerData[1];

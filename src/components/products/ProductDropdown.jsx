@@ -1,5 +1,5 @@
 import React from "react";
-import ProductDropdownImage from "../assets/images/ProductDropdown.svg";
+import ProductDropdownImage from "../../assets/images/ProductDropdown.svg";
 const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
   if (!isVisible) return null;
 

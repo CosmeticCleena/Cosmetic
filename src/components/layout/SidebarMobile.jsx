@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import LeftArrowNav from "../assets/icons/LeftArrowNav.svg";
-import RightArrowNav from "../assets/icons/RightArrowNav.svg";
-import SIDEBAR_DATA from "../configs/Sidebar.json";
+import LeftArrowNav from "../../assets/icons/LeftArrowNav.svg";
+import RightArrowNav from "../../assets/icons/RightArrowNav.svg";
+import SIDEBAR_DATA from "../../configs/Sidebar.json";
+import SidebarBackground from "../common/SidebarBackground";
 
 const SidebarMobile = ({ isOpen }) => {
   const [currentMenu, setCurrentMenu] = useState([]);
@@ -25,13 +26,7 @@ const SidebarMobile = ({ isOpen }) => {
   const menuData = currentMenu.length > 0 ? getMenuData() : SIDEBAR_DATA;
 
   return (
-    <aside
-      className={`fixed w-screen h-full bg-[#FAF9F5] z-40 pt-20 md:pt-40 overflow-auto transition-all duration-300 ease-in-out ${
-        isOpen
-          ? "opacity-100 scale-100"
-          : "opacity-0 scale-95 pointer-events-none"
-      }`}
-    >
+    <SidebarBackground isOpen={isOpen}>
       <div className="w-[90%] mx-auto">
         <div className="flex items-center space-x-3 my-5 px-4">
           {currentMenu.length > 0 && (
@@ -69,7 +64,7 @@ const SidebarMobile = ({ isOpen }) => {
           ))}
         </div>
       </div>
-    </aside>
+    </SidebarBackground>
   );
 };
 

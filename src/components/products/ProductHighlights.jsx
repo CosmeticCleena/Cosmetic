@@ -1,8 +1,8 @@
 import React from "react";
-import ProductHighlight from "../components/ProductHighlight";
-import ProductHighlight1Img from "../assets/images/ProductHighlight1.svg";
-import ProductHighlight2Img from "../assets/images/ProductHighlight2.svg";
-import ProductHighlightData from "../configs/ProductHightlight.json";
+import ProductHighlight from "./ProductHighlight";
+import ProductHighlight1Img from "../../assets/images/ProductHighlight1.svg";
+import ProductHighlight2Img from "../../assets/images/ProductHighlight2.svg";
+import ProductHighlightData from "../../configs/ProductHightlight.json";
 
 const imgSrc = {
   ProductHighlight1Img: ProductHighlight1Img,

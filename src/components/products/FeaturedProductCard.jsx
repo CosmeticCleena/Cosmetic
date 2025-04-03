@@ -1,5 +1,5 @@
 import React from "react";
-import FeatureProduct from "../assets/images/FeatureProduct.svg";
+import FeatureProduct from "../../assets/images/FeatureProduct.svg";
 
 const FeaturedProductCard = ({ isAddToCart, data }) => {
   const productName = data?.product_name;
