@@ -2,25 +2,66 @@ import React, { useState, useRef } from "react";
 import RightArrowNav from "../../assets/icons/RightArrowNav.svg";
 import PRODUCT_DROPDOWN_DATA from "../../configs/ProductDropdown.json";
 import ProductDropdownImage from "../../assets/images/ProductDropdown.svg";
+
 const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
   const [hoveredItem, setHoveredItem] = useState(null);
   const submenuRefs = useRef({});
+  const timeoutRef = useRef(null);
 
   // Handle mouse enter on submenu item with nested menu
   const handleItemMouseEnter = (uniqueId) => {
+    // Clear any existing timeout to prevent early closing
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+    setHoveredItem(uniqueId);
+  };
+
+  // Handle mouse leave from main item
+  const handleItemMouseLeave = (e, uniqueId) => {
+    // Check if the mouse is moving to the nested submenu
+    const submenuRef = submenuRefs.current[uniqueId];
+
+    // Don't close immediately, use a small delay
+    timeoutRef.current = setTimeout(() => {
+      // Only close if we're not moving to the submenu
+      if (
+        !submenuRef ||
+        (!submenuRef.contains(document.activeElement) && !e.relatedTarget) ||
+        (submenuRef && !submenuRef.contains(e.relatedTarget))
+      ) {
+        setHoveredItem(null);
+      }
+    }, 100); // Small delay gives user time to move to submenu
+  };
+
+  // Handle mouse enter on submenu
+  const handleSubmenuMouseEnter = (uniqueId) => {
+    // Clear any closing timeout
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
     setHoveredItem(uniqueId);
   };
 
   // Handle mouse leave from submenu
-  const handleSubmenuMouseLeave = (e, uniqueId) => {
-    // Check if the mouse is moving to the nested submenu
-    const submenuRef = submenuRefs.current[uniqueId];
-    if (submenuRef && submenuRef.contains(e.relatedTarget)) {
-      // Don't close the submenu if moving to it
-      return;
-    }
-    setHoveredItem(null);
+  const handleSubmenuMouseLeave = () => {
+    // Use timeout to give user time to move between elements
+    timeoutRef.current = setTimeout(() => {
+      setHoveredItem(null);
+    }, 100);
   };
+
+  // Clean up timeouts when component unmounts
+  React.useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
 
   if (!isVisible) return null;
 
@@ -32,8 +73,17 @@ const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
       {/* Dropdown menu - positioned to be visible above the darkened overlay */}
       <div
         onMouseLeave={() => {
-          setProductDropdownOpen(false);
-          setHoveredItem(null);
+          // Use timeout to prevent immediate closing
+          timeoutRef.current = setTimeout(() => {
+            setProductDropdownOpen(false);
+            setHoveredItem(null);
+          }, 100);
+        }}
+        onMouseEnter={() => {
+          if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current);
+            timeoutRef.current = null;
+          }
         }}
         className="hidden md:flex absolute left-0 right-0 bg-white z-50 shadow-lg"
       >
@@ -67,7 +117,7 @@ const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
                                 handleItemMouseEnter(subItemUniqueId)
                               }
                               onMouseLeave={(e) =>
-                                handleSubmenuMouseLeave(e, subItemUniqueId)
+                                handleItemMouseLeave(e, subItemUniqueId)
                               }
                             >
                               {subItem.name}
@@ -75,7 +125,7 @@ const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
                                 <img
                                   src={RightArrowNav}
                                   alt=">"
-                                  className="ml-1 w-5 h-5 inline-block transform rotate-90" // Changed to rotate-90 to point down
+                                  className="ml-1 w-5 h-5 inline-block transform rotate-90" // Pointing down
                                 />
                               )}
                             </div>
@@ -87,10 +137,12 @@ const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
                                   ref={(el) =>
                                     (submenuRefs.current[subItemUniqueId] = el)
                                   }
-                                  className="absolute left-0 top-full bg-white shadow-md p-2 z-50 min-w-[200px]" // Changed positioning
-                                  style={{
-                                    marginTop: "5px", // Add some spacing from parent
-                                  }}
+                                  className="absolute left-0 top-full bg-white shadow-md p-2 z-50 min-w-[200px]"
+                                  style={{ marginTop: "5px" }}
+                                  onMouseEnter={() =>
+                                    handleSubmenuMouseEnter(subItemUniqueId)
+                                  }
+                                  onMouseLeave={handleSubmenuMouseLeave}
                                 >
                                   {subItem.submenu.map(
                                     (nestedItem, nestedIndex) => (

@@ -105,9 +105,19 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Hamburger Menu - Mobile Only (smaller than md) */}
-          <div className="flex md:hidden cursor-pointer">
-            <div className="w-6 h-6 flex items-center justify-center">
+          {/* Mobile Icons with Search and Hamburger Menu */}
+          <div className="flex md:hidden items-center gap-3">
+            {/* Search Icon for Mobile */}
+            <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
+              <img
+                src={SearchIcon}
+                alt="search-icon"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            {/* Hamburger Menu */}
+            <div className="w-6 h-6 flex items-center justify-center cursor-pointer">
               <img
                 src={hamburgerMenu}
                 alt="menu"
