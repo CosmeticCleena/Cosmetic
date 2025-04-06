@@ -7,9 +7,11 @@ import User from "../../assets/icons/User.svg";
 import Cart from "../../assets/icons/Cart.svg";
 import SideBarMobile from "../layout/SidebarMobile";
 import ProductDropdown from "../products/ProductDropdown";
+import SearchMobile from "./SearchMobile";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("Giới thiệu");
 
@@ -17,6 +19,16 @@ const Navbar = () => {
     setIsOpen(!isOpen);
     if (!isOpen) {
       setProductDropdownOpen(false);
+    }
+    if (isSearchOpen) {
+      setIsSearchOpen(false);
+    }
+  };
+
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
+    if (isOpen) {
+      setIsOpen(false);
     }
   };
 
@@ -108,7 +120,10 @@ const Navbar = () => {
           {/* Mobile Icons with Search and Hamburger Menu */}
           <div className="flex md:hidden items-center gap-3">
             {/* Search Icon for Mobile */}
-            <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
+            <div
+              className="w-5 h-5 flex items-center justify-center cursor-pointer"
+              onClick={toggleSearch}
+            >
               <img
                 src={SearchIcon}
                 alt="search-icon"
@@ -137,6 +152,7 @@ const Navbar = () => {
         </div>
       </nav>
       <SideBarMobile isOpen={isOpen} />
+      <SearchMobile isOpen={isSearchOpen} />
     </>
   );
 };
