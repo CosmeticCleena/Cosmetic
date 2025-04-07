@@ -1,39 +1,35 @@
 {
-    "trending_now": {
-      "title": "Trending Now",
-      "list": [
-        "advanced night repair",
-        "pure color",
-        "moisturizer",
-        "serum"
-      ]
-    },
-    "recent_searches": {
-      "title": "Your Recent Searches",
-      "list": [
-        "facial serum",
-        "eye cream"
-      ]
-    },
-    "popular_products": {
-      "title": "Popular Products",
-      "list": [
-        {
-          "name": "Beautya Prestige la Mousse Micellaire",
-          "image": "productSearch0"
-        },
-        {
-          "name": "Beautya Prestige la Mousse Micellaire",
-          "image": "productSearch1"
-        },
-        {
-          "name": "avaacasd",
-          "image": "productSearch2"
-        },
-        {
-          "name": "adfsdfasdfsf",
-          "image": "productSearch3"
-        }
-      ]
-    }
+  "trending_now": {
+    "title": "Trending Now",
+    "list": ["advanced night repair", "pure color", "moisturizer", "serum"]
+  },
+  "recent_searches": {
+    "title": "Your Recent Searches",
+    "list": ["facial serum", "eye cream"]
+  },
+  "popular_products": {
+    "title": "Popular Products",
+    "list": [
+      {
+        "name": "Beautya Prestige la Mousse Micellaire",
+        "image": "productSearch0",
+        "description": "Plumping Gloss - Instant and Long-Term Volume Effect - 24h Hydration"
+      },
+      {
+        "name": "Beautya Prestige la Mousse Micellaire",
+        "image": "productSearch1",
+        "description": "Plumping Gloss - Instant and Long-Term Volume Effect - 24h Hydration"
+      },
+      {
+        "name": "avaacasd",
+        "image": "productSearch2",
+        "description": "Plumping Gloss - Instant and Long-Term Volume Effect - 24h Hydration"
+      },
+      {
+        "name": "adfsdfasdfsf",
+        "image": "productSearch3",
+        "description": "Plumping Gloss - Instant and Long-Term Volume Effect - 24h Hydration"
+      }
+    ]
   }
+}

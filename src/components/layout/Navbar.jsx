@@ -8,12 +8,15 @@ import Cart from "../../assets/icons/Cart.svg";
 import SideBarMobile from "../layout/SidebarMobile";
 import ProductDropdown from "../products/ProductDropdown";
 import SearchMobile from "./SearchMobile";
+import SearchDesktop from "./SearchDesktop";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  // Không thay đổi phần này
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("Giới thiệu");
+  const [isDesktopSearchOpen, setIsDesktopSearchOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -24,7 +27,7 @@ const Navbar = () => {
       setIsSearchOpen(false);
     }
   };
-
+  // Không thay đổi phần này
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen);
     if (isOpen) {
@@ -39,6 +42,13 @@ const Navbar = () => {
     } else {
       setProductDropdownOpen(false);
     }
+  };
+
+  const toggleDesktopSearch = () => {
+    setIsSearchOpen(false);
+
+    if (setIsDesktopSearchOpen) setProductDropdownOpen(false);
+    setIsDesktopSearchOpen(!isDesktopSearchOpen);
   };
 
   return (
@@ -94,7 +104,11 @@ const Navbar = () => {
                 Liên hệ
               </li>
             </ul>
-            <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
+            {/* Toogle Search Desktop */}
+            <div
+              className="w-5 h-5 flex items-center justify-center cursor-pointer"
+              onClick={toggleDesktopSearch}
+            >
               <img
                 src={SearchIcon}
                 alt="search-icon"
@@ -150,8 +164,18 @@ const Navbar = () => {
             setProductDropdownOpen={setProductDropdownOpen}
           />
         </div>
+
+        {/* Position the search dropdown similar to product dropdown */}
+        <div className="relative">
+          <SearchDesktop
+            isDesktopSearchOpen={isDesktopSearchOpen}
+            setIsDesktopSearchOpen={setIsDesktopSearchOpen}
+          />
+        </div>
       </nav>
+      {/*Không thay đổi phần này*/}
       <SideBarMobile isOpen={isOpen} />
+      {/*Không thay đổi phần này*/}
       <SearchMobile isOpen={isSearchOpen} />
     </>
   );

@@ -29,7 +29,7 @@ const SearchMobile = ({ isOpen }) => {
   };
 
   const filterData = DATA.popular_products.list.filter((item) =>
-    item.name.includes(searchValue)
+    item.name.toLowerCase().includes(searchValue.toLowerCase())
   );
 
   return (
