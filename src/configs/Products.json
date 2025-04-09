@@ -1,0 +1,33 @@
+{
+  "1": {
+    "title": "Beautya Prestige la Mousse Micellaire",
+    "description": "Anti-Aging Face Serum, with Purifying French Water Lily",
+    "price": 76.0,
+    "amount": 30,
+    "images": ["img1", "img2"],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["cleansers"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": [
+      {
+        "stars": null,
+        "name": "",
+        "text": "",
+        "postedOn": "",
+        "images": ["img1", "img2"]
+      },
+      {
+        "stars": null,
+        "name": "",
+        "text": "",
+        "postedOn": "",
+        "images": []
+      }
+    ]
+  }
+}
