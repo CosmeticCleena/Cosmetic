@@ -120,15 +120,6 @@ const ProductDetailSlider = () => {
 
   return (
     <div className="">
-      {/* Breadcrumb Navigation */}
-      <div className="py-2 flex items-center text-sm text-gray-600">
-        <span>Home</span>
-        <span className="mx-1">›</span>
-        <span>Women Skincare</span>
-        <span className="mx-1">›</span>
-        <span className="text-gray-900">De Rose Advanced Serum</span>
-      </div>
-
       {/* Products Images and Details Container */}
       <div className="w-full flex flex-col md:flex-row gap-4">
         {/* Vertical slider for desktop */}
