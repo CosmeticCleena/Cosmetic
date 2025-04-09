@@ -1,9 +1,7 @@
 import Hero from "../components/layout/Hero";
-import Navbar from "../components/layout/Navbar";
 import HeroBg from "../assets/images/Hero.svg";
 import LinearImage from "../components/common/LinearImage";
 import ProductHighlights from "../components/products/ProductHighlights";
-import Footer from "../components/layout/Footer";
 import FeatureProducts from "../components/products/FeaturedProducts";
 import SignatureProducts from "../components/products/SignatureProducts";
 import FirstBanner from "../components/layout/FirstBanner";
@@ -14,7 +12,6 @@ import Feedback from "../components/layout/Feedback";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <ProductHighlights />
       <SignatureProducts />
@@ -44,7 +41,6 @@ const Home = () => {
           </div>
         </div>
       </LinearImage>
-      <Footer />
     </>
   );
 };
