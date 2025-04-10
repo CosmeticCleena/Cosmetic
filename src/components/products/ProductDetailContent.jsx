@@ -1,8 +1,5 @@
-import { useState } from "react";
-
-import arrow_readmore from "../../assets/icons/arrow_readmore.svg";
-
-import arrrow_readless from "../../assets/icons/arrrow_readless.svg";
+import { useState, useEffect } from "react";
+import { Plus, Minus, ChevronRight, ChevronDown } from "lucide-react";
 
 export default function ProductDetailContent() {
   const [activeTab, setActiveTab] = useState("how-to-apply");
@@ -13,6 +10,23 @@ export default function ProductDetailContent() {
     "what-makes-it-advance": false,
     "product-specification": false,
   });
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check screen size on mount and resize
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Initial check
+    checkScreenSize();
+
+    // Add event listener
+    window.addEventListener("resize", checkScreenSize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   const toggleExpand = (tabId) => {
     // If closing a section, remove active tab state
@@ -65,7 +79,7 @@ export default function ProductDetailContent() {
       preview:
         "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
       content: (
-        <div className="text-gray-800 space-y-4 ">
+        <div className="text-gray-800 space-y-4">
           <p>
             Beautya's 1st Revitalizing Serum That Concentrates The Double Power
             Of The Rose De Granville From The Stem To The Flower To Revitalize
@@ -90,7 +104,7 @@ export default function ProductDetailContent() {
             Appear Enhanced.
           </p>
           <p>Reveal Your Extraordinary Beauty With Beautya Prestige.</p>
-          <div className="mt-6 space-y-2 text-[18px]">
+          <div className="mt-6 space-y-2">
             <p>(1) Instrumental Test, 32 Panelists, After 30 Min.</p>
             <p>(2) In A 30 Ml Bottle.</p>
             <p>
@@ -184,23 +198,25 @@ export default function ProductDetailContent() {
   ];
 
   return (
-    <div className="w-full mt-10 mx-auto bg-white">
-      {/* Top Navigation Bar */}
-      <div className="flex justify-between border-b border-gray-300">
-        {tabData.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => handleTabClick(tab.id)}
-            className={`py-3 px-4 text-sm font-medium font-magnificent text-[20px] transition-colors ${
-              activeTab === tab.id && expandedSections[tab.id]
-                ? "text-[#7F4F29] border-b-2 border-[#D1AE62]"
-                : "text-[#606060] hover:text-[#7F4F29] "
-            }`}
-          >
-            {tab.title}
-          </button>
-        ))}
-      </div>
+    <div className="max-w-[1224px] mx-auto bg-white">
+      {/* Top Navigation Bar - Only visible on desktop */}
+      {!isMobile && (
+        <div className="flex justify-between border-b border-gray-300">
+          {tabData.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => handleTabClick(tab.id)}
+              className={`py-3 px-4 text-sm font-medium text-[20px] transition-colors ${
+                activeTab === tab.id && expandedSections[tab.id]
+                  ? "text-[#7F4F29] border-b-2 border-[#D1AE62]"
+                  : "text-[#606060] hover:text-[#7F4F29]"
+              }`}
+            >
+              {tab.title}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Content sections stacked vertically */}
       <div className="px-4 py-6">
@@ -208,35 +224,64 @@ export default function ProductDetailContent() {
           <div
             id={tab.id}
             key={tab.id}
-            className="py-4 border-b border-gray-300 font-lato"
+            className="py-4 border-b border-gray-300"
           >
-            <div className="">
-              <h3 className="text-lg font-magnificent  font-medium text-gray-800 mb-1">
+            {/* Mobile view - Accordion style header with plus/minus icons */}
+            {isMobile ? (
+              <button
+                onClick={() => toggleExpand(tab.id)}
+                className="w-full flex justify-between items-center text-left"
+              >
+                <h3
+                  className={`text-lg font-medium ${
+                    expandedSections[tab.id]
+                      ? "text-[#D1AE62]"
+                      : "text-gray-800"
+                  }`}
+                >
+                  {tab.title}
+                </h3>
+                {expandedSections[tab.id] ? (
+                  <Minus className="h-5 w-5 text-[#D1AE62]" />
+                ) : (
+                  <Plus className="h-5 w-5 text-gray-800" />
+                )}
+              </button>
+            ) : (
+              // Desktop view - Regular header
+              <h3 className="text-lg font-medium text-gray-800 mb-1">
                 {tab.title}
               </h3>
+            )}
 
-              {expandedSections[tab.id] ? (
-                <div className="transition-all duration-300 ease-in-out   ">
-                  {tab.content}
-                  <button
-                    onClick={() => toggleExpand(tab.id)}
-                    className="mt-4 flex items-center text-[#D1AE62]  gap-2 text-sm font-medium  transition-colors"
-                  >
-                    Read Less <img src={arrrow_readless} alt="" />
-                  </button>
-                </div>
-              ) : (
-                <div className="transition-all duration-300 ease-in-out">
-                  <p className="text-gray-600 text-sm">{tab.preview}</p>
-                  <button
-                    onClick={() => toggleExpand(tab.id)}
-                    className="mt-4 flex items-center text-[#D1AE62]  gap-2 text-sm font-medium  transition-colors"
-                  >
-                    Read More <img src={arrow_readmore} alt="" />
-                  </button>
-                </div>
-              )}
-            </div>
+            {/* Content area - Different for mobile and desktop */}
+            {isMobile ? (
+              // Mobile view - Just show content when expanded, no read more/less
+              expandedSections[tab.id] && (
+                <div className="mt-2">{tab.content}</div>
+              )
+            ) : // Desktop view - Show preview with read more/less
+            expandedSections[tab.id] ? (
+              <div className="transition-all duration-300 ease-in-out">
+                {tab.content}
+                <button
+                  onClick={() => toggleExpand(tab.id)}
+                  className="mt-4 flex items-center text-[#D1AE62] gap-2 text-sm font-medium transition-colors"
+                >
+                  Read Less <ChevronDown className="w-4 h-4" />
+                </button>
+              </div>
+            ) : (
+              <div className="transition-all duration-300 ease-in-out">
+                <p className="text-gray-600 text-sm">{tab.preview}</p>
+                <button
+                  onClick={() => toggleExpand(tab.id)}
+                  className="mt-4 flex items-center text-[#D1AE62] gap-2 text-sm font-medium transition-colors"
+                >
+                  Read More <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+            )}
           </div>
         ))}
       </div>

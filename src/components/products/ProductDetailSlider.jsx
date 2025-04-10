@@ -16,6 +16,7 @@ import messages from "../../assets/icons/messages.svg";
 
 import card_giftcard from "../../assets/icons/card_giftcard.svg";
 import discount from "../../assets/icons/discount.svg";
+import Breadcumbs from "../layout/Breadcumbs";
 
 const ProductDetailSlider = () => {
   // Array of all product images for easy indexing
@@ -119,9 +120,10 @@ const ProductDetailSlider = () => {
   }, [currentImageIndex]);
 
   return (
-    <div className="">
+    <div className="max-w-[1224px] mx-auto">
+      <Breadcumbs />
       {/* Products Images and Details Container */}
-      <div className="w-full flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col md:flex-row gap-4">
         {/* Vertical slider for desktop */}
         <div className="hidden md:flex md:flex-col md:w-20 md:h-[605px] md:justify-between">
           <button
