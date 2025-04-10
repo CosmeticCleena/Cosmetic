@@ -1,6 +1,9 @@
 import React from "react";
 import Breadcumbs from "../components/layout/Breadcumbs";
 import ProductFilter from "../components/layout/ProductFilter";
+import SearchProduct from "../components/products/SearchProduct";
+import PRODUCTS from "../configs/product/Products.json";
+import { BannerImgs, ProductImgs } from "../configs/product/images";
 import { useState } from "react";
 
 const Product = () => {
@@ -56,12 +59,38 @@ const Product = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-4 ">
+        <div className="grid grid-cols-12 gap-4 py-5">
           <ProductFilter
             handleUpdateFilters={handleUpdateFilters}
             filters={filters}
           />
-          <div className="col-spans-9 bg-white"></div>
+          <div className="col-start-4 col-span-8">
+            <div className="grid grid-cols-9 gap-8">
+              {PRODUCTS.map((item, index) => {
+                if (item.isBanner) {
+                  return (
+                    <div className={`${item.width} justify-center`} key={index}>
+                      <img
+                        src={BannerImgs[item.bannerImg]}
+                        alt="banner"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  );
+                } else {
+                  return (
+                    <SearchProduct
+                      key={item.id}
+                      productName={item.title}
+                      description={item.description}
+                      price={item.price.toString()}
+                      productImg={ProductImgs[item.mainImg]}
+                    />
+                  );
+                }
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </div>
