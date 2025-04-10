@@ -7,7 +7,7 @@ const SearchProduct = ({
   price = "",
 }) => {
   return (
-    <div className="col-span-3 w-full flex flex-col border border-[#DFDFDF]">
+    <div className="col-span-3 w-full flex flex-col border border-[#DFDFDF] transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2">
       <img
         src={productImg}
         alt="productSearch0"
@@ -15,7 +15,7 @@ const SearchProduct = ({
       />
       <div className="w-full h-full px-2 py-3 bg-white">
         <p
-          className={`text-md font-magnificent font-thin ${
+          className={`text-md font-magnificent ${
             description.length > 0 && "text-[#D1AE62]"
           }`}
         >
