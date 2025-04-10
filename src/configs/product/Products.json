@@ -1,0 +1,331 @@
+[
+  {
+    "id": 1,
+    "title": "Beautya La Mousse Off/On Foaming Cleanser",
+    "description": "Anti-Pollution Foaming Cleanser With Purifying French Water Lily",
+    "price": 65.0,
+    "amount": null,
+    "mainImg": "ProductImg",
+    "images": [],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["cleansers"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": [
+      {
+        "stars": 5,
+        "name": "Alice",
+        "text": "Leaves my skin feeling fresh and soft. Smells amazing too!",
+        "postedOn": "2025-03-12",
+        "images": ["img_cleanser_1.jpg"]
+      },
+      {
+        "stars": 4,
+        "name": "Ben",
+        "text": "Really nice texture, great for morning cleanse.",
+        "postedOn": "2025-03-15",
+        "images": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Beautya Prestige La Mousse Micellaire",
+    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "price": 520.0,
+    "amount": null,
+    "mainImg": "ProductImg1",
+    "images": [],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["serums"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": [
+      {
+        "stars": 5,
+        "name": "Chloe",
+        "text": "My go-to serum. Super hydrating and luxurious.",
+        "postedOn": "2025-02-28",
+        "images": ["img_serum_1.jpg", "img_serum_2.jpg"]
+      },
+      {
+        "stars": 4,
+        "name": "Derek",
+        "text": "Visible difference in skin smoothness after two weeks.",
+        "postedOn": "2025-03-02",
+        "images": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "isBanner": true,
+    "bannerImg": "ProductBanner1",
+    "width": "col-span-3"
+  },
+  {
+    "id": 4,
+    "title": "Beautya Prestige La Mousse Micellaire",
+    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "price": 520.0,
+    "amount": null,
+    "mainImg": "ProductImg2",
+    "images": [],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["serums"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": [
+      {
+        "stars": 5,
+        "name": "Ella",
+        "text": "Good value for the results. It really plumps the skin.",
+        "postedOn": "2025-03-10",
+        "images": ["img_review_ella.jpg"]
+      },
+      {
+        "stars": 3,
+        "name": "Faisal",
+        "text": "It works fine but takes time to show effect.",
+        "postedOn": "2025-03-11",
+        "images": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Beautya Prestige La Mousse Micellaire",
+    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "price": 520.0,
+    "amount": null,
+    "mainImg": "ProductImg3",
+    "images": [],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["serums"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": [
+      {
+        "stars": 4,
+        "name": "Grace",
+        "text": "Instant glow effect. Skin feels younger!",
+        "postedOn": "2025-02-20",
+        "images": ["img_grace_glow.jpg"]
+      },
+      {
+        "stars": 4,
+        "name": "Hassan",
+        "text": "A bit pricey but worth it for special care.",
+        "postedOn": "2025-02-22",
+        "images": []
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Beautya Prestige La Mousse Micellaire",
+    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "price": 520.0,
+    "amount": null,
+    "mainImg": "ProductImg4",
+    "images": [],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["serums"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": [
+      {
+        "stars": 5,
+        "name": "Isla",
+        "text": "Feels premium and really improves skin texture.",
+        "postedOn": "2025-01-25",
+        "images": ["img_isla_skin.jpg"]
+      },
+      {
+        "stars": 4,
+        "name": "Jay",
+        "text": "Nice absorption and no irritation on sensitive skin.",
+        "postedOn": "2025-02-01",
+        "images": []
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "isBanner": true,
+    "bannerImg": "ProductBanner2",
+    "width": "col-span-6"
+  },
+  {
+    "id": 8,
+    "title": "Beautya Prestige La Mousse Micellaire",
+    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "price": 520.0,
+    "amount": null,
+    "mainImg": "ProductImg5",
+    "images": [],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["serums"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": [
+      {
+        "stars": 5,
+        "name": "Tina",
+        "text": "Daily essential now! Can't go a day without it.",
+        "postedOn": "2025-03-06",
+        "images": ["img_tina_daily.jpg"]
+      },
+      {
+        "stars": 4,
+        "name": "Umar",
+        "text": "Nice hydration without greasiness.",
+        "postedOn": "2025-03-07",
+        "images": []
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Beautya Prestige La Mousse Micellaire",
+    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "price": 520.0,
+    "amount": null,
+    "mainImg": "ProductImg6",
+    "images": [],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["serums"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": [
+      {
+        "stars": 5,
+        "name": "Lana",
+        "text": "So creamy and rich—perfect for dry skin.",
+        "postedOn": "2025-03-09",
+        "images": ["img_lana_cream.jpg"]
+      },
+      {
+        "stars": 4,
+        "name": "Mark",
+        "text": "Good performance, but scent is a bit strong for me.",
+        "postedOn": "2025-03-11",
+        "images": []
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Beautya Prestige La Mousse Micellaire",
+    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "price": 520.0,
+    "amount": null,
+    "mainImg": "ProductImg7",
+    "images": [],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["serums"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": [
+      {
+        "stars": 5,
+        "name": "Nina",
+        "text": "Love the luxurious feel and packaging!",
+        "postedOn": "2025-03-18",
+        "images": []
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Beautya Prestige La Mousse Micellaire",
+    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "price": 520.0,
+    "amount": null,
+    "mainImg": "ProductImg8",
+    "images": [],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["serums"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": []
+  },
+  {
+    "id": 12,
+    "title": "Beautya Prestige La Mousse Micellaire",
+    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "price": 520.0,
+    "amount": null,
+    "mainImg": "ProductImg9",
+    "images": [],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["serums"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": []
+  },
+  {
+    "id": 13,
+    "title": "Beautya La Mousse Off/On Foaming Cleanser",
+    "description": "Anti-Pollution Foaming Cleanser With Purifying French Water Lily",
+    "price": 65.0,
+    "amount": null,
+    "mainImg": "ProductImg10",
+    "images": [],
+    "productDetails": "",
+    "howToApply": "",
+    "ingredient": "",
+    "whatMakesItAdvance": "",
+    "productSpecifications": "",
+    "categories": ["cleansers"],
+    "skinConditions": [],
+    "featured": [],
+    "comments": []
+  },
+  {
+    "id": 14,
+    "isBanner": true,
+    "bannerImg": "ProductBanner3",
+    "width": "col-span-3"
+  }
+]

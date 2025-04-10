@@ -1,0 +1,103 @@
+[
+  {
+    "title": "Category",
+    "items": [
+      {
+        "name": "Cleansers"
+      },
+      {
+        "name": "Exfoliators"
+      },
+      {
+        "name": "Toners"
+      },
+      {
+        "name": "Retinols"
+      },
+      {
+        "name": "Peels And Masques"
+      },
+      {
+        "name": "Moisturiser"
+      },
+      {
+        "name": "Night Cream"
+      },
+      {
+        "name": "Facial Oil"
+      },
+      {
+        "name": "Sunscreen"
+      },
+      {
+        "name": "Eye Care"
+      }
+    ]
+  },
+  {
+    "title": "Skin Condition",
+    "items": [
+      {
+        "name": "Brightening"
+      },
+      {
+        "name": "Hydration"
+      },
+      {
+        "name": "Acne"
+      },
+      {
+        "name": "Anti-Ageing"
+      },
+      {
+        "name": "Redness"
+      },
+      {
+        "name": "Sensitive Skin"
+      },
+      {
+        "name": "Sun Protection"
+      }
+    ]
+  },
+  {
+    "title": "Featured",
+    "items": [
+      {
+        "name": "New"
+      },
+      {
+        "name": "Best Sellers"
+      },
+      {
+        "name": "Travel Size"
+      },
+      {
+        "name": "Professional Treatments"
+      },
+      {
+        "name": "Daily Defense"
+      }
+    ]
+  },
+  {
+    "title": "Price",
+    "items": [
+      {
+        "name": "$50.00 - $150.00"
+      },
+      {
+        "name": "$150.00 - $250.00"
+      },
+      {
+        "name": "$250.00 - $350.00"
+      },
+      {
+        "name": "$350.00 - $450.00"
+      },
+      {
+        "name": "$450.00 - $550.00"
+      }
+    ]
+  }
+]
