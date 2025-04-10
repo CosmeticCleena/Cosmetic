@@ -13,19 +13,17 @@ const SearchProduct = ({
         alt="productSearch0"
         className="object-cover w-full"
       />
-      <div className="w-full h-full px-2 py-3 bg-white">
-        <p
-          className={`text-md font-magnificent ${
-            description.length > 0 && "text-[#D1AE62]"
-          }`}
-        >
+      <div className="w-full px-4 py-4 h-full bg-white flex flex-col justify-evenly gap-2">
+        <p className="text-md md:text-lg text-[#D1AE62] font-magnificent">
           {productName}
         </p>
-        {description.length > 0 && (
-          <p className="mt-2 font-latox">{description}</p>
+        {description && (
+          <p className="text-md font-latox text-black leading-tight">
+            {description}
+          </p>
         )}
-        {price.length > 0 && (
-          <p className="mt-2 text-xl font-latox text-[#0C0C0C] font-light">
+        {price && (
+          <p className="text-md md:text-xl font-latox text-[#0C0C0C] pt-2">
             ${price}
           </p>
         )}
