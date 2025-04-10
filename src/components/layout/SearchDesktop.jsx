@@ -31,7 +31,7 @@ const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
         className="fixed hidden md:flex inset-0 top-[100px] bg-black  bg-opacity-70 z-40"
       />
       {/* Search dropdown - positioned like ProductDropdown */}
-      <div className="absolute hidden overflow-auto md:flex left-0 right-0 md:max-h-[486px] bg-white z-50 shadow-lg pb-10">
+      <div className="absolute hidden overflow-auto md:flex left-0 right-0 md:max-h-[530px] bg-white z-50 shadow-lg pb-10">
         <div className="container mx-auto px-4 md:px-[60px] xl:px-[120px]">
           {/* Search bar */}
           <div
@@ -99,7 +99,7 @@ const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
                 </span>
               </div>
 
-              <div className="flex flex-col md:flex-row md:gap-6">
+              <div className="grid grid-cols-12 md:flex-row md:gap-6">
                 {filterData.map((item, index) => (
                   <SearchProduct
                     key={index}
