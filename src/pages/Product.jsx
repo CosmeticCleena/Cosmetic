@@ -3,8 +3,12 @@ import Breadcumbs from "../components/layout/Breadcumbs";
 import ProductFilter from "../components/layout/ProductFilter";
 import SearchProduct from "../components/products/SearchProduct";
 import PRODUCTS from "../configs/product/Products.json";
+import SELECT_BOX_DATA from "../configs/product/Sort.json";
+import FilterIcon from "../assets/icons/Filter.svg";
 import { BannerImgs, ProductImgs } from "../configs/product/images";
 import { useState } from "react";
+import SelectBox from "../components/common/SelectBox";
+import FilterMobile from "../components/layout/FilterMobile";
 
 const Product = () => {
   const [filters, setFilters] = useState({
@@ -13,6 +17,10 @@ const Product = () => {
     featured: [],
     price: [],
   });
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const handleFilterToggle = () => {
+    setIsFilterOpen((prev) => !prev);
+  };
 
   const handleUpdateFilters = (filterType, filterValue, type) => {
     setFilters((prevFilters) => {
@@ -31,69 +39,84 @@ const Product = () => {
   };
 
   return (
-    <div className="bg-[#FAF9F5] w-full pt-8">
-      <div className="w-[90%] mx-auto">
-        <Breadcumbs />
-        <h1 className="text-3xl font-magnificent pl-5 py-5 font-thin">
-          Women Skincare <span className="text-md">(17)</span>
-        </h1>
-        <div className="flex justify-between">
-          <p className="text-2xl font-magnificent">Filter</p>
-          <div className="flex items-center border border-gray-300 shadow-sm pl-5 py-2 bg-white">
-            <span className="mr-2 text-gray-700">Sort:</span>
-            <select className="appearance-none bg-transparent border-none font-semibold text-gray-800 focus:outline-none cursor-pointer">
-              <option selected>Recommended</option>
-              <option>Price: Low to High</option>
-              <option>Price: High to Low</option>
-              <option>Newest</option>
-              <option>Rating</option>
-            </select>
-            <div className="ml-1 pointer-events-none">
-              <svg
-                className="w-4 h-4 fill-current text-gray-700"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
+    <>
+      <FilterMobile
+        isOpen={isFilterOpen}
+        handleFilterToggle={handleFilterToggle}
+      />
+      <div className="bg-[#FAF9F5] w-full pt-8">
+        <div className="w-[90%] mx-auto">
+          <Breadcumbs />
+          <h1 className="text-3xl font-magnificent pl-5 py-5 font-thin">
+            Women Skincare <span className="text-md">(17)</span>
+          </h1>
+          <div className="hidden md:flex justify-between">
+            <p className="text-2xl font-magnificent">Filter</p>
+            <SelectBox
+              title={SELECT_BOX_DATA.title}
+              data={SELECT_BOX_DATA.data}
+            />
+          </div>
+          <div className="md:hidden grid grid-cols-12 gap-4">
+            <div className="col-span-6">
+              <div
+                className="border border-gray-300 h-full bg-white flex items-center justify-center space-x-3"
+                onClick={handleFilterToggle}
               >
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
+                <img
+                  src={FilterIcon}
+                  alt="filter icon"
+                  className="object-contain w-4 h-4"
+                />
+                <p className="font-lato text-[#0C0C0C]">Filter</p>
+              </div>
+            </div>
+            <div className="col-span-6">
+              <SelectBox
+                title={SELECT_BOX_DATA.title}
+                data={SELECT_BOX_DATA.data}
+              />
             </div>
           </div>
-        </div>
-        <div className="grid grid-cols-12 gap-4 py-5">
-          <ProductFilter
-            handleUpdateFilters={handleUpdateFilters}
-            filters={filters}
-          />
-          <div className="col-span-12 md:col-span-9">
-            <div className="grid grid-cols-6 md:grid-cols-9 gap-2 md:gap-8">
-              {PRODUCTS.map((item, index) => {
-                if (item.isBanner) {
-                  return (
-                    <div className={`${item.width} justify-center`} key={index}>
-                      <img
-                        src={BannerImgs[item.bannerImg]}
-                        alt="banner"
-                        className="w-full h-full object-cover"
+          <div className="grid grid-cols-12 gap-4 py-5">
+            <ProductFilter
+              handleUpdateFilters={handleUpdateFilters}
+              filters={filters}
+            />
+            <div className="col-span-12 md:col-span-9">
+              <div className="grid grid-cols-6 md:grid-cols-9 gap-2 md:gap-8">
+                {PRODUCTS.map((item, index) => {
+                  if (item.isBanner) {
+                    return (
+                      <div
+                        className={`${item.width} justify-center`}
+                        key={index}
+                      >
+                        <img
+                          src={BannerImgs[item.bannerImg]}
+                          alt="banner"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    );
+                  } else {
+                    return (
+                      <SearchProduct
+                        key={item.id}
+                        productName={item.title}
+                        description={item.description}
+                        price={item.price.toString()}
+                        productImg={ProductImgs[item.mainImg]}
                       />
-                    </div>
-                  );
-                } else {
-                  return (
-                    <SearchProduct
-                      key={item.id}
-                      productName={item.title}
-                      description={item.description}
-                      price={item.price.toString()}
-                      productImg={ProductImgs[item.mainImg]}
-                    />
-                  );
-                }
-              })}
+                    );
+                  }
+                })}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

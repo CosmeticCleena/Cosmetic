@@ -1,0 +1,25 @@
+{
+  "title": "Sort",
+  "data": [
+    {
+      "text": "Recommended",
+      "value": "recommended"
+    },
+    {
+      "text": "Price: Low to High",
+      "value": "price_low_to_high"
+    },
+    {
+      "text": "Price: High to Low",
+      "value": "price_high_to_low"
+    },
+    {
+      "text": "Newest",
+      "value": "newest"
+    },
+    {
+      "text": "Rating",
+      "value": "rating"
+    }
+  ]
+}
