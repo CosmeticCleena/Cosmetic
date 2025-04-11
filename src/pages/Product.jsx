@@ -48,7 +48,10 @@ const Product = () => {
         <div className="w-[90%] mx-auto">
           <Breadcumbs />
           <h1 className="text-3xl font-magnificent pl-5 py-5 font-thin">
-            Women Skincare <span className="text-md">(17)</span>
+            Women Skincare{" "}
+            <span className="text-md">
+              ({PRODUCTS.filter((item) => !item.isBanner).length})
+            </span>
           </h1>
           <div className="hidden md:flex justify-between">
             <p className="text-2xl font-magnificent">Filter</p>

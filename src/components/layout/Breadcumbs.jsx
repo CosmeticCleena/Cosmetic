@@ -12,7 +12,7 @@ const Breadcumbs = ({ productName = "" }) => {
       <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
         <li className="inline-flex items-center">
           <NavLink
-            to="/home"
+            to="/"
             className="inline-flex items-center hover:text-blue-600"
           >
             <svg
