@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         magnificent: ["SVN-Magnificent", "sans-serif"],
         lato: ["Lato", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
       },
     },
   },
