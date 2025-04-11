@@ -174,7 +174,7 @@ const Navbar = () => {
         </div>
       </nav>
       {/*Không thay đổi phần này*/}
-      <SideBarMobile isOpen={isOpen} />
+      <SideBarMobile isOpen={isOpen} toggleMenu={toggleMenu} />
       {/*Không thay đổi phần này*/}
       <SearchMobile isOpen={isSearchOpen} />
     </>

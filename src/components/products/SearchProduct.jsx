@@ -14,11 +14,11 @@ const SearchProduct = ({
         className="object-cover w-full"
       />
       <div className="w-full px-4 py-4 h-full bg-white flex flex-col justify-evenly gap-2">
-        <p className="text-md md:text-lg text-[#D1AE62] font-magnificent">
+        <p className="text-md md:text-lg min-h-16 text-[#D1AE62] font-magnificent">
           {productName}
         </p>
         {description && (
-          <p className="text-md font-latox text-black leading-tight">
+          <p className="text-md min-h-20 md:min-h-0 font-latox text-black leading-tight">
             {description}
           </p>
         )}
