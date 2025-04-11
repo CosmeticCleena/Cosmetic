@@ -8,7 +8,7 @@ const ProductFilter = ({ filters, handleUpdateFilters }) => {
     (filter) => filter.length === 0
   );
   return (
-    <div className="col-span-3 bg-white h-fit">
+    <div className="hidden md:block col-span-3 bg-white h-fit">
       <div className="flex flex-col space-y-4 border-y border-gray-200 py-5 px-5">
         <p className="text-md font-magnificent">Applied Filters</p>
         {!isFilterEmpty && (

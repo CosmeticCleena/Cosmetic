@@ -64,8 +64,8 @@ const Product = () => {
             handleUpdateFilters={handleUpdateFilters}
             filters={filters}
           />
-          <div className="col-span-9">
-            <div className="grid grid-cols-9 gap-8">
+          <div className="col-span-12 md:col-span-9">
+            <div className="grid grid-cols-6 md:grid-cols-9 gap-2 md:gap-8">
               {PRODUCTS.map((item, index) => {
                 if (item.isBanner) {
                   return (
