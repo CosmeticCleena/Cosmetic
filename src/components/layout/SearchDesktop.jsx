@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import SearchIcon from "../../assets/icons/SearchIcon.svg";
 import DATA from "../../configs/MobileSearch.json";
 import SearchProduct from "../products/SearchProduct";
@@ -106,6 +106,7 @@ const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
                     productImg={imgSrc[item.image]}
                     productName={item.name}
                     description={item.description}
+                    isSearch={true}
                   />
                 ))}
               </div>

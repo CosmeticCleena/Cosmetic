@@ -7,11 +7,11 @@ const SearchProduct = ({
   productName,
   description = "",
   price = "",
+  isSearch = false,
 }) => {
   const navigate = useNavigate();
   const handleClick = (id) => {
     navigate(`/products/${id}`);
-    console.log("Product ID:", id);
   };
   return (
     <div
@@ -24,18 +24,24 @@ const SearchProduct = ({
         className="object-cover w-full"
       />
       <div className="w-full px-4 py-4 h-full bg-white flex flex-col justify-evenly gap-2">
-        <p className="text-md md:text-lg min-h-16 text-[#D1AE62] font-magnificent">
+        <p
+          className={`text-md ${
+            isSearch ? "lg:text-lg" : "lg:text-2xl min-h-16"
+          } text-[#D1AE62] font-magnificent`}
+        >
           {productName}
         </p>
         {description && (
-          <p className="text-md min-h-20 md:min-h-0 font-latox text-black leading-tight">
+          <p
+            className={`text-sm ${
+              isSearch ? "md:text-base" : "md:text-lg"
+            } font-latox text-black leading-tight`}
+          >
             {description}
           </p>
         )}
         {price && (
-          <p className="text-md md:text-xl font-latox text-[#0C0C0C] pt-2">
-            ${price}
-          </p>
+          <p className="md:text-lg font-latox text-[#0C0C0C] pt-2">${price}</p>
         )}
       </div>
     </div>

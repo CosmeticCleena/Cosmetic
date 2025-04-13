@@ -56,14 +56,34 @@ const SearchMobile = ({ isOpen }) => {
         </div>
       </div>
       <div className="flex flex-col font-magnificent w-[90%] mx-auto mt-5">
-        <div className="flex flex-col space-y-2 font-thin">
-          <h1 className="text-xl text-[#0C0C0C]">{DATA.trending_now.title}</h1>
-          <div className="mt-4 flex flex-col gap-1 text-[#404040]">
-            {DATA.trending_now.list.map((item, index) => (
-              <p key={index}>{item}</p>
-            ))}
+        {isFocus && searchValue.length > 0 ? (
+          <div className="flex flex-col space-y-2 font-thin">
+            <h1 className="text-xl text-[#0C0C0C]">Suggestion</h1>
+            <div className="mt-4 flex flex-col gap-1 text-[#404040]">
+              {filterData.slice(0, 4).map((item, index) => (
+                <p
+                  key={index}
+                  onClick={() => {
+                    setSearchValue(item.name);
+                  }}
+                >
+                  {item.name}
+                </p>
+              ))}
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="flex flex-col space-y-2 font-thin">
+            <h1 className="text-xl text-[#0C0C0C]">
+              {DATA.trending_now.title}
+            </h1>
+            <div className="mt-4 flex flex-col gap-1 text-[#404040]">
+              {DATA.trending_now.list.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
+            </div>
+          </div>
+        )}
         <div className="flex flex-col space-y-2 font-thin mt-5">
           <h1 className="text-xl text-[#0C0C0C]">
             {DATA.recent_searches.title}
@@ -90,6 +110,7 @@ const SearchMobile = ({ isOpen }) => {
               key={index}
               productImg={imgSrc[item.image]}
               productName={item.name}
+              isSearch={true}
             />
           ))}
         </div>
