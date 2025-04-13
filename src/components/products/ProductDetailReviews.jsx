@@ -8,14 +8,28 @@ import ProductReviewProgressBar from "./ProductReviewProgressBar";
 import Comment from "../common/Comment";
 const stars = [Star, Star, Star, Star, Star];
 
-const ProductDetailReviews = () => {
+const ProductDetailReviews = ({ commentArray }) => {
   const [page, setPage] = useState(0);
+  const totalReivews = commentArray.length;
 
+  const calculateStars = (commentArray) => {
+    let objStars = {};
+    for (let comment of commentArray) {
+      if (objStars[comment.stars]) {
+        objStars[comment.stars] += 1;
+      } else {
+        objStars[comment.stars] = 1;
+      }
+    }
+    return objStars;
+  };
+
+  let objStars = calculateStars(commentArray);
   return (
-    <div className="mx-auto max-w-[1180px] mt-10">
+    <div className="hidden md:flex md:flex-col mx-auto max-w-[1180px] mt-10">
       <div>
         {/* First Line of Stars */}
-        <div className="flex  gap-[10px]  items-center">
+        <div className="flex gap-[10px] items-center">
           <p className="text-[28px]">Reviews</p>
           <img src={Line} alt="" />
           <div className="flex">
@@ -24,7 +38,7 @@ const ProductDetailReviews = () => {
             })}
           </div>
           <p className="text-[24px] text-[#D1AE62] font-manrope">4,8</p>
-          <p className="text-[#4D4D4D] font-manrope">(136)</p>
+          <p className="text-[#4D4D4D] font-manrope">({totalReivews})</p>
         </div>
         {/* Rating Snapshot and  Review this product */}
         <div className="px-10 mt-2 flex justify-between">
@@ -32,28 +46,28 @@ const ProductDetailReviews = () => {
           <div className="w-2/3">
             <h1 className="text-[20px]">Rating snapshot</h1>
             <ProductReviewProgressBar
-              totalReviews={136}
-              currentReviews={100}
+              totalReviews={totalReivews}
+              currentReviews={objStars[5] || 0}
               stars={5}
             />
             <ProductReviewProgressBar
-              totalReviews={136}
-              currentReviews={20}
+              totalReviews={totalReivews}
+              currentReviews={objStars[4] || 0}
               stars={4}
             />
             <ProductReviewProgressBar
-              totalReviews={136}
-              currentReviews={20}
+              totalReviews={totalReivews}
+              currentReviews={objStars[3] || 0}
               stars={3}
             />
             <ProductReviewProgressBar
-              totalReviews={136}
-              currentReviews={1}
+              totalReviews={totalReivews}
+              currentReviews={objStars[2] || 0}
               stars={2}
             />
             <ProductReviewProgressBar
-              totalReviews={136}
-              currentReviews={0}
+              totalReviews={totalReivews}
+              currentReviews={objStars[1] || 0}
               stars={1}
             />
           </div>
@@ -82,7 +96,7 @@ const ProductDetailReviews = () => {
       {/* Comment Section */}
       <div className="">
         <div className="mt-10 flex justify-between font-lato border-b border-[#F1DDA4]">
-          <p>1 -- 8 of 136 reviews</p>
+          <p>1 -- 2 of {totalReivews} reviews</p>
           <div className="flex items-center gap-2">
             <p className="text-[14px]">Sort by:</p>
             <p className="text-[16px]">Name (A-Z) </p>
@@ -90,10 +104,18 @@ const ProductDetailReviews = () => {
           </div>
         </div>
         <div className="mt-10">
-          <Comment />
-          <Comment />
-          <Comment />
-          <Comment />
+          {commentArray.map((comment, index) => {
+            return (
+              <Comment
+                key={index}
+                starsNumber={comment.stars}
+                name={comment.name}
+                postedOn={comment.postedOn}
+                text={comment.text}
+                images={comment.images}
+              />
+            );
+          })}
         </div>
         <div className="flex gap-3 justify-center items-center mt-10">
           <p>Page</p>
@@ -105,7 +127,7 @@ const ProductDetailReviews = () => {
             className="w-[80px] rounded-md px-4 py-2 border border-[#808080]"
             type="number"
           />
-          of 100
+          of {100}
         </div>
       </div>
     </div>
