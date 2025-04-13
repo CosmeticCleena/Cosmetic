@@ -18,7 +18,7 @@ const ProductDetail = () => {
   const productDetailsData = DATA_PRODUCT.find((prod) => prod.id == id);
 
   return productDetailsData.title ? (
-    <div className="pb-16 md:pb-0  bg-[#FAF9F6]">
+    <div className="pb-16 md:pb-0 pt-8  bg-[#FAF9F6]">
       <ProductDetailSlider productData={productDetailsData} />
       <ProductDetailContent
         tabContentData={productDetailsData.tabContentData}

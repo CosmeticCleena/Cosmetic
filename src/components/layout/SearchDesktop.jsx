@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import SearchIcon from "../../assets/icons/SearchIcon.svg";
 import DATA from "../../configs/MobileSearch.json";
 import SearchProduct from "../products/SearchProduct";

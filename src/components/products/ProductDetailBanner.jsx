@@ -203,7 +203,7 @@ const ProductDetailBanner = ({ banner }) => {
 
         {/* Indicator dots */}
         {totalSlides > 1 && (
-          <div className="flex justify-center items-center gap-4 mt-6">
+          <div className="flex justify-center items-center gap-1 mt-6">
             {Array.from({ length: totalSlides }).map((_, index) => (
               <button
                 key={index}
