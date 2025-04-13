@@ -6,7 +6,7 @@ const Breadcumbs = ({ productName = "" }) => {
   const pathnames = location.pathname.split("/").filter((path) => path);
   return (
     <div
-      className="flex mt-24 text-xl font-magnificent"
+      className="flex mt-24 text-[12px] md:text-xl font-magnificent"
       aria-label="Breadcrumb"
     >
       <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
@@ -73,7 +73,10 @@ const Breadcumbs = ({ productName = "" }) => {
                   d="m1 9 4-4-4-4"
                 />
               </svg>
-              <NavLink to="" className="ms-1 md:ms-2 hover:text-blue-600">
+              <NavLink
+                to=""
+                className="ms-1 md:ms-2 hover:text-blue-600 font-extrabold"
+              >
                 {productName}
               </NavLink>
             </div>

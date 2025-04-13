@@ -1,0 +1,309 @@
+import React, { useState, useRef, useEffect } from "react";
+
+import slider_arrow_down from "../../assets/icons/slider_arrow_down.svg";
+import slider_arrow_up from "../../assets/icons/slider_arrow_up.svg";
+import arrow_drop_down from "../../assets/icons/arrow_drop_down.svg";
+import location_on from "../../assets/icons/location_on.svg";
+
+// mobile icons
+import messages from "../../assets/icons/messages.svg";
+
+import card_giftcard from "../../assets/icons/card_giftcard.svg";
+import discount from "../../assets/icons/discount.svg";
+import Breadcumbs from "../layout/Breadcumbs";
+
+//images
+import { ProductDetailSliderImgs } from "../../configs/product_details/images";
+
+const ProductDetailSlider = ({ productData }) => {
+  const productImages = productData.images;
+  const productName = productData.title;
+  // State for the current selected image index
+  const [currentImageIndex, setCurrentImageIndex] = useState(4);
+
+  // Reference to mobile thumbnail slider
+  const mobileThumbnailSliderRef = useRef(null);
+
+  // Touch related states for mobile swipe
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startScrollLeft, setStartScrollLeft] = useState(0);
+
+  // Handle thumbnail click to change main image
+  const handleThumbnailClick = (index) => {
+    setCurrentImageIndex(index);
+
+    // For mobile, scroll to the selected thumbnail to ensure it's visible
+    if (mobileThumbnailSliderRef.current) {
+      // Increased thumbnail width to match the new size (80px + padding + border)
+      const thumbnailWidth = 90;
+      const scrollOffset =
+        index * thumbnailWidth -
+        mobileThumbnailSliderRef.current.offsetWidth / 2 +
+        thumbnailWidth / 2;
+      mobileThumbnailSliderRef.current.scrollTo({
+        left: scrollOffset,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  // Handle scrolling through images with the up/down buttons
+  const handleNavigateImage = (direction) => {
+    if (direction === "up") {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex > 0 ? prevIndex - 1 : productImages.length - 1
+      );
+    } else {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex < productImages.length - 1 ? prevIndex + 1 : 0
+      );
+    }
+  };
+
+  // Touch Event Handlers for mobile swipe
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+    setStartScrollLeft(mobileThumbnailSliderRef.current.scrollLeft);
+    setIsDragging(true);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isDragging) return;
+    setTouchEnd(e.targetTouches[0].clientX);
+
+    // Calculate how far to scroll based on touch movement
+    const touchDelta = touchStart - e.targetTouches[0].clientX;
+    mobileThumbnailSliderRef.current.scrollLeft = startScrollLeft + touchDelta;
+
+    // Prevent default to avoid page scrolling while swiping the carousel
+    e.preventDefault();
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+    // Reset touch states
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
+
+  // Make sure the selected thumbnail is in view when component mounts or selection changes
+  useEffect(() => {
+    if (mobileThumbnailSliderRef.current) {
+      // Updated thumbnail width to match new size
+      const thumbnailWidth = 90;
+      const thumbnailElement =
+        mobileThumbnailSliderRef.current.children[currentImageIndex];
+
+      if (thumbnailElement) {
+        const scrollOffset =
+          thumbnailElement.offsetLeft -
+          mobileThumbnailSliderRef.current.offsetWidth / 2 +
+          thumbnailWidth / 2;
+
+        mobileThumbnailSliderRef.current.scrollTo({
+          left: scrollOffset,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [currentImageIndex]);
+
+  return (
+    <div className="w-full max-w-full mx-auto px-4">
+      <div className="max-w-[1224px] mx-auto">
+        <Breadcumbs productName={productName} />
+        {/* Products Images and Details Container */}
+        <div className="flex flex-col lg:flex-row gap-6">
+          {/* Vertical slider for desktop */}
+          <div className="hidden lg:flex lg:flex-col lg:w-20 lg:h-[605px] lg:justify-between">
+            <button
+              className="border hover:bg-gray-300 w-20 h-8 flex justify-center items-center"
+              onClick={() => handleNavigateImage("up")}
+            >
+              <img src={slider_arrow_up} alt="Scroll up" />
+            </button>
+            <div className="flex flex-col gap-4 overflow-hidden">
+              {productImages.map((image, index) => (
+                <div
+                  key={index}
+                  className={`${
+                    index === currentImageIndex
+                      ? "border-2 border-[#D1AE62]"
+                      : "border hover:border-gray-400"
+                  } cursor-pointer`}
+                  onClick={() => handleThumbnailClick(index)}
+                >
+                  <img
+                    className="w-20 h-20 object-contain"
+                    src={ProductDetailSliderImgs[image]}
+                    alt={`Product thumbnail ${index + 1}`}
+                  />
+                </div>
+              ))}
+            </div>
+
+            <button
+              className="border hover:bg-gray-300 w-20 h-8 flex justify-center items-center"
+              onClick={() => handleNavigateImage("down")}
+            >
+              <img src={slider_arrow_down} alt="Scroll down" />
+            </button>
+          </div>
+
+          {/* Main content container */}
+          <div className="flex flex-col w-full lg:w-auto">
+            {/* Mobile/Tablet Product Information - Only visible on mobile and tablet */}
+            <div className="lg:hidden w-full flex flex-col gap-4 my-4">
+              <div className="font-magnificent flex flex-col gap-3">
+                <h1 className="text-[#7F4F29] text-2xl">{productData.title}</h1>
+                <p className="text-[16px]">{productData.description}</p>
+                <div className="text-[14px] flex gap-2">
+                  {productData.categories.map((cate, index) => {
+                    if (index === productData.categories.length - 1)
+                      return <span key={index}>{cate} </span>;
+                    return <span key={index}>{cate} |</span>;
+                  })}
+                </div>
+                <p className="text-[#868686] text-[16px]">
+                  {productData.description2}
+                </p>
+              </div>
+            </div>
+
+            {/* Main image - responsive at all screen sizes */}
+            <div className="bg-gray-100 w-full h-[300px] sm:h-[400px] md:h-[450px] lg:w-[704px] lg:h-[605px] flex items-center justify-center">
+              <img
+                className="max-w-full max-h-full object-contain"
+                src={ProductDetailSliderImgs[productImages[currentImageIndex]]}
+                alt="Product Image"
+              />
+            </div>
+
+            {/* Mobile/Tablet Horizontal Thumbnails with touch swipe support */}
+            <div
+              ref={mobileThumbnailSliderRef}
+              className="flex lg:hidden overflow-x-auto space-x-4 py-6 px-2 w-full scrollbar-hide"
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+              style={{
+                scrollbarWidth: "none", // Firefox
+                msOverflowStyle: "none", // IE and Edge
+                WebkitOverflowScrolling: "touch", // Smoother scrolling on iOS
+              }}
+            >
+              {productImages.map((image, index) => (
+                <div
+                  key={index}
+                  className={`flex-shrink-0 ${
+                    index === currentImageIndex
+                      ? "border-2 border-[#D1AE62]"
+                      : "border"
+                  } p-2 cursor-pointer`}
+                  onClick={() => handleThumbnailClick(index)}
+                >
+                  <img
+                    src={ProductDetailSliderImgs[image]}
+                    alt={`Product view ${index + 1}`}
+                    className="w-20 h-20 object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Price Container - Mobile/Tablet (below slider) */}
+            <div className="lg:hidden w-full mt-4 px-2">
+              {/* Price for mobile/tablet */}
+              <p className="font-magnificent text-[24px] mb-2">
+                ${productData.price}
+              </p>
+
+              {/* Size and price selector */}
+              <div className="text-[#606060] font-lato py-3 px-4 flex justify-between border-b border-b-[#606060]">
+                <p>{productData.amount}</p>
+                <div className="flex gap-1 items-center">
+                  <p>${productData.price}</p>
+                  <img src={arrow_drop_down} alt="Dropdown arrow" />
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile/Tablet promotions section */}
+            <div className="flex justify-center w-full text-[#9E6A30] text-[14px] px-2">
+              <div className="mt-6 space-y-4 lg:hidden w-full">
+                <div className="flex items-center gap-4">
+                  <span className="w-8 h-8 flex items-center justify-center bg-amber-100 rounded-full mr-2">
+                    <img src={card_giftcard} alt="" />
+                  </span>
+                  <p>receive 2 free samples when you spend $100</p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="w-8 h-8 flex items-center justify-center bg-amber-100 rounded-full mr-2">
+                    <img src={discount} alt="" />
+                  </span>
+                  <p>receive $2 when you return 5 empty containers</p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="w-8 h-8 flex items-center justify-center bg-amber-100 rounded-full mr-2">
+                    <img src={messages} alt="" />
+                  </span>
+                  <p>receive free 1-2-1 expert advice in branches</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Product Information - Only visible on desktop */}
+          <div className="hidden lg:flex lg:flex-col w-full lg:max-w-[392px] gap-4 my-4 lg:my-0">
+            <div className="font-magnificent flex flex-col gap-3">
+              <h1 className="text-[#7F4F29] text-[24px] lg:text-[32px]">
+                {productData.title}
+              </h1>
+              <p className="text-[14px] lg:text-[16px]">
+                {productData.description}
+              </p>
+              <div className="text-[12px] lg:text-[14px] flex gap-2">
+                {productData.categories.map((cate, index) => {
+                  if (index === productData.categories.length - 1)
+                    return <span key={index}>{cate}</span>;
+                  return <span key={index}>{cate} |</span>;
+                })}
+              </div>
+              <p className="text-[#868686] text-[16px]">
+                {productData.description2}
+              </p>
+              <p className="text-[20px] lg:text-[25px]">${productData.price}</p>
+            </div>
+
+            {/* Price Container - Desktop */}
+            <div className="text-[#606060] font-lato py-2 px-4 flex justify-between border-b border-b-[#606060]">
+              <p>{productData.amount} ML</p>
+              <div className="flex gap-1 items-center">
+                <p>${productData.price}</p>
+                <img src={arrow_drop_down} alt="Dropdown arrow" />
+              </div>
+            </div>
+
+            {/* Button - Desktop only */}
+            <button className="w-full bg-[#D1AE62] gap-2 text-white text-[16px] py-2 px-4 flex justify-center items-center hover:bg-[#c19f52]">
+              <img src={location_on} alt="Location icon" />
+              Check In Branches Stock
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Fixed Button for Mobile and Tablet - Always visible when scrolling */}
+      <div className="fixed bottom-0 left-0 right-0 bg-white shadow-lg lg:hidden z-50">
+        <button className="w-full bg-[#D1AE62] gap-2 text-white text-[16px] py-3 flex justify-center items-center hover:bg-[#c19f52]">
+          <img src={location_on} alt="Location icon" className="mr-2" />
+          Check In Branches Stock
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default ProductDetailSlider;
