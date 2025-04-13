@@ -11,9 +11,9 @@ import copyright from "../../assets/icons/copyright.svg";
 import BGLogo from "../../assets/icons/BGLogo.svg";
 import socialMediaIcons from "../../assets/icons/socialMediaIcons.svg";
 
-const Footer = () => {
+const Footer = ({ footerRef }) => {
   return (
-    <div className="w-full mx-auto relative">
+    <div ref={footerRef} className="w-full mx-auto relative">
       {/* Top section - features */}
       <div className="grid grid-cols-2 p-5 footer-top gap-16 bg-[#F9F6ED] text-[#9E6A30] h-max-[104px] md:flex items-center justify-between md:px-[108px] text-[16px]">
         <div className="flex gap-[8px] items-center">

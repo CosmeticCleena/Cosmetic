@@ -10,7 +10,7 @@ import ProductDropdown from "../products/ProductDropdown";
 import SearchMobile from "./SearchMobile";
 import SearchDesktop from "./SearchDesktop";
 
-const Navbar = () => {
+const Navbar = ({ footerRef }) => {
   const [isOpen, setIsOpen] = useState(false);
   // Không thay đổi phần này
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -41,6 +41,11 @@ const Navbar = () => {
       setProductDropdownOpen(!productDropdownOpen);
     } else {
       setProductDropdownOpen(false);
+    }
+    if (item !== "Sản phẩm") {
+      footerRef.current?.scrollIntoView({
+        behavior: "smooth",
+      });
     }
   };
 

@@ -71,11 +71,7 @@ export default function ProductDetailContent({ tabContentData }) {
     // Update active tab
     setActiveTab(tabId);
 
-    // Auto-scroll to the section
-    const element = document.getElementById(tabId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    // Đã loại bỏ đoạn code auto-scroll tại đây
   };
 
   // Function to render tab content from plain text
