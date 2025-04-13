@@ -1,13 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const SearchProduct = ({
+  id,
   productImg,
   productName,
   description = "",
   price = "",
 }) => {
+  const navigate = useNavigate();
+  const handleClick = (id) => {
+    navigate(`/products/${id}`);
+    console.log("Product ID:", id);
+  };
   return (
-    <div className="col-span-3 w-full flex flex-col border border-[#DFDFDF] transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2">
+    <div
+      className="col-span-3 w-full flex flex-col border border-[#DFDFDF] transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+      onClick={() => handleClick(id)}
+    >
       <img
         src={productImg}
         alt="productSearch0"

@@ -88,12 +88,12 @@ const Product = () => {
             />
             <div className="col-span-12 md:col-span-9">
               <div className="grid grid-cols-6 md:grid-cols-9 gap-2 md:gap-8">
-                {PRODUCTS.map((item, index) => {
+                {PRODUCTS.map((item) => {
                   if (item.isBanner) {
                     return (
                       <div
                         className={`${item.width} justify-center`}
-                        key={index}
+                        key={item.id}
                       >
                         <img
                           src={BannerImgs[item.bannerImg]}
@@ -106,6 +106,7 @@ const Product = () => {
                     return (
                       <SearchProduct
                         key={item.id}
+                        id={item.id}
                         productName={item.title}
                         description={item.description}
                         price={item.price.toString()}
