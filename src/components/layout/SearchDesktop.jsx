@@ -106,6 +106,7 @@ const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
                     productImg={imgSrc[item.image]}
                     productName={item.name}
                     description={item.description}
+                    isSearch={true}
                   />
                 ))}
               </div>

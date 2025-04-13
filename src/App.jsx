@@ -1,5 +1,6 @@
 import Root from "./pages/Root";
 import Home from "./pages/Home";
+import NotFoundPage from "./components/common/NotFoundPage";
 import {
   createBrowserRouter,
   Navigate,
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <NotFoundPage />,
     children: [
       { index: true, element: <Navigate to="home" replace /> },
       { path: "home", element: <Home /> },

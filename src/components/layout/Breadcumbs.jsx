@@ -47,7 +47,10 @@ const Breadcumbs = ({ productName = "" }) => {
                       d="m1 9 4-4-4-4"
                     />
                   </svg>
-                  <NavLink to="" className="ms-1 md:ms-2 hover:text-blue-600">
+                  <NavLink
+                    to={`/${pathname}`}
+                    className="ms-1 md:ms-2 hover:text-blue-600"
+                  >
                     {pathname.charAt(0).toUpperCase() + pathname.slice(1)}
                   </NavLink>
                 </div>
