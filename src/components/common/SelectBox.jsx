@@ -2,7 +2,7 @@ import React from "react";
 
 const SelectBox = ({ title, data }) => {
   return (
-    <div className="flex text-sm md:text-md items-center border border-gray-300 shadow-sm pl-2 md:pl-5 py-2 bg-white group">
+    <div className="flex text-sm md:text-md items-center border border-gray-300 shadow-sm pl-1 md:pl-5 py-2 bg-white group">
       <span className="mr-2 text-gray-700">{title}:</span>
       <div className="relative inline-block">
         <select
