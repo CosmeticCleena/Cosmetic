@@ -33,7 +33,7 @@ const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
         className="fixed hidden md:flex inset-0 top-[100px] bg-black  bg-opacity-70 z-40"
       />
       {/* Search dropdown - positioned like ProductDropdown */}
-      <div className="absolute hidden overflow-auto md:flex left-0 right-0 md:max-h-[530px] bg-white z-50 shadow-lg pb-10">
+      <div className="absolute hidden  md:flex left-0 right-0 md:max-h-[570px] bg-white z-50 shadow-lg pb-10">
         <div className="container mx-auto px-4 md:px-[60px] xl:px-[120px]">
           {/* Search bar */}
           <div
