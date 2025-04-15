@@ -15,7 +15,7 @@ const SearchProduct = ({
   };
   return (
     <div
-      className="col-span-3 w-full flex flex-col border border-[#DFDFDF] transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2"
+      className="col-span-3 w-full flex flex-col border border-[#DFDFDF] transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2 cursor-pointer"
       onClick={() => handleClick(id)}
     >
       <img

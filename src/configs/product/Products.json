@@ -222,7 +222,7 @@
   {
     "id": 3,
     "isBanner": true,
-    "bannerImg": "ProductBanner1",
+    "banner": "ProductBanner1",
     "width": "col-span-3"
   },
   {
@@ -558,7 +558,7 @@
   {
     "id": 7,
     "isBanner": true,
-    "bannerImg": "ProductBanner2",
+    "banner": "ProductBanner2",
     "width": "col-span-6"
   },
   {
@@ -1071,6 +1071,12 @@
   },
   {
     "id": 13,
+    "isBanner": true,
+    "banner": "ProductBanner3",
+    "width": "col-span-3"
+  },
+  {
+    "id": 14,
     "title": "Beautya La Mousse Off/On Foaming Cleanser",
     "description": "Anti-Pollution Foaming Cleanser With Purifying French Water Lily",
     "price": 65.0,
@@ -1162,11 +1168,5 @@
         "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
       }
     ]
-  },
-  {
-    "id": 14,
-    "isBanner": true,
-    "bannerImg": "ProductBanner3",
-    "width": "col-span-3"
   }
 ]

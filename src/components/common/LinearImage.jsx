@@ -1,7 +1,7 @@
 import React from "react";
 
 const LinearImage = ({
-  leftColor,
+  leftColor = "",
   rightColor = "to-transparent",
   imgSrc,
   children,

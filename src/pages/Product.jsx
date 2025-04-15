@@ -5,10 +5,19 @@ import SearchProduct from "../components/products/SearchProduct";
 import PRODUCTS from "../configs/product/Products.json";
 import SELECT_BOX_DATA from "../configs/product/Sort.json";
 import FilterIcon from "../assets/icons/Filter.svg";
-import { BannerImgs, ProductImgs } from "../configs/product/images";
+import { ProductImgs } from "../configs/product/images";
 import { useState } from "react";
 import SelectBox from "../components/common/SelectBox";
 import FilterMobile from "../components/layout/FilterMobile";
+import ProductBanner1 from "../components/products/ProductBanner1";
+import ProductBanner2 from "../components/products/ProductBanner2";
+import ProductBanner3 from "../components/products/ProductBanner3";
+
+const bannerMap = {
+  ProductBanner1: <ProductBanner1 />,
+  ProductBanner2: <ProductBanner2 />,
+  ProductBanner3: <ProductBanner3 />,
+};
 
 const Product = () => {
   const [filters, setFilters] = useState({
@@ -91,15 +100,8 @@ const Product = () => {
                 {PRODUCTS.map((item) => {
                   if (item.isBanner) {
                     return (
-                      <div
-                        className={`${item.width} justify-center`}
-                        key={item.id}
-                      >
-                        <img
-                          src={BannerImgs[item.bannerImg]}
-                          alt="banner"
-                          className="w-full h-full object-cover"
-                        />
+                      <div className={`${item.width}`} key={item.id}>
+                        {bannerMap[item.banner]}
                       </div>
                     );
                   } else {
