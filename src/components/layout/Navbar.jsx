@@ -36,13 +36,16 @@ const Navbar = ({ footerRef }) => {
   };
 
   const handleItemClick = (item) => {
+    console.log(item);
     setActiveItem(item);
     if (item === "Sản phẩm") {
       navigate("/products");
+    } else if (item === "Giới thiệu") {
+      navigate("/");
     } else {
       setProductDropdownOpen(false);
     }
-    if (item !== "Sản phẩm") {
+    if (item !== "Sản phẩm" && item !== "Giới thiệu") {
       footerRef.current?.scrollIntoView({
         behavior: "smooth",
       });
