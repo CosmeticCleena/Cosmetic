@@ -1,7 +1,7 @@
 import React from "react";
 import SidebarBackground from "../common/SidebarBackground";
 import FILTER_DATA from "../../configs/Filters.json";
-import CloseIcon from "../../assets/icons/Close.svg";
+import CloseIcon from "../../assets/icons/close.svg";
 import Accordion from "../common/Accordion";
 
 const FilterMobile = ({ isOpen, handleFilterToggle }) => {
