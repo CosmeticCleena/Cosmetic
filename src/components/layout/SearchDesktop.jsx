@@ -7,6 +7,7 @@ import productSearch0 from "../../assets/images/productSearch0.svg";
 import productSearch1 from "../../assets/images/productSearch1.svg";
 import productSearch2 from "../../assets/images/productSearch2.svg";
 import productSearch3 from "../../assets/images/productSearch3.svg";
+import { useNavigate } from "react-router-dom";
 
 const imgSrc = {
   productSearch0: productSearch0,
@@ -17,6 +18,7 @@ const imgSrc = {
 const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
   const [searchValue, setSearchValue] = useState("");
   const [isFocus, setIsFocus] = useState(false);
+  const navigate = useNavigate();
   const filterData = DATA.popular_products.list.filter((item) =>
     item.name.toLowerCase().includes(searchValue.toLowerCase())
   );
@@ -94,7 +96,12 @@ const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
             <div className="w-[60%]">
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-lg font-magnificent">Popular Products</h3>
-                <span className="text-sm text-[#D1AE62] cursor-pointer hover:underline">
+                <span
+                  onClick={() => {
+                    navigate("/products");
+                  }}
+                  className="text-sm text-[#D1AE62] cursor-pointer hover:underline"
+                >
                   View All
                 </span>
               </div>

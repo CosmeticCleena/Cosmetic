@@ -1,22 +1,12 @@
-import { useState, useEffect } from "react";
-import { Plus, Minus, ChevronRight, ChevronDown } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { Plus, Minus } from "lucide-react";
 
 export default function ProductDetailContent({ tabContentData }) {
-  // Find the product by ID
-  const [activeTab, setActiveTab] = useState("how-to-apply");
-  const [expandedSections, setExpandedSections] = useState({});
+  // Mặc định để tab "product-details" khi mới vào
+  const [activeTab, setActiveTab] = useState("product-details");
   const [isMobile, setIsMobile] = useState(false);
-
-  // Initialize expandedSections based on the tabs in the product
-  useEffect(() => {
-    if (tabContentData) {
-      const initialExpandedState = {};
-      tabContentData.forEach((tab) => {
-        initialExpandedState[tab.id] = false;
-      });
-      setExpandedSections(initialExpandedState);
-    }
-  }, [tabContentData]);
+  const [contentHeight, setContentHeight] = useState("auto");
+  const contentRef = useRef(null);
 
   // Check screen size on mount and resize
   useEffect(() => {
@@ -34,44 +24,50 @@ export default function ProductDetailContent({ tabContentData }) {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  const toggleExpand = (tabId) => {
-    // If closing a section, remove active tab state
-    if (expandedSections[tabId]) {
-      setActiveTab(null);
-    } else {
-      // If opening a section, set it as active tab
-      setActiveTab(tabId);
-    }
+  // Calculate max height of all tab contents on initial render
+  useEffect(() => {
+    if (!isMobile && tabContentData && tabContentData.length > 0) {
+      // Create a hidden div to measure content heights
+      const tempDiv = document.createElement("div");
+      tempDiv.style.position = "absolute";
+      tempDiv.style.visibility = "hidden";
+      tempDiv.style.width = contentRef.current
+        ? `${contentRef.current.offsetWidth}px`
+        : "100%";
+      document.body.appendChild(tempDiv);
 
-    // Toggle the expanded state
-    setExpandedSections({
-      ...expandedSections,
-      [tabId]: !expandedSections[tabId],
-    });
+      // Find the maximum height
+      let maxHeight = 0;
+
+      tabContentData.forEach((tab) => {
+        tempDiv.innerHTML = tab.content
+          .split("\n\n")
+          .map((paragraph) => `<p class="mb-4">${paragraph}</p>`)
+          .join("");
+
+        const height = tempDiv.offsetHeight;
+        maxHeight = Math.max(maxHeight, height);
+      });
+
+      // Add some padding to prevent scrollbars
+      maxHeight += 20;
+
+      // Set the content height
+      setContentHeight(`${maxHeight}px`);
+
+      // Clean up
+      document.body.removeChild(tempDiv);
+    }
+  }, [tabContentData, isMobile]);
+
+  // For mobile: toggle accordion section
+  const toggleMobileTab = (tabId) => {
+    setActiveTab(activeTab === tabId ? null : tabId);
   };
 
+  // For desktop: set active tab
   const handleTabClick = (tabId) => {
-    // If clicking on the active tab, do nothing
-    if (activeTab === tabId && expandedSections[tabId]) {
-      return;
-    }
-
-    // First collapse all sections
-    const allCollapsed = Object.keys(expandedSections).reduce((acc, key) => {
-      acc[key] = false;
-      return acc;
-    }, {});
-
-    // Then expand only the clicked one
-    setExpandedSections({
-      ...allCollapsed,
-      [tabId]: true,
-    });
-
-    // Update active tab
     setActiveTab(tabId);
-
-    // Đã loại bỏ đoạn code auto-scroll tại đây
   };
 
   // Function to render tab content from plain text
@@ -83,105 +79,89 @@ export default function ProductDetailContent({ tabContentData }) {
     ));
   };
 
+  // Get current active tab content
+  const getActiveTabContent = () => {
+    const activeTabData = tabContentData.find((tab) => tab.id === activeTab);
+    return activeTabData ? activeTabData.content : "";
+  };
+
   // If no product or no tab content data
   if (!tabContentData) {
     return <div>Product information not available</div>;
   }
 
   return (
-    <div className="max-w-[1224px] mx-auto bg-white mt-10">
-      {/* Top Navigation Bar - Only visible on desktop */}
-      {!isMobile && (
-        <div className="flex justify-between border-b border-gray-300 font-magnificent">
+    <div className="max-w-[1224px] mx-auto bg-white mt-10 pb-10">
+      {isMobile ? (
+        // Mobile View - Accordion Style
+        <div className="px-4">
           {tabContentData.map((tab) => (
-            <button
+            <div
+              id={tab.id}
               key={tab.id}
-              onClick={() => handleTabClick(tab.id)}
-              className={`py-3 px-4 text-sm font-medium text-[20px] transition-colors ${
-                activeTab === tab.id && expandedSections[tab.id]
-                  ? "text-[#7F4F29] border-b-2 border-[#D1AE62]"
-                  : "text-[#606060] hover:text-[#7F4F29]"
-              }`}
+              className="py-4 border-b border-gray-300"
             >
-              {tab.title}
-            </button>
-          ))}
-        </div>
-      )}
-
-      {/* Content sections stacked vertically */}
-      <div className="px-4 py-6">
-        {tabContentData.map((tab) => (
-          <div
-            id={tab.id}
-            key={tab.id}
-            className="py-4 border-b border-gray-300"
-          >
-            {/* Mobile view - Accordion style header with plus/minus icons */}
-            {isMobile ? (
               <button
-                onClick={() => toggleExpand(tab.id)}
+                onClick={() => toggleMobileTab(tab.id)}
                 className="w-full flex justify-between items-center text-left"
               >
                 <h3
                   className={`text-lg font-medium font-magnificent ${
-                    expandedSections[tab.id]
-                      ? "text-[#D1AE62]"
-                      : "text-gray-800"
+                    activeTab === tab.id ? "text-[#D1AE62]" : "text-gray-800"
                   }`}
                 >
                   {tab.title}
                 </h3>
-                {expandedSections[tab.id] ? (
+                {activeTab === tab.id ? (
                   <Minus className="h-5 w-5 text-[#D1AE62]" />
                 ) : (
                   <Plus className="h-5 w-5 text-gray-800" />
                 )}
               </button>
-            ) : (
-              // Desktop view - Regular header
-              <h3 className="text-lg font-medium text-gray-800 mb-1 font-magnificent">
-                {tab.title}
-              </h3>
-            )}
 
-            {/* Content area - Different for mobile and desktop */}
-            {isMobile ? (
-              // Mobile view - Just show content when expanded, no read more/less
-              expandedSections[tab.id] && (
-                <div className="mt-2">
+              {/* Mobile view - Show content when tab is active */}
+              {activeTab === tab.id && (
+                <div className="mt-4">
                   <div className="text-gray-800 space-y-4">
                     {renderContent(tab.content)}
                   </div>
                 </div>
-              )
-            ) : // Desktop view - Show preview with read more/less
-            expandedSections[tab.id] ? (
-              <div className="transition-all duration-300 ease-in-out">
-                <div className="text-gray-800 space-y-4">
-                  {renderContent(tab.content)}
-                </div>
-                <button
-                  onClick={() => toggleExpand(tab.id)}
-                  className="mt-4 flex items-center text-[#D1AE62] gap-2 text-sm font-medium transition-colors"
-                >
-                  Read Less <ChevronDown className="w-4 h-4" />
-                </button>
-              </div>
-            ) : (
-              <div className="transition-all duration-300 ease-in-out">
-                <p className="text-gray-600 text-sm">{tab.preview}</p>
-                <button
-                  onClick={() => toggleExpand(tab.id)}
-                  className="mt-4 flex items-center text-[#D1AE62] gap-2 text-sm font-medium transition-colors"
-                >
-                  Read More <ChevronRight className="w-4 h-4" />
-                </button>
-              </div>
-            )}
+              )}
+            </div>
+          ))}
+        </div>
+      ) : (
+        // Desktop View - Tabs with Single Content Area
+        <>
+          {/* Tab Navigation */}
+          <div className="flex justify-between border-b border-gray-300 font-magnificent">
+            {tabContentData.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => handleTabClick(tab.id)}
+                className={`py-3 px-4 text-sm font-medium text-[20px] transition-colors ${
+                  activeTab === tab.id
+                    ? "text-[#7F4F29] border-b-2 border-[#D1AE62]"
+                    : "text-[#606060] hover:text-[#7F4F29]"
+                }`}
+              >
+                {tab.title}
+              </button>
+            ))}
           </div>
-        ))}
-      </div>
+
+          {/* Single Content Area for Desktop with fixed height */}
+          <div
+            ref={contentRef}
+            className="px-4 py-6 overflow-y-auto transition-all duration-300"
+            style={{ minHeight: contentHeight }}
+          >
+            <div className="text-gray-800 space-y-4">
+              {renderContent(getActiveTabContent())}
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
