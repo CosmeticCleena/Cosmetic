@@ -3,15 +3,15 @@ import React from "react";
 import LumiaLogo from "../../assets/images/LumiaLogo.svg";
 import SearchIcon from "../../assets/icons/SearchIcon.svg";
 import hamburgerMenu from "../../assets/icons/hamburgerMenu.svg";
-import User from "../../assets/icons/User.svg";
-import Cart from "../../assets/icons/Cart.svg";
 import SideBarMobile from "../layout/SidebarMobile";
 import ProductDropdown from "../products/ProductDropdown";
 import SearchMobile from "./SearchMobile";
 import SearchDesktop from "./SearchDesktop";
+import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ footerRef }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
   // Không thay đổi phần này
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
@@ -38,9 +38,14 @@ const Navbar = () => {
   const handleItemClick = (item) => {
     setActiveItem(item);
     if (item === "Sản phẩm") {
-      setProductDropdownOpen(!productDropdownOpen);
+      navigate("/products");
     } else {
       setProductDropdownOpen(false);
+    }
+    if (item !== "Sản phẩm") {
+      footerRef.current?.scrollIntoView({
+        behavior: "smooth",
+      });
     }
   };
 
@@ -69,16 +74,6 @@ const Navbar = () => {
                 onClick={() => handleItemClick("Giới thiệu")}
               >
                 Giới thiệu
-              </li>
-              <li
-                className={`cursor-pointer whitespace-nowrap ${
-                  activeItem === "Về chúng tôi"
-                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
-                    : ""
-                }`}
-                onClick={() => handleItemClick("Về chúng tôi")}
-              >
-                Về chúng tôi
               </li>
               <li
                 className={`cursor-pointer whitespace-nowrap relative ${
@@ -112,20 +107,6 @@ const Navbar = () => {
               <img
                 src={SearchIcon}
                 alt="search-icon"
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
-              <img
-                src={User}
-                alt="user-icon"
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <div className="w-5 h-5 flex items-center justify-center cursor-pointer">
-              <img
-                src={Cart}
-                alt="cart-icon"
                 className="w-full h-full object-contain"
               />
             </div>

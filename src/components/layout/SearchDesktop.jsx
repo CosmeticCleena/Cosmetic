@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import SearchIcon from "../../assets/icons/SearchIcon.svg";
 import DATA from "../../configs/MobileSearch.json";
 import SearchProduct from "../products/SearchProduct";
@@ -7,6 +7,7 @@ import productSearch0 from "../../assets/images/productSearch0.svg";
 import productSearch1 from "../../assets/images/productSearch1.svg";
 import productSearch2 from "../../assets/images/productSearch2.svg";
 import productSearch3 from "../../assets/images/productSearch3.svg";
+import { useNavigate } from "react-router-dom";
 
 const imgSrc = {
   productSearch0: productSearch0,
@@ -17,6 +18,7 @@ const imgSrc = {
 const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
   const [searchValue, setSearchValue] = useState("");
   const [isFocus, setIsFocus] = useState(false);
+  const navigate = useNavigate();
   const filterData = DATA.popular_products.list.filter((item) =>
     item.name.toLowerCase().includes(searchValue.toLowerCase())
   );
@@ -31,7 +33,7 @@ const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
         className="fixed hidden md:flex inset-0 top-[100px] bg-black  bg-opacity-70 z-40"
       />
       {/* Search dropdown - positioned like ProductDropdown */}
-      <div className="absolute hidden overflow-auto md:flex left-0 right-0 md:max-h-[486px] bg-white z-50 shadow-lg pb-10">
+      <div className="absolute hidden overflow-auto md:flex left-0 right-0 md:max-h-[530px] bg-white z-50 shadow-lg pb-10">
         <div className="container mx-auto px-4 md:px-[60px] xl:px-[120px]">
           {/* Search bar */}
           <div
@@ -94,18 +96,24 @@ const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
             <div className="w-[60%]">
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-lg font-magnificent">Popular Products</h3>
-                <span className="text-sm text-[#D1AE62] cursor-pointer hover:underline">
+                <span
+                  onClick={() => {
+                    navigate("/products");
+                  }}
+                  className="text-sm text-[#D1AE62] cursor-pointer hover:underline"
+                >
                   View All
                 </span>
               </div>
 
-              <div className="flex flex-col md:flex-row md:gap-6">
+              <div className="grid grid-cols-12 md:flex-row md:gap-6">
                 {filterData.map((item, index) => (
                   <SearchProduct
                     key={index}
                     productImg={imgSrc[item.image]}
                     productName={item.name}
                     description={item.description}
+                    isSearch={true}
                   />
                 ))}
               </div>

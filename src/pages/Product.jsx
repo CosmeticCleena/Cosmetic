@@ -5,10 +5,19 @@ import SearchProduct from "../components/products/SearchProduct";
 import PRODUCTS from "../configs/product/Products.json";
 import SELECT_BOX_DATA from "../configs/product/Sort.json";
 import FilterIcon from "../assets/icons/Filter.svg";
-import { BannerImgs, ProductImgs } from "../configs/product/images";
+import { ProductImgs } from "../configs/product/images";
 import { useState } from "react";
 import SelectBox from "../components/common/SelectBox";
 import FilterMobile from "../components/layout/FilterMobile";
+import ProductBanner1 from "../components/products/ProductBanner1";
+import ProductBanner2 from "../components/products/ProductBanner2";
+import ProductBanner3 from "../components/products/ProductBanner3";
+
+const bannerMap = {
+  ProductBanner1: <ProductBanner1 />,
+  ProductBanner2: <ProductBanner2 />,
+  ProductBanner3: <ProductBanner3 />,
+};
 
 const Product = () => {
   const [filters, setFilters] = useState({
@@ -88,24 +97,18 @@ const Product = () => {
             />
             <div className="col-span-12 md:col-span-9">
               <div className="grid grid-cols-6 md:grid-cols-9 gap-2 md:gap-8">
-                {PRODUCTS.map((item, index) => {
+                {PRODUCTS.map((item) => {
                   if (item.isBanner) {
                     return (
-                      <div
-                        className={`${item.width} justify-center`}
-                        key={index}
-                      >
-                        <img
-                          src={BannerImgs[item.bannerImg]}
-                          alt="banner"
-                          className="w-full h-full object-cover"
-                        />
+                      <div className={`${item.width}`} key={item.id}>
+                        {bannerMap[item.banner]}
                       </div>
                     );
                   } else {
                     return (
                       <SearchProduct
                         key={item.id}
+                        id={item.id}
                         productName={item.title}
                         description={item.description}
                         price={item.price.toString()}

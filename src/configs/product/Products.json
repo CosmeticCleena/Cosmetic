@@ -3,15 +3,18 @@
     "id": 1,
     "title": "Beautya La Mousse Off/On Foaming Cleanser",
     "description": "Anti-Pollution Foaming Cleanser With Purifying French Water Lily",
+    "description2": "Formulated with 92% Natural-Origin Ingredients",
     "price": 65.0,
-    "amount": null,
+    "amount": 30,
     "mainImg": "ProductImg",
-    "images": [],
-    "productDetails": "",
-    "howToApply": "",
-    "ingredient": "",
-    "whatMakesItAdvance": "",
-    "productSpecifications": "",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
     "categories": ["cleansers"],
     "skinConditions": [],
     "featured": [],
@@ -21,14 +24,88 @@
         "name": "Alice",
         "text": "Leaves my skin feeling fresh and soft. Smells amazing too!",
         "postedOn": "2025-03-12",
-        "images": ["img_cleanser_1.jpg"]
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
       },
       {
         "stars": 4,
         "name": "Ben",
         "text": "Really nice texture, great for morning cleanse.",
         "postedOn": "2025-03-15",
-        "images": []
+        "images": ["CommentImg1"]
+      }
+    ],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Product Details",
+        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
+        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "How To Apply",
+        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
+        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+      },
+      {
+        "id": "ingredient",
+        "title": "Ingredient",
+        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
+        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "What Makes It Advance",
+        "preview": "OVER 11 AWARDS WON!",
+        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+      },
+      {
+        "id": "product-specification",
+        "title": "Product Specification",
+        "preview": "Product Code-46000701",
+        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
       }
     ]
   },
@@ -36,15 +113,18 @@
     "id": 2,
     "title": "Beautya Prestige La Mousse Micellaire",
     "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "description2": "Formulated with 92% Natural-Origin Ingredients",
     "price": 520.0,
     "amount": null,
     "mainImg": "ProductImg1",
-    "images": [],
-    "productDetails": "",
-    "howToApply": "",
-    "ingredient": "",
-    "whatMakesItAdvance": "",
-    "productSpecifications": "",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
     "categories": ["serums"],
     "skinConditions": [],
     "featured": [],
@@ -54,7 +134,7 @@
         "name": "Chloe",
         "text": "My go-to serum. Super hydrating and luxurious.",
         "postedOn": "2025-02-28",
-        "images": ["img_serum_1.jpg", "img_serum_2.jpg"]
+        "images": ["CommentImg1"]
       },
       {
         "stars": 4,
@@ -63,27 +143,105 @@
         "postedOn": "2025-03-02",
         "images": []
       }
+    ],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Product Details",
+        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
+        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "How To Apply",
+        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
+        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+      },
+      {
+        "id": "ingredient",
+        "title": "Ingredient",
+        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
+        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "What Makes It Advance",
+        "preview": "OVER 11 AWARDS WON!",
+        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+      },
+      {
+        "id": "product-specification",
+        "title": "Product Specification",
+        "preview": "Product Code-46000701",
+        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+      }
     ]
   },
   {
     "id": 3,
     "isBanner": true,
-    "bannerImg": "ProductBanner1",
+    "banner": "ProductBanner1",
     "width": "col-span-3"
   },
   {
     "id": 4,
     "title": "Beautya Prestige La Mousse Micellaire",
     "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "description2": "Formulated with 92% Natural-Origin Ingredients",
+
     "price": 520.0,
     "amount": null,
     "mainImg": "ProductImg2",
-    "images": [],
-    "productDetails": "",
-    "howToApply": "",
-    "ingredient": "",
-    "whatMakesItAdvance": "",
-    "productSpecifications": "",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
     "categories": ["serums"],
     "skinConditions": [],
     "featured": [],
@@ -102,21 +260,98 @@
         "postedOn": "2025-03-11",
         "images": []
       }
+    ],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Product Details",
+        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
+        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "How To Apply",
+        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
+        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+      },
+      {
+        "id": "ingredient",
+        "title": "Ingredient",
+        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
+        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "What Makes It Advance",
+        "preview": "OVER 11 AWARDS WON!",
+        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+      },
+      {
+        "id": "product-specification",
+        "title": "Product Specification",
+        "preview": "Product Code-46000701",
+        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+      }
     ]
   },
   {
     "id": 5,
     "title": "Beautya Prestige La Mousse Micellaire",
     "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
+    "description2": "Formulated with 92% Natural-Origin Ingredients",
     "price": 520.0,
     "amount": null,
     "mainImg": "ProductImg3",
-    "images": [],
-    "productDetails": "",
-    "howToApply": "",
-    "ingredient": "",
-    "whatMakesItAdvance": "",
-    "productSpecifications": "",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
     "categories": ["serums"],
     "skinConditions": [],
     "featured": [],
@@ -135,6 +370,80 @@
         "postedOn": "2025-02-22",
         "images": []
       }
+    ],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Product Details",
+        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
+        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "How To Apply",
+        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
+        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+      },
+      {
+        "id": "ingredient",
+        "title": "Ingredient",
+        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
+        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "What Makes It Advance",
+        "preview": "OVER 11 AWARDS WON!",
+        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+      },
+      {
+        "id": "product-specification",
+        "title": "Product Specification",
+        "preview": "Product Code-46000701",
+        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+      }
     ]
   },
   {
@@ -144,12 +453,14 @@
     "price": 520.0,
     "amount": null,
     "mainImg": "ProductImg4",
-    "images": [],
-    "productDetails": "",
-    "howToApply": "",
-    "ingredient": "",
-    "whatMakesItAdvance": "",
-    "productSpecifications": "",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
     "categories": ["serums"],
     "skinConditions": [],
     "featured": [],
@@ -168,12 +479,86 @@
         "postedOn": "2025-02-01",
         "images": []
       }
+    ],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Product Details",
+        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
+        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "How To Apply",
+        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
+        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+      },
+      {
+        "id": "ingredient",
+        "title": "Ingredient",
+        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
+        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "What Makes It Advance",
+        "preview": "OVER 11 AWARDS WON!",
+        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+      },
+      {
+        "id": "product-specification",
+        "title": "Product Specification",
+        "preview": "Product Code-46000701",
+        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+      }
     ]
   },
   {
     "id": 7,
     "isBanner": true,
-    "bannerImg": "ProductBanner2",
+    "banner": "ProductBanner2",
     "width": "col-span-6"
   },
   {
@@ -183,12 +568,14 @@
     "price": 520.0,
     "amount": null,
     "mainImg": "ProductImg5",
-    "images": [],
-    "productDetails": "",
-    "howToApply": "",
-    "ingredient": "",
-    "whatMakesItAdvance": "",
-    "productSpecifications": "",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
     "categories": ["serums"],
     "skinConditions": [],
     "featured": [],
@@ -207,6 +594,80 @@
         "postedOn": "2025-03-07",
         "images": []
       }
+    ],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Product Details",
+        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
+        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "How To Apply",
+        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
+        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+      },
+      {
+        "id": "ingredient",
+        "title": "Ingredient",
+        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
+        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "What Makes It Advance",
+        "preview": "OVER 11 AWARDS WON!",
+        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+      },
+      {
+        "id": "product-specification",
+        "title": "Product Specification",
+        "preview": "Product Code-46000701",
+        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+      }
     ]
   },
   {
@@ -216,12 +677,14 @@
     "price": 520.0,
     "amount": null,
     "mainImg": "ProductImg6",
-    "images": [],
-    "productDetails": "",
-    "howToApply": "",
-    "ingredient": "",
-    "whatMakesItAdvance": "",
-    "productSpecifications": "",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
     "categories": ["serums"],
     "skinConditions": [],
     "featured": [],
@@ -240,6 +703,80 @@
         "postedOn": "2025-03-11",
         "images": []
       }
+    ],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Product Details",
+        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
+        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "How To Apply",
+        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
+        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+      },
+      {
+        "id": "ingredient",
+        "title": "Ingredient",
+        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
+        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "What Makes It Advance",
+        "preview": "OVER 11 AWARDS WON!",
+        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+      },
+      {
+        "id": "product-specification",
+        "title": "Product Specification",
+        "preview": "Product Code-46000701",
+        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+      }
     ]
   },
   {
@@ -249,12 +786,14 @@
     "price": 520.0,
     "amount": null,
     "mainImg": "ProductImg7",
-    "images": [],
-    "productDetails": "",
-    "howToApply": "",
-    "ingredient": "",
-    "whatMakesItAdvance": "",
-    "productSpecifications": "",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
     "categories": ["serums"],
     "skinConditions": [],
     "featured": [],
@@ -266,6 +805,80 @@
         "postedOn": "2025-03-18",
         "images": []
       }
+    ],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Product Details",
+        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
+        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "How To Apply",
+        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
+        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+      },
+      {
+        "id": "ingredient",
+        "title": "Ingredient",
+        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
+        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "What Makes It Advance",
+        "preview": "OVER 11 AWARDS WON!",
+        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+      },
+      {
+        "id": "product-specification",
+        "title": "Product Specification",
+        "preview": "Product Code-46000701",
+        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+      }
     ]
   },
   {
@@ -275,16 +888,92 @@
     "price": 520.0,
     "amount": null,
     "mainImg": "ProductImg8",
-    "images": [],
-    "productDetails": "",
-    "howToApply": "",
-    "ingredient": "",
-    "whatMakesItAdvance": "",
-    "productSpecifications": "",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
     "categories": ["serums"],
     "skinConditions": [],
     "featured": [],
-    "comments": []
+    "comments": [],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Product Details",
+        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
+        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "How To Apply",
+        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
+        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+      },
+      {
+        "id": "ingredient",
+        "title": "Ingredient",
+        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
+        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "What Makes It Advance",
+        "preview": "OVER 11 AWARDS WON!",
+        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+      },
+      {
+        "id": "product-specification",
+        "title": "Product Specification",
+        "preview": "Product Code-46000701",
+        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+      }
+    ]
   },
   {
     "id": 12,
@@ -293,39 +982,191 @@
     "price": 520.0,
     "amount": null,
     "mainImg": "ProductImg9",
-    "images": [],
-    "productDetails": "",
-    "howToApply": "",
-    "ingredient": "",
-    "whatMakesItAdvance": "",
-    "productSpecifications": "",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
     "categories": ["serums"],
     "skinConditions": [],
     "featured": [],
-    "comments": []
+    "comments": [],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Product Details",
+        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
+        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "How To Apply",
+        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
+        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+      },
+      {
+        "id": "ingredient",
+        "title": "Ingredient",
+        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
+        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "What Makes It Advance",
+        "preview": "OVER 11 AWARDS WON!",
+        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+      },
+      {
+        "id": "product-specification",
+        "title": "Product Specification",
+        "preview": "Product Code-46000701",
+        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+      }
+    ]
   },
   {
     "id": 13,
+    "isBanner": true,
+    "banner": "ProductBanner3",
+    "width": "col-span-3"
+  },
+  {
+    "id": 14,
     "title": "Beautya La Mousse Off/On Foaming Cleanser",
     "description": "Anti-Pollution Foaming Cleanser With Purifying French Water Lily",
     "price": 65.0,
     "amount": null,
     "mainImg": "ProductImg10",
-    "images": [],
-    "productDetails": "",
-    "howToApply": "",
-    "ingredient": "",
-    "whatMakesItAdvance": "",
-    "productSpecifications": "",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
     "categories": ["cleansers"],
     "skinConditions": [],
     "featured": [],
-    "comments": []
-  },
-  {
-    "id": 14,
-    "isBanner": true,
-    "bannerImg": "ProductBanner3",
-    "width": "col-span-3"
+    "comments": [],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Product Details",
+        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
+        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "How To Apply",
+        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
+        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+      },
+      {
+        "id": "ingredient",
+        "title": "Ingredient",
+        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
+        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "What Makes It Advance",
+        "preview": "OVER 11 AWARDS WON!",
+        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+      },
+      {
+        "id": "product-specification",
+        "title": "Product Specification",
+        "preview": "Product Code-46000701",
+        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+      }
+    ]
   }
 ]
