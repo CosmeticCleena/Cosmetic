@@ -4,7 +4,6 @@ import ProductDetailSlider from "../components/products/ProductDetailSlider";
 import ProductDetailContent from "../components/products/ProductDetailContent";
 import ProductSkincareResult from "../components/products/ProductSkincareResult";
 import ProductFAQ from "../components/products/ProductDetailFAQ";
-import Video from "../assets/images/Video.svg";
 import ProductDetailReviews from "../components/products/ProductDetailReviews";
 import ProductDetailBanner from "../components/products/ProductDetailBanner";
 
@@ -44,7 +43,10 @@ const ProductDetail = () => {
 
       <ProductDetailReviews commentArray={productDetailsData.comments} />
 
-      <ProductDetailBanner banner={BannerObj.YouMayAlsoLike} />
+      <ProductDetailBanner
+        banner={BannerObj.YouMayAlsoLike}
+        isSecondBanner={true}
+      />
     </div>
   ) : (
     <NotFoundPage />

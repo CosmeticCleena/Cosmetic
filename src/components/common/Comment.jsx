@@ -6,7 +6,7 @@ import { CommentImages } from "../../configs/product_details/images";
 
 const Comment = ({ starsNumber, name, text, postedOn, images }) => {
   return (
-    <div className="flex flex-col gap-[15px] mt-10">
+    <div className="flex flex-col gap-[15px] mt-10 pb-5  border-b border-[#F1DDA4]">
       <div className="flex justify-between">
         <div className="flex">
           {Array.from({ length: starsNumber }).map((s, index) => {

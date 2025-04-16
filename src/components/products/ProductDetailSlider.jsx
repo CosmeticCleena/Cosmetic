@@ -4,10 +4,7 @@ import slider_arrow_down from "../../assets/icons/slider_arrow_down.svg";
 import slider_arrow_up from "../../assets/icons/slider_arrow_up.svg";
 import arrow_drop_down from "../../assets/icons/arrow_drop_down.svg";
 import location_on from "../../assets/icons/location_on.svg";
-
-// mobile icons
 import messages from "../../assets/icons/messages.svg";
-
 import card_giftcard from "../../assets/icons/card_giftcard.svg";
 import discount from "../../assets/icons/discount.svg";
 import Breadcumbs from "../layout/Breadcumbs";
@@ -19,7 +16,7 @@ const ProductDetailSlider = ({ productData }) => {
   const productImages = productData.images;
   const productName = productData.title;
   // State for the current selected image index
-  const [currentImageIndex, setCurrentImageIndex] = useState(4);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Reference to mobile thumbnail slider
   const mobileThumbnailSliderRef = useRef(null);
@@ -36,8 +33,8 @@ const ProductDetailSlider = ({ productData }) => {
 
     // For mobile, scroll to the selected thumbnail to ensure it's visible
     if (mobileThumbnailSliderRef.current) {
-      // Increased thumbnail width to match the new size (80px + padding + border)
-      const thumbnailWidth = 90;
+      // Use thumbnail width that covers fully
+      const thumbnailWidth = 80;
       const scrollOffset =
         index * thumbnailWidth -
         mobileThumbnailSliderRef.current.offsetWidth / 2 +
@@ -91,8 +88,7 @@ const ProductDetailSlider = ({ productData }) => {
   // Make sure the selected thumbnail is in view when component mounts or selection changes
   useEffect(() => {
     if (mobileThumbnailSliderRef.current) {
-      // Updated thumbnail width to match new size
-      const thumbnailWidth = 90;
+      const thumbnailWidth = 80;
       const thumbnailElement =
         mobileThumbnailSliderRef.current.children[currentImageIndex];
 
@@ -116,36 +112,82 @@ const ProductDetailSlider = ({ productData }) => {
         <Breadcumbs productName={productName} />
         {/* Products Images and Details Container */}
         <div className="flex flex-col lg:flex-row gap-6">
-          {/* Vertical slider for desktop */}
-          <div className="hidden lg:flex lg:flex-col lg:w-20 lg:h-[605px] lg:justify-between">
+          {/* Vertical slider for desktop - ADJUSTED SECTION */}
+          <div className="hidden lg:flex lg:flex-col lg:w-20 lg:h-[605px]">
             <button
-              className="border hover:bg-gray-300 w-20 h-8 flex justify-center items-center"
+              className="border hover:bg-gray-300 w-20 h-8 flex justify-center items-center mb-1"
               onClick={() => handleNavigateImage("up")}
             >
               <img src={slider_arrow_up} alt="Scroll up" />
             </button>
-            <div className="flex flex-col gap-4 overflow-hidden">
-              {productImages.map((image, index) => (
-                <div
-                  key={index}
-                  className={`${
-                    index === currentImageIndex
-                      ? "border-2 border-[#D1AE62]"
-                      : "border hover:border-gray-400"
-                  } cursor-pointer`}
-                  onClick={() => handleThumbnailClick(index)}
-                >
+
+            <div className="flex-1 flex flex-col justify-between py-1">
+              {/* First image - close to top button */}
+              <div
+                className={`${
+                  0 === currentImageIndex
+                    ? "ring-2 ring-[#D1AE62]"
+                    : "ring-1 ring-gray-200 hover:ring-gray-400"
+                } cursor-pointer overflow-hidden`}
+                onClick={() => handleThumbnailClick(0)}
+              >
+                <div className="w-20 h-20 overflow-hidden">
                   <img
-                    className="w-20 h-20 object-contain"
-                    src={ProductDetailSliderImgs[image]}
-                    alt={`Product thumbnail ${index + 1}`}
+                    className="w-full h-full object-cover"
+                    src={ProductDetailSliderImgs[productImages[0]]}
+                    alt="Product thumbnail 1"
                   />
                 </div>
-              ))}
+              </div>
+
+              {/* Middle images with proper spacing */}
+              <div className="flex-1 flex flex-col justify-evenly my-2">
+                {productImages.slice(1, -1).map((image, index) => (
+                  <div
+                    key={index + 1}
+                    className={`${
+                      index + 1 === currentImageIndex
+                        ? "ring-2 ring-[#D1AE62]"
+                        : "ring-1 ring-gray-200 hover:ring-gray-400"
+                    } cursor-pointer overflow-hidden`}
+                    onClick={() => handleThumbnailClick(index + 1)}
+                  >
+                    <div className="w-20 h-20 overflow-hidden">
+                      <img
+                        className="w-full h-full object-cover"
+                        src={ProductDetailSliderImgs[image]}
+                        alt={`Product thumbnail ${index + 2}`}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Last image - close to bottom button */}
+              <div
+                className={`${
+                  productImages.length - 1 === currentImageIndex
+                    ? "ring-2 ring-[#D1AE62]"
+                    : "ring-1 ring-gray-200 hover:ring-gray-400"
+                } cursor-pointer overflow-hidden`}
+                onClick={() => handleThumbnailClick(productImages.length - 1)}
+              >
+                <div className="w-20 h-20 overflow-hidden">
+                  <img
+                    className="w-full h-full object-cover"
+                    src={
+                      ProductDetailSliderImgs[
+                        productImages[productImages.length - 1]
+                      ]
+                    }
+                    alt={`Product thumbnail ${productImages.length}`}
+                  />
+                </div>
+              </div>
             </div>
 
             <button
-              className="border hover:bg-gray-300 w-20 h-8 flex justify-center items-center"
+              className="border hover:bg-gray-300 w-20 h-8 flex justify-center items-center mt-1"
               onClick={() => handleNavigateImage("down")}
             >
               <img src={slider_arrow_down} alt="Scroll down" />
@@ -173,18 +215,18 @@ const ProductDetailSlider = ({ productData }) => {
             </div>
 
             {/* Main image - responsive at all screen sizes */}
-            <div className="bg-gray-100 w-full h-[300px] sm:h-[400px] md:h-[450px] lg:w-[704px] lg:h-[605px] flex items-center justify-center">
+            <div className="bg-gray-100 w-full h-[300px] sm:h-[400px] md:h-[450px] lg:w-[704px] lg:h-[605px] flex items-center justify-center overflow-hidden">
               <img
-                className="max-w-full max-h-full object-contain"
+                className="w-full h-full object-contain"
                 src={ProductDetailSliderImgs[productImages[currentImageIndex]]}
                 alt="Product Image"
               />
             </div>
 
-            {/* Mobile/Tablet Horizontal Thumbnails with touch swipe support */}
+            {/* Mobile/Tablet Horizontal Thumbnails with touch swipe support - IMPROVED SECTION */}
             <div
               ref={mobileThumbnailSliderRef}
-              className="flex lg:hidden overflow-x-auto space-x-4 py-6 px-2 w-full scrollbar-hide"
+              className="flex lg:hidden overflow-x-auto py-4 w-full scrollbar-hide"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
@@ -192,23 +234,27 @@ const ProductDetailSlider = ({ productData }) => {
                 scrollbarWidth: "none", // Firefox
                 msOverflowStyle: "none", // IE and Edge
                 WebkitOverflowScrolling: "touch", // Smoother scrolling on iOS
+                scrollSnapType: "x mandatory", // Enable snap scrolling
               }}
             >
               {productImages.map((image, index) => (
                 <div
                   key={index}
-                  className={`flex-shrink-0 ${
+                  className={`flex-shrink-0 cursor-pointer scroll-snap-align-start mx-2 first:ml-0 last:mr-0 overflow-hidden ${
                     index === currentImageIndex
-                      ? "border-2 border-[#D1AE62]"
-                      : "border"
-                  } p-2 cursor-pointer`}
+                      ? "ring-2 ring-[#D1AE62]"
+                      : "ring-1 ring-gray-200"
+                  }`}
                   onClick={() => handleThumbnailClick(index)}
+                  style={{ scrollSnapAlign: "start" }}
                 >
-                  <img
-                    src={ProductDetailSliderImgs[image]}
-                    alt={`Product view ${index + 1}`}
-                    className="w-20 h-20 object-cover"
-                  />
+                  <div className="w-20 h-20 overflow-hidden">
+                    <img
+                      src={ProductDetailSliderImgs[image]}
+                      alt={`Product view ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               ))}
             </div>
