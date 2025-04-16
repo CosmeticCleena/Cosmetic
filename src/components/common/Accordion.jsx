@@ -31,8 +31,8 @@ const Accordion = ({ title, data, handleUpdateFilters }) => {
       >
         <p className="text-xl font-magnificent">{title}</p>
         <svg
-          className={`w-3 h-3 transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
+          className={`w-3 h-3 transition-transform duration-300 rotate-180 ${
+            isOpen ? "rotate-0" : ""
           }`}
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
