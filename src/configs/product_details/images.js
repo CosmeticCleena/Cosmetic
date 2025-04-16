@@ -1,10 +1,10 @@
 // Product Slider Images
-import ProductDetailSlider1 from "../../assets/images/deroseadvancedserum12312.svg";
-import ProductDetailSlider2 from "../../assets/images/deroseadvancedserum12313.svg";
-import ProductDetailSlider3 from "../../assets/images/deroseadvancedserum12314.svg";
+import ProductDetailSlider1 from "../../assets/images/deroseadvancedserum12312.jpg";
+import ProductDetailSlider2 from "../../assets/images/deroseadvancedserum12313.jpg";
+import ProductDetailSlider3 from "../../assets/images/deroseadvancedserum12314.jpg";
 import ProductDetailSlider4 from "../../assets/images/deroseadvancedserum12315.svg";
-import ProductDetailSlider5 from "../../assets/images/deroseadvancedserum12316.svg";
-import ProductDetailSlider6 from "../../assets/images/deroseadvancedserum12317.svg";
+import ProductDetailSlider5 from "../../assets/images/deroseadvancedserum12316.jpg";
+import ProductDetailSlider6 from "../../assets/images/deroseadvancedserum12317.jpg";
 
 // ProductSkincare Images
 import SkinCare1 from "../../assets/images/SkinCare1.svg";

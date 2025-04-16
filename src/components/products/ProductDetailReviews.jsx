@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Star from "../../assets/images/products_detail/products_detail_reviews/Star.svg";
 import Line from "../../assets/images/products_detail/products_detail_reviews/Line.svg";
 import ButtonArrowRight from "../../assets/images/products_detail/products_detail_reviews/ButtonArrowRight.svg";
-import SortByArrow from "../../assets/images/products_detail/products_detail_reviews/SortByArrow.svg";
 
 import ProductReviewProgressBar from "./ProductReviewProgressBar";
 import Comment from "../common/Comment";
@@ -95,13 +94,8 @@ const ProductDetailReviews = ({ commentArray }) => {
       </div>
       {/* Comment Section */}
       <div className="">
-        <div className="mt-10 flex justify-between font-lato border-b border-[#F1DDA4]">
+        <div className="mt-10 flex justify-between pb-3 font-lato border-b border-[#F1DDA4]">
           <p>1 -- 2 of {totalReivews} reviews</p>
-          <div className="flex items-center gap-2">
-            <p className="text-[14px]">Sort by:</p>
-            <p className="text-[16px]">Name (A-Z) </p>
-            <img src={SortByArrow} alt="SortByArrow" />
-          </div>
         </div>
         <div className="mt-10">
           {commentArray.map((comment, index) => {
