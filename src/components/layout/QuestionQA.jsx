@@ -1,7 +1,7 @@
 import QA_DATA from "../../configs/QuestionQA.json";
 const QuestionQA = () => {
   return (
-    <div className="md:px-28 py-4 mt-6">
+    <div className="w-[75%] mx-auto py-4 mt-6">
       <p className="font-magnificent text-4xl text-center">Câu hỏi Q&A</p>
       <div className="grid grid-cols-12 mt-6 gap-6">
         {QA_DATA.map((item, index) => (

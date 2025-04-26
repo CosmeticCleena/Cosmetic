@@ -3,7 +3,7 @@ import CalendarIcon from "../../assets/icons/Calender.svg";
 
 const CustomerSupport = () => {
   return (
-    <div className="w-[86%] mx-auto grid grid-cols-12 gap-6 mt-6 mb-10">
+    <div className="w-[80%] mx-auto grid grid-cols-12 gap-6 mt-6 mb-10">
       <div className="col-span-12 md:col-span-4 flex flex-col space-y-4">
         <h1 className="font-magnificent text-3xl text-center md:text-start">
           Đăng Ký Tư Vấn 1-1
