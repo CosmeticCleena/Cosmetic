@@ -104,6 +104,7 @@ const ProductDetailReviews = ({ commentArray }) => {
                 key={index}
                 starsNumber={comment.stars}
                 name={comment.name}
+                avatar={comment.avatar}
                 postedOn={comment.postedOn}
                 text={comment.text}
                 images={comment.images}
