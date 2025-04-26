@@ -8,6 +8,7 @@ import FirstBanner from "../components/layout/FirstBanner";
 import SecondBanner from "../components/layout/SecondBanner";
 import DiscoverProducts from "../components/products/DiscoverProducts";
 import Feedback from "../components/layout/Feedback";
+import TechnologyTransfer from "../components/layout/TechnologyTransfer";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <SecondBanner />
       <Feedback />
       <FeatureProducts />
+      <TechnologyTransfer />
       <LinearImage
         imgSrc={HeroBg}
         leftColor="from-black/30"
