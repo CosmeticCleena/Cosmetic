@@ -109,12 +109,12 @@ const Footer = ({ footerRef }) => {
         <div className="py-[8px] flex flex-col items-start md:flex-row gap-4 pr-4 md:items-center text-[16px] mx-[1em]">
           <div className="flex gap-3">
             <img src={Location} alt="Location" />
-            Dr. Richardson, California
+            150 Nguyễn Sơn, Long Biên, Hà Nội, Việt Nam
           </div>
           <img className="hidden md:flex" src={indicator} alt="indicator" />
           <div className="flex gap-3">
             <img src={Telephone} alt="Telephone" />
-            1-802-526-2463
+            Hotline: +84 988 602 888
           </div>
         </div>
         <img
