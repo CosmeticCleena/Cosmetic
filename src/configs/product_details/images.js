@@ -24,6 +24,13 @@ import ProductImg8 from "../../assets/images/products/product8.svg";
 import ProductImg9 from "../../assets/images/products/product9.svg";
 import ProductImg10 from "../../assets/images/products/product10.svg";
 
+// avatar images
+import avatar1 from "../../assets/images/MaiLanSpa.jpeg";
+import avatar2 from "../../assets/images/NhungBeauty.jpeg";
+import avatar3 from "../../assets/images/TuanAnhSpa.jpeg";
+import avatar4 from "../../assets/images/KimLan.jpeg";
+import avatar5 from "../../assets/images/SpaThanhTu.jpeg";
+
 export const ProductDetailSliderImgs = {
   ProductDetailSlider1,
   ProductDetailSlider2,
@@ -64,4 +71,12 @@ export const CommentImages = {
   CommentImg8: ProductImg8,
   CommentImg9: ProductImg9,
   CommentImg10: ProductImg10,
+};
+
+export const AvatarImages = {
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4,
+  avatar5,
 };

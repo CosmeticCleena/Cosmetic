@@ -20,18 +20,50 @@
     "featured": [],
     "comments": [
       {
+        "avatar": "avatar1",
         "stars": 5,
-        "name": "Alice",
-        "text": "Leaves my skin feeling fresh and soft. Smells amazing too!",
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
+      },
+      {
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
         "postedOn": "2025-03-12",
         "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
       },
       {
-        "stars": 4,
-        "name": "Ben",
-        "text": "Really nice texture, great for morning cleanse.",
-        "postedOn": "2025-03-15",
-        "images": ["CommentImg1"]
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
       }
     ],
     "tabContentData": [
