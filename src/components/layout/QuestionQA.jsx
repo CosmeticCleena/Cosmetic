@@ -15,7 +15,7 @@ const QuestionQA = () => {
                 {item.id}
               </p>
             </div>
-            <p className="text-[#0D0D0D] text-xl mt-6 md:h-24 lg:h-20 overflow-auto">
+            <p className="text-[#0D0D0D] text-xl mt-6 md:h-22 lg:h-[82px] line-clamp-3">
               {item.question}
             </p>
             <p className="text-[#6A6A6A] text-xl mt-2 lg:mt-4">{item.answer}</p>
