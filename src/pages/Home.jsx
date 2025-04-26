@@ -8,6 +8,8 @@ import FirstBanner from "../components/layout/FirstBanner";
 import SecondBanner from "../components/layout/SecondBanner";
 import DiscoverProducts from "../components/products/DiscoverProducts";
 import Feedback from "../components/layout/Feedback";
+import QuestionQA from "../components/layout/QuestionQA";
+import CustomerSupport from "../components/layout/CustomerSupport";
 
 const Home = () => {
   return (
@@ -20,6 +22,8 @@ const Home = () => {
       <SecondBanner />
       <Feedback />
       <FeatureProducts />
+      <QuestionQA />
+      <CustomerSupport />
       <LinearImage
         imgSrc={HeroBg}
         leftColor="from-black/30"
