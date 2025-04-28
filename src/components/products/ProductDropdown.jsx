@@ -2,12 +2,13 @@ import React, { useState, useRef } from "react";
 import RightArrowNav from "../../assets/icons/RightArrowNav.svg";
 import PRODUCT_DROPDOWN_DATA from "../../configs/ProductDropdown.json";
 import ProductDropdownImage from "../../assets/images/ProductDropdown.svg";
+import { useNavigate } from "react-router-dom";
 
 const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
   const [hoveredItem, setHoveredItem] = useState(null);
   const submenuRefs = useRef({});
   const timeoutRef = useRef(null);
-
+  const navigate = useNavigate();
   // Handle mouse enter on submenu item with nested menu
   const handleItemMouseEnter = (uniqueId) => {
     // Clear any existing timeout to prevent early closing
@@ -119,6 +120,9 @@ const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
                               onMouseLeave={(e) =>
                                 handleItemMouseLeave(e, subItemUniqueId)
                               }
+                              onClick={() => {
+                                navigate(`/products/${subItem.id}`);
+                              }}
                             >
                               {subItem.name}
                               {hasNestedSubmenu && (

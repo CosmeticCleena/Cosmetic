@@ -1,122 +1,72 @@
 [
   {
-    "name": "Women Make Up",
+    "name": "Công Nghệ Xử Lý",
     "submenu": [
-      { "name": "Shop all makeup", "submenu": [] },
       {
-        "name": "By Category",
-        "hasNestedMenu": true,
-        "submenu": [
-          { "name": "Foundation", "submenu": [] },
-          { "name": "Concealer", "submenu": [] },
-          { "name": "Powder", "submenu": [] },
-          { "name": "Lipstick", "submenu": [] },
-          { "name": "Mascara", "submenu": [] },
-          { "name": "Eyeshadow", "submenu": [] },
-          { "name": "Blush", "submenu": [] },
-          { "name": "Highlighter", "submenu": [] }
-        ]
+        "name": "Kem Nám Chân - Brightening Corector Cream",
+        "id": 1,
+        "hasNestedMenu": false,
+        "submenu": []
       },
       {
-        "name": "Collection",
-        "hasNestedMenu": true,
-        "submenu": [
-          { "name": "Beautya Classic", "submenu": [] },
-          { "name": "Beautya Premium", "submenu": [] },
-          { "name": "Beautya Forever", "submenu": [] }
-        ]
+        "name": "Kem Nám Mảng - Brightening And Regenerating Cream",
+        "id": 2,
+        "submenu": []
       },
-      { "name": "Best sellers", "submenu": [] },
-      { "name": "New arrivals", "submenu": [] },
-      { "name": "Travel size", "submenu": [] }
+      {
+        "name": "Tinh Chất Điều Trị Nám Mạnh - Dark Spot Serum",
+        "id": 4,
+        "submenu": []
+      }
     ]
   },
   {
-    "name": "Women Skincare",
+    "name": "Công Nghệ Phục Hồi",
     "submenu": [
-      { "name": "Shop all skincare", "submenu": [] },
       {
-        "name": "By Category",
-        "hasNestedMenu": true,
-        "submenu": [
-          { "name": "Cleansers", "submenu": [] },
-          { "name": "Exfoliators", "submenu": [] },
-          { "name": "Toners", "submenu": [] },
-          { "name": "Retinols", "submenu": [] },
-          { "name": "Peels And Masques", "submenu": [] },
-          { "name": "Moisturizer", "submenu": [] },
-          { "name": "Night Cream", "submenu": [] },
-          { "name": "Facial Oil", "submenu": [] },
-          { "name": "Sunscreen", "submenu": [] },
-          { "name": "Eye Care", "submenu": [] }
-        ]
+        "name": "Sữa Dưỡng - Rejuvenating Essential Emulsion",
+        "id": 5,
+        "submenu": []
       },
       {
-        "name": "By Skin Condition",
-        "hasNestedMenu": true,
-        "submenu": [
-          { "name": "Brightening", "submenu": [] },
-          { "name": "Hydration", "submenu": [] },
-          { "name": "Acne", "submenu": [] },
-          { "name": "Anti-Ageing", "submenu": [] },
-          { "name": "Redness", "submenu": [] },
-          { "name": "Sensitive Skin", "submenu": [] },
-          { "name": "Sun Protection", "submenu": [] }
-        ]
+        "name": "Tinh Chất Hồng Sâm - Red Ginseng Essence",
+        "id": 6,
+        "submenu": []
       },
       {
-        "name": "Collection",
-        "hasNestedMenu": true,
-        "submenu": [
-          { "name": "Beautya Cleansing", "submenu": [] },
-          { "name": "Beautya Prestige", "submenu": [] },
-          { "name": "Beautya Light In White", "submenu": [] },
-          { "name": "Capture Totale", "submenu": [] },
-          { "name": "Capture Youth", "submenu": [] },
-          { "name": "Capture Dreamskin", "submenu": [] },
-          { "name": "One Essential", "submenu": [] },
-          { "name": "Professional Solution", "submenu": [] },
-          { "name": "Beautya Hydra Life", "submenu": [] }
-        ]
-      },
-      { "name": "Now", "submenu": [] },
-      { "name": "Best sellers", "submenu": [] },
-      { "name": "Travel size", "submenu": [] },
-      { "name": "Professional treatments", "submenu": [] },
-      { "name": "Daily defense", "submenu": [] },
-      { "name": "Virtual Skincare Analysis", "submenu": [] }
+        "name": "Bộ đôi kem Dưỡng Ngày/Đêm - Anti-Aging Day/Night Cream",
+        "id": 8,
+        "submenu": []
+      }
     ]
   },
   {
-    "name": "Gifts & sets",
+    "name": "Skincare Hàng Ngày",
     "submenu": [
-      { "name": "Shop all gifts", "submenu": [] },
-      { "name": "Gift sets", "submenu": [] },
-      { "name": "Holiday specials", "submenu": [] },
-      { "name": "Limited editions", "submenu": [] },
-      { "name": "Luxury gift boxes", "submenu": [] },
-      { "name": "Gift cards", "submenu": [] }
+      { "name": "Kem Chống Nắng - UV Defender", "id": 9, "submenu": [] },
+      {
+        "name": "Sữa Rửa Mặt - Face Cleanser Foam Collagen",
+        "id": 10,
+        "submenu": []
+      },
+      { "name": "Toner - Revitalizing Toner", "id": 11, "submenu": [] },
+      { "name": "Set Tế Bào Gốc - Lumia Smart Set", "id": 12, "submenu": [] }
     ]
   },
   {
-    "name": "Branches",
+    "name": "Sản Phẩm Nổi Bật",
     "submenu": [
-      { "name": "Find a store", "submenu": [] },
-      { "name": "Store locator", "submenu": [] },
-      { "name": "Flagship stores", "submenu": [] },
-      { "name": "International", "submenu": [] },
-      { "name": "Book an appointment", "submenu": [] }
-    ]
-  },
-  {
-    "name": "Our Brand",
-    "submenu": [
-      { "name": "About us", "submenu": [] },
-      { "name": "Our story", "submenu": [] },
-      { "name": "Sustainability", "submenu": [] },
-      { "name": "Ingredients", "submenu": [] },
-      { "name": "Press", "submenu": [] },
-      { "name": "Careers", "submenu": [] }
+      {
+        "name": "Kem Nám - Brightening Corector Cream",
+        "id": 14,
+        "submenu": []
+      },
+      {
+        "name": "Kem Dưỡng Ban Ngày và Ban Đêm - Anti-Aging Day & Glow Revival Night",
+        "id": 15,
+        "submenu": []
+      },
+      { "name": "Mặt Nạ Dưỡng Ẩm - Moisturizing Mask", "id": 16, "submenu": [] }
     ]
   }
 ]

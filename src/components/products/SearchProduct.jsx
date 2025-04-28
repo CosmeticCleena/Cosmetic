@@ -40,9 +40,6 @@ const SearchProduct = ({
             {description}
           </p>
         )}
-        {price && (
-          <p className="md:text-lg font-latox text-[#0C0C0C] pt-2">${price}</p>
-        )}
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ const FeaturedProductCard = ({ isAddToCart, data }) => {
           </div>
         </div>
         <div className="text-[#79541F] font-medium md:self-center mt-2 md:mt-0">
-          <span className="text-right block">{price}</span>
+          {/* <span className="text-right block">{price}</span> */}
         </div>
       </div>
 
