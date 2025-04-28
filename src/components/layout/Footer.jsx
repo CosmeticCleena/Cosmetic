@@ -109,28 +109,44 @@ const Footer = ({ footerRef }) => {
       </div>
 
       {/* Location and social media section */}
-      <div className="flex-col md:flex-row bg-[#5C3827] text-white px-4 md:px-[108px] flex justify-between relative z-20">
-        {/* Changed px-[30px] to px-4 for consistency and removed mx-[1em] */}
-        <div className="py-[8px] flex flex-col items-start md:flex-row gap-4 pr-4 md:items-center text-[16px]">
-          <div className="flex gap-3 pl-[12px] md:pl-0">
-            {/* Added pl-[12px] to match copyright alignment on mobile and removed on larger screens */}
-            <img src={Location} alt="Location" />
-            150 Nguyễn Sơn, Long Biên, Hà Nội, Việt Nam
+      <div className="bg-[#5C3827] text-white px-4 md:px-[108px] relative z-20">
+        <div className="flex flex-col md:flex-row justify-between">
+          {/* Location and telephone info */}
+          <div className="py-[8px] flex flex-col items-start md:flex-row gap-4 pr-4 md:items-center text-[16px]">
+            <div className="flex gap-3 pl-[12px] md:pl-0">
+              <img src={Location} alt="Location" />
+              <span className="flex-shrink">
+                150 Nguyễn Sơn, Long Biên, Hà Nội, Việt Nam
+              </span>
+            </div>
+            <img className="hidden md:flex" src={indicator} alt="indicator" />
+            <div className="flex gap-3 pl-[12px] md:pl-0">
+              <img src={Telephone} alt="Telephone" />
+              <span>Hotline: +84 988 602 888</span>
+            </div>
           </div>
-          <img className="hidden md:flex" src={indicator} alt="indicator" />
-          <div className="flex gap-3 pl-[12px] md:pl-0">
-            {/* Added pl-[12px] to match copyright alignment on mobile and removed on larger screens */}
-            <img src={Telephone} alt="Telephone" />
-            Hotline: +84 988 602 888
+
+          {/* Social media icons - single row on mobile, centered */}
+          <div className="flex flex-wrap justify-center md:justify-end items-center gap-x-2 gap-y-3 py-3 md:py-2">
+            <div className="flex items-center justify-center w-10 h-10">
+              <img className="p-2" src={Instagram} alt="Instagram" />
+            </div>
+            <div className="flex items-center justify-center w-10 h-10">
+              <img className="p-2" src={Facebook} alt="Facebook" />
+            </div>
+            <div className="flex items-center justify-center w-10 h-10">
+              <img className="p-2" src={Twitter} alt="Twitter" />
+            </div>
+            <div className="flex items-center justify-center w-10 h-10">
+              <img className="p-2" src={Pinterest} alt="Pinterest" />
+            </div>
+            <div className="flex items-center justify-center w-10 h-10">
+              <img className="p-2" src={Reddit} alt="Reddit" />
+            </div>
+            <div className="flex items-center justify-center w-10 h-10">
+              <img className="p-2" src={Tiktok} alt="Tiktok" />
+            </div>
           </div>
-        </div>
-        <div className="flex justify-center items-center gap-2">
-          <img className="p-2" src={Instagram} alt="Instagram" />
-          <img className="p-2" src={Facebook} alt="Facebook" />
-          <img className="p-2" src={Twitter} alt="Twitter" />
-          <img className="p-2" src={Pinterest} alt="Pinterest" />
-          <img className="p-2" src={Reddit} alt="Reddit" />
-          <img className="p-2" src={Tiktok} alt="Tiktok" />
         </div>
       </div>
 
