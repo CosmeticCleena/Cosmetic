@@ -262,15 +262,15 @@ const ProductDetailSlider = ({ productData }) => {
             {/* Price Container - Mobile/Tablet (below slider) */}
             <div className="lg:hidden w-full mt-4 px-2">
               {/* Price for mobile/tablet */}
-              <p className="font-magnificent text-[24px] mb-2">
+              {/* <p className="font-magnificent text-[24px] mb-2">
                 ${productData.price}
-              </p>
+              </p> */}
 
               {/* Size and price selector */}
               <div className="text-[#606060] font-lato py-3 px-4 flex justify-between border-b border-b-[#606060]">
-                <p>{productData.amount}</p>
+                <p>{productData.amount} ML</p>
                 <div className="flex gap-1 items-center">
-                  <p>${productData.price}</p>
+                  {/* <p>${productData.price}</p> */}
                   <img src={arrow_drop_down} alt="Dropdown arrow" />
                 </div>
               </div>
@@ -320,14 +320,14 @@ const ProductDetailSlider = ({ productData }) => {
               <p className="text-[#868686] text-[16px]">
                 {productData.description2}
               </p>
-              <p className="text-[20px] lg:text-[25px]">${productData.price}</p>
+              {/* <p className="text-[20px] lg:text-[25px]">${productData.price}</p> */}
             </div>
 
             {/* Price Container - Desktop */}
             <div className="text-[#606060] font-lato py-2 px-4 flex justify-between border-b border-b-[#606060]">
               <p>{productData.amount} ML</p>
               <div className="flex gap-1 items-center">
-                <p>${productData.price}</p>
+                {/* <p>${productData.price}</p> */}
                 <img src={arrow_drop_down} alt="Dropdown arrow" />
               </div>
             </div>

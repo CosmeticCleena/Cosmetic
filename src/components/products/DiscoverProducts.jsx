@@ -32,7 +32,6 @@ const DiscoverProducts = () => {
                   id: 1,
                   product_name: "Brightening and Regenerating Cream",
                   description: "Lorm, Typing, Institute",
-                  price: "$00.00",
                 }}
               />
             </div>
