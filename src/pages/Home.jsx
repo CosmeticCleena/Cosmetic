@@ -1,5 +1,5 @@
 import Hero from "../components/layout/Hero";
-import HeroBg from "../assets/images/Hero.svg";
+import HeroBg from "../assets/images/Hero2.svg";
 import LinearImage from "../components/common/LinearImage";
 import ProductHighlights from "../components/products/ProductHighlights";
 import FeatureProducts from "../components/products/FeaturedProducts";

@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Beautya La Mousse Off/On Foaming Cleanser",
-    "description": "Anti-Pollution Foaming Cleanser With Purifying French Water Lily",
+    "title": "Kem Nám Chân - Brightening Corector Cream",
+    "description": "Điều trị nám chân gốc rễ, kích thích tuần hoàn, phục hồi sắc tố melanin, làm sáng da, đều màu chỉ sau 2 tuần. Sản phẩm sử dụng công nghệ phân tử tiên tiến, mang lại hiệu quả gấp 3-5 lần so với phương pháp thông thường.",
     "description2": "Formulated with 92% Natural-Origin Ingredients",
     "price": 65.0,
     "amount": 30,
@@ -15,7 +15,7 @@
       "ProductDetailSlider5",
       "ProductDetailSlider6"
     ],
-    "categories": ["cleansers"],
+    "categories": ["Công Nghệ Xử Lý"],
     "skinConditions": [],
     "featured": [],
     "comments": [
@@ -69,33 +69,28 @@
     "tabContentData": [
       {
         "id": "product-details",
-        "title": "Product Details",
-        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
-        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+        "title": "Đặc điểm nổi bật",
+        "content": "Điều trị nám chân gốc rễ, kích thích tuần hoàn, phục hồi sắc tố melanin, làm sáng da, đều màu chỉ sau 2 tuần. Sản phẩm sử dụng công nghệ phân tử tiên tiến, mang lại hiệu quả gấp 3-5 lần so với phương pháp thông thường."
       },
       {
         "id": "how-to-apply",
-        "title": "How To Apply",
-        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
-        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+        "title": "Lợi Ích",
+        "content": "Kem trị nám chân sâu với Alpha Arbutin, Acid Ascorbic và Glutathione giúp ức chế sự hình thành melanin, làm mờ nám chân sâu, tàn nhang, đốm nâu, mang lại làn da sáng mịn và đều màu. Công thức giàu chất chống oxy hóa giúp tái tạo tế bào, bảo vệ da khỏi tác nhân gây hại, dưỡng ẩm, và cải thiện độ đàn hồi."
       },
       {
         "id": "ingredient",
-        "title": "Ingredient",
-        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
-        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+        "title": "Thành Phần",
+        "content": "Thành phần: Alpha Arbutin, Acid Ascorbic, Glutathione"
       },
       {
         "id": "what-makes-it-advance",
-        "title": "What Makes It Advance",
-        "preview": "OVER 11 AWARDS WON!",
-        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+        "title": "Lý do lựa chọn",
+        "content": "Phù hợp cho mọi loại da, kể cả da yếu hoặc đã bị tổn thương, giúp da khỏe mạnh và giảm thiểu nám tái phát."
       },
       {
         "id": "product-specification",
-        "title": "Product Specification",
-        "preview": "Product Code-46000701",
-        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+        "title": "Xuất xứ",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
       }
     ],
     "faqItems": [
@@ -143,76 +138,102 @@
   },
   {
     "id": 2,
-    "title": "Beautya Prestige La Mousse Micellaire",
-    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
-    "description2": "Formulated with 92% Natural-Origin Ingredients",
-    "price": 520.0,
-    "amount": null,
-    "mainImg": "ProductImg1",
+    "title": "Kem Nám Mảng - Brightening And Regenerating Cream",
+    "description": "Cải thiện tình trạng da không đều màu, mang lại làn da săn chắc, mịn màng và tươi sáng. Công thức kết hợp Pakuchiol, Glycolic Acid, và Retinol giúp tăng cường tái tạo da và bảo vệ da khỏi tác nhân gây hại.",
+    "description2": "Formulated with Advanced Skin Brightening Technology",
+    "price": 75.0,
+    "amount": 50,
+    "mainImg": "ProductImg2",
     "images": [
       "ProductDetailSlider1",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
-      "ProductDetailSlider5",
-      "ProductDetailSlider6"
+      "ProductDetailSlider5"
     ],
-    "categories": ["serums"],
+    "categories": ["Công Nghệ Xử Lý"],
     "skinConditions": [],
-    "featured": [],
+    "featured": ["Best Seller"],
     "comments": [
       {
+        "avatar": "avatar1",
         "stars": 5,
-        "name": "Chloe",
-        "text": "My go-to serum. Super hydrating and luxurious.",
-        "postedOn": "2025-02-28",
-        "images": ["CommentImg1"]
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
       },
       {
-        "stars": 4,
-        "name": "Derek",
-        "text": "Visible difference in skin smoothness after two weeks.",
-        "postedOn": "2025-03-02",
-        "images": []
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
       }
     ],
     "tabContentData": [
       {
         "id": "product-details",
-        "title": "Product Details",
-        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
-        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+        "title": "Đặc điểm nổi bật",
+        "content": "Cải thiện tình trạng da không đều màu, mang lại làn da săn chắc, mịn màng và tươi sáng. Công thức kết hợp Pakuchiol, Glycolic Acid, và Retinol giúp tăng cường tái tạo da và bảo vệ da khỏi tác nhân gây hại."
       },
       {
         "id": "how-to-apply",
-        "title": "How To Apply",
-        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
-        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+        "title": "Lợi Ích",
+        "content": "Kem điều trị nám giúp ức chế sự hình thành sắc tố melanin, làm mờ thâm mụn, giảm nám và tàn nhang, đồng thời thu nhỏ lỗ chân lông, kiểm soát bã nhờn, tăng cường độ ẩm, và thúc đẩy tái tạo da."
       },
       {
         "id": "ingredient",
-        "title": "Ingredient",
-        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
-        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+        "title": "Thành Phần",
+        "content": "Thành phần: Pakuchiol, Glycolic Acid, Retinol"
       },
       {
         "id": "what-makes-it-advance",
-        "title": "What Makes It Advance",
-        "preview": "OVER 11 AWARDS WON!",
-        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+        "title": "Lý do lựa chọn",
+        "content": "Mang lại hiệu quả sáng da và đều màu ngay sau vài tuần sử dụng."
       },
       {
         "id": "product-specification",
-        "title": "Product Specification",
-        "preview": "Product Code-46000701",
-        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+        "title": "Xuất xứ",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
       }
     ],
     "faqItems": [
       {
         "id": "best-way",
         "question": "What is the best way to use this product?",
-        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+        "answer": "Apply 2-3 pumps of product onto cleansed skin. Gently pat the cream into your face and neck using upward motions. Use in the evening after cleansing and toning. For best results, follow with a moisturizer. In the morning, always apply sunscreen as the product may increase sensitivity to sunlight."
       },
       {
         "id": "skin-types",
@@ -222,17 +243,17 @@
       {
         "id": "how-often",
         "question": "How often should I use this product?",
-        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+        "answer": "For optimal results, we recommend using this product once daily, preferably in the evening skincare routine. If you have resilient skin, you may increase to twice daily after two weeks of use. Always monitor your skin's response and adjust usage accordingly."
       },
       {
         "id": "pregnancy",
         "question": "Can this product be used during pregnancy?",
-        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+        "answer": "Due to the presence of Retinol in this product, we do not recommend using it during pregnancy or while breastfeeding. Please consult with your healthcare provider for suitable alternatives during this time."
       },
       {
         "id": "how-often-2",
-        "question": "How often should I use this product?",
-        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+        "question": "How long will the product last?",
+        "answer": "With regular use as directed (once daily application), a 50ml jar typically lasts approximately 2-3 months, depending on the amount used per application."
       },
       {
         "id": "storage",
@@ -242,12 +263,12 @@
       {
         "id": "results",
         "question": "How long will it take to see results from using this product?",
-        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+        "answer": "Most users notice initial improvements in skin texture and brightness within 2-3 weeks of consistent use. More significant results in hyperpigmentation reduction and skin tone evening typically become visible after 4-8 weeks. For optimal results, consistent use for at least 12 weeks is recommended."
       },
       {
         "id": "conjunction",
         "question": "Can this product be used in conjunction with other skincare products?",
-        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+        "answer": "Yes, our product is formulated to work well with most skincare routines. However, we recommend avoiding using it simultaneously with other products containing high concentrations of AHAs, BHAs, or other retinoids to prevent potential irritation. Allow each product to fully absorb before applying the next. If using with vitamin C products, separate their application times (e.g., vitamin C in the morning, our product in the evening)."
       }
     ]
   },
@@ -259,316 +280,257 @@
   },
   {
     "id": 4,
-    "title": "Beautya Prestige La Mousse Micellaire",
-    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
-    "description2": "Formulated with 92% Natural-Origin Ingredients",
-
-    "price": 520.0,
-    "amount": null,
-    "mainImg": "ProductImg2",
-    "images": [
-      "ProductDetailSlider1",
-      "ProductDetailSlider2",
-      "ProductDetailSlider3",
-      "ProductDetailSlider4",
-      "ProductDetailSlider5",
-      "ProductDetailSlider6"
-    ],
-    "categories": ["serums"],
-    "skinConditions": [],
-    "featured": [],
-    "comments": [
-      {
-        "stars": 5,
-        "name": "Ella",
-        "text": "Good value for the results. It really plumps the skin.",
-        "postedOn": "2025-03-10",
-        "images": ["img_review_ella.jpg"]
-      },
-      {
-        "stars": 3,
-        "name": "Faisal",
-        "text": "It works fine but takes time to show effect.",
-        "postedOn": "2025-03-11",
-        "images": []
-      }
-    ],
-    "tabContentData": [
-      {
-        "id": "product-details",
-        "title": "Product Details",
-        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
-        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
-      },
-      {
-        "id": "how-to-apply",
-        "title": "How To Apply",
-        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
-        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
-      },
-      {
-        "id": "ingredient",
-        "title": "Ingredient",
-        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
-        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
-      },
-      {
-        "id": "what-makes-it-advance",
-        "title": "What Makes It Advance",
-        "preview": "OVER 11 AWARDS WON!",
-        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
-      },
-      {
-        "id": "product-specification",
-        "title": "Product Specification",
-        "preview": "Product Code-46000701",
-        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
-      }
-    ],
-    "faqItems": [
-      {
-        "id": "best-way",
-        "question": "What is the best way to use this product?",
-        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
-      },
-      {
-        "id": "skin-types",
-        "question": "Can this product be used on all skin types?",
-        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
-      },
-      {
-        "id": "how-often",
-        "question": "How often should I use this product?",
-        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
-      },
-      {
-        "id": "pregnancy",
-        "question": "Can this product be used during pregnancy?",
-        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
-      },
-      {
-        "id": "how-often-2",
-        "question": "How often should I use this product?",
-        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
-      },
-      {
-        "id": "storage",
-        "question": "How should I store this product?",
-        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
-      },
-      {
-        "id": "results",
-        "question": "How long will it take to see results from using this product?",
-        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
-      },
-      {
-        "id": "conjunction",
-        "question": "Can this product be used in conjunction with other skincare products?",
-        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Beautya Prestige La Mousse Micellaire",
-    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
-    "description2": "Formulated with 92% Natural-Origin Ingredients",
-    "price": 520.0,
-    "amount": null,
+    "title": "Tinh Chất Điều Trị Nám Mạnh - Dark Spot Serum",
+    "description": "Điều trị nám mạnh, làm mờ sắc tố, phục hồi da sau trị liệu, giúp da đều màu và săn chắc. Tinh chất giúp làm mờ sắc tố, phục hồi da sau laser CO2, giảm kích ứng, cấp ẩm sâu, cùng có hàng rào bảo vệ da.",
+    "description2": "Advanced Formula with Triple Action Technology",
+    "price": 85.0,
+    "amount": 30,
     "mainImg": "ProductImg3",
     "images": [
       "ProductDetailSlider1",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
-      "ProductDetailSlider4",
-      "ProductDetailSlider5",
-      "ProductDetailSlider6"
+      "ProductDetailSlider4"
     ],
-    "categories": ["serums"],
-    "skinConditions": [],
-    "featured": [],
+    "categories": ["Công Nghệ Xử Lý"],
+    "skinConditions": ["Post-Treatment"],
+    "featured": ["New Arrival"],
     "comments": [
       {
-        "stars": 4,
-        "name": "Grace",
-        "text": "Instant glow effect. Skin feels younger!",
-        "postedOn": "2025-02-20",
-        "images": ["img_grace_glow.jpg"]
+        "avatar": "avatar1",
+        "stars": 5,
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
       },
       {
-        "stars": 4,
-        "name": "Hassan",
-        "text": "A bit pricey but worth it for special care.",
-        "postedOn": "2025-02-22",
-        "images": []
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
       }
     ],
     "tabContentData": [
       {
         "id": "product-details",
-        "title": "Product Details",
-        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
-        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+        "title": "Đặc điểm nổi bật",
+        "content": "Điều trị nám mạnh, làm mờ sắc tố, phục hồi da sau trị liệu, giúp da đều màu và săn chắc. Tinh chất đặc biệt hiệu quả cho da sau điều trị laser hoặc peel."
       },
       {
         "id": "how-to-apply",
-        "title": "How To Apply",
-        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
-        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+        "title": "Lợi Ích",
+        "content": "Tinh chất giúp làm mờ sắc tố, phục hồi da sau laser CO2, giảm kích ứng, cấp ẩm sâu, cùng có hàng rào bảo vệ da, tăng sinh collagen, và giúp da săn chắc, khỏe mạnh."
       },
       {
         "id": "ingredient",
-        "title": "Ingredient",
-        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
-        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+        "title": "Thành Phần",
+        "content": "Thành phần: Kojic Acid, Tranexamic Acid, Alpha Arbutin"
       },
       {
         "id": "what-makes-it-advance",
-        "title": "What Makes It Advance",
-        "preview": "OVER 11 AWARDS WON!",
-        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+        "title": "Lý do lựa chọn",
+        "content": "Mang lại làn da đều màu và khỏe mạnh, giúp tái tạo tế bào và làm sáng da."
       },
       {
         "id": "product-specification",
-        "title": "Product Specification",
-        "preview": "Product Code-46000701",
-        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+        "title": "Xuất xứ",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
       }
     ],
     "faqItems": [
       {
         "id": "best-way",
         "question": "What is the best way to use this product?",
-        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+        "answer": "Apply 3-5 drops of the serum onto cleansed and toned skin. Gently pat and press the serum into your skin until fully absorbed. Use twice daily, morning and evening. For best results, follow with a moisturizer and sunscreen (during daytime use)."
       },
       {
         "id": "skin-types",
         "question": "Can this product be used on all skin types?",
-        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+        "answer": "Our Dark Spot Serum is specifically formulated for post-treatment skin and those with hyperpigmentation concerns. It's suitable for normal, combination, and dry skin types. For sensitive or compromised skin, we recommend patch testing first and consulting with your dermatologist, especially if you've recently undergone invasive skin treatments."
       },
       {
         "id": "how-often",
         "question": "How often should I use this product?",
-        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+        "answer": "For optimal results, apply the serum twice daily - once in the morning and once in the evening. If you're using it immediately after a laser treatment or chemical peel, follow your skincare professional's advice, which may include waiting 24-48 hours post-procedure before application."
       },
       {
         "id": "pregnancy",
         "question": "Can this product be used during pregnancy?",
-        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+        "answer": "Due to the presence of certain active ingredients like Tranexamic Acid, we recommend consulting with your healthcare provider before using this product during pregnancy or while breastfeeding. Your doctor can provide personalized advice based on your specific situation."
       },
       {
         "id": "how-often-2",
         "question": "How often should I use this product?",
-        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+        "answer": "For optimal results, apply the serum twice daily - once in the morning and once in the evening. If you're using it immediately after a laser treatment or chemical peel, follow your skincare professional's advice, which may include waiting 24-48 hours post-procedure before application."
       },
       {
         "id": "storage",
         "question": "How should I store this product?",
-        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+        "answer": "Store in a cool, dry place away from direct sunlight. The dark glass bottle helps preserve the potency of the active ingredients, but additional protection from heat and light is recommended. Keep tightly closed when not in use and store at temperatures below 25°C (77°F)."
       },
       {
         "id": "results",
         "question": "How long will it take to see results from using this product?",
-        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+        "answer": "Initial improvements in skin texture and hydration are typically noticed within 1-2 weeks. Visible reduction in dark spots and hyperpigmentation usually begins after 3-4 weeks of consistent use. Significant results for post-treatment skin recovery are generally observed after 6-8 weeks of regular application. Individual results may vary depending on skin condition and severity of concerns."
       },
       {
         "id": "conjunction",
         "question": "Can this product be used in conjunction with other skincare products?",
-        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+        "answer": "Yes, our Dark Spot Serum is designed to complement other skincare products. However, we recommend avoiding simultaneous use with products containing high concentrations of vitamin C, AHAs, or BHAs to prevent potential irritation. If you wish to use these ingredients, consider alternating them (e.g., vitamin C in the morning, our serum in the evening). Always allow each product to fully absorb before applying the next."
       }
     ]
   },
   {
-    "id": 6,
-    "title": "Beautya Prestige La Mousse Micellaire",
-    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
-    "price": 520.0,
-    "amount": null,
-    "mainImg": "ProductImg4",
+    "id": 5,
+    "title": "Sữa Dưỡng - Rejuvenating Essential Emulsion",
+    "description": "Dưỡng trắng và tái tạo da sâu với công nghệ Waterboost, giúp da sáng mịn và khỏe mạnh từ bên trong. Sữa dưỡng trắng da giúp làm sáng và đều màu da, cấp ẩm, bảo vệ da khỏi tác nhân môi trường, thúc đẩy tái tạo da, và giảm thâm mụn.",
+    "description2": "Formulated with Advanced Waterboost Technology",
+    "price": 55.0,
+    "amount": 120,
+    "mainImg": "ProductImg5",
     "images": [
       "ProductDetailSlider1",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
-      "ProductDetailSlider5",
-      "ProductDetailSlider6"
+      "ProductDetailSlider5"
     ],
-    "categories": ["serums"],
-    "skinConditions": [],
-    "featured": [],
+    "categories": ["Công Nghệ Phục Hồi"],
+    "skinConditions": ["Dehydrated"],
+    "featured": ["Best Seller"],
     "comments": [
       {
+        "avatar": "avatar1",
         "stars": 5,
-        "name": "Isla",
-        "text": "Feels premium and really improves skin texture.",
-        "postedOn": "2025-01-25",
-        "images": ["img_isla_skin.jpg"]
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
       },
       {
-        "stars": 4,
-        "name": "Jay",
-        "text": "Nice absorption and no irritation on sensitive skin.",
-        "postedOn": "2025-02-01",
-        "images": []
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
       }
     ],
     "tabContentData": [
       {
         "id": "product-details",
-        "title": "Product Details",
-        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
-        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+        "title": "Đặc điểm nổi bật",
+        "content": "Dưỡng trắng và tái tạo da sâu với công nghệ Waterboost, giúp da sáng mịn và khỏe mạnh từ bên trong."
       },
       {
         "id": "how-to-apply",
-        "title": "How To Apply",
-        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
-        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+        "title": "Lợi Ích",
+        "content": "Sữa dưỡng trắng da giúp làm sáng và đều màu da, cấp ẩm, bảo vệ da khỏi tác nhân môi trường, thúc đẩy tái tạo da, và giảm thâm mụn."
       },
       {
         "id": "ingredient",
-        "title": "Ingredient",
-        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
-        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+        "title": "Thành Phần",
+        "content": "Thành phần: Glutathione, Lucent Biome, Waterboost complex"
       },
       {
         "id": "what-makes-it-advance",
-        "title": "What Makes It Advance",
-        "preview": "OVER 11 AWARDS WON!",
-        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+        "title": "Lý do lựa chọn",
+        "content": "Cung cấp dưỡng chất sâu, giữ ẩm và bảo vệ da khỏi tác nhân môi trường, giúp da sáng và khỏe mạnh."
       },
       {
         "id": "product-specification",
-        "title": "Product Specification",
-        "preview": "Product Code-46000701",
-        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+        "title": "Xuất xứ",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
       }
     ],
     "faqItems": [
       {
         "id": "best-way",
         "question": "What is the best way to use this product?",
-        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+        "answer": "Apply a moderate amount of the emulsion to your face and neck after cleansing and toning. Gently pat the product into your skin until fully absorbed. Use morning and evening for best results. This product works well as part of your hydration routine before applying heavier creams or oils."
       },
       {
         "id": "skin-types",
         "question": "Can this product be used on all skin types?",
-        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+        "answer": "Our Rejuvenating Essential Emulsion is formulated to be suitable for all skin types, particularly beneficial for dehydrated, dull, and uneven skin tones. The lightweight formula makes it appropriate for combination and oily skin, while the hydrating properties benefit dry skin types as well."
       },
       {
         "id": "how-often",
         "question": "How often should I use this product?",
-        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+        "answer": "For optimal results, we recommend using this product twice daily, morning and evening. Consistent application will help maintain skin hydration levels and enhance the brightening and protective benefits of the formula."
       },
       {
         "id": "pregnancy",
         "question": "Can this product be used during pregnancy?",
-        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+        "answer": "The ingredients in our Rejuvenating Essential Emulsion are generally considered safe during pregnancy. However, as individual sensitivities can vary, we recommend consulting with your healthcare provider before incorporating any new skincare products into your routine during pregnancy or while breastfeeding."
       },
       {
         "id": "how-often-2",
         "question": "How often should I use this product?",
-        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+        "answer": "For optimal results, we recommend using this product twice daily, morning and evening. Consistent application will help maintain skin hydration levels and enhance the brightening and protective benefits of the formula."
       },
       {
         "id": "storage",
@@ -578,15 +540,151 @@
       {
         "id": "results",
         "question": "How long will it take to see results from using this product?",
-        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+        "answer": "Most users notice immediate improvements in skin hydration and texture. More significant results in skin brightness and evenness typically become visible after 2-3 weeks of consistent use. For optimal results with reduction of dark spots and overall skin tone improvement, consistent use for 4-6 weeks is recommended."
       },
       {
         "id": "conjunction",
         "question": "Can this product be used in conjunction with other skincare products?",
-        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+        "answer": "Yes, our Rejuvenating Essential Emulsion is designed to work harmoniously within your skincare routine. It should be applied after cleansing and toning, but before heavier serums, creams, and oils. The formulation is compatible with most active ingredients, including vitamin C, niacinamide, and hyaluronic acid products."
       }
     ]
   },
+  {
+    "id": 6,
+    "title": "Tinh Chất Hồng Sâm - Red Ginseng Essence",
+    "description": "Thành phần hồng sâm từ Hàn Quốc giúp kháng viêm và phục hồi nhanh chóng, đặc biệt cho da nhạy cảm. Tinh chất hồng sâm giúp kháng viêm, làm dịu da, giảm đỏ tức thì, phục hồi làn da nhạy cảm, và cải thiện độ đàn hồi.",
+    "description2": "Korean Red Ginseng For Sensitive Skin",
+    "price": 70.0,
+    "amount": 40,
+    "mainImg": "ProductImg6",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4"
+    ],
+    "categories": ["Công Nghệ Phục Hồi"],
+    "skinConditions": ["Sensitive", "Irritated"],
+    "featured": ["Recommended"],
+    "comments": [
+      {
+        "avatar": "avatar1",
+        "stars": 5,
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
+      },
+      {
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      }
+    ],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Đặc điểm nổi bật",
+        "content": "Thành phần hồng sâm từ Hàn Quốc giúp kháng viêm và phục hồi nhanh chóng, đặc biệt cho da nhạy cảm."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "Lợi Ích",
+        "content": "Tinh chất hồng sâm giúp kháng viêm, làm dịu da, giảm đỏ tức thì, phục hồi làn da nhạy cảm, và cải thiện độ đàn hồi."
+      },
+      {
+        "id": "ingredient",
+        "title": "Thành Phần",
+        "content": "Thành phần: Glutathione, Titanium Dioxide"
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "Lý do lựa chọn",
+        "content": "Dưỡng trắng, chống lão hóa, và cải thiện độ đàn hồi, mang lại làn da rạng rỡ và khỏe mạnh."
+      },
+      {
+        "id": "product-specification",
+        "title": "Xuất xứ",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "Apply 3-4 drops of the essence onto clean, slightly damp skin. Gently pat and press the product into your skin with your fingertips until fully absorbed. Use twice daily, morning and evening, after cleansing and toning. For enhanced results, follow with your regular moisturizer."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Red Ginseng Essence is specifically formulated for sensitive, irritated, and reactive skin types. The anti-inflammatory properties of Korean Red Ginseng make it particularly beneficial for skin that is prone to redness, irritation, or recovering from treatments or environmental stress."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily, morning and evening. During periods of increased skin sensitivity or after treatments, you may increase usage to 3 times daily to help expedite the healing and recovery process."
+      },
+      {
+        "id": "pregnancy",
+        "question": "Can this product be used during pregnancy?",
+        "answer": "The ingredients in our Red Ginseng Essence are generally considered safe for use during pregnancy. However, as individual sensitivities may vary, we always recommend consulting with your healthcare provider before incorporating any new skincare products into your routine during pregnancy or while breastfeeding."
+      },
+      {
+        "id": "how-often-2",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this product twice daily, morning and evening. During periods of increased skin sensitivity or after treatments, you may increase usage to 3 times daily to help expedite the healing and recovery process."
+      },
+      {
+        "id": "storage",
+        "question": "How should I store this product?",
+        "answer": "Store in a cool, dry place away from direct sunlight. The dark amber bottle helps protect the active ingredients from light degradation. Keep tightly closed when not in use. For an extra soothing effect, you may refrigerate the product, which can enhance its calming properties when applied."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users experience immediate soothing effects and reduction in redness upon application. Consistent improvement in skin texture and resilience typically becomes noticeable within 1-2 weeks of regular use. Long-term benefits in skin barrier function and elasticity generally develop after 4-6 weeks of continued application."
+      },
+      {
+        "id": "conjunction",
+        "question": "Can this product be used in conjunction with other skincare products?",
+        "answer": "Yes, our Red Ginseng Essence is designed to complement your existing skincare routine. It works particularly well with gentle, non-irritating products. However, when using with active ingredients like AHAs, BHAs, or retinoids, we recommend applying the essence first to help buffer potential irritation. For sensitized skin, consider temporarily reducing use of potentially irritating actives while focusing on repair with our essence."
+      }
+    ]
+  },
+
   {
     "id": 7,
     "isBanner": true,
@@ -595,119 +693,146 @@
   },
   {
     "id": 8,
-    "title": "Beautya Prestige La Mousse Micellaire",
-    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
-    "price": 520.0,
-    "amount": null,
-    "mainImg": "ProductImg5",
+    "title": "Bộ đôi kem Dưỡng Ngày/Đêm - Anti-Aging Day/Night Cream",
+    "description": "Bộ sản phẩm dưỡng da ban ngày/ban đêm giúp ức chế melanin, làm mờ thâm nám, sạm nám, và bảo vệ da khỏi tác hại của tia UV. Kem dưỡng da ban ngày/ban đêm giúp ức chế melanin, làm mờ thâm nám, giúp da luôn mịn màng và không thoanh suốt cả ngày.",
+    "description2": "24-Hour Complete Skin Protection & Repair System",
+    "price": 120.0,
+    "amount": 100,
+    "mainImg": "ProductImg7",
     "images": [
       "ProductDetailSlider1",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
-      "ProductDetailSlider5",
-      "ProductDetailSlider6"
+      "ProductDetailSlider5"
     ],
-    "categories": ["serums"],
-    "skinConditions": [],
-    "featured": [],
+    "categories": ["Công Nghệ Phục Hồi"],
+    "skinConditions": ["Aging", "Hyperpigmentation"],
+    "featured": ["Premium"],
     "comments": [
       {
+        "avatar": "avatar1",
         "stars": 5,
-        "name": "Tina",
-        "text": "Daily essential now! Can't go a day without it.",
-        "postedOn": "2025-03-06",
-        "images": ["img_tina_daily.jpg"]
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
       },
       {
-        "stars": 4,
-        "name": "Umar",
-        "text": "Nice hydration without greasiness.",
-        "postedOn": "2025-03-07",
-        "images": []
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
       }
     ],
     "tabContentData": [
       {
         "id": "product-details",
-        "title": "Product Details",
-        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
-        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+        "title": "Đặc điểm nổi bật",
+        "content": "Bộ sản phẩm dưỡng da ban ngày/ban đêm giúp ức chế melanin, làm mờ thâm nám, sạm nám, và bảo vệ da khỏi tác hại của tia UV."
       },
       {
         "id": "how-to-apply",
-        "title": "How To Apply",
-        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
-        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+        "title": "Lợi Ích",
+        "content": "Kem dưỡng da ban ngày/ban đêm giúp ức chế melanin, làm mờ thâm nám, giúp da luôn mịn màng và không thoanh suốt cả ngày."
       },
       {
         "id": "ingredient",
-        "title": "Ingredient",
-        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
-        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+        "title": "Thành Phần",
+        "content": "Thành phần: Tranexamic Acid, Alpha Arbutin, Hyaluronic Acid"
       },
       {
         "id": "what-makes-it-advance",
-        "title": "What Makes It Advance",
-        "preview": "OVER 11 AWARDS WON!",
-        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+        "title": "Lý do lựa chọn",
+        "content": "Giúp bảo vệ da khỏi tia UV và làm sáng da tự nhiên, thích hợp cho mọi loại da."
       },
       {
         "id": "product-specification",
-        "title": "Product Specification",
-        "preview": "Product Code-46000701",
-        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+        "title": "Xuất xứ",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
       }
     ],
     "faqItems": [
       {
         "id": "best-way",
         "question": "What is the best way to use this product?",
-        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+        "answer": "For the Day Cream: Apply a pea-sized amount to clean, dry skin in the morning. Gently massage in circular motions until fully absorbed. Follow with sunscreen for optimal protection. For the Night Cream: After cleansing and applying any treatment serums in the evening, apply a small amount to face and neck. Massage using upward motions until absorbed. For best results, use consistently as part of your morning and evening routines."
       },
       {
         "id": "skin-types",
         "question": "Can this product be used on all skin types?",
-        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+        "answer": "Our Anti-Aging Day/Night Cream duo is formulated to be suitable for most skin types, particularly beneficial for mature skin, skin with hyperpigmentation, and those concerned with prevention of early signs of aging. The formulation is non-comedogenic and suitable for normal, combination, and dry skin types. Those with very oily or acne-prone skin may prefer to use a lighter amount of the product."
       },
       {
         "id": "how-often",
         "question": "How often should I use this product?",
-        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+        "answer": "For optimal results, the Day Cream should be used every morning and the Night Cream every evening. Consistent daily use of both products as part of your skincare routine will provide the most noticeable improvement in skin tone, texture, and overall appearance."
       },
       {
         "id": "pregnancy",
         "question": "Can this product be used during pregnancy?",
-        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+        "answer": "Some ingredients in our Anti-Aging Day/Night Cream, such as Tranexamic Acid, may not be recommended during pregnancy. We advise consulting with your healthcare provider before using these products if you are pregnant, planning to become pregnant, or breastfeeding."
       },
       {
         "id": "how-often-2",
         "question": "How often should I use this product?",
-        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
+        "answer": "For optimal results, the Day Cream should be used every morning and the Night Cream every evening. Consistent daily use of both products as part of your skincare routine will provide the most noticeable improvement in skin tone, texture, and overall appearance."
       },
       {
         "id": "storage",
         "question": "How should I store this product?",
-        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+        "answer": "Store both creams in a cool, dry place away from direct sunlight. Keep containers tightly closed when not in use. Do not expose to extreme temperatures. For optimal potency and effectiveness, we recommend using the products within 12 months after opening."
       },
       {
         "id": "results",
         "question": "How long will it take to see results from using this product?",
-        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+        "answer": "Most users notice improvements in skin hydration and texture within the first week of consistent use. More visible results in reducing hyperpigmentation and fine lines typically become apparent after 4-6 weeks. Significant improvements in skin tone evenness, firmness, and overall appearance generally develop after 8-12 weeks of regular, twice-daily application."
       },
       {
         "id": "conjunction",
         "question": "Can this product be used in conjunction with other skincare products?",
-        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+        "answer": "Yes, our Anti-Aging Day/Night Cream duo is designed to work well within a comprehensive skincare routine. They can be used alongside cleansers, toners, and targeted treatment serums. For the Day Cream, apply before sunscreen in your morning routine. For the Night Cream, apply after any treatment serums in your evening routine. If using with retinol or other potent actives, you may want to alternate nights or consult with a skincare professional for personalized advice."
       }
     ]
   },
   {
     "id": 9,
-    "title": "Beautya Prestige La Mousse Micellaire",
-    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
-    "price": 520.0,
-    "amount": null,
+    "title": "Kem Chống Nắng - UV Defender",
+    "description": "Giúp da sáng mịn và đều màu, cung cấp lớp bảo vệ da mạnh mẽ suốt cả ngày.",
+    "price": 320.0,
+    "amount": 30,
     "mainImg": "ProductImg6",
     "images": [
       "ProductDetailSlider1",
@@ -717,55 +842,87 @@
       "ProductDetailSlider5",
       "ProductDetailSlider6"
     ],
-    "categories": ["serums"],
+    "categories": ["Skincare Hàng Ngày"],
     "skinConditions": [],
     "featured": [],
     "comments": [
       {
+        "avatar": "avatar1",
         "stars": 5,
-        "name": "Lana",
-        "text": "So creamy and rich—perfect for dry skin.",
-        "postedOn": "2025-03-09",
-        "images": ["img_lana_cream.jpg"]
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
       },
       {
-        "stars": 4,
-        "name": "Mark",
-        "text": "Good performance, but scent is a bit strong for me.",
-        "postedOn": "2025-03-11",
-        "images": []
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
       }
     ],
     "tabContentData": [
       {
         "id": "product-details",
-        "title": "Product Details",
-        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
-        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+        "title": "Đặc điểm nổi bật",
+        "preview": "Giúp da sáng mịn và đều màu, cung cấp lớp bảo vệ da mạnh mẽ suốt cả ngày...",
+        "content": "Giúp da sáng mịn và đều màu, cung cấp lớp bảo vệ da mạnh mẽ suốt cả ngày. Công thức chống nắng phổ rộng bảo vệ da khỏi tia UVA (PA++++) và UVB, ngăn ngừa các tác hại của ánh nắng như sạm da, nám, tàn nhang và dấu hiệu lão hóa sớm do ánh nắng gây ra."
       },
       {
         "id": "how-to-apply",
-        "title": "How To Apply",
-        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
-        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+        "title": "Lợi ích",
+        "preview": "Bảo vệ da toàn diện khỏi tia UVA (PA++++) và các tác hại của ánh nắng mặt trời...",
+        "content": "Bảo vệ da toàn diện khỏi tia UVA (PA++++) và các tác hại của ánh nắng mặt trời, ngăn ngừa cháy nắng, sạm da, nám, tàn nhang, và đốm nâu do tác hại của ánh nắng mặt trời."
       },
       {
         "id": "ingredient",
-        "title": "Ingredient",
-        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
-        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+        "title": "Thành phần",
+        "preview": "Niacinamide, Zinc Oxide, Titanium Dioxide...",
+        "content": "Thành phần: Niacinamide, Zinc Oxide, Titanium Dioxide"
       },
       {
         "id": "what-makes-it-advance",
-        "title": "What Makes It Advance",
-        "preview": "OVER 11 AWARDS WON!",
-        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+        "title": "Lý do lựa chọn",
+        "preview": "Cung cấp khả năng bảo vệ cao hơn các sản phẩm chống nắng thông thường...",
+        "content": "Cung cấp khả năng bảo vệ cao hơn các sản phẩm chống nắng thông thường, mang lại làn da khỏe mạnh và đều màu."
       },
       {
         "id": "product-specification",
-        "title": "Product Specification",
-        "preview": "Product Code-46000701",
-        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+        "title": "Xuất xứ",
+        "preview": "Sản phẩm chăm sóc da Hàn Quốc...",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
       }
     ],
     "faqItems": [
@@ -813,10 +970,10 @@
   },
   {
     "id": 10,
-    "title": "Beautya Prestige La Mousse Micellaire",
-    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
-    "price": 520.0,
-    "amount": null,
+    "title": "Sữa Rửa Mặt - Face Cleanser Foam Collagen",
+    "description": "Làm sạch da hiệu quả mà không gây khô da, đồng thời giúp da luôn tươi mới và mịn màng.",
+    "price": 180.0,
+    "amount": 30,
     "mainImg": "ProductImg7",
     "images": [
       "ProductDetailSlider1",
@@ -826,48 +983,87 @@
       "ProductDetailSlider5",
       "ProductDetailSlider6"
     ],
-    "categories": ["serums"],
+    "categories": ["Skincare Hàng Ngày"],
     "skinConditions": [],
     "featured": [],
     "comments": [
       {
+        "avatar": "avatar1",
         "stars": 5,
-        "name": "Nina",
-        "text": "Love the luxurious feel and packaging!",
-        "postedOn": "2025-03-18",
-        "images": []
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
+      },
+      {
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
       }
     ],
     "tabContentData": [
       {
         "id": "product-details",
-        "title": "Product Details",
-        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
-        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+        "title": "Đặc điểm nổi bật",
+        "preview": "Làm sạch da hiệu quả mà không gây khô da, đồng thời giúp da luôn tươi mới và mịn màng...",
+        "content": "Làm sạch da hiệu quả mà không gây khô da, đồng thời giúp da luôn tươi mới và mịn màng. Công thức nhẹ nhàng nhưng hiệu quả giúp loại bỏ bụi bẩn, dầu thừa và tạp chất mà không làm mất đi độ ẩm tự nhiên của da."
       },
       {
         "id": "how-to-apply",
-        "title": "How To Apply",
-        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
-        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+        "title": "Lợi ích",
+        "preview": "Làm sạch sâu, kiểm soát dầu, ngăn ngừa mụn, đồng thời cung cấp độ ẩm cần thiết...",
+        "content": "Làm sạch sâu, kiểm soát dầu, ngăn ngừa mụn, đồng thời cung cấp độ ẩm cần thiết, giúp da mềm mại và không bị khô."
       },
       {
         "id": "ingredient",
-        "title": "Ingredient",
-        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
-        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+        "title": "Thành phần",
+        "preview": "Salicylic Acid, Lactic Acid, Chamomile Extract, Green Tea Extract...",
+        "content": "Thành phần: Salicylic Acid, Lactic Acid, Chamomile Extract, Green Tea Extract"
       },
       {
         "id": "what-makes-it-advance",
-        "title": "What Makes It Advance",
-        "preview": "OVER 11 AWARDS WON!",
-        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+        "title": "Lý do lựa chọn",
+        "preview": "Phù hợp với da dầu và dễ bị mụn, giúp duy trì làn da sạch sẽ, thông thoáng...",
+        "content": "Phù hợp với da dầu và dễ bị mụn, giúp duy trì làn da sạch sẽ, thông thoáng."
       },
       {
         "id": "product-specification",
-        "title": "Product Specification",
-        "preview": "Product Code-46000701",
-        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+        "title": "Xuất xứ",
+        "preview": "Sản phẩm chăm sóc da Hàn Quốc...",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
       }
     ],
     "faqItems": [
@@ -915,10 +1111,10 @@
   },
   {
     "id": 11,
-    "title": "Beautya Prestige La Mousse Micellaire",
-    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
-    "price": 520.0,
-    "amount": null,
+    "title": "Toner - Revitalizing Toner",
+    "description": "Tái tạo và phục hồi da hư tổn, giúp da tươi trẻ và tràn đầy sức sống",
+    "price": 210.0,
+    "amount": 30,
     "mainImg": "ProductImg8",
     "images": [
       "ProductDetailSlider1",
@@ -928,40 +1124,87 @@
       "ProductDetailSlider5",
       "ProductDetailSlider6"
     ],
-    "categories": ["serums"],
+    "categories": ["Skincare Hàng Ngày"],
     "skinConditions": [],
     "featured": [],
-    "comments": [],
+    "comments": [
+      {
+        "avatar": "avatar1",
+        "stars": 5,
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
+      },
+      {
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      }
+    ],
     "tabContentData": [
       {
         "id": "product-details",
-        "title": "Product Details",
-        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
-        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+        "title": "Đặc điểm nổi bật",
+        "preview": "Tái tạo và phục hồi da hư tổn, giúp da tươi trẻ và tràn đầy sức sống...",
+        "content": "Tái tạo và phục hồi da hư tổn, giúp da tươi trẻ và tràn đầy sức sống. Công thức làm dịu nhẹ nhàng, cân bằng độ pH và chuẩn bị da để hấp thụ tối đa các sản phẩm dưỡng da tiếp theo."
       },
       {
         "id": "how-to-apply",
-        "title": "How To Apply",
-        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
-        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+        "title": "Lợi ích",
+        "preview": "Toner xịt khoáng tế bào gốc giúp làm sạch sâu, se khít lỗ chân lông...",
+        "content": "Toner xịt khoáng tế bào gốc giúp làm sạch sâu, se khít lỗ chân lông, cung cấp độ ẩm tức thì và giúp da luôn căng mịn."
       },
       {
         "id": "ingredient",
-        "title": "Ingredient",
-        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
-        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+        "title": "Thành phần",
+        "preview": "Allantoin, Niacinamide, Ascorbic Acid...",
+        "content": "Thành phần: Allantoin, Niacinamide, Ascorbic Acid"
       },
       {
         "id": "what-makes-it-advance",
-        "title": "What Makes It Advance",
-        "preview": "OVER 11 AWARDS WON!",
-        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+        "title": "Lý do lựa chọn",
+        "preview": "Phù hợp cho mọi loại da, mang lại hiệu quả chống lão hóa và làm sáng da...",
+        "content": "Phù hợp cho mọi loại da, mang lại hiệu quả chống lão hóa và làm sáng da."
       },
       {
         "id": "product-specification",
-        "title": "Product Specification",
-        "preview": "Product Code-46000701",
-        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+        "title": "Xuất xứ",
+        "preview": "Sản phẩm chăm sóc da Hàn Quốc...",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
       }
     ],
     "faqItems": [
@@ -1009,10 +1252,10 @@
   },
   {
     "id": 12,
-    "title": "Beautya Prestige La Mousse Micellaire",
-    "description": "Anti-Aging Face Serum, With Purifying French Water Lily",
-    "price": 520.0,
-    "amount": null,
+    "title": "Set Tế Bào Gốc - Lumia Smart Set",
+    "description": "Tăng cường khả năng tái tạo và phục hồi da sau tổn thương, giúp da sáng mịn và trẻ trung.",
+    "price": 750.0,
+    "amount": 30,
     "mainImg": "ProductImg9",
     "images": [
       "ProductDetailSlider1",
@@ -1022,40 +1265,87 @@
       "ProductDetailSlider5",
       "ProductDetailSlider6"
     ],
-    "categories": ["serums"],
+    "categories": ["Skincare Hàng Ngày"],
     "skinConditions": [],
     "featured": [],
-    "comments": [],
+    "comments": [
+      {
+        "avatar": "avatar1",
+        "stars": 5,
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
+      },
+      {
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      }
+    ],
     "tabContentData": [
       {
         "id": "product-details",
-        "title": "Product Details",
-        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
-        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+        "title": "Đặc điểm nổi bật",
+        "preview": "Tăng cường khả năng tái tạo và phục hồi da sau tổn thương, giúp da sáng mịn và trẻ trung...",
+        "content": "Tăng cường khả năng tái tạo và phục hồi da sau tổn thương, giúp da sáng mịn và trẻ trung. Bộ sản phẩm chăm sóc da toàn diện giúp cải thiện kết cấu da, làm mờ nếp nhăn và tăng cường độ đàn hồi."
       },
       {
         "id": "how-to-apply",
-        "title": "How To Apply",
-        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
-        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+        "title": "Lợi ích",
+        "preview": "Cung cấp độ ẩm sâu, làm sáng da, làm mờ vết thâm và cải thiện độ đàn hồi của da...",
+        "content": "Cung cấp độ ẩm sâu, làm sáng da, làm mờ vết thâm và cải thiện độ đàn hồi của da."
       },
       {
         "id": "ingredient",
-        "title": "Ingredient",
-        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
-        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+        "title": "Thành phần",
+        "preview": "Axit hyaluronic, ceramide, liposome...",
+        "content": "Thành phần: Axit hyaluronic, ceramide, liposome"
       },
       {
         "id": "what-makes-it-advance",
-        "title": "What Makes It Advance",
-        "preview": "OVER 11 AWARDS WON!",
-        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+        "title": "Lý do lựa chọn",
+        "preview": "Sự kết hợp đa dạng của axit hyaluronic mang đến hiệu quả phục hồi và làm sáng da...",
+        "content": "Sự kết hợp đa dạng của axit hyaluronic mang đến hiệu quả phục hồi và làm sáng da."
       },
       {
         "id": "product-specification",
-        "title": "Product Specification",
-        "preview": "Product Code-46000701",
-        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+        "title": "Xuất xứ",
+        "preview": "Sản phẩm chăm sóc da Hàn Quốc...",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
       }
     ],
     "faqItems": [
@@ -1109,11 +1399,11 @@
   },
   {
     "id": 14,
-    "title": "Beautya La Mousse Off/On Foaming Cleanser",
-    "description": "Anti-Pollution Foaming Cleanser With Purifying French Water Lily",
-    "price": 65.0,
-    "amount": null,
-    "mainImg": "ProductImg10",
+    "title": "Kem Nám - Brightening Corector Cream",
+    "description": "Hiệu quả nhanh chóng, giúp giảm nám rõ rệt chỉ sau 2 tuần sử dụng. Công nghệ phân tử tiên tiến giúp đẩy hấp thụ dưỡng chất gấp 3-5 lần so với phương pháp thông thường, điều trị tận gốc nám chân, hành nhăn, nám sâu.",
+    "price": 450.0,
+    "amount": 30,
+    "mainImg": "ProductImg11",
     "images": [
       "ProductDetailSlider1",
       "ProductDetailSlider2",
@@ -1122,47 +1412,94 @@
       "ProductDetailSlider5",
       "ProductDetailSlider6"
     ],
-    "categories": ["cleansers"],
-    "skinConditions": [],
+    "categories": ["Sản Phẩm Nổi Bật"],
+    "skinConditions": ["Nám", "Tàn nhang"],
     "featured": [],
-    "comments": [],
+    "comments": [
+      {
+        "avatar": "avatar1",
+        "stars": 5,
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
+      },
+      {
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      }
+    ],
     "tabContentData": [
       {
         "id": "product-details",
-        "title": "Product Details",
-        "preview": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville...",
-        "content": "Beautya's 1st Revitalizing Serum That Concentrates The Double Power Of The Rose De Granville From The Stem To The Flower To Revitalize The Skin Twice As Fast (1) And Visibly Rejuvenate.\n\nCreated After 20 Years Of Research, The 10,000 (2) Micro-Pearls Rich In Revitalizing Rose Micro-Nutrients Are Now Completed By The Power Of The Rose Sap. The Next-Generation, 92% Natural-Origin (3) Formula Of La Micro-Huile De Rose Advanced Serum Is Twice As Concentrated,(4) Combining The Nourishing Richness Of An Oil With The Deep Penetration Of A Serum.\n\nFrom The First Application Of The Serum, The Skin Appears Plumped. In 3 Weeks, 2x Improvement In The Look Or Feel Of Skin Elasticity.(5) With Regular Use, Skin Looks And Feels Transformed.\n\nAs If Replenished From Within, The Skin Seems Denser And Firmer, And Wrinkles Appear Noticeably Reduced. As If Lifted, Facial Contours Appear Enhanced.\n\nReveal Your Extraordinary Beauty With Beautya Prestige."
+        "title": "Đặc điểm nổi bật",
+        "preview": "Hiệu quả nhanh chóng, giúp giảm nám rõ rệt chỉ sau 2 tuần sử dụng...",
+        "content": "Hiệu quả nhanh chóng, giúp giảm nám rõ rệt chỉ sau 2 tuần sử dụng. Công nghệ phân tử tiên tiến giúp đẩy hấp thụ dưỡng chất gấp 3-5 lần so với phương pháp thông thường, điều trị tận gốc nám chân, hành nhăn, nám sâu."
       },
       {
         "id": "how-to-apply",
-        "title": "How To Apply",
-        "preview": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand...",
-        "content": "Step 1: Dispense Two To Three Pumps Into The Palm Of Your Hand. Then, Using The Pads Of The Fingers, Apply The Serum To The Entire Face From The Centre Outwards.\n\nStep 2: Use Gentle Pressure To Make The Serum Penetrate Deeply...."
+        "title": "Lợi ích",
+        "preview": "Ức chế tế bào chân sâu dưới da gây sự hình thành melanin, làm mờ nám, tàn nhang, vá đốm nâu...",
+        "content": "Ức chế tế bào chân sâu dưới da gây sự hình thành melanin, làm mờ nám, tàn nhang, vá đốm nâu. Mang lại làn da sáng mịn, đều màu và cải thiện độ đàn hồi da. Sản phẩm được kết hợp với các chất chống oxy hóa giúp làn da khỏi tác động của khí hại từ môi trường."
       },
       {
         "id": "ingredient",
-        "title": "Ingredient",
-        "preview": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE...",
-        "content": "AQUA/WATER/EAU, C12-15 ALKYL BENZOATE, GLYCERYL STEARATE SE, BUTYLENE GLYCOL, GLYCERIN, OLUS OIL/VEGETABLE OIL/HUILE VÉGÉTALE, ISONONYL ISONONANOATE, CETYL ALCOHOL, ETHYLHEXYL PALMITATE, CYCLOPENTASILOXANE, DIMETHICONE, POLYESTER-7, PHENOXYETHANOL, NEOPENTYL GLYCOL DIHEPTANOATE, BUTYROSPERMUM PARKII (SHEA) BUTTER, STEARETH-21, AVENA SATIVA (OAT)..."
+        "title": "Thành phần",
+        "preview": "Alpha Arbutin, Acid Ascorbic, Glutathione...",
+        "content": "Thành phần: Alpha Arbutin, Acid Ascorbic, Glutathione"
       },
       {
         "id": "what-makes-it-advance",
-        "title": "What Makes It Advance",
-        "preview": "OVER 11 AWARDS WON!",
-        "content": "OVER 11 AWARDS WON!\n\nBIONYMPH PEPTIDE: Peptide Blend That Helps To Condition For Smoother, Plumper Looking Skin\n\nVITAMINS C & E: Work In Harmony To BRIGHTEN The Look Of Your Complexion And EVEN The Appearance Of The Skin Tone..."
+        "title": "Lý do lựa chọn",
+        "preview": "Phù hợp với mọi loại da, mang lại làn da sáng khỏe, bảo vệ da khỏi tác động của tia UV và ô nhiễm môi trường...",
+        "content": "Phù hợp với mọi loại da, mang lại làn da sáng khỏe, bảo vệ da khỏi tác động của tia UV và ô nhiễm môi trường."
       },
       {
         "id": "product-specification",
-        "title": "Product Specification",
-        "preview": "Product Code-46000701",
-        "content": "Product Code-46000701\nKey Ingredients-Hyaluronic Acid, Vitamin C\nBeauty Effect-Brightening..."
+        "title": "Xuất xứ",
+        "preview": "Sản phẩm chăm sóc da Hàn Quốc...",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
       }
     ],
     "faqItems": [
       {
         "id": "best-way",
         "question": "What is the best way to use this product?",
-        "answer": "Apply 2-3 pumps of serum onto cleansed skin. Gently pat the serum into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
+        "answer": "Apply a small amount onto cleansed skin, focusing on areas with hyperpigmentation. Gently massage into your face and neck using upward motions. Allow to fully absorb before applying moisturizer. For best results, use morning and evening as part of your skincare routine."
       },
       {
         "id": "skin-types",
@@ -1175,29 +1512,251 @@
         "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
       },
       {
-        "id": "pregnancy",
-        "question": "Can this product be used during pregnancy?",
-        "answer": "While our product contains ingredients that are generally considered safe, we always recommend consulting with your healthcare provider before using any skincare products during pregnancy or while breastfeeding, as individual circumstances may vary."
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "Most users notice initial improvements in skin tone and reduced hyperpigmentation within 2 weeks of consistent use. More significant results typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Kem Dưỡng Ban Ngày và Ban Đêm - Anti-Aging Day & Glow Revival Night",
+    "description": "Cung cấp bảo vệ da khỏi tia UV, ngăn ngừa sạm nám và thâm. Sản phẩm còn giúp kiểm soát dầu nhờn và giữ da luôn thông thoáng, mịn màng suốt cả ngày.",
+    "price": 520.0,
+    "amount": 30,
+    "mainImg": "ProductImg11",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
+    "categories": ["Sản Phẩm Nổi Bật"],
+    "skinConditions": ["Lão hóa", "Da khô"],
+    "featured": [],
+    "comments": [
+      {
+        "avatar": "avatar1",
+        "stars": 5,
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
       },
       {
-        "id": "how-often-2",
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      }
+    ],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Đặc điểm nổi bật",
+        "preview": "Cung cấp độ ẩm tận sâu, giúp da sáng mịn và căng bóng khi thức dậy...",
+        "content": "Cung cấp độ ẩm tận sâu, giúp da sáng mịn và căng bóng khi thức dậy. Sản phẩm hồi phục tái tạo da, giảm thâm nám, mờ sạm nâu, và cải thiện độ đàn hồi da."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "Lợi ích",
+        "preview": "Cung cấp bảo vệ da khỏi tia UV, ngăn ngừa sạm nám và thâm...",
+        "content": "Kem Dưỡng Ngày (Anti-Aging Day Cream): Cung cấp bảo vệ da khỏi tia UV, ngăn ngừa sạm nám và thâm. Sản phẩm còn giúp kiểm soát dầu nhờn và giữ da luôn thông thoáng, mịn màng suốt cả ngày.\nKem Dưỡng Đêm (Glow Revival Night): Phục hồi và tái tạo da, làm sáng da và mờ nám, thu nhỏ lỗ chân lông, cấp ẩm sâu, giúp da sáng mịn và căng bóng khi thức dậy."
+      },
+      {
+        "id": "ingredient",
+        "title": "Thành phần",
+        "preview": "Tranexamic Acid, Alpha Arbutin, Hyaluronic Acid, Niacinamide, Zinc Oxide, Titanium Dioxide...",
+        "content": "Thành phần: Tranexamic Acid, Alpha Arbutin, Hyaluronic Acid, Niacinamide, Zinc Oxide, Titanium Dioxide"
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "Lý do lựa chọn",
+        "preview": "Sản phẩm kết hợp công nghệ tiên tiến và thành phần dưỡng chất dày đủ cho da, giúp làm sáng và phục hồi da hiệu quả từ ban ngày đến ban đêm...",
+        "content": "Sản phẩm kết hợp công nghệ tiên tiến và thành phần dưỡng chất dày đủ cho da, giúp làm sáng và phục hồi da hiệu quả từ ban ngày đến ban đêm."
+      },
+      {
+        "id": "product-specification",
+        "title": "Xuất xứ",
+        "preview": "Sản phẩm chăm sóc da Hàn Quốc...",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "For the Day Cream, apply in the morning after cleansing and serum application. For the Night Cream, apply in the evening as the final step in your skincare routine. Both creams should be applied by gently massaging onto face and neck using upward motions."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Suitable For Most Skin Types, Including Normal, Oily, Dry, And Combination Skin. However, If You Have Sensitive Skin Or A Skin Condition, We Recommend Performing A Patch Test Before Using The Product All Over Your Face. Apply A Small Amount Of The Product To The Inside Of Your Elbow And Wait 24 Hours To Make Sure You Do Not Have An Allergic Reaction Or Irritation. If You Experience Any Discomfort, Discontinue Use Of The Product Immediately."
+      },
+      {
+        "id": "how-often",
         "question": "How often should I use this product?",
-        "answer": "For optimal results, we recommend using this product twice daily - once in the morning and once in the evening. Apply after cleansing and toning, but before moisturizing. If you have sensitive skin, you may want to start with once daily application and gradually increase as your skin adjusts."
-      },
-      {
-        "id": "storage",
-        "question": "How should I store this product?",
-        "answer": "Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use. Do not expose to extreme temperatures. For maximum potency, we recommend using the product within 12 months after opening."
+        "answer": "For optimal results, use the Day Cream every morning and the Night Cream every evening. The Day Cream should be applied in the morning after cleansing and before sun exposure. The Night Cream should be applied in the evening as the final step in your skincare routine."
       },
       {
         "id": "results",
         "question": "How long will it take to see results from using this product?",
-        "answer": "Most users notice initial improvements in skin texture and hydration within 1-2 weeks of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 4-6 weeks of regular application. Individual results may vary depending on skin type and condition."
+        "answer": "Most users notice initial improvements in skin texture and hydration within 1 week of consistent use. More significant results, such as reduction in fine lines and improved firmness, typically become visible after 3-4 weeks of regular application. Individual results may vary depending on skin type and condition."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Mặt Nạ Dưỡng Ẩm - Moisturizing Mask",
+    "description": "Cung cấp độ ẩm sâu cho da, giúp da mềm mại, mịn màng, làm dịu và phục hồi da sau tiếp xúc với môi trường khó hành. Tính chất chẩn xuất từ thiên nhiên làm sáng da và phục hồi da khỏi tổn hại của ánh nắng.",
+    "price": 380.0,
+    "amount": 30,
+    "mainImg": "ProductImg11",
+    "images": [
+      "ProductDetailSlider1",
+      "ProductDetailSlider2",
+      "ProductDetailSlider3",
+      "ProductDetailSlider4",
+      "ProductDetailSlider5",
+      "ProductDetailSlider6"
+    ],
+    "categories": ["Sản Phẩm Nổi Bật"],
+    "skinConditions": ["Da khô", "Da thiếu ẩm", "Da nhạy cảm"],
+    "featured": [],
+    "comments": [
+      {
+        "avatar": "avatar1",
+        "stars": 5,
+        "name": "Ngọc Lan, Chủ Spa Mai Lan",
+        "text": "LUMIA là thương hiệu mà chúng tôi luôn tin tưởng và lựa chọn cho spa của mình. Sản phẩm của họ giúp chúng tôi mang lại hiệu quả rõ rệt cho khách hàng, đặc biệt là trong việc điều trị nám và làm sáng da. Công nghệ Postbiotic 99% giúp khách hàng cảm thấy sự khác biệt ngay từ lần đầu sử dụng. Chắc chắn chúng tôi sẽ tiếp tục hợp tác lâu dài với LUMIA.",
+        "postedOn": "2025-03-12",
+        "images": [
+          "CommentImg8",
+          "CommentImg8",
+          "CommentImg3",
+          "CommentImg3",
+          "CommentImg3"
+        ]
       },
       {
-        "id": "conjunction",
-        "question": "Can this product be used in conjunction with other skincare products?",
-        "answer": "Yes, our product is formulated to work well with most skincare routines. It can be layered with other products, but we recommend applying from thinnest to thickest consistency. Allow each product to fully absorb before applying the next. If using with active ingredients like retinol or vitamin C, you may want to alternate usage times to prevent potential irritation."
+        "avatar": "avatar2",
+        "stars": 5,
+        "name": "Hồng Nhung, Chủ Spa Nhung’s Beauty",
+        "text": "Với các dòng sản phẩm chăm sóc da của LUMIA, khách hàng của chúng tôi không chỉ hài lòng về hiệu quả mà còn an tâm về độ an toàn. Các sản phẩm dưỡng da khoa học và tiên tiến, đặc biệt là kem dưỡng tái tạo Brightening and Regenerating Cream, luôn được khách hàng yêu thích. Chúng tôi rất vui khi có thể mang lại dịch vụ chăm sóc da chuẩn Hàn Quốc cho khách hàng tại spa của mình.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar3",
+        "stars": 5,
+        "name": "Tuấn Anh, Chủ Spa Tuấn Anh Luxury Spa",
+        "text": "LUMIA giúp spa của chúng tôi nâng tầm chất lượng dịch vụ. Những sản phẩm như serum và ampoule của họ không chỉ mang lại kết quả điều trị hiệu quả mà còn giúp chúng tôi tiết kiệm thời gian và chi phí trong việc tìm kiếm sản phẩm phù hợp. Khách hàng luôn hài lòng và tin tưởng vào liệu trình chăm sóc da tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar4",
+        "stars": 5,
+        "name": "Kim Lan, Chủ Spa Kim Lan Beauty",
+        "text": "Sản phẩm của LUMIA thật sự làm chúng tôi ấn tượng ngay từ lần đầu sử dụng. Với các dòng kem dưỡng và serum giúp phục hồi da, khách hàng của chúng tôi đã thấy sự cải thiện rõ rệt về độ sáng mịn và đàn hồi của da. Công nghệ Postbiotic 99% là một yếu tố quan trọng giúp sản phẩm đạt được hiệu quả tuyệt vời. Đây chính là lựa chọn lý tưởng cho các spa muốn cung cấp dịch vụ chăm sóc da cao cấp.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      },
+      {
+        "avatar": "avatar5",
+        "stars": 5,
+        "name": "Thanh Tú, Chủ Spa Thanh Tú Exclusive",
+        "text": "Chúng tôi đã thử nghiệm sản phẩm LUMIA trong nhiều tháng và kết quả thật sự ấn tượng. Các sản phẩm như LUMIA Whitening Ampoule và Cell Active Age Renewal Serum giúp cải thiện sắc tố da và làm sáng da hiệu quả. Khách hàng phản hồi rất tích cực về độ hiệu quả và cảm giác mềm mại, tươi mới sau mỗi liệu trình. Chắc chắn LUMIA sẽ là sản phẩm chủ lực tại spa của chúng tôi.",
+        "postedOn": "2025-03-12",
+        "images": ["CommentImg8", "CommentImg8", "CommentImg3"]
+      }
+    ],
+    "tabContentData": [
+      {
+        "id": "product-details",
+        "title": "Đặc điểm nổi bật",
+        "preview": "Cung cấp độ ẩm trị liệu cho da khô và thiếu sức sống, giúp tái tạo da và giảm thâm dầu hiệu lực hóa...",
+        "content": "Cung cấp độ ẩm trị liệu cho da khô và thiếu sức sống, giúp tái tạo da và giảm thâm dầu hiệu lực hóa."
+      },
+      {
+        "id": "how-to-apply",
+        "title": "Lợi ích",
+        "preview": "Cung cấp độ ẩm sâu cho da, giúp da mềm mại, mịn màng, làm dịu và phục hồi da sau tiếp xúc với môi trường khó hành...",
+        "content": "Cung cấp độ ẩm sâu cho da, giúp da mềm mại, mịn màng, làm dịu và phục hồi da sau tiếp xúc với môi trường khó hành. Tính chất chẩn xuất từ thiên nhiên làm sáng da và phục hồi da khỏi tổn hại của ánh nắng."
+      },
+      {
+        "id": "ingredient",
+        "title": "Thành phần",
+        "preview": "Ceramide 4000ppm, Bơ hạt mỡ, Tinh dầu Rosa Canina, Dầu hạt Macadamia...",
+        "content": "Thành phần: Ceramide 4000ppm, Bơ hạt mỡ, Tinh dầu Rosa Canina, Dầu hạt Macadamia, Chiết xuất Centopodium Alpinum, Bảo Ngọc, Rau má"
+      },
+      {
+        "id": "what-makes-it-advance",
+        "title": "Lý do lựa chọn",
+        "preview": "Sử dụng các chiết xuất thiên nhiên kết hợp với ceramide nồng độ cao, mặt nạ dưỡng ẩm chuyên sâu này thích hợp cho da nhạy cảm và da thiếu ẩm...",
+        "content": "Sử dụng các chiết xuất thiên nhiên kết hợp với ceramide nồng độ cao, mặt nạ dưỡng ẩm chuyên sâu này thích hợp cho da nhạy cảm và da thiếu ẩm, mang lại cảm giác mềm mại và tươi mới ngay sau khi sử dụng."
+      },
+      {
+        "id": "product-specification",
+        "title": "Xuất xứ",
+        "preview": "Sản phẩm chăm sóc da Hàn Quốc...",
+        "content": "Sản phẩm chăm sóc da Hàn Quốc, phát triển với công nghệ tiên tiến và được kiểm nghiệm qua các nghiên cứu lâm sàng."
+      }
+    ],
+    "faqItems": [
+      {
+        "id": "best-way",
+        "question": "What is the best way to use this product?",
+        "answer": "After cleansing, apply a generous layer of the mask to your face, avoiding the eye and lip areas. Leave on for 15-20 minutes, then rinse thoroughly with lukewarm water. For best results, use 2-3 times per week."
+      },
+      {
+        "id": "skin-types",
+        "question": "Can this product be used on all skin types?",
+        "answer": "Our Product Is Specially Formulated For Dry, Dehydrated, And Sensitive Skin Types. However, It Can Be Used By All Skin Types During Periods Of Dehydration Or Environmental Stress. If You Have Very Oily Skin, You May Want To Use It Less Frequently, Such As Once A Week."
+      },
+      {
+        "id": "how-often",
+        "question": "How often should I use this product?",
+        "answer": "For optimal results, we recommend using this mask 2-3 times per week. If you have extremely dry or dehydrated skin, you may use it more frequently, up to once daily as an intensive treatment. If you have normal to oily skin, 1-2 times per week may be sufficient."
+      },
+      {
+        "id": "results",
+        "question": "How long will it take to see results from using this product?",
+        "answer": "You should notice immediate hydration and softening effects after the first use. With consistent use over 2-3 weeks, you'll see more significant improvements in skin texture, moisture retention, and overall complexion."
       }
     ]
   }

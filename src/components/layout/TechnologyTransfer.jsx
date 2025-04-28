@@ -90,7 +90,7 @@ const TechnologyTransfer = () => {
                   alt={`technology icon ${index + 1}`}
                 />
                 <div className="flex flex-col gap-[10px]">
-                  <h1 className="font-bold md:h-[100px] md:text-[22px] lg:text-[24px]">
+                  <h1 className="font-bold md:text-[22px] lg:text-[24px] mb-2">
                     {feat.title}
                   </h1>
                   <p className="text-[#6A6A6A]">{feat.description}</p>

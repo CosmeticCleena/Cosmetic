@@ -3,15 +3,31 @@ import { useState } from "react";
 import AvatarFeedbackImg from "../../assets/images/AvatarFeedback.svg";
 import UserFeedbackImg from "../../assets/images/UserFeedbackImg.svg";
 import FeedbackData from "../../configs/Feedbacks.json";
-
+import avatar1 from "../../assets/images/MaiLanSpa.jpeg";
+import avatar2 from "../../assets/images/NhungBeauty.jpeg";
+import avatar3 from "../../assets/images/TuanAnhSpa.jpeg";
+import avatar4 from "../../assets/images/KimLan.jpeg";
+import avatar5 from "../../assets/images/SpaThanhTu.jpeg";
 const imgSrc = [
   {
     reviewImg: UserFeedbackImg,
-    userAva: AvatarFeedbackImg,
+    userAva: avatar1,
   },
   {
     reviewImg: UserFeedbackImg,
-    userAva: AvatarFeedbackImg,
+    userAva: avatar2,
+  },
+  {
+    reviewImg: UserFeedbackImg,
+    userAva: avatar3,
+  },
+  {
+    reviewImg: UserFeedbackImg,
+    userAva: avatar4,
+  },
+  {
+    reviewImg: UserFeedbackImg,
+    userAva: avatar5,
   },
 ];
 
