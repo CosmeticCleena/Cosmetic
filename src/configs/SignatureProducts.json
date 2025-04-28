@@ -1,22 +1,22 @@
-[        
-    {
-        "id": 1,
-        "title": "Brightening Serum",
-        "description": "Lorm, Typing, Institue"
-    },
-    {
-        "id": 2,
-        "title": "Brightening Serum",
-        "description": "Lorm, Typing, Institue"
-    },
-    {
-        "id": 3,
-        "title": "Brightening Serum",
-        "description": "Lorm, Typing, Institue"
-    },
-    {
-        "id": 3,
-        "title": "Brightening Serum",
-        "description": "Lorm, Typing, Institue"
-    }
+[
+  {
+    "id": 14,
+    "title": "Kem Nám - Brightening Corector Cream",
+    "description": "Hiệu quả nhanh chóng, giúp giảm nám rõ rệt chỉ sau 2 tuần sử dụng. Công nghệ phân tử tiên tiến giúp da hấp thụ dưỡng chất gấp 3-5 lần so với phương pháp thông thường, điều trị tận gốc nám chân, nám mảng, nám sâu."
+  },
+  {
+    "id": 15,
+    "title": "Kem Dưỡng Ban Ngày và Ban Đêm - Anti-Aging Day & Glow Revival Night",
+    "description": "Cung cấp độ ẩm lâu dài, giúp da luôn tươi mới và khỏe mạnh. Sản phẩm hỗ trợ quá trình tái tạo da, giảm thâm nám, mờ sạm màu, và cải thiện độ đàn hồi da."
+  },
+  {
+    "id": 16,
+    "title": "Mặt Nạ Dưỡng Ẩm - Moisturizing Mask",
+    "description": "Cung cấp độ ẩm tức thì cho da khô và thiếu sức sống, giúp tái tạo da và giảm thiểu dấu hiệu lão hóa."
+  },
+  {
+    "id": 16,
+    "title": "Mặt Nạ Dưỡng Ẩm - Moisturizing Mask",
+    "description": "Cung cấp độ ẩm tức thì cho da khô và thiếu sức sống, giúp tái tạo da và giảm thiểu dấu hiệu lão hóa."
+  }
 ]

@@ -1,12 +1,17 @@
 import React from "react";
 import RightArrow from "../../assets/icons/RightArrow.svg";
 import SignatureProductImg from "../../assets/images/SignatureProduct.svg";
+import { useNavigate } from "react-router-dom";
 
-const SignatureProduct = ({ title, description }) => {
+const SignatureProduct = ({ title, description, id }) => {
+  const navigate = useNavigate();
   return (
     <div
+      onClick={() => {
+        navigate(`/products/${id}`);
+      }}
       className="bg-[#FCF7E1] col-span-8 md:col-span-6 lg:col-span-3 rounded-lg p-4 shadow-lg hover:bg-[#E3C988] 
-                  transition-all duration-300 flex flex-col col-start-3 sm:col-start-1"
+                  transition-all duration-300 flex flex-col col-start-3 sm:col-start-1 cursor-pointer"
     >
       <img
         src={SignatureProductImg}

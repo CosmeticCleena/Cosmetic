@@ -1,13 +1,40 @@
-[
+{
+  "FirstBanner": [
     {
-        "title": "Lumia không chỉ đơn thuần là một thương hiệu mỹ phẩm",
-        "description": "Lumia không chỉ đơn thuần là một thương hiệu mỹ phẩm, mà còn là người bạn đồng hành trên hành trình chăm sóc và yêu thương làn da của bạn. Chúng tôi hiểu rằng mỗi loại da đều có nhu cầu riêng, vì vậy Lumia mang đến những sản phẩm được nghiên cứu kỹ lưỡng, giúp cung cấp độ ẩm, phục hồi và bảo vệ làn da khỏi tác động của môi trường. Với sự kết hợp giữa khoa học hiện đại và nguồn nguyên liệu thiên nhiên, Lumia giúp bạn tự tin hơn mỗi ngày với làn da khỏe mạnh, căng tràn sức sống. Hãy để Lumia trở thành bí quyết làm đẹp không thể thiếu của bạn!",
-        "buttonText": "Khám Phá Ngay"
+      "title": "LUMIA – Chăm Sóc Làn Da Bạn Theo Cách Tự Nhiên Nhất",
+      "description": "LUMIA mang đến những sản phẩm dưỡng da đột phá, kết hợp giữa thiên nhiên và công nghệ tiên tiến. Đặc biệt, chúng tôi tự hào sở hữu công nghệ vi sinh Postbiotic 99% 2 in 1 độc quyền tại Việt Nam, chuyên biệt trong việc điều trị nám và các vấn đề về sắc tố da. Công nghệ này không chỉ giúp làm mờ nám, tàn nhang mà còn kích thích tái tạo collagen, giúp làn da săn chắc, đều màu và sáng mịn từ sâu bên trong. LUMIA giúp bạn nắm lấn gốc, bảo vệ và nuôi dưỡng làn da khỏe mạnh, đồng hành cùng bạn trong hành trình chăm sóc và phục hồi vẻ đẹp tự nhiên của làn da.",
+      "buttonText": "KHÁM PHÁ NGAY"
     },
     {
-        "title": "DƯỠNG DA KHOA HỌC",
-        "description": "Sản phẩm dưỡng da khoa học dựa trên những thành phần/hoạt chất đã được nghiên cứu chứng minh có tác dụng cải thiện làn da hiệu quả. Tuân thủ nghiêm ngặt các quy định an toàn của pháp luật.",
-        "indicators": 6
+      "title": "Lịch Sử Hình Thành Thương Hiệu",
+      "description": "LUMIA được sáng lập bởi CEO Lưu Thu Trang, người tiên phong đưa công nghệ vi sinh Postbiotic 99% 2 in 1 từ Hàn Quốc về Việt Nam, mở ra một kỷ nguyên mới trong điều trị nám. Với niềm đam mê và tầm nhìn xa, bà Lưu Thu Trang đã vượt qua khó khăn để phát triển những sản phẩm chăm sóc da giúp điều trị nám hiệu quả, mang lại làn da sáng mịn và rạng rỡ. LUMIA không chỉ là thương hiệu mỹ phẩm, mà là biểu tượng của sự kiên định và cam kết giúp phụ nữ Việt Nam sở hữu làn da khỏe mạnh, không còn lo lắng về nám.",
+      "buttonText": "TÌM HIỂU THÊM"
     }
-]
-  
+  ],
+  "SecondBanner": [
+    {
+      "title": "Làm Đẹp Và Chăm Sóc Da",
+      "description": "Để đạt được kết quả tốt nhất khi sử dụng các sản phẩm từ LUMIA, việc hiểu rõ cách sử dụng sản phẩm đúng cách là rất quan trọng. Dưới đây là hướng dẫn chi tiết để bạn có thể tận dụng tối đa hiệu quả của các sản phẩm chăm sóc da từ LUMIA:"
+    },
+    {
+      "title": "Bước 1: Làm Sạch Da",
+      "description": "Trước khi bắt đầu bất kỳ quy trình dưỡng da nào, việc làm sạch da là rất quan trọng. Sử dụng Face Cleanser Foam Collagen để loại bỏ bụi bẩn, dầu thừa và lớp trang điểm. Điều này sẽ giúp da dễ dàng hấp thụ các dưỡng chất trong các bước tiếp theo."
+    },
+    {
+      "title": "Bước 2: Dùng Toner",
+      "description": "Sau khi làm sạch da, hãy sử dụng Revitalizing Toner để se khít lỗ chân lông và cân bằng độ pH. Toner giúp làn da bạn sẵn sàng tiếp nhận các dưỡng chất từ các sản phẩm tiếp theo."
+    },
+    {
+      "title": "Bước 3: Sử Dụng Serum Và Kem Dưỡng",
+      "description": "Đối với da cần điều trị nám, sử dụng Dark Spot Serum để làm mờ sắc tố và phục hồi da. Sau đó, tiếp tục với Anti-Aging Day Cream vào buổi sáng để bảo vệ da khỏi tia UV và cung cấp dưỡng ẩm. Vào buổi tối, sử dụng Glow Revival Night để phục hồi da và làm sáng da trong khi bạn ngủ."
+    },
+    {
+      "title": "Bước 4: Mặt Nạ Dưỡng Ẩm",
+      "description": "Để tăng cường độ ẩm và phục hồi da, đắp Moisturizing Mask một hoặc hai lần mỗi tuần. Mặt nạ này cung cấp độ ẩm sâu, giúp làm dịu da, cải thiện độ đàn hồi và giảm thiểu dấu hiệu lão hóa."
+    },
+    {
+      "title": "Làm Sáng Da Và Điều Trị Nám Hiệu Quả: Những Bí Quyết Giúp Làm Sáng Da Và Giảm Thiểu Nám, Tàn Nhang Bằng Sản Phẩm LUMIA",
+      "description": "Làn da sáng mịn và đều màu luôn là mong muốn của nhiều người, đặc biệt là khi đối mặt với vấn đề nám, tàn nhang và các đốm nâu. LUMIA mang đến các giải pháp hiệu quả giúp bạn đạt được làn da như mong muốn.Điều Trị Nám Chân Và Tàn NhangCác sản phẩm như Brightening Corector Cream và Brightening And Regenerating Cream chứa các thành phần mạnh mẽ như Alpha Arbutin, Glutathione, và Vitamin C giúp làm mờ sắc tố melanin, giảm thiểu nám chân sâu và tàn nhang, mang lại làn da sáng mịn và đều màu.Tăng Cường Sự Sáng Mịn Với Serum Và Kem DưỡngSerum Dark Spot Serum giúp làm mờ các đốm nám sâu, đồng thời phục hồi da sau laser hoặc các liệu pháp điều trị. Sản phẩm này làm sáng da và cải thiện sắc tố hiệu quả. Đối với da cần dưỡng sáng lâu dài, LUMIA Whitening Ampoule là sự lựa chọn tuyệt vời, giúp làm sáng da ngay từ lần sử dụng đầu tiên.Dưỡng Da Từ Bên TrongBên cạnh việc điều trị nám, việc dưỡng ẩm sâu cho da cũng rất quan trọng. Sử dụng sản phẩm như Rejuvenating Essential Emulsion để cấp ẩm và tái tạo da, giữ cho da luôn mềm mịn và rạng rỡ.Sử dụng các sản phẩm LUMIA kết hợp với chế độ chăm sóc da phù hợp sẽ giúp bạn làm sáng da, giảm thiểu nám và tàn nhang, mang lại làn da tươi trẻ và khỏe mạnh từ sâu bên trong."
+    }
+  ]
+}

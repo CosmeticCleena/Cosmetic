@@ -63,7 +63,15 @@ const Navbar = ({ footerRef }) => {
     <>
       <nav className="w-full fixed top-0 z-50 bg-white">
         <div className="px-4 md:px-[60px] xl:px-[120px] pt-2 pb-2 flex items-center justify-between">
-          <img className="w-[150px] md:w-[200px]" src={LumiaLogo} alt="logo" />
+          <img
+            onClick={() => {
+              handleItemClick("Giới thiệu");
+              navigate("/home");
+            }}
+            className="w-[150px] md:w-[200px] cursor-pointer"
+            src={LumiaLogo}
+            alt="logo"
+          />
 
           {/* Full Menu with Navigation + Icons - On Tablet & Desktop */}
           <div className="hidden md:flex items-center gap-3">

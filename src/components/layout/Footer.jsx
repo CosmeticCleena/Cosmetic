@@ -9,7 +9,12 @@ import indicator from "../../assets/icons/indicator.svg";
 import copyright from "../../assets/icons/copyright.svg";
 
 import BGLogo from "../../assets/icons/BGLogo.svg";
-import socialMediaIcons from "../../assets/icons/socialMediaIcons.svg";
+import Facebook from "../../assets/icons/_Facebook.svg";
+import Instagram from "../../assets/icons/_Instagram.svg";
+import Pinterest from "../../assets/icons/_Pinterest.svg";
+import Reddit from "../../assets/icons/_Reddit.svg";
+import Tiktok from "../../assets/icons/_Tiktok.svg";
+import Twitter from "../../assets/icons/_Twitter.svg";
 
 const Footer = ({ footerRef }) => {
   return (
@@ -104,29 +109,33 @@ const Footer = ({ footerRef }) => {
       </div>
 
       {/* Location and social media section */}
-      <div className="flex-col md:flex-row bg-[#5C3827] text-white px-[30px] md:px-[108px] flex justify-between relative z-20">
-        {/* Added z-20 to ensure this is above the BGLogo */}
-        <div className="py-[8px] flex flex-col items-start md:flex-row gap-4 pr-4 md:items-center text-[16px] mx-[1em]">
-          <div className="flex gap-3">
+      <div className="flex-col md:flex-row bg-[#5C3827] text-white px-4 md:px-[108px] flex justify-between relative z-20">
+        {/* Changed px-[30px] to px-4 for consistency and removed mx-[1em] */}
+        <div className="py-[8px] flex flex-col items-start md:flex-row gap-4 pr-4 md:items-center text-[16px]">
+          <div className="flex gap-3 pl-[12px] md:pl-0">
+            {/* Added pl-[12px] to match copyright alignment on mobile and removed on larger screens */}
             <img src={Location} alt="Location" />
             150 Nguyễn Sơn, Long Biên, Hà Nội, Việt Nam
           </div>
           <img className="hidden md:flex" src={indicator} alt="indicator" />
-          <div className="flex gap-3">
+          <div className="flex gap-3 pl-[12px] md:pl-0">
+            {/* Added pl-[12px] to match copyright alignment on mobile and removed on larger screens */}
             <img src={Telephone} alt="Telephone" />
             Hotline: +84 988 602 888
           </div>
         </div>
-        <img
-          className="icons py-[8px] w-[60%] md:w-[20%] mx-auto md:mx-[0.5em]"
-          src={socialMediaIcons}
-          alt="socialMediaIcons"
-        />
+        <div className="flex justify-center items-center gap-2">
+          <img className="p-2" src={Instagram} alt="Instagram" />
+          <img className="p-2" src={Facebook} alt="Facebook" />
+          <img className="p-2" src={Twitter} alt="Twitter" />
+          <img className="p-2" src={Pinterest} alt="Pinterest" />
+          <img className="p-2" src={Reddit} alt="Reddit" />
+          <img className="p-2" src={Tiktok} alt="Tiktok" />
+        </div>
       </div>
 
       {/* Copyright section */}
       <div className="bg-[#351D13] flex flex-col md:flex-row justify-between text-[#CBCBCB] text-[12px] px-4 md:px-[108px] relative z-20">
-        {/* Added z-20 to ensure this is above the BGLogo */}
         <div className="py-[8px] flex gap-1 items-center justify-center md:justify-start">
           <img className="relative right-1" src={copyright} alt="copyright" />
           <span>2025 Beautya. All Rights Reserved.</span>

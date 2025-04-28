@@ -24,7 +24,7 @@ const SignatureProducts = () => {
 
           <div className="grid grid-cols-12 gap-4 md:gap-6 overflow-x-auto">
             {SIGNATURE_PRODUCTS.map((product, index) => (
-              <SignatureProduct key={index} {...product} />
+              <SignatureProduct key={index} {...product} id={product.id} />
             ))}
           </div>
         </div>
