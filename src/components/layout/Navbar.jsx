@@ -8,14 +8,13 @@ import ProductDropdown from "../products/ProductDropdown";
 import SearchMobile from "./SearchMobile";
 import SearchDesktop from "./SearchDesktop";
 import { useNavigate } from "react-router-dom";
-
 const Navbar = ({ footerRef }) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   // Không thay đổi phần này
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState("Giới thiệu");
+  const [activeItem, setActiveItem] = useState("Trang Chủ");
   const [isDesktopSearchOpen, setIsDesktopSearchOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -40,12 +39,12 @@ const Navbar = ({ footerRef }) => {
     setActiveItem(item);
     if (item === "Sản phẩm") {
       navigate("/products");
-    } else if (item === "Giới thiệu") {
+    } else if (item === "Trang Chủ") {
       navigate("/");
     } else {
       setProductDropdownOpen(false);
     }
-    if (item !== "Sản phẩm" && item !== "Giới thiệu") {
+    if (item !== "Sản phẩm" && item !== "Trang Chủ") {
       footerRef.current?.scrollIntoView({
         behavior: "smooth",
       });
@@ -65,7 +64,7 @@ const Navbar = ({ footerRef }) => {
         <div className="px-4 md:px-[60px] xl:px-[120px] pt-2 pb-2 flex items-center justify-between">
           <img
             onClick={() => {
-              handleItemClick("Giới thiệu");
+              handleItemClick("Trang Chủ");
               navigate("/home");
             }}
             className="w-[150px] md:w-[200px] cursor-pointer"
@@ -78,13 +77,23 @@ const Navbar = ({ footerRef }) => {
             <ul className="flex items-center gap-4 relative right-[5rem] font-magnificent">
               <li
                 className={`cursor-pointer whitespace-nowrap ${
-                  activeItem === "Giới thiệu"
+                  activeItem === "Trang Chủ"
                     ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
                     : ""
                 }`}
-                onClick={() => handleItemClick("Giới thiệu")}
+                onClick={() => handleItemClick("Trang Chủ")}
               >
-                Giới thiệu
+                Trang Chủ
+              </li>
+              <li
+                className={`cursor-pointer whitespace-nowrap ${
+                  activeItem === "Tổng Quan Thương Hiệu"
+                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
+                    : ""
+                }`}
+                onClick={() => handleItemClick("Tổng Quan Thương Hiệu")}
+              >
+                Tổng Quan Thương Hiệu
               </li>
               <li
                 className={`cursor-pointer whitespace-nowrap relative ${
@@ -98,6 +107,16 @@ const Navbar = ({ footerRef }) => {
                 }}
               >
                 Sản phẩm
+              </li>
+              <li
+                className={`cursor-pointer whitespace-nowrap ${
+                  activeItem === "Đại Lý"
+                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
+                    : ""
+                }`}
+                onClick={() => handleItemClick("Đại Lý")}
+              >
+                Đại Lý
               </li>
               <li
                 className={`cursor-pointer whitespace-nowrap ${
