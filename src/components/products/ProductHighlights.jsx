@@ -11,7 +11,7 @@ const imgSrc = {
 
 const ProductHighlights = () => {
   return (
-    <>
+    <div id="brand-overview">
       {ProductHighlightData.map((item, index) => (
         <ProductHighlight
           key={index}
@@ -32,7 +32,7 @@ const ProductHighlights = () => {
           )}
         </ProductHighlight>
       ))}
-    </>
+    </div>
   );
 };
 

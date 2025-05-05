@@ -53,7 +53,7 @@ const Product = () => {
         isOpen={isFilterOpen}
         handleFilterToggle={handleFilterToggle}
       />
-      <div className="bg-[#FAF9F5] w-full pt-8">
+      <div className="bg-[#FAF9F5] w-full pt-12">
         <div className="w-[90%] mx-auto">
           <Breadcumbs />
           <h1 className="text-3xl font-magnificent pl-5 py-5 font-thin">

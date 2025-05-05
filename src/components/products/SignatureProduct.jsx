@@ -19,7 +19,7 @@ const SignatureProduct = ({ title, description, id }) => {
         className="object-contain max-h-[270px] h-auto mb-4 w-full"
       />
       <div className="flex items-center justify-between my-0 py-0 text-[#967031] font-magnificent space-x-4 text-3xl mx-auto">
-        <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#B08B3B] to-[#EAC980] text-2xl md:text-3xl">
+        <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#B08B3B] to-[#EAC980] text-2xl md:text-3xl line-clamp-4">
           {title}
         </p>
         <img
@@ -28,7 +28,7 @@ const SignatureProduct = ({ title, description, id }) => {
           className="inline-block align-middle h-fit object-contain"
         />
       </div>
-      <p className="text-start text-[#0A0A0A] font-lato">{description}</p>
+      <p className="text-start text-[#0A0A0A] font-lato mt-4">{description}</p>
     </div>
   );
 };

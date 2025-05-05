@@ -23,10 +23,10 @@ const SearchProduct = ({
         alt="productSearch0"
         className="object-cover w-full"
       />
-      <div className="w-full px-4 py-4 h-full bg-white flex flex-col justify-evenly gap-2">
+      <div className="w-full px-4 py-4 h-full bg-white flex flex-col gap-2">
         <p
           className={`text-md ${
-            isSearch ? "lg:text-lg" : "lg:text-2xl min-h-16"
+            isSearch ? "lg:text-lg" : "lg:text-2xl"
           } text-[#D1AE62] font-magnificent`}
         >
           {productName}
