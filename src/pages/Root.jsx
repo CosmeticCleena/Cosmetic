@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer";
 
 const Root = () => {
   const footerRef = useRef(null);
+  // overview brand
   return (
     <>
       <Navbar footerRef={footerRef} />
