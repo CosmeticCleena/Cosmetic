@@ -16,9 +16,9 @@ import Reddit from "../../assets/icons/_Reddit.svg";
 import Tiktok from "../../assets/icons/_Tiktok.svg";
 import Twitter from "../../assets/icons/_Twitter.svg";
 
-const Footer = ({ footerRef }) => {
+const Footer = () => {
   return (
-    <div ref={footerRef} className="w-full mx-auto relative">
+    <div id="footer" className="w-full mx-auto relative">
       {/* Top section - features */}
       <div className="grid grid-cols-2 p-5 footer-top gap-16 bg-[#F9F6ED] text-[#9E6A30] h-max-[104px] md:flex items-center justify-between md:px-[108px] text-[16px]">
         <div className="flex gap-[8px] items-center">

@@ -7,8 +7,9 @@ import SideBarMobile from "../layout/SidebarMobile";
 import ProductDropdown from "../products/ProductDropdown";
 import SearchMobile from "./SearchMobile";
 import SearchDesktop from "./SearchDesktop";
+import { Link } from "react-scroll";
 import { useNavigate } from "react-router-dom";
-const Navbar = ({ footerRef }) => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   // Không thay đổi phần này
@@ -41,13 +42,10 @@ const Navbar = ({ footerRef }) => {
       navigate("/products");
     } else if (item === "Trang Chủ") {
       navigate("/");
+    } else if (item === "Đại Lý") {
+      navigate("/agency");
     } else {
       setProductDropdownOpen(false);
-    }
-    if (item !== "Sản phẩm" && item !== "Trang Chủ") {
-      footerRef.current?.scrollIntoView({
-        behavior: "smooth",
-      });
     }
   };
 
@@ -60,7 +58,7 @@ const Navbar = ({ footerRef }) => {
 
   return (
     <>
-      <nav className="w-full fixed top-0 z-50 bg-white">
+      <nav className="w-full sticky top-0 z-50 bg-white">
         <div className="px-4 md:px-[60px] xl:px-[120px] pt-2 pb-2 flex items-center justify-between">
           <img
             onClick={() => {
@@ -85,16 +83,21 @@ const Navbar = ({ footerRef }) => {
               >
                 Trang Chủ
               </li>
-              <li
+              <Link
                 className={`cursor-pointer whitespace-nowrap ${
                   activeItem === "Tổng Quan Thương Hiệu"
                     ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
                     : ""
                 }`}
                 onClick={() => handleItemClick("Tổng Quan Thương Hiệu")}
+                to="brand-overview"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
               >
                 Tổng Quan Thương Hiệu
-              </li>
+              </Link>
               <li
                 className={`cursor-pointer whitespace-nowrap relative ${
                   activeItem === "Sản phẩm"
@@ -118,16 +121,20 @@ const Navbar = ({ footerRef }) => {
               >
                 Đại Lý
               </li>
-              <li
+              <Link
                 className={`cursor-pointer whitespace-nowrap ${
                   activeItem === "Liên hệ"
                     ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
                     : ""
                 }`}
                 onClick={() => handleItemClick("Liên hệ")}
+                to="footer"
+                spy={true}
+                smooth={true}
+                duration={1000}
               >
                 Liên hệ
-              </li>
+              </Link>
             </ul>
             {/* Toogle Search Desktop */}
             <div

@@ -1,6 +1,7 @@
 import Root from "./pages/Root";
 import Home from "./pages/Home";
 import NotFoundPage from "./components/common/NotFoundPage";
+import TechnologyTransfer from "./components/layout/TechnologyTransfer";
 import {
   createBrowserRouter,
   Navigate,
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "home", element: <Home /> },
       { path: "products", element: <Product /> },
       { path: "products/:id", element: <ProductDetail /> },
+      { path: "agency", element: <TechnologyTransfer /> },
     ],
   },
 ]);

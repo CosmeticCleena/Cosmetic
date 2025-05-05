@@ -74,7 +74,7 @@ const Feedback = () => {
             />
           </div>
           <div className="basis-[70%] flex flex-col w-full space-y-4">
-            <div className="h-[170px] flex flex-col space-y-3">
+            <div className="flex flex-col space-y-3">
               <div className="flex items-center space-x-1">{stars}</div>
               <p className="font-lato text-xl line-clamp-3">
                 {FeedbackData.review[activeIndex].text}

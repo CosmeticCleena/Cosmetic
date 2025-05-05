@@ -1,18 +1,17 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 
 const Root = () => {
-  const footerRef = useRef(null);
   // overview brand
   return (
     <>
-      <Navbar footerRef={footerRef} />
+      <Navbar />
       <main>
         <Outlet />
       </main>
-      <Footer footerRef={footerRef} />
+      <Footer />
     </>
   );
 };

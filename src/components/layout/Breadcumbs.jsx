@@ -6,7 +6,7 @@ const Breadcumbs = ({ productName = "" }) => {
   const pathnames = location.pathname.split("/").filter((path) => path);
   return (
     <div
-      className="flex mt-24 text-base md:text-xl font-magnificent"
+      className="flex text-base md:text-xl font-magnificent"
       aria-label="Breadcrumb"
     >
       <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
