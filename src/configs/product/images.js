@@ -9,7 +9,10 @@ import ProductImg7 from "../../assets/images/products/product7.svg";
 import ProductImg8 from "../../assets/images/products/product8.svg";
 import ProductImg9 from "../../assets/images/products/product9.svg";
 import ProductImg10 from "../../assets/images/products/product10.svg";
-import ProductImg11 from "../../assets/images/SignatureProduct.svg";
+import ProductImg11 from "../../assets/images/products/product11.svg";
+// import ProductImg12 from "../../assets/images/products/product11.svg";
+import ProductImg13 from "../../assets/images/products/product13.svg";
+import ProductImg14 from "../../assets/images/products/product14.svg";
 
 export const ProductImgs = {
   ProductImg,
@@ -24,4 +27,6 @@ export const ProductImgs = {
   ProductImg9,
   ProductImg10,
   ProductImg11,
+  ProductImg13,
+  ProductImg14,
 };
