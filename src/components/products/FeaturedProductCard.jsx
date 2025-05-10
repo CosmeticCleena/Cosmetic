@@ -1,6 +1,7 @@
 import React from "react";
 import FeatureProduct from "../../assets/images/FeatureProduct.svg";
 import { useNavigate } from "react-router-dom";
+import SignatureProduct from "../../assets/images/SignatureProduct.svg";
 
 const FeaturedProductCard = ({ isAddToCart, data }) => {
   const productName = data?.product_name;
@@ -20,7 +21,7 @@ const FeaturedProductCard = ({ isAddToCart, data }) => {
         </div>
         <img
           className="rounded-t-[16px] w-full h-[240px] object-contain"
-          src={FeatureProduct}
+          src={SignatureProduct}
           alt="FeatureProduct"
         />
       </div>
