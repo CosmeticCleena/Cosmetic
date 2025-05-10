@@ -1,50 +1,58 @@
 import React from "react";
 import FeatureProduct from "../../assets/images/FeatureProduct.svg";
+import { useNavigate } from "react-router-dom";
 
 const FeaturedProductCard = ({ isAddToCart, data }) => {
   const productName = data?.product_name;
   const description = data?.description;
-  const price = data?.price;
-
+  const id = data?.id;
+  const navigate = useNavigate();
   return (
     <div
-      className={`max-w-[380px] max-h-[518px] bg-[#E6E6E6] hover:bg-[#FCF7E1] rounded-[20px] p-4 shadow-2xl`}
+      onClick={() => {
+        navigate(`/products/${id}`);
+      }}
+      className={`w-full cursor-pointer h-[518px] bg-[#E6E6E6] hover:bg-[#FCF7E1] rounded-[20px] p-4 shadow-2xl flex flex-col`}
     >
       <div className="relative">
         <div className="bg-[#967031] absolute top-2 left-2 rounded-3xl text-white text-[10px] w-[20px] h-[12px] flex items-center justify-center p-5">
           NEW
         </div>
         <img
-          className="rounded-t-[16px] w-full"
+          className="rounded-t-[16px] w-full h-[240px] object-contain"
           src={FeatureProduct}
           alt="FeatureProduct"
         />
       </div>
 
-      {/* Fixed spacing between image and content */}
-      <div className="mt-4 mb-3 min-h-[120px] flex flex-col md:flex-row justify-between">
-        <div className="text-[#1A1A1A] flex flex-col gap-2 max-w-full md:max-w-[203px]">
-          {/* product name */}
-          <p className="font-medium">{productName}</p>
-          {/* description */}
-          <span className="text-sm">{description}</span>
+      {/* Content section with fixed height */}
+      <div className="mt-4 flex-grow flex flex-col">
+        <div className="text-[#1A1A1A] flex flex-col gap-2">
+          {/* product name with fixed height */}
+          <p className="font-medium h-[48px] overflow-hidden">{productName}</p>
+          {/* description with fixed height and truncation */}
+          <div className="h-[72px] overflow-hidden mb-2">
+            <span className="text-sm line-clamp-3 overflow-hidden text-ellipsis">
+              {description}
+            </span>
+          </div>
           <div className="flex gap-[10px] mt-1">
             <div className="w-[17px] h-[18px] bg-[#6A6E4E] rounded-3xl"></div>
             <div className="w-[17px] h-[18px] bg-[#D9D9D9] rounded-3xl"></div>
           </div>
         </div>
-        <div className="text-[#79541F] font-medium md:self-center mt-2 md:mt-0">
-          {/* <span className="text-right block">{price}</span> */}
-        </div>
       </div>
 
-      <button
-        className={`${
-          isAddToCart ? "hover:bg-[#C09C50] bg-[#C09C50]" : "md:hidden hidden"
-        } text-white h-10 w-full rounded-[8px] transition-colors text-sm overflow-hidden whitespace-normal`}
-      >
-        Thêm vào giỏ hàng
-      </button>
+      {/* Button at the bottom */}
+      <div className="mt-auto">
+        <button
+          className={`${
+            isAddToCart ? "bg-[#C09C50] hover:bg-[#a88235]" : "hidden"
+          } text-white h-10 w-full rounded-[8px] transition-colors text-sm`}
+        >
+          Thêm vào giỏ hàng
+        </button>
+      </div>
     </div>
   );
 };
