@@ -8,7 +8,7 @@ import ProductDropdown from "../products/ProductDropdown";
 import SearchMobile from "./SearchMobile";
 import SearchDesktop from "./SearchDesktop";
 import { Link } from "react-scroll";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
@@ -83,21 +83,17 @@ const Navbar = () => {
               >
                 Trang Chủ
               </li>
-              <Link
+              <NavLink
                 className={`cursor-pointer whitespace-nowrap ${
                   activeItem === "Tổng Quan Thương Hiệu"
                     ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
                     : ""
                 }`}
                 onClick={() => handleItemClick("Tổng Quan Thương Hiệu")}
-                to="brand-overview"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
+                to={"/home#brand-overview"}
               >
                 Tổng Quan Thương Hiệu
-              </Link>
+              </NavLink>
               <li
                 className={`cursor-pointer whitespace-nowrap relative ${
                   activeItem === "Sản phẩm"
@@ -121,20 +117,17 @@ const Navbar = () => {
               >
                 Đại Lý
               </li>
-              <Link
+              <NavLink
                 className={`cursor-pointer whitespace-nowrap ${
                   activeItem === "Liên hệ"
                     ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
                     : ""
                 }`}
                 onClick={() => handleItemClick("Liên hệ")}
-                to="footer"
-                spy={true}
-                smooth={true}
-                duration={1000}
+                to={"/home#footer"}
               >
                 Liên hệ
-              </Link>
+              </NavLink>
             </ul>
             {/* Toogle Search Desktop */}
             <div

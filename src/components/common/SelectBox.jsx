@@ -6,7 +6,7 @@ const SelectBox = ({ title, data }) => {
       <span className="mr-2 text-gray-700">{title}:</span>
       <div className="relative inline-block">
         <select
-          className="appearance-none bg-transparent border-none font-semibold text-gray-800 focus:outline-none cursor-pointer pr-6 w-auto transition duration-150 ease-in-out hover:font-bold"
+          className="appearance-none bg-transparent border-none font-semibold text-gray-800 focus:outline-none cursor-pointer pr-3 w-auto transition duration-150 ease-in-out hover:font-bold"
           defaultValue={data[0]?.value}
         >
           {data.map((item, index) => (

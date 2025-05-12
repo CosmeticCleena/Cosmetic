@@ -2,102 +2,48 @@
   {
     "title": "Category",
     "items": [
-      {
-        "name": "Cleansers"
-      },
-      {
-        "name": "Exfoliators"
-      },
-      {
-        "name": "Toners"
-      },
-      {
-        "name": "Retinols"
-      },
-      {
-        "name": "Peels And Masques"
-      },
-      {
-        "name": "Moisturiser"
-      },
-      {
-        "name": "Night Cream"
-      },
-      {
-        "name": "Facial Oil"
-      },
-      {
-        "name": "Sunscreen"
-      },
-      {
-        "name": "Eye Care"
-      }
+      { "name": "Sữa rửa mặt" },
+      { "name": "Tẩy tế bào chết" },
+      { "name": "Nước hoa hồng" },
+      { "name": "Retinol" },
+      { "name": "Mặt nạ và lột da" },
+      { "name": "Kem dưỡng ẩm" },
+      { "name": "Kem dưỡng ban đêm" },
+      { "name": "Dầu dưỡng da mặt" },
+      { "name": "Kem chống nắng" },
+      { "name": "Chăm sóc vùng mắt" }
     ]
   },
   {
     "title": "Skin Condition",
     "items": [
-      {
-        "name": "Brightening"
-      },
-      {
-        "name": "Hydration"
-      },
-      {
-        "name": "Acne"
-      },
-      {
-        "name": "Anti-Ageing"
-      },
-      {
-        "name": "Redness"
-      },
-      {
-        "name": "Sensitive Skin"
-      },
-      {
-        "name": "Sun Protection"
-      }
+      { "name": "Làm sáng da" },
+      { "name": "Dưỡng ẩm" },
+      { "name": "Mụn" },
+      { "name": "Chống lão hóa" },
+      { "name": "Mẩn đỏ" },
+      { "name": "Da nhạy cảm" },
+      { "name": "Bảo vệ da khỏi nắng" }
     ]
   },
   {
     "title": "Featured",
     "items": [
-      {
-        "name": "New"
-      },
-      {
-        "name": "Best Sellers"
-      },
-      {
-        "name": "Travel Size"
-      },
-      {
-        "name": "Professional Treatments"
-      },
-      {
-        "name": "Daily Defense"
-      }
+      { "name": "Mới" },
+      { "name": "Bán chạy nhất" },
+      { "name": "Kích thước du lịch" },
+      { "name": "Liệu trình chuyên sâu" },
+      { "name": "Bảo vệ hàng ngày" }
     ]
   },
   {
     "title": "Price",
     "items": [
-      {
-        "name": "$50.00 - $150.00"
-      },
-      {
-        "name": "$150.00 - $250.00"
-      },
-      {
-        "name": "$250.00 - $350.00"
-      },
-      {
-        "name": "$350.00 - $450.00"
-      },
-      {
-        "name": "$450.00 - $550.00"
-      }
+      { "name": "$50.00 - $150.00" },
+      { "name": "$150.00 - $250.00" },
+      { "name": "$250.00 - $350.00" },
+      { "name": "$350.00 - $450.00" },
+      { "name": "$450.00 - $550.00" }
     ]
   }
 ]
