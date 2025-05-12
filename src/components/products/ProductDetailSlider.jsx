@@ -14,6 +14,7 @@ import { ProductDetailSliderImgs } from "../../configs/product_details/images";
 
 const ProductDetailSlider = ({ productData }) => {
   const productImages = productData.images;
+  console.log(productImages);
   const productName = productData.title;
   // State for the current selected image index
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -111,7 +112,7 @@ const ProductDetailSlider = ({ productData }) => {
       <div className="max-w-[1224px] mx-auto">
         <Breadcumbs productName={productName} />
         {/* Products Images and Details Container */}
-        <div className="flex flex-col lg:flex-row gap-6">
+        <div className="flex flex-col lg:flex-row gap-6 mt-3">
           {/* Vertical slider for desktop - ADJUSTED SECTION */}
           <div className="hidden lg:flex lg:flex-col lg:w-20 lg:h-[605px]">
             <button
@@ -326,10 +327,6 @@ const ProductDetailSlider = ({ productData }) => {
             {/* Price Container - Desktop */}
             <div className="text-[#606060] font-lato py-2 px-4 flex justify-between border-b border-b-[#606060]">
               <p>{productData.amount} ML</p>
-              <div className="flex gap-1 items-center">
-                {/* <p>${productData.price}</p> */}
-                <img src={arrow_drop_down} alt="Dropdown arrow" />
-              </div>
             </div>
 
             {/* Button - Desktop only */}

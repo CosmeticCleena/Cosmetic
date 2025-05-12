@@ -2,16 +2,19 @@
   {
     "id": 1,
     "product_name": "Kem Nám Chân - Brightening Corector Cream",
-    "description": "Hiệu quả nhanh chóng, giúp giảm nám rõ rệt chỉ sau 2 tuần sử dụng. Công nghệ phân tử tiên tiến giúp da hấp thụ dưỡng chất gấp 3-5 lần so với phương pháp thông thường, điều trị tận gốc nám chân, nám mảng, nám sâu."
+    "description": "Hiệu quả nhanh chóng, giúp giảm nám rõ rệt chỉ sau 2 tuần sử dụng. Công nghệ phân tử tiên tiến giúp da hấp thụ dưỡng chất gấp 3-5 lần so với phương pháp thông thường, điều trị tận gốc nám chân, nám mảng, nám sâu.",
+    "image": "Signature1"
   },
   {
     "id": 15,
     "product_name": "Kem Dưỡng Ban Ngày và Ban Đêm - Anti-Aging Day & Glow Revival Night",
-    "description": "Cung cấp độ ẩm lâu dài, giúp da luôn tươi mới và khỏe mạnh. Sản phẩm hỗ trợ quá trình tái tạo da, giảm thâm nám, mờ sạm màu, và cải thiện độ đàn hồi da."
+    "description": "Cung cấp độ ẩm lâu dài, giúp da luôn tươi mới và khỏe mạnh. Sản phẩm hỗ trợ quá trình tái tạo da, giảm thâm nám, mờ sạm màu, và cải thiện độ đàn hồi da.",
+    "image": "Signature2"
   },
   {
     "id": 16,
     "product_name": "Mặt Nạ Dưỡng Ẩm - Moisturizing Mask",
-    "description": "Cung cấp độ ẩm tức thì cho da khô và thiếu sức sống, giúp tái tạo da và giảm thiểu dấu hiệu lão hóa."
+    "description": "Cung cấp độ ẩm tức thì cho da khô và thiếu sức sống, giúp tái tạo da và giảm thiểu dấu hiệu lão hóa.",
+    "image": "Signature3"
   }
 ]
