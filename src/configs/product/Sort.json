@@ -1,24 +1,24 @@
 {
-  "title": "Sort",
+  "title": "Sắp xếp",
   "data": [
     {
-      "text": "Recommended",
+      "text": "Đề xuất",
       "value": "recommended"
     },
     {
-      "text": "Price: Low to High",
+      "text": "Giá: Thấp đến Cao",
       "value": "price_low_to_high"
     },
     {
-      "text": "Price: High to Low",
+      "text": "Giá: Cao đến Thấp",
       "value": "price_high_to_low"
     },
     {
-      "text": "Newest",
+      "text": "Mới nhất",
       "value": "newest"
     },
     {
-      "text": "Rating",
+      "text": "Đánh giá",
       "value": "rating"
     }
   ]

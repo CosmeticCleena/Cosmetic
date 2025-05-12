@@ -32,6 +32,9 @@ const Product = () => {
   };
 
   const handleUpdateFilters = (filterType, filterValue, type) => {
+    console.log(
+      `Filter Type: ${filterType}, Filter Value: ${filterValue}, Type: ${type}`
+    );
     setFilters((prevFilters) => {
       const updatedFilters = { ...prevFilters };
       if (type === "add") {
@@ -57,13 +60,13 @@ const Product = () => {
         <div className="w-[90%] mx-auto">
           <Breadcumbs />
           <h1 className="text-3xl font-magnificent pl-5 py-5 font-thin">
-            Women Skincare{" "}
+            Chăm sóc da nữ{" "}
             <span className="text-md">
               ({PRODUCTS.filter((item) => !item.isBanner).length})
             </span>
           </h1>
           <div className="hidden md:flex justify-between">
-            <p className="text-2xl font-magnificent">Filter</p>
+            <p className="text-2xl font-magnificent">Bộ lọc</p>
             <SelectBox
               title={SELECT_BOX_DATA.title}
               data={SELECT_BOX_DATA.data}
@@ -80,7 +83,7 @@ const Product = () => {
                   alt="filter icon"
                   className="object-contain w-4 h-4"
                 />
-                <p className="font-lato text-[#0C0C0C]">Filter</p>
+                <p className="font-lato text-[#0C0C0C]">Bộ lọc</p>
               </div>
             </div>
             <div className="col-span-6">

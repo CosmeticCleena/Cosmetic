@@ -10,8 +10,24 @@ import DiscoverProducts from "../components/products/DiscoverProducts";
 import Feedback from "../components/layout/Feedback";
 import QuestionQA from "../components/layout/QuestionQA";
 import CustomerSupport from "../components/layout/CustomerSupport";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { scroller } from "react-scroll";
 
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = location.hash.replace("#", "");
+    if (hash) {
+      scroller.scrollTo(hash, {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+        offset: -120,
+      });
+    }
+  }, [location]);
   return (
     <>
       <Hero />
