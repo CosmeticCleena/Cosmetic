@@ -1,4 +1,3 @@
-import React from "react";
 import bunnyVector from "../../assets/icons/bunnyVector.svg";
 import Leaf from "../../assets/icons/Leaf.svg";
 import Wheat from "../../assets/icons/Wheat.svg";
@@ -23,19 +22,19 @@ const Footer = () => {
       <div className="grid grid-cols-2 p-5 footer-top gap-16 bg-[#F9F6ED] text-[#9E6A30] h-max-[104px] md:flex items-center justify-between md:px-[108px] text-[16px]">
         <div className="flex gap-[8px] items-center">
           <img src={bunnyVector} alt="" />
-          <span>No Tests On Animals</span>
+          <span>Không thử nghiệm trên động vật</span>
         </div>
         <div className="flex gap-[8px] items-center">
           <img src={Leaf} alt="" />
-          <span>No animal-derived ingredients</span>
+          <span>Không thành phần từ động vật</span>
         </div>
         <div className="flex gap-[8px] items-center">
           <img src={Wheat} alt="" />
-          <span>No gluten, or gluten byproducts</span>
+          <span>Không gluten hoặc phụ phẩm gluten</span>
         </div>
         <div className="flex gap-[8px] items-center">
           <img src={LightBall} alt="" />
-          <span>Recyclable packaging</span>
+          <span>Bao bì có thể tái chế</span>
         </div>
       </div>
 
@@ -52,34 +51,36 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row px-4 md:px-[108px] justify-between pt-16 relative z-10">
           <div className="flex flex-col gap-3 md:gap-4 font-lato md:mx-0 mx-[3em]">
-            <h1 className="text-[24px] font-magnificent">How Can We Help?</h1>
-            <span>Beautya Branches</span>
-            <span>Contact Us</span>
-            <span>FAQ</span>
-            <span>Our Brand</span>
+            <h1 className="text-[24px] font-magnificent">
+              Chúng tôi có thể giúp gì?
+            </h1>
+            <span>Chi nhánh Beautya</span>
+            <span>Liên hệ với chúng tôi</span>
+            <span>Câu hỏi thường gặp</span>
+            <span>Thương hiệu của chúng tôi</span>
             <span>Blog</span>
           </div>
           <div className="flex flex-col gap-3 md:gap-4 font-lato md:mx-0 mx-[3em] md:mt-0 mt-5">
-            <h1 className="text-[24px] font-magnificent">Products</h1>
-            <span>Women Make up</span>
-            <span>Women Skincare</span>
-            <span>Gifts & Sets</span>
+            <h1 className="text-[24px] font-magnificent">Sản phẩm</h1>
+            <span>Trang điểm cho phụ nữ</span>
+            <span>Chăm sóc da cho phụ nữ</span>
+            <span>Quà tặng & Bộ sản phẩm</span>
           </div>
           <div className="flex flex-col gap-4 md:w-1/2 w-full font-lato px-3 sm:px-[3em] mt-10 md:mt-0 relative z-10">
             {/* Changed mx-[3em] to px-3 sm:px-[3em] and added w-full for better tablet support */}
             <span className="text-[24px] font-magnificent">
-              Keep in touch with Lumia
+              Giữ liên lạc với Lumia
             </span>
             <span className="text-[16px] w-full sm:w-[90%]">
               {/* Changed w-[90%] to w-full sm:w-[90%] for better mobile/tablet support */}
-              Join the Beautya newsletter and be first to hear about news,
-              offers and skincare Advice
+              Đăng ký nhận bản tin Beautya và là người đầu tiên biết về tin tức,
+              ưu đãi và lời khuyên chăm sóc da
             </span>
             <div className="flex flex-col md:flex-row gap-2 w-full text-[#CBCBCB] items-center">
               <input
                 className="bg-transparent border-b w-full p-3 focus:outline-none text-[24px] block"
                 /* Added block to ensure visibility */
-                placeholder="Email Address"
+                placeholder="Địa chỉ Email"
                 type="text"
               />
               <button className="w-full relative top-2 text-[16px] bg-transparent border-solid border-[2px] md:w-[104px] h-12 border-[#CBCBCB] py-2 px-4">
@@ -95,13 +96,13 @@ const Footer = () => {
                 type="checkbox"
               />
               <label className="hidden md:block text-sm" htmlFor="email-check">
-                By submitting your email, you agree to receive advertising
-                emails from Beautya. Please review our Privacy Policy, which
-                includes our Financial Incentive Notice for CA residents.
+                Bằng cách gửi email của bạn, bạn đồng ý nhận email quảng cáo từ
+                Beautya. Vui lòng xem Chính sách Bảo mật của chúng tôi, bao gồm
+                Thông báo Ưu đãi Tài chính dành cho cư dân CA.
               </label>
               <label className="md:hidden text-sm" htmlFor="email-check">
-                I agree to Beautya's Terms and Conditions and Privacy and
-                Policy.
+                Tôi đồng ý với Điều khoản và Điều kiện cũng như Chính sách Bảo
+                mật của Beautya.
               </label>
             </div>
           </div>
@@ -122,7 +123,7 @@ const Footer = () => {
             <img className="hidden md:flex" src={indicator} alt="indicator" />
             <div className="flex gap-3 pl-[12px] md:pl-0">
               <img src={Telephone} alt="Telephone" />
-              <span>Hotline: +84 988 602 888</span>
+              <span>Đường dây nóng: +84 988 602 888</span>
             </div>
           </div>
 
@@ -154,11 +155,11 @@ const Footer = () => {
       <div className="bg-[#351D13] flex flex-col md:flex-row justify-between text-[#CBCBCB] text-[12px] px-4 md:px-[108px] relative z-20">
         <div className="py-[8px] flex gap-1 items-center justify-center md:justify-start">
           <img className="relative right-1" src={copyright} alt="copyright" />
-          <span>2025 Beautya. All Rights Reserved.</span>
+          <span>2025 Beautya. Tất cả các quyền được bảo lưu.</span>
         </div>
         <div className="py-[8px] flex gap-4 justify-center md:justify-start flex-wrap">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
+          <span>Điều khoản & Điều kiện</span>
+          <span>Chính sách Bảo mật</span>
         </div>
       </div>
     </div>

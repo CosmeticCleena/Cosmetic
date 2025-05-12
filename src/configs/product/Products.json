@@ -8,7 +8,7 @@
     "amount": 30,
     "mainImg": "ProductImg",
     "images": [
-      "ProductDetailSlider1",
+      "ProductImg0",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
@@ -145,7 +145,7 @@
     "amount": 50,
     "mainImg": "ProductImg2",
     "images": [
-      "ProductDetailSlider1",
+      "ProductImg2",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
@@ -287,7 +287,7 @@
     "amount": 30,
     "mainImg": "ProductImg3",
     "images": [
-      "ProductDetailSlider1",
+      "ProductImg3",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4"
@@ -422,7 +422,7 @@
     "amount": 120,
     "mainImg": "ProductImg5",
     "images": [
-      "ProductDetailSlider1",
+      "ProductImg5",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
@@ -558,6 +558,7 @@
     "amount": 40,
     "mainImg": "ProductImg6",
     "images": [
+      "ProductImg6",
       "ProductDetailSlider1",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
@@ -700,7 +701,7 @@
     "amount": 100,
     "mainImg": "ProductImg7",
     "images": [
-      "ProductDetailSlider1",
+      "ProductImg7",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
@@ -835,7 +836,7 @@
     "amount": 30,
     "mainImg": "ProductImg8",
     "images": [
-      "ProductDetailSlider1",
+      "ProductImg8",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
@@ -976,7 +977,7 @@
     "amount": 30,
     "mainImg": "ProductImg9",
     "images": [
-      "ProductDetailSlider1",
+      "ProductImg9",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
@@ -1117,7 +1118,7 @@
     "amount": 30,
     "mainImg": "ProductImg10",
     "images": [
-      "ProductDetailSlider1",
+      "ProductImg10",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
@@ -1258,7 +1259,7 @@
     "amount": 30,
     "mainImg": "ProductImg11",
     "images": [
-      "ProductDetailSlider1",
+      "ProductImg11",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
@@ -1405,7 +1406,7 @@
     "amount": 30,
     "mainImg": "ProductImg13",
     "images": [
-      "ProductDetailSlider1",
+      "ProductImg13",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",
@@ -1526,7 +1527,7 @@
     "amount": 30,
     "mainImg": "ProductImg14",
     "images": [
-      "ProductDetailSlider1",
+      "ProductImg14",
       "ProductDetailSlider2",
       "ProductDetailSlider3",
       "ProductDetailSlider4",

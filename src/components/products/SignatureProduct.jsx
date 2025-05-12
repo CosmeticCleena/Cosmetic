@@ -1,9 +1,8 @@
-import React from "react";
 import RightArrow from "../../assets/icons/RightArrow.svg";
-import SignatureProductImg from "../../assets/images/SignatureProduct.svg";
 import { useNavigate } from "react-router-dom";
-
-const SignatureProduct = ({ title, description, id }) => {
+import SignatureProductImages from "../../configs/signature_products/signature_products.js";
+console.log("Sig", SignatureProductImages);
+const SignatureProduct = ({ title, description, id, image }) => {
   const navigate = useNavigate();
   return (
     <div
@@ -14,7 +13,7 @@ const SignatureProduct = ({ title, description, id }) => {
                   transition-all duration-300 flex flex-col col-start-3 sm:col-start-1 cursor-pointer"
     >
       <img
-        src={SignatureProductImg}
+        src={SignatureProductImages[image]}
         alt={title}
         className="object-contain max-h-[270px] h-auto mb-4 w-full"
       />

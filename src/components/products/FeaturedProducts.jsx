@@ -15,6 +15,7 @@ const FeaturedProducts = () => {
               key={index}
               isAddToCart={true}
               data={{ ...product }}
+              image={product.image}
             />
           );
         })}

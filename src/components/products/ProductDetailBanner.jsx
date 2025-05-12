@@ -1,6 +1,64 @@
 import React, { useState, useRef, useEffect } from "react";
-import SearchProduct from "./SearchProduct";
 import { ProductDetailsBannerImages } from "../../configs/product_details/images";
+
+import { useNavigate } from "react-router-dom";
+
+const SearchProduct = ({
+  id,
+  productImg,
+  productName,
+  description = "",
+  price = "",
+  isSearch = false,
+}) => {
+  const navigate = useNavigate();
+
+  const handleClick = (id) => {
+    navigate(`/products/${id}`);
+  };
+
+  return (
+    <div
+      className="col-span-3 w-full flex flex-col border border-[#DFDFDF] transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2 cursor-pointer"
+      onClick={() => handleClick(id)}
+    >
+      {/* Fixed aspect ratio for image */}
+      <div className="w-full aspect-square overflow-hidden">
+        <img
+          src={productImg}
+          alt={productName}
+          className="object-cover w-full h-full"
+        />
+      </div>
+
+      {/* Fixed height content area */}
+      <div
+        className="w-full px-4 py-4 bg-white flex flex-col"
+        style={{ minHeight: "300px" }}
+      >
+        {/* Title with golden color */}
+        <h3
+          className={`text-md ${
+            isSearch ? "lg:text-lg" : "lg:text-xl"
+          } text-[#D1AE62] font-magnificent mb-2`}
+        >
+          {productName}
+        </h3>
+
+        {/* Description with smaller font */}
+        {description && (
+          <p
+            className={`text-sm ${
+              isSearch ? "md:text-sm" : "md:text-base"
+            } font-latox text-black leading-tight`}
+          >
+            {description}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+};
 
 const ProductDetailBanner = ({ banner, isSecondBanner }) => {
   const title = banner.title;
@@ -48,10 +106,6 @@ const ProductDetailBanner = ({ banner, isSecondBanner }) => {
 
   const totalDesktopSlides = desktopProductGroups.length;
   const totalMobileSlides = mobileProductPairs.length;
-
-  // Use a single state for active index but maintain different total counts
-  const totalSlides =
-    window.innerWidth >= 1024 ? totalDesktopSlides : totalMobileSlides;
 
   // Update active index when screen size changes
   useEffect(() => {
@@ -195,9 +249,9 @@ const ProductDetailBanner = ({ banner, isSecondBanner }) => {
           {title}
         </h1>
 
-        {/* Desktop view - 4 products per slide */}
+        {/* Desktop view - 4 products per slide with CSS Grid */}
         <div className="hidden lg:block relative">
-          {/* Navigation arrows - now square and closer to edge */}
+          {/* Navigation arrows - square and closer to edge */}
           <button
             onClick={handlePrev}
             className="absolute left-0 top-1/2 transform -translate-y-1/2 -ml-6 bg-white shadow-md z-10 hover:bg-gray-100 w-10 h-10 flex items-center justify-center"
@@ -230,26 +284,31 @@ const ProductDetailBanner = ({ banner, isSecondBanner }) => {
               style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
               {desktopProductGroups.map((group, groupIndex) => (
-                <div key={groupIndex} className="flex gap-6 min-w-full">
-                  {group.map((prod, prodIndex) =>
-                    prod ? (
-                      <div
-                        key={prodIndex}
-                        className="w-1/4 product-card lg:text-base"
-                      >
-                        <div className="font-magnificent">
-                          <SearchProduct
-                            productName={prod.productName}
-                            productImg={ProductDetailsBannerImages[prod.image]}
-                            description={prod.description}
-                            price={prod.price}
-                          />
+                <div key={groupIndex} className="min-w-full">
+                  <div className="grid grid-cols-4 gap-6">
+                    {group.map((prod, prodIndex) =>
+                      prod ? (
+                        <div
+                          key={prodIndex}
+                          className="product-card lg:text-base"
+                        >
+                          <div className="font-magnificent">
+                            <SearchProduct
+                              productName={prod.productName}
+                              productImg={
+                                ProductDetailsBannerImages[prod.image]
+                              }
+                              description={prod.description}
+                              price={prod.price}
+                              id={prod.id}
+                            />
+                          </div>
                         </div>
-                      </div>
-                    ) : (
-                      <div key={`empty-${prodIndex}`} className="w-1/4"></div>
-                    )
-                  )}
+                      ) : (
+                        <div key={`empty-${prodIndex}`} className=""></div>
+                      )
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
@@ -293,9 +352,9 @@ const ProductDetailBanner = ({ banner, isSecondBanner }) => {
           )}
         </div>
 
-        {/* Mobile and Tablet view - 2 products per slide */}
+        {/* Mobile and Tablet view - also using grid for consistency */}
         <div className="lg:hidden relative">
-          {/* Navigation arrows - now square and closer to edge */}
+          {/* Navigation arrows - square and closer to edge */}
           <button
             onClick={handlePrev}
             className="absolute left-0 top-1/2 transform -translate-y-1/2 -ml-2 bg-white shadow-md z-10 hover:bg-gray-100 w-8 h-8 flex items-center justify-center"
@@ -332,26 +391,31 @@ const ProductDetailBanner = ({ banner, isSecondBanner }) => {
               }}
             >
               {mobileProductPairs.map((pair, pairIndex) => (
-                <div key={pairIndex} className="flex gap-4 min-w-full">
-                  {pair.map((prod, prodIndex) =>
-                    prod ? (
-                      <div key={prodIndex} className="w-1/2 product-card">
-                        <div className="font-magnificent md:text-sm text-sm">
-                          <SearchProduct
-                            productName={prod.productName}
-                            productImg={ProductDetailsBannerImages[prod.image]}
-                            description={prod.description}
-                            price={prod.price}
-                          />
+                <div key={pairIndex} className="min-w-full">
+                  <div className="grid grid-cols-2 gap-4">
+                    {pair.map((prod, prodIndex) =>
+                      prod ? (
+                        <div key={prodIndex} className="product-card">
+                          <div className="font-magnificent md:text-sm text-sm">
+                            <SearchProduct
+                              productName={prod.productName}
+                              productImg={
+                                ProductDetailsBannerImages[prod.image]
+                              }
+                              description={prod.description}
+                              price={prod.price}
+                              id={prod.id}
+                            />
+                          </div>
                         </div>
-                      </div>
-                    ) : (
-                      <div
-                        key={`empty-mobile-${prodIndex}`}
-                        className="w-1/2"
-                      ></div>
-                    )
-                  )}
+                      ) : (
+                        <div
+                          key={`empty-mobile-${prodIndex}`}
+                          className=""
+                        ></div>
+                      )
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
