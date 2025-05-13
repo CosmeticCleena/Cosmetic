@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 import LumiaLogo from "../../assets/images/LumiaLogo.svg";
 import SearchIcon from "../../assets/icons/SearchIcon.svg";
@@ -8,7 +8,7 @@ import ProductDropdown from "../products/ProductDropdown";
 import SearchMobile from "./SearchMobile";
 import SearchDesktop from "./SearchDesktop";
 import { Link } from "react-scroll";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
@@ -56,6 +56,13 @@ const Navbar = () => {
     setIsDesktopSearchOpen(!isDesktopSearchOpen);
   };
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname.startsWith("/products")) {
+      setActiveItem("Sản phẩm");
+    }
+  }, [location]);
   return (
     <>
       <nav className="w-full sticky top-0 z-50 bg-white">
