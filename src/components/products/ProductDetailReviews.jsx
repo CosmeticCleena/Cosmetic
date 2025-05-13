@@ -29,7 +29,7 @@ const ProductDetailReviews = ({ commentArray }) => {
       <div>
         {/* First Line of Stars */}
         <div className="flex gap-[10px] items-center">
-          <p className="text-[28px]">Reviews</p>
+          <p className="text-[28px]">Các Đánh Giá</p>
           <img src={Line} alt="" />
           <div className="flex">
             {stars.map((s, index) => {
@@ -43,7 +43,7 @@ const ProductDetailReviews = ({ commentArray }) => {
         <div className="px-10 mt-2 flex justify-between">
           {/* Rating Snapshot  */}
           <div className="w-2/3">
-            <h1 className="text-[20px]">Rating snapshot</h1>
+            <h1 className="text-[20px]">Tổng Quan Đánh Giá</h1>
             <ProductReviewProgressBar
               totalReviews={totalReivews}
               currentReviews={objStars[5] || 0}
@@ -72,7 +72,7 @@ const ProductDetailReviews = ({ commentArray }) => {
           </div>
           {/* Review this Product */}
           <div className="space-y-3">
-            <h1 className="text-[20px]">Review this Product</h1>
+            <h1 className="text-[20px]">Đánh Giá Sản Phẩm Này</h1>
             <div className="flex">
               {stars.map((image, index) => {
                 return (
@@ -86,7 +86,7 @@ const ProductDetailReviews = ({ commentArray }) => {
               })}
             </div>
             <button className="px-4 py-2 border border-[#F1DDA4] text-[#967031] flex items-center gap-2">
-              Write your comment
+              Để lại bình luận tại đây
               <img src={ButtonArrowRight} alt="" />
             </button>
           </div>
@@ -95,7 +95,7 @@ const ProductDetailReviews = ({ commentArray }) => {
       {/* Comment Section */}
       <div className="">
         <div className="mt-10 flex justify-between pb-3 font-lato border-b border-[#F1DDA4]">
-          <p>1 -- 2 of {totalReivews} reviews</p>
+          <p>1 -- 2 of {totalReivews} đấnh giá</p>
         </div>
         <div className="mt-10">
           {commentArray.map((comment, index) => {
