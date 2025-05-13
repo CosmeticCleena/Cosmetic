@@ -11,7 +11,7 @@ export default function ProductReviewProgressBar({
 
   return (
     <div className="flex items-center gap-3">
-      <p className="text-[#644012]">{stars} Stars</p>
+      <p className="text-[#644012]">{stars} Sao</p>
       <div className="w-1/4 h-4 mt-1 bg-gray-200 rounded-full overflow-hidden">
         <div
           className="h-full bg-[#D1AE62] rounded-full transition-all duration-300"
