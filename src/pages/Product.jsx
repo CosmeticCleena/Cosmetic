@@ -32,9 +32,6 @@ const Product = () => {
   };
 
   const handleUpdateFilters = (filterType, filterValue, type) => {
-    console.log(
-      `Filter Type: ${filterType}, Filter Value: ${filterValue}, Type: ${type}`
-    );
     setFilters((prevFilters) => {
       const updatedFilters = { ...prevFilters };
       if (type === "add") {

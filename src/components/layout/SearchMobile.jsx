@@ -18,7 +18,6 @@ const SearchMobile = ({ isOpen }) => {
   const handleFocus = (status) => {
     setIsFocus(status);
   };
-  console.log(DATA);
   const filterData = DATA.filter((item) => item?.title).filter((item) =>
     item.title.toLowerCase().includes(searchValue.toLowerCase())
   );

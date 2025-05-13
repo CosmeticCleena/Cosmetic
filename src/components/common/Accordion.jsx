@@ -1,22 +1,13 @@
 import { useState } from "react";
 
-const Accordion = ({ title, data, handleUpdateFilters }) => {
+const Accordion = ({ title, displayTitle, data, handleUpdateFilters }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const itemTitle = title
-    .split(" ")
-    .map((word, index) =>
-      index === 0
-        ? word.charAt(0).toLowerCase() + word.slice(1)
-        : word.charAt(0).toUpperCase() + word.slice(1)
-    )
-    .join("");
-
   function handleCheckboxChange(event, name) {
     const { checked } = event.target;
     if (checked) {
-      handleUpdateFilters(itemTitle, name, "add");
+      handleUpdateFilters(title, name, "add");
     } else {
-      handleUpdateFilters(itemTitle, name, "remove");
+      handleUpdateFilters(title, name, "remove");
     }
   }
   return (
@@ -29,7 +20,7 @@ const Accordion = ({ title, data, handleUpdateFilters }) => {
         className="flex justify-between items-center text-[#D1AE62] cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <p className="text-xl font-magnificent">{title}</p>
+        <p className="text-xl font-magnificent">{displayTitle}</p>
         <svg
           className={`w-3 h-3 transition-transform duration-300 ${
             isOpen ? "rotate-0" : "rotate-180"
