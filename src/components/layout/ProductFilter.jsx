@@ -1,10 +1,8 @@
-import React from "react";
 import closeIcon from "../../assets/icons/close.svg";
 import Accordion from "../../components/common/Accordion";
 import FILTER_DATA from "../../configs/Filters.json";
 
 const ProductFilter = ({ filters, handleUpdateFilters }) => {
-  console.log("filters", filters);
   const isFilterEmpty = Object.values(filters).every(
     (filter) => filter.length === 0
   );
@@ -31,7 +29,11 @@ const ProductFilter = ({ filters, handleUpdateFilters }) => {
             {Object.entries(filters)?.map(([filterType, value], index) => (
               <div className="flex flex-col space-y-2" key={index}>
                 {value?.length > 0 && (
-                  <p className="font-lato pl-3">{getFilterTitle(filterType)}</p>
+                  <>
+                    <p className="font-lato pl-3">
+                      {getFilterTitle(filterType)}
+                    </p>
+                  </>
                 )}
                 <div className="flex flex-wrap gap-3">
                   {value?.map((item, index) => (
@@ -57,14 +59,25 @@ const ProductFilter = ({ filters, handleUpdateFilters }) => {
         )}
         <p className="text-[#D1AE62] font-lato text-xl">Xóa tất cả</p>
       </div>
-      {FILTER_DATA.map((item, index) => (
-        <Accordion
-          title={item.title}
-          key={index}
-          data={item.items}
-          handleUpdateFilters={handleUpdateFilters}
-        />
-      ))}
+      {FILTER_DATA.map((item, index) => {
+        const transformedTitle = item.title
+          .split(" ")
+          .map((word, idx) =>
+            idx === 0
+              ? word.charAt(0).toLowerCase() + word.slice(1)
+              : word.charAt(0).toUpperCase() + word.slice(1)
+          )
+          .join("");
+        return (
+          <Accordion
+            title={transformedTitle}
+            key={index}
+            displayTitle={getFilterTitle(transformedTitle)}
+            data={item.items}
+            handleUpdateFilters={handleUpdateFilters}
+          />
+        );
+      })}
     </div>
   );
 };

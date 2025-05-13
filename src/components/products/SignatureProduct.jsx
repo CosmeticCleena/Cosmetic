@@ -1,7 +1,7 @@
 import RightArrow from "../../assets/icons/RightArrow.svg";
 import { useNavigate } from "react-router-dom";
 import SignatureProductImages from "../../configs/signature_products/signature_products.js";
-console.log("Sig", SignatureProductImages);
+
 const SignatureProduct = ({ title, description, id, image }) => {
   const navigate = useNavigate();
   return (
