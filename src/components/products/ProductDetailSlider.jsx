@@ -107,13 +107,16 @@ const ProductDetailSlider = ({ productData }) => {
     }
   }, [currentImageIndex]);
 
+  // Determine whether to show multiple thumbnails for mobile
+  const shouldShowMobileThumbnails = productImages.length > 1;
+
   return (
     <div className="w-full max-w-full mx-auto px-4">
       <div className="max-w-[1224px] mx-auto">
         <Breadcumbs productName={productName} />
         {/* Products Images and Details Container */}
         <div className="flex flex-col lg:flex-row gap-6 mt-3">
-          {/* Vertical slider for desktop - ADJUSTED SECTION */}
+          {/* Vertical slider for desktop - ALWAYS shown but with correct number of images */}
           <div className="hidden lg:flex lg:flex-col lg:w-20 lg:h-[605px]">
             <button
               className="border hover:bg-gray-300 w-20 h-8 flex justify-center items-center mb-1"
@@ -123,68 +126,43 @@ const ProductDetailSlider = ({ productData }) => {
             </button>
 
             <div className="flex-1 flex flex-col justify-between py-1">
-              {/* First image - close to top button */}
-              <div
-                className={`${
-                  0 === currentImageIndex
-                    ? "ring-2 ring-[#D1AE62]"
-                    : "ring-1 ring-gray-200 hover:ring-gray-400"
-                } cursor-pointer overflow-hidden`}
-                onClick={() => handleThumbnailClick(0)}
-              >
-                <div className="w-20 h-20 overflow-hidden">
-                  <img
-                    className="w-full h-full object-cover"
-                    src={ProductDetailSliderImgs[productImages[0]]}
-                    alt="Product thumbnail 1"
-                  />
+              {/* Display only the exact thumbnails from productImages array */}
+              {productImages.length === 1 ? (
+                // When there's only one image
+                <div
+                  className="ring-2 ring-[#D1AE62] cursor-pointer overflow-hidden"
+                  onClick={() => handleThumbnailClick(0)}
+                >
+                  <div className="w-20 h-20 overflow-hidden">
+                    <img
+                      className="w-full h-full object-cover"
+                      src={ProductDetailSliderImgs[productImages[0]]}
+                      alt="Product thumbnail"
+                    />
+                  </div>
                 </div>
-              </div>
-
-              {/* Middle images with proper spacing */}
-              <div className="flex-1 flex flex-col justify-evenly my-2">
-                {productImages.slice(1, -1).map((image, index) => (
+              ) : (
+                // When there are multiple images
+                productImages.map((image, index) => (
                   <div
-                    key={index + 1}
+                    key={index}
                     className={`${
-                      index + 1 === currentImageIndex
+                      index === currentImageIndex
                         ? "ring-2 ring-[#D1AE62]"
                         : "ring-1 ring-gray-200 hover:ring-gray-400"
                     } cursor-pointer overflow-hidden`}
-                    onClick={() => handleThumbnailClick(index + 1)}
+                    onClick={() => handleThumbnailClick(index)}
                   >
                     <div className="w-20 h-20 overflow-hidden">
                       <img
                         className="w-full h-full object-cover"
                         src={ProductDetailSliderImgs[image]}
-                        alt={`Product thumbnail ${index + 2}`}
+                        alt={`Product thumbnail ${index + 1}`}
                       />
                     </div>
                   </div>
-                ))}
-              </div>
-
-              {/* Last image - close to bottom button */}
-              <div
-                className={`${
-                  productImages.length - 1 === currentImageIndex
-                    ? "ring-2 ring-[#D1AE62]"
-                    : "ring-1 ring-gray-200 hover:ring-gray-400"
-                } cursor-pointer overflow-hidden`}
-                onClick={() => handleThumbnailClick(productImages.length - 1)}
-              >
-                <div className="w-20 h-20 overflow-hidden">
-                  <img
-                    className="w-full h-full object-cover"
-                    src={
-                      ProductDetailSliderImgs[
-                        productImages[productImages.length - 1]
-                      ]
-                    }
-                    alt={`Product thumbnail ${productImages.length}`}
-                  />
-                </div>
-              </div>
+                ))
+              )}
             </div>
 
             <button
@@ -224,54 +202,50 @@ const ProductDetailSlider = ({ productData }) => {
               />
             </div>
 
-            {/* Mobile/Tablet Horizontal Thumbnails with touch swipe support - IMPROVED SECTION */}
-            <div
-              ref={mobileThumbnailSliderRef}
-              className="flex lg:hidden overflow-x-auto py-4 w-full scrollbar-hide"
-              onTouchStart={handleTouchStart}
-              onTouchMove={handleTouchMove}
-              onTouchEnd={handleTouchEnd}
-              style={{
-                scrollbarWidth: "none", // Firefox
-                msOverflowStyle: "none", // IE and Edge
-                WebkitOverflowScrolling: "touch", // Smoother scrolling on iOS
-                scrollSnapType: "x mandatory", // Enable snap scrolling
-              }}
-            >
-              {productImages.map((image, index) => (
-                <div
-                  key={index}
-                  className={`flex-shrink-0 cursor-pointer scroll-snap-align-start mx-2 first:ml-0 last:mr-0 overflow-hidden ${
-                    index === currentImageIndex
-                      ? "ring-2 ring-[#D1AE62]"
-                      : "ring-1 ring-gray-200"
-                  }`}
-                  onClick={() => handleThumbnailClick(index)}
-                  style={{ scrollSnapAlign: "start" }}
-                >
-                  <div className="w-20 h-20 overflow-hidden">
-                    <img
-                      src={ProductDetailSliderImgs[image]}
-                      alt={`Product view ${index + 1}`}
-                      className="w-full h-full object-cover"
-                    />
+            {/* Mobile/Tablet Horizontal Thumbnails - Only shown when multiple images */}
+            {shouldShowMobileThumbnails && (
+              <div
+                ref={mobileThumbnailSliderRef}
+                className="flex lg:hidden overflow-x-auto py-4 w-full scrollbar-hide"
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+                style={{
+                  scrollbarWidth: "none", // Firefox
+                  msOverflowStyle: "none", // IE and Edge
+                  WebkitOverflowScrolling: "touch", // Smoother scrolling on iOS
+                  scrollSnapType: "x mandatory", // Enable snap scrolling
+                }}
+              >
+                {productImages.map((image, index) => (
+                  <div
+                    key={index}
+                    className={`flex-shrink-0 cursor-pointer scroll-snap-align-start mx-2 first:ml-0 last:mr-0 overflow-hidden ${
+                      index === currentImageIndex
+                        ? "ring-2 ring-[#D1AE62]"
+                        : "ring-1 ring-gray-200"
+                    }`}
+                    onClick={() => handleThumbnailClick(index)}
+                    style={{ scrollSnapAlign: "start" }}
+                  >
+                    <div className="w-20 h-20 overflow-hidden">
+                      <img
+                        src={ProductDetailSliderImgs[image]}
+                        alt={`Product view ${index + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
 
             {/* Price Container - Mobile/Tablet (below slider) */}
             <div className="lg:hidden w-full mt-4 px-2">
-              {/* Price for mobile/tablet */}
-              {/* <p className="font-magnificent text-[24px] mb-2">
-                ${productData.price}
-              </p> */}
-
               {/* Size and price selector */}
               <div className="text-[#606060] font-lato py-3 px-4 flex justify-between border-b border-b-[#606060]">
                 <p>{productData.amount} ML</p>
                 <div className="flex gap-1 items-center">
-                  {/* <p>${productData.price}</p> */}
                   <img src={arrow_drop_down} alt="Dropdown arrow" />
                 </div>
               </div>
@@ -284,19 +258,21 @@ const ProductDetailSlider = ({ productData }) => {
                   <span className="w-8 h-8 flex items-center justify-center bg-amber-100 rounded-full mr-2">
                     <img src={card_giftcard} alt="" />
                   </span>
-                  <p>receive 2 free samples when you spend $100</p>
+                  <p>Nhận 2 mẫu thử miễn phí khi bạn chi tiêu $100</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <span className="w-8 h-8 flex items-center justify-center bg-amber-100 rounded-full mr-2">
                     <img src={discount} alt="" />
                   </span>
-                  <p>receive $2 when you return 5 empty containers</p>
+                  <p>Nhận $2 khi bạn trả lại 5 hộp rỗng</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <span className="w-8 h-8 flex items-center justify-center bg-amber-100 rounded-full mr-2">
                     <img src={messages} alt="" />
                   </span>
-                  <p>receive free 1-2-1 expert advice in branches</p>
+                  <p>
+                    Nhận tư vấn miễn phí 1-1 với chuyên gia tại các chi nhánh
+                  </p>
                 </div>
               </div>
             </div>
@@ -321,7 +297,6 @@ const ProductDetailSlider = ({ productData }) => {
               <p className="text-[#868686] text-[16px]">
                 {productData.description2}
               </p>
-              {/* <p className="text-[20px] lg:text-[25px]">${productData.price}</p> */}
             </div>
 
             {/* Price Container - Desktop */}
@@ -332,7 +307,7 @@ const ProductDetailSlider = ({ productData }) => {
             {/* Button - Desktop only */}
             <button className="w-full bg-[#D1AE62] gap-2 text-white text-[16px] py-2 px-4 flex justify-center items-center hover:bg-[#c19f52]">
               <img src={location_on} alt="Location icon" />
-              Check In Branches Stock
+              Kiểm tra hàng tồn ở các chi nhánh
             </button>
           </div>
         </div>
@@ -342,7 +317,7 @@ const ProductDetailSlider = ({ productData }) => {
       <div className="fixed bottom-0 left-0 right-0 bg-white shadow-lg lg:hidden z-50">
         <button className="w-full bg-[#D1AE62] gap-2 text-white text-[16px] py-3 flex justify-center items-center hover:bg-[#c19f52]">
           <img src={location_on} alt="Location icon" className="mr-2" />
-          Check In Branches Stock
+          Kiểm tra hàng tồn ở các chi nhánh
         </button>
       </div>
     </div>
