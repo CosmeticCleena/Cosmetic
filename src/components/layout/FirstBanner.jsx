@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BannerImg1 from "../../assets/images/Banner_1.svg";
+import BannerImg1 from "../../assets/images/Banner_6.jpg";
 import Banner from "../common/Banner";
 import BannerData from "../../configs/Banners.json";
 const FirstBanner = () => {
