@@ -88,7 +88,7 @@ const Comment = ({ starsNumber, name, avatar, text, postedOn, images }) => {
         <img src={CheckMarkRound} alt="" />
       </div>
       <p>{text}</p>
-      <p className="text-[#00000099] font-lato">Posted on {postedOn}</p>
+      <p className="text-[#00000099] font-lato">Đăng vào ngày {postedOn}</p>
 
       {/* Images comment section */}
       <div className="flex gap-[10px]">

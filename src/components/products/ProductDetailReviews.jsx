@@ -95,7 +95,7 @@ const ProductDetailReviews = ({ commentArray }) => {
       {/* Comment Section */}
       <div className="">
         <div className="mt-10 flex justify-between pb-3 font-lato border-b border-[#F1DDA4]">
-          <p>1 -- 2 of {totalReivews} đấnh giá</p>
+          <p>1 -- 2 trên {totalReivews} đánh giá</p>
         </div>
         <div className="mt-10">
           {commentArray.map((comment, index) => {
@@ -111,18 +111,6 @@ const ProductDetailReviews = ({ commentArray }) => {
               />
             );
           })}
-        </div>
-        <div className="flex gap-3 justify-center items-center mt-10">
-          <p>Page</p>
-          <input
-            onChange={(e) => {
-              setPage(e.target.value);
-            }}
-            value={page}
-            className="w-[80px] rounded-md px-4 py-2 border border-[#808080]"
-            type="number"
-          />
-          of {100}
         </div>
       </div>
     </div>
