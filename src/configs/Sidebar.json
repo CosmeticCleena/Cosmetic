@@ -1,64 +1,113 @@
 [
   {
-    "name": "Women Make Up",
+    "name": "Trang chủ",
+    "link": "/home",
     "submenu": []
   },
   {
-    "name": "Women Skincare",
+    "name": "Tổng Quan Thương Hiệu",
+    "link": "/home#brand-overview",
+    "submenu": []
+  },
+  {
+    "name": "Sản phẩm",
+    "link": "/products",
     "submenu": [
       {
-        "name": "Shop all skincare",
-        "link": "/products",
-        "submenu": []
+        "name": "Công Nghệ Xử Lý",
+        "submenu": [
+          {
+            "name": "Kem Nám Chân - Brightening Corector Cream",
+            "link": "/products/1",
+            "submenu": []
+          },
+          {
+            "name": "Kem Nám Mảng - Brightening And Regenerating Cream",
+            "link": "/products/2",
+            "submenu": []
+          },
+          {
+            "name": "Tinh Chất Điều Trị Nám Mạnh - Dark Spot Serum",
+            "link": "/products/4",
+            "submenu": []
+          }
+        ]
       },
       {
-        "name": "By Category",
-        "submenu": []
+        "name": "Công Nghệ Phục Hồi",
+        "submenu": [
+          {
+            "name": "Sữa Dưỡng - Rejuvenating Essential Emulsion",
+            "link": "/products/5",
+            "submenu": []
+          },
+          {
+            "name": "Tinh Chất Hồng Sâm - Red Ginseng Essence",
+            "link": "/products/6",
+            "submenu": []
+          },
+          {
+            "name": "Bộ đôi kem Dưỡng Ngày/Đêm - Anti-Aging Day/Night Cream",
+            "link": "/products/8",
+            "submenu": []
+          }
+        ]
       },
       {
-        "name": "By Skin Condition",
-        "submenu": []
+        "name": "Skincare Hàng Ngày",
+        "submenu": [
+          {
+            "name": "Kem Chống Nắng - UV Defender",
+            "link": "/products/9",
+            "submenu": []
+          },
+          {
+            "name": "Sữa Rửa Mặt - Face Cleanser Foam Collagen",
+            "link": "/products/10",
+            "submenu": []
+          },
+          {
+            "name": "Toner - Revitalizing Toner",
+            "link": "/products/11",
+            "submenu": []
+          },
+          {
+            "name": "Set Tế Bào Gốc - Lumia Smart Set",
+            "link": "/products/12",
+            "submenu": []
+          }
+        ]
       },
       {
-        "name": "Collection",
-        "submenu": []
-      },
-      {
-        "name": "New",
-        "submenu": []
-      },
-      {
-        "name": "Best sellers",
-        "submenu": []
-      },
-      {
-        "name": "Travel size",
-        "submenu": []
-      },
-      {
-        "name": "Professional treatments",
-        "submenu": []
-      },
-      {
-        "name": "Daily defense",
-        "submenu": []
-      },
-      {
-        "name": "Virtual Skincare Analysis",
-        "submenu": []
+        "name": "Sản Phẩm Nổi Bật",
+        "submenu": [
+          {
+            "name": "Kem Nám - Brightening Corector Cream",
+            "link": "/products/14",
+            "submenu": []
+          },
+          {
+            "name": "Kem Dưỡng Ban Ngày và Ban Đêm - Anti-Aging Day & Glow Revival Night",
+            "link": "/products/15",
+            "submenu": []
+          },
+          {
+            "name": "Mặt Nạ Dưỡng Ẩm - Moisturizing Mask",
+            "link": "/products/16",
+            "submenu": []
+          }
+        ]
       }
     ]
   },
   {
-    "name": "Gifts & sets",
+    "name": "Đại lý",
+    "link": "/agency",
     "submenu": []
   },
   {
-    "name": "Branches",
-    "submenu": []
-  },
-  {
-    "name": "Our Brand",
+    "name": "Liên hệ",
+    "link": "/home#footer",
     "submenu": []
   }
 ]

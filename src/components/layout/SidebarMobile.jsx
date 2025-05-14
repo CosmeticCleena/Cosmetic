@@ -10,14 +10,14 @@ const SidebarMobile = ({ isOpen, toggleMenu }) => {
   const [currentMenu, setCurrentMenu] = useState([]);
   const navigate = useNavigate();
 
-  const navigageteTo = (link) => {
+  const navigateTo = (link) => {
     navigate(link);
     toggleMenu();
     setCurrentMenu([]);
   };
 
-  const handleMenuClick = (menu) => {
-    setCurrentMenu((prev) => [menu, ...prev]);
+  const handleMenuClick = (menuItem) => {
+    setCurrentMenu((prev) => [...prev, menuItem]);
   };
 
   const handleBackClick = () => {
@@ -26,7 +26,7 @@ const SidebarMobile = ({ isOpen, toggleMenu }) => {
 
   function getMenuData() {
     return currentMenu.reduce((acc, item) => {
-      const subMenu = acc.find((sub) => sub.name === item)?.submenu;
+      const subMenu = acc.find((sub) => sub.name === item.name)?.submenu;
       return subMenu ? subMenu : acc;
     }, SIDEBAR_DATA);
   }
@@ -46,7 +46,7 @@ const SidebarMobile = ({ isOpen, toggleMenu }) => {
                 onClick={handleBackClick}
               />
               <h1 className="font-magnificent text-xl text-[#0C0C0C]">
-                {currentMenu.join(" > ")}
+                {currentMenu.map((item) => item.name).join(" › ")}
               </h1>
             </>
           )}
@@ -58,8 +58,10 @@ const SidebarMobile = ({ isOpen, toggleMenu }) => {
               key={index}
             >
               <h1
-                className="font-magnificent text-xl"
-                onClick={item.link ? () => navigageteTo(item.link) : undefined}
+                className={`font-magnificent text-xl ${
+                  item.link ? "cursor-pointer" : ""
+                }`}
+                onClick={item.link ? () => navigateTo(item.link) : undefined}
               >
                 {item.name}
               </h1>
@@ -67,10 +69,8 @@ const SidebarMobile = ({ isOpen, toggleMenu }) => {
                 <img
                   src={RightArrowNav}
                   alt="RightArrow"
-                  className="w-6 h-7 object-cover"
-                  onClick={() =>
-                    item.submenu?.length > 0 && handleMenuClick(item.name)
-                  }
+                  className="w-6 h-7 object-cover cursor-pointer"
+                  onClick={() => handleMenuClick(item)}
                 />
               )}
             </div>
