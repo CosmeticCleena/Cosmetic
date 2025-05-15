@@ -26,7 +26,7 @@ const ProductDetail = () => {
       <ProductDetailContent
         tabContentData={productDetailsData.tabContentData}
       />
-      <ProductSkincareResult />
+      {/* <ProductSkincareResult /> */}
       {/* <ProductFAQ faqItems={productDetailsData.faqItems} /> */}
       <ProductDetailBanner banner={BannerObj.RecommendedSkincareBanner} />
       {/* Video
