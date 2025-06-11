@@ -20,10 +20,8 @@ const SearchProduct = ({
     >
       <img
         src={productImg}
-        alt={productName}
+        alt="productSearch0"
         className="object-cover w-full"
-        loading="lazy"
-        decoding="async"
       />
       <div className="w-full px-4 py-4 h-full bg-white flex flex-col gap-2">
         <p
