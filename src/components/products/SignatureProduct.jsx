@@ -16,6 +16,8 @@ const SignatureProduct = ({ title, description, id, image }) => {
         src={SignatureProductImages[image]}
         alt={title}
         className="object-contain max-h-[270px] h-auto mb-4 w-full"
+        loading="lazy"
+        decoding="async"
       />
       <div className="flex items-center justify-between my-0 py-0 text-[#967031] font-magnificent space-x-4 text-3xl mx-auto">
         <p className="bg-clip-text text-transparent bg-gradient-to-r from-[#B08B3B] to-[#EAC980] text-2xl md:text-3xl line-clamp-4">

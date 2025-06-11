@@ -13,7 +13,13 @@ const LinearImage = ({
       className={`relative w-full ${height} bg-cover bg-no-repeat overflow-hidden`}
     >
       <div className="absolute inset-0 z-0">
-        <img src={imgSrc} alt="" className="w-full h-full object-cover" />
+        <img
+          src={imgSrc}
+          alt=""
+          className="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       {isLinear && (
         <div

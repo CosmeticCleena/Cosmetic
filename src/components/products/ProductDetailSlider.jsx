@@ -199,6 +199,8 @@ const ProductDetailSlider = ({ productData }) => {
                 className="w-full h-full object-contain"
                 src={ProductDetailSliderImgs[productImages[currentImageIndex]]}
                 alt="Product Image"
+                loading={currentImageIndex === 0 ? "eager" : "lazy"}
+                decoding="async"
               />
             </div>
 
@@ -206,35 +208,28 @@ const ProductDetailSlider = ({ productData }) => {
             {shouldShowMobileThumbnails && (
               <div
                 ref={mobileThumbnailSliderRef}
-                className="flex lg:hidden overflow-x-auto py-4 w-full scrollbar-hide"
+                className="lg:hidden flex gap-2 mt-4 overflow-x-auto touch-pan-x snap-x snap-mandatory"
                 onTouchStart={handleTouchStart}
                 onTouchMove={handleTouchMove}
                 onTouchEnd={handleTouchEnd}
-                style={{
-                  scrollbarWidth: "none", // Firefox
-                  msOverflowStyle: "none", // IE and Edge
-                  WebkitOverflowScrolling: "touch", // Smoother scrolling on iOS
-                  scrollSnapType: "x mandatory", // Enable snap scrolling
-                }}
               >
                 {productImages.map((image, index) => (
                   <div
                     key={index}
-                    className={`flex-shrink-0 cursor-pointer scroll-snap-align-start mx-2 first:ml-0 last:mr-0 overflow-hidden ${
+                    className={`flex-shrink-0 w-20 h-20 snap-start ${
                       index === currentImageIndex
                         ? "ring-2 ring-[#D1AE62]"
                         : "ring-1 ring-gray-200"
-                    }`}
+                    } cursor-pointer overflow-hidden`}
                     onClick={() => handleThumbnailClick(index)}
-                    style={{ scrollSnapAlign: "start" }}
                   >
-                    <div className="w-20 h-20 overflow-hidden">
-                      <img
-                        src={ProductDetailSliderImgs[image]}
-                        alt={`Product view ${index + 1}`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                    <img
+                      src={ProductDetailSliderImgs[image]}
+                      alt={`Product thumbnail ${index + 1}`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                 ))}
               </div>
