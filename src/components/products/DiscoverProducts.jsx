@@ -71,6 +71,7 @@ const DiscoverProducts = () => {
           src={DiscoverProduct}
           alt="DiscoverProduct"
           className="block w-full xl:w-auto mb-6 xl:mb-0"
+          loading="lazy"
         />
 
         <div className="flex flex-col items-center w-full">

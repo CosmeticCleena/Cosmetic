@@ -48,6 +48,7 @@ const ProductFilter = ({ filters, handleUpdateFilters }) => {
                         onClick={() =>
                           handleUpdateFilters(filterType, item, "remove")
                         }
+                        loading="lazy"
                         className="hover:bg-gray-200"
                       />
                     </div>

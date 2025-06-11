@@ -61,7 +61,7 @@ const CustomerSupport = () => {
             className="order-2 px-4 py-3 bg-[#D1AE62] hover:bg-[#cfa957] text-[#FFFFFF] flex items-center justify-center"
           >
             <span className="pr-4">
-              <img src={CalendarIcon} alt="Calendar Icon" />
+              <img src={CalendarIcon} alt="Calendar Icon" loading="lazy" />
             </span>{" "}
             [Đăng Ký Tư Vấn 1-1]
           </button>

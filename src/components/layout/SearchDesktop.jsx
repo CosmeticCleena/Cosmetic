@@ -41,7 +41,7 @@ const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
               isFocus ? "border-[#D1AE62]" : "border-black "
             } pb-4 px-4`}
           >
-            <img src={SearchIcon} alt="search" className="w-5 h-5 mr-3" />
+            <img src={SearchIcon} alt="search" className="w-5 h-5 mr-3" loading="lazy" />
             <input
               onFocus={() => {
                 setIsFocus(true);

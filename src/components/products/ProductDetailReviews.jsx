@@ -30,10 +30,10 @@ const ProductDetailReviews = ({ commentArray }) => {
         {/* First Line of Stars */}
         <div className="flex gap-[10px] items-center">
           <p className="text-[28px]">Các Đánh Giá</p>
-          <img src={Line} alt="" />
+          <img src={Line} alt="" loading="lazy" />
           <div className="flex">
             {stars.map((s, index) => {
-              return <img className="" key={index} src={s} alt="star" />;
+              return <img className="" key={index} src={s} alt="star" loading="lazy" />;
             })}
           </div>
           <p className="text-[24px] text-[#D1AE62] font-manrope">4,8</p>
@@ -81,6 +81,7 @@ const ProductDetailReviews = ({ commentArray }) => {
                     key={index}
                     src={image}
                     alt="star"
+                    loading="lazy"
                   />
                 );
               })}

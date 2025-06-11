@@ -44,6 +44,7 @@ const SidebarMobile = ({ isOpen, toggleMenu }) => {
                 alt="LeftArrow"
                 className="cursor-pointer"
                 onClick={handleBackClick}
+                loading="lazy"
               />
               <h1 className="font-magnificent text-xl text-[#0C0C0C]">
                 {currentMenu.map((item) => item.name).join(" › ")}
@@ -71,6 +72,7 @@ const SidebarMobile = ({ isOpen, toggleMenu }) => {
                   alt="RightArrow"
                   className="w-6 h-7 object-cover cursor-pointer"
                   onClick={() => handleMenuClick(item)}
+                  loading="lazy"
                 />
               )}
             </div>

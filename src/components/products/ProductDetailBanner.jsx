@@ -28,6 +28,7 @@ const SearchProduct = ({
           src={productImg}
           alt={productName}
           className="object-cover w-full h-full"
+          loading="lazy"
         />
       </div>
 

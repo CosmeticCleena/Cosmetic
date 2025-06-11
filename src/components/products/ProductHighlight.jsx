@@ -13,6 +13,7 @@ const ProductHighlight = ({ isReverse = false, imgSrc, children }) => {
           src={imgSrc}
           className="w-full min-h-[500px] h-auto max-h-[700px] object-cover rounded-lg backdrop-brightness-125"
           alt="Mỹ phẩm"
+          loading="lazy"
         />
       </div>
     </div>

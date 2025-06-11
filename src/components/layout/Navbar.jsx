@@ -75,6 +75,7 @@ const Navbar = () => {
             className="w-[150px] md:w-[200px] cursor-pointer"
             src={LumiaLogo}
             alt="logo"
+            loading="lazy"
           />
 
           {/* Full Menu with Navigation + Icons - On Tablet & Desktop */}

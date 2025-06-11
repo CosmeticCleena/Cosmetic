@@ -130,6 +130,7 @@ const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
                                   src={RightArrowNav}
                                   alt=">"
                                   className="ml-1 w-5 h-5 inline-block transform rotate-90" // Pointing down
+                                  loading="lazy"
                                 />
                               )}
                             </div>
@@ -171,7 +172,7 @@ const ProductDropdown = ({ isVisible, setProductDropdownOpen }) => {
 
             {/* Product image and description */}
             <div className="max-w-[288px] text-[14px] space-y-2">
-              <img className="w-full" src={ProductDropdownImage} alt="" />
+              <img className="w-full" src={ProductDropdownImage} alt="" loading="lazy"/>
               <p className="font-semibold">
                 capture totale super potent rich cream
               </p>

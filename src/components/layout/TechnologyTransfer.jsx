@@ -71,6 +71,7 @@ const TechnologyTransfer = () => {
               <img
                 src={technologyTransferImages[feat.iconRef]}
                 alt={`technology icon ${index + 1}`}
+                loading="lazy"
               />
               <h2 className="text-[22px] font-bold">{feat.title}</h2>
             </div>
@@ -88,6 +89,7 @@ const TechnologyTransfer = () => {
                 <img
                   src={technologyTransferImages[feat.iconRef]}
                   alt={`technology icon ${index + 1}`}
+                  loading="lazy"
                 />
                 <div className="flex flex-col gap-[10px]">
                   <h1 className="font-bold md:text-[22px] lg:text-[24px] mb-2">

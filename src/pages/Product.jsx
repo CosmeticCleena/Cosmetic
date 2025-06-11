@@ -79,6 +79,7 @@ const Product = () => {
                   src={FilterIcon}
                   alt="filter icon"
                   className="object-contain w-4 h-4"
+                  loading="lazy"
                 />
                 <p className="font-lato text-[#0C0C0C]">Bộ lọc</p>
               </div>

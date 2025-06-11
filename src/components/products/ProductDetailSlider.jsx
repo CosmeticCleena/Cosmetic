@@ -122,7 +122,7 @@ const ProductDetailSlider = ({ productData }) => {
               className="border hover:bg-gray-300 w-20 h-8 flex justify-center items-center mb-1"
               onClick={() => handleNavigateImage("up")}
             >
-              <img src={slider_arrow_up} alt="Scroll up" />
+              <img src={slider_arrow_up} alt="Scroll up" loading="lazy" />
             </button>
 
             <div className="flex-1 flex flex-col justify-between py-1">
@@ -138,6 +138,7 @@ const ProductDetailSlider = ({ productData }) => {
                       className="w-full h-full object-cover"
                       src={ProductDetailSliderImgs[productImages[0]]}
                       alt="Product thumbnail"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -158,6 +159,7 @@ const ProductDetailSlider = ({ productData }) => {
                         className="w-full h-full object-cover"
                         src={ProductDetailSliderImgs[image]}
                         alt={`Product thumbnail ${index + 1}`}
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -199,6 +201,7 @@ const ProductDetailSlider = ({ productData }) => {
                 className="w-full h-full object-contain"
                 src={ProductDetailSliderImgs[productImages[currentImageIndex]]}
                 alt="Product Image"
+                loading="lazy"
               />
             </div>
 
@@ -233,6 +236,7 @@ const ProductDetailSlider = ({ productData }) => {
                         src={ProductDetailSliderImgs[image]}
                         alt={`Product view ${index + 1}`}
                         className="w-full h-full object-cover"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -246,7 +250,7 @@ const ProductDetailSlider = ({ productData }) => {
               <div className="text-[#606060] font-lato py-3 px-4 flex justify-between border-b border-b-[#606060]">
                 <p>{productData.amount} ML</p>
                 <div className="flex gap-1 items-center">
-                  <img src={arrow_drop_down} alt="Dropdown arrow" />
+                  <img src={arrow_drop_down} alt="Dropdown arrow" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -256,19 +260,19 @@ const ProductDetailSlider = ({ productData }) => {
               <div className="mt-6 space-y-4 lg:hidden w-full">
                 <div className="flex items-center gap-4">
                   <span className="w-8 h-8 flex items-center justify-center bg-amber-100 rounded-full mr-2">
-                    <img src={card_giftcard} alt="" />
+                    <img src={card_giftcard} alt="" loading="lazy" />
                   </span>
                   <p>Nhận 2 mẫu thử miễn phí khi bạn chi tiêu $100</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <span className="w-8 h-8 flex items-center justify-center bg-amber-100 rounded-full mr-2">
-                    <img src={discount} alt="" />
+                    <img src={discount} alt="" loading="lazy"/>
                   </span>
                   <p>Nhận $2 khi bạn trả lại 5 hộp rỗng</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <span className="w-8 h-8 flex items-center justify-center bg-amber-100 rounded-full mr-2">
-                    <img src={messages} alt="" />
+                    <img src={messages} alt="" loading="lazy" />
                   </span>
                   <p>
                     Nhận tư vấn miễn phí 1-1 với chuyên gia tại các chi nhánh

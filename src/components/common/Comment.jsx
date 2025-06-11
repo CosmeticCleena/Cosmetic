@@ -35,6 +35,7 @@ const ImageSlider = ({ images, onClose }) => {
           <img
             src={CommentImages[images[currentIndex]]}
             alt={`Slide ${currentIndex + 1}`}
+            loading="lazy"
             className="max-h-[80vh] max-w-full mx-auto"
           />
           <button
@@ -73,19 +74,20 @@ const Comment = ({ starsNumber, name, avatar, text, postedOn, images }) => {
       <div className="flex justify-between">
         <div className="flex">
           {Array.from({ length: starsNumber }).map((s, index) => {
-            return <img className="" key={index} src={Star} alt="star" />;
+            return <img className="" key={index} src={Star} alt="star" loading="lazy" />;
           })}
         </div>
-        <img className="cursor-pointer" src={MoreOptionMenu} alt="" />
+        <img className="cursor-pointer" src={MoreOptionMenu} alt="" loading="lazy" />
       </div>
       <div className="flex gap-2 items-center">
         <img
           className="w-[4%] rounded-3xl"
           src={AvatarImages[avatar]}
           alt="avatar"
+          loading="lazy"
         />
         <h1>{name}</h1>
-        <img src={CheckMarkRound} alt="" />
+        <img src={CheckMarkRound} alt="" loading="lazy" />
       </div>
       <p>{text}</p>
       <p className="text-[#00000099] font-lato">Đăng vào ngày {postedOn}</p>
@@ -97,6 +99,7 @@ const Comment = ({ starsNumber, name, avatar, text, postedOn, images }) => {
             key={index}
             src={CommentImages[image]}
             alt=""
+            loading="lazy"
             className="h-24 object-cover rounded"
             onClick={() => setShowSlider(true)}
           />

@@ -34,6 +34,7 @@ const SearchMobile = ({ isOpen }) => {
             src={SearchIcon}
             alt="SearchIcon"
             className="object-cover w-5 h-5"
+            loading="lazy"
           />
           <input
             type="text"

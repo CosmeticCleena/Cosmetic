@@ -24,6 +24,7 @@ const FeaturedProductCard = ({ isAddToCart, image, data }) => {
           className="rounded-t-[16px] w-full h-[240px] object-contain"
           src={SignatureProductImages[image]}
           alt="FeatureProduct"
+          loading="lazy"
         />
       </div>
 

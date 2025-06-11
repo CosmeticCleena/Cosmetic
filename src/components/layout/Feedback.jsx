@@ -66,6 +66,7 @@ const Feedback = () => {
             <img
               src={avatars[activeReviewIndex]}
               alt="Feedback avatar"
+              loading="lazy"
               className="w-full h-full object-cover rounded-md"
             />
           </div>
@@ -136,6 +137,7 @@ const Feedback = () => {
                 <img
                   src={CommentImages[img]}
                   alt={`User Feedback ${index + 1}`}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

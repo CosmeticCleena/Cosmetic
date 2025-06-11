@@ -126,6 +126,7 @@ const ProductSkinCareResult = () => {
               src={ProductSkinCareResultImages[image]}
               alt={`Kết quả chăm sóc da ${index + 1}`}
               className="w-full h-auto"
+              loading="lazy"
             />
           </div>
         ))}
@@ -159,6 +160,7 @@ const ProductSkinCareResult = () => {
               alt={`Kết quả chăm sóc da ${chiSoHoatDong + 1}`}
               className="w-full h-full object-cover"
               draggable="false"
+              loading="lazy"
             />
           </div>
         </div>

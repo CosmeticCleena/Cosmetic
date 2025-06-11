@@ -13,6 +13,7 @@ const FilterMobile = ({ isOpen, handleFilterToggle }) => {
           src={CloseIcon}
           alt="Close"
           className="w-6 h-6"
+          loading="lazy"
           onClick={handleFilterToggle}
         />
       </div>
