@@ -20,6 +20,7 @@ const SecondBanner = () => {
         src={QuoteArrow}
         alt="Quote Arrow"
         className="w-[60px] h-[50px] mx-auto"
+        loading="lazy"
       />
       <p className="text-white text-3xl font-magnificent text-center mb-4">
         {slides[activeIndex].title}

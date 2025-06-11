@@ -21,19 +21,19 @@ const Footer = () => {
       {/* Top section - features */}
       <div className="grid grid-cols-2 p-5 footer-top gap-16 bg-[#F9F6ED] text-[#9E6A30] h-max-[104px] md:flex items-center justify-between md:px-[108px] text-[16px]">
         <div className="flex gap-[8px] items-center">
-          <img src={bunnyVector} alt="" />
+          <img src={bunnyVector} alt="" loading="lazy"/>
           <span>Không thử nghiệm trên động vật</span>
         </div>
         <div className="flex gap-[8px] items-center">
-          <img src={Leaf} alt="" />
+          <img src={Leaf} alt="" loading="lazy"/>
           <span>Không thành phần từ động vật</span>
         </div>
         <div className="flex gap-[8px] items-center">
-          <img src={Wheat} alt="" />
+          <img src={Wheat} alt="" loading="lazy"/>
           <span>Không gluten hoặc phụ phẩm gluten</span>
         </div>
         <div className="flex gap-[8px] items-center">
-          <img src={LightBall} alt="" />
+          <img src={LightBall} alt="" loading="lazy"/>
           <span>Bao bì có thể tái chế</span>
         </div>
       </div>
@@ -46,6 +46,7 @@ const Footer = () => {
             src={BGLogo}
             alt="Background Logo"
             className="w-[325px] h-auto"
+            loading="lazy"
           />
         </div>
 
@@ -115,12 +116,12 @@ const Footer = () => {
           {/* Location and telephone info */}
           <div className="py-[8px] flex flex-col items-start md:flex-row gap-4 pr-4 md:items-center text-[16px]">
             <div className="flex gap-3 pl-[12px] md:pl-0">
-              <img src={Location} alt="Location" />
+              <img src={Location} alt="Location" loading="lazy"/>
               <span className="flex-shrink">
                 150 Nguyễn Sơn, Long Biên, Hà Nội, Việt Nam
               </span>
             </div>
-            <img className="hidden md:flex" src={indicator} alt="indicator" />
+            <img className="hidden md:flex" src={indicator} alt="indicator" loading="lazy"/>
             <div className="flex gap-3 pl-[12px] md:pl-0">
               <img src={Telephone} alt="Telephone" />
               <span>Đường dây nóng: +84 988 602 888</span>
@@ -130,22 +131,22 @@ const Footer = () => {
           {/* Social media icons - single row on mobile, centered */}
           <div className="flex flex-wrap justify-center md:justify-end items-center gap-x-2 gap-y-3 py-3 md:py-2">
             <div className="flex items-center justify-center w-10 h-10">
-              <img className="p-2" src={Instagram} alt="Instagram" />
+              <img className="p-2" src={Instagram} alt="Instagram" loading="lazy"/>
             </div>
             <div className="flex items-center justify-center w-10 h-10">
-              <img className="p-2" src={Facebook} alt="Facebook" />
+              <img className="p-2" src={Facebook} alt="Facebook" loading="lazy"/>
             </div>
             <div className="flex items-center justify-center w-10 h-10">
-              <img className="p-2" src={Twitter} alt="Twitter" />
+              <img className="p-2" src={Twitter} alt="Twitter" loading="lazy"/>
             </div>
             <div className="flex items-center justify-center w-10 h-10">
-              <img className="p-2" src={Pinterest} alt="Pinterest" />
+              <img className="p-2" src={Pinterest} alt="Pinterest" loading="lazy"/>
             </div>
             <div className="flex items-center justify-center w-10 h-10">
-              <img className="p-2" src={Reddit} alt="Reddit" />
+              <img className="p-2" src={Reddit} alt="Reddit" loading="lazy"/>
             </div>
             <div className="flex items-center justify-center w-10 h-10">
-              <img className="p-2" src={Tiktok} alt="Tiktok" />
+              <img className="p-2" src={Tiktok} alt="Tiktok" loading="lazy"/>
             </div>
           </div>
         </div>
