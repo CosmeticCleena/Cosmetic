@@ -9,6 +9,7 @@ import SearchMobile from "./SearchMobile";
 import SearchDesktop from "./SearchDesktop";
 import { Link } from "react-scroll";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
@@ -63,39 +64,45 @@ const Navbar = () => {
       setActiveItem("Sản phẩm");
     }
   }, [location]);
+
   return (
     <>
-      <nav className="w-full sticky top-0 z-50 bg-white">
-        <div className="px-4 md:px-[60px] xl:px-[120px] pt-2 pb-2 flex items-center justify-between">
-          <img
+      <nav className="w-full sticky top-0 z-50 bg-white shadow-sm">
+        <div className="px-4 sm:px-6 md:px-[60px] xl:px-[120px]  flex items-center justify-between">
+          {/* Logo Container - Optimized for better display */}
+          <div 
             onClick={() => {
               handleItemClick("Trang Chủ");
               navigate("/home");
             }}
-            className="w-[150px] md:w-[200px] cursor-pointer"
-            src={LumiaLogo}
-            alt="logo"
-            loading="lazy"
-          />
+            className="flex-shrink-0 cursor-pointer transition-transform hover:scale-105 duration-200"
+          >
+            <img
+              className="h-10 sm:h-20 md:h-22 lg:h-24 w-auto max-w-[120px] sm:max-w-[140px] md:max-w-[180px] lg:max-w-[200px] object-contain"
+              src={LumiaLogo}
+              alt="Lumia Logo"
+              loading="lazy"
+            />
+          </div>
 
           {/* Full Menu with Navigation + Icons - On Tablet & Desktop */}
-          <div className="hidden md:flex items-center gap-3">
-            <ul className="flex items-center gap-4 relative right-[5rem] font-magnificent">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8">
+            <ul className="flex items-center gap-4 lg:gap-6 font-magnificent text-sm lg:text-base">
               <li
-                className={`cursor-pointer whitespace-nowrap ${
+                className={`cursor-pointer whitespace-nowrap transition-all duration-200 hover:scale-105 ${
                   activeItem === "Trang Chủ"
-                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
-                    : ""
+                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980] font-semibold"
+                    : "hover:text-[#B08B3B]"
                 }`}
                 onClick={() => handleItemClick("Trang Chủ")}
               >
                 Trang Chủ
               </li>
               <NavLink
-                className={`cursor-pointer whitespace-nowrap ${
+                className={`cursor-pointer whitespace-nowrap transition-all duration-200 hover:scale-105 ${
                   activeItem === "Tổng Quan Thương Hiệu"
-                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
-                    : ""
+                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980] font-semibold"
+                    : "hover:text-[#B08B3B]"
                 }`}
                 onClick={() => handleItemClick("Tổng Quan Thương Hiệu")}
                 to={"/home#brand-overview"}
@@ -103,10 +110,10 @@ const Navbar = () => {
                 Tổng Quan Thương Hiệu
               </NavLink>
               <li
-                className={`cursor-pointer whitespace-nowrap relative ${
+                className={`cursor-pointer whitespace-nowrap relative transition-all duration-200 hover:scale-105 ${
                   activeItem === "Sản phẩm"
-                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
-                    : ""
+                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980] font-semibold"
+                    : "hover:text-[#B08B3B]"
                 }`}
                 onClick={() => handleItemClick("Sản phẩm")}
                 onMouseEnter={() => {
@@ -116,20 +123,20 @@ const Navbar = () => {
                 Sản phẩm
               </li>
               <li
-                className={`cursor-pointer whitespace-nowrap ${
+                className={`cursor-pointer whitespace-nowrap transition-all duration-200 hover:scale-105 ${
                   activeItem === "Đại Lý"
-                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
-                    : ""
+                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980] font-semibold"
+                    : "hover:text-[#B08B3B]"
                 }`}
                 onClick={() => handleItemClick("Đại Lý")}
               >
                 Đại Lý
               </li>
               <NavLink
-                className={`cursor-pointer whitespace-nowrap ${
+                className={`cursor-pointer whitespace-nowrap transition-all duration-200 hover:scale-105 ${
                   activeItem === "Liên hệ"
-                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980]"
-                    : ""
+                    ? "text-transparent bg-clip-text bg-gradient-to-r from-[#B08B3B] to-[#EAC980] font-semibold"
+                    : "hover:text-[#B08B3B]"
                 }`}
                 onClick={() => handleItemClick("Liên hệ")}
                 to={"/home#footer"}
@@ -137,9 +144,10 @@ const Navbar = () => {
                 Liên hệ
               </NavLink>
             </ul>
-            {/* Toogle Search Desktop */}
+            
+            {/* Toggle Search Desktop */}
             <div
-              className="w-5 h-5 flex items-center justify-center cursor-pointer"
+              className="w-5 h-5 lg:w-6 lg:h-6 flex items-center justify-center cursor-pointer transition-transform hover:scale-110 duration-200 p-1"
               onClick={toggleDesktopSearch}
             >
               <img
@@ -151,10 +159,10 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Icons with Search and Hamburger Menu */}
-          <div className="flex md:hidden items-center gap-3">
+          <div className="flex md:hidden items-center gap-4">
             {/* Search Icon for Mobile */}
             <div
-              className="w-5 h-5 flex items-center justify-center cursor-pointer"
+              className="w-5 h-5 flex items-center justify-center cursor-pointer transition-transform hover:scale-110 duration-200 p-1"
               onClick={toggleSearch}
             >
               <img
@@ -165,7 +173,7 @@ const Navbar = () => {
             </div>
 
             {/* Hamburger Menu */}
-            <div className="w-6 h-6 flex items-center justify-center cursor-pointer">
+            <div className="w-6 h-6 flex items-center justify-center cursor-pointer transition-transform hover:scale-110 duration-200">
               <img
                 src={hamburgerMenu}
                 alt="menu"
@@ -192,6 +200,7 @@ const Navbar = () => {
           />
         </div>
       </nav>
+      
       {/*Không thay đổi phần này*/}
       <SideBarMobile isOpen={isOpen} toggleMenu={toggleMenu} />
       {/*Không thay đổi phần này*/}
