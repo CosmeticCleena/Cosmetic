@@ -28,6 +28,11 @@ import ProductImg11 from "../../assets/images/products/product11.svg";
 import ProductImg13 from "../../assets/images/products/product13.svg";
 import ProductImg14 from "../../assets/images/products/product14.svg";
 
+// Feedback Images:
+import Feedback1 from "../../assets/images/feedback_imgs/FeedbackImg1.png";
+import Feedback2 from "../../assets/images/feedback_imgs/FeedbackImg2.png";
+import Feedback3 from "../../assets/images/feedback_imgs/FeedbackImg3.png";
+
 // avatar images
 import avatar1 from "../../assets/images/MaiLanSpa.jpeg";
 import avatar2 from "../../assets/images/NhungBeauty.jpeg";
@@ -90,6 +95,9 @@ export const CommentImages = {
   CommentImg8: ProductImg8,
   CommentImg9: ProductImg9,
   CommentImg10: ProductImg10,
+  CommentImg11: Feedback1,
+  CommentImg12: Feedback2,
+  CommentImg13: Feedback3,
 };
 
 export const AvatarImages = {
