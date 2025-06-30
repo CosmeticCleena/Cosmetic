@@ -172,7 +172,7 @@ const Navbar = () => {
               />
             </div>
 
-            {/* Hamburger Menu */}
+            
             <div className="w-6 h-6 flex items-center justify-center cursor-pointer transition-transform hover:scale-110 duration-200">
               <img
                 src={hamburgerMenu}
@@ -184,7 +184,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Position the dropdown immediately after the navbar */}
+        
         <div className="relative">
           <ProductDropdown
             isVisible={productDropdownOpen && !isOpen}
@@ -192,7 +192,6 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Position the search dropdown similar to product dropdown */}
         <div className="relative">
           <SearchDesktop
             isDesktopSearchOpen={isDesktopSearchOpen}
@@ -201,9 +200,9 @@ const Navbar = () => {
         </div>
       </nav>
       
-      {/*Không thay đổi phần này*/}
+      
       <SideBarMobile isOpen={isOpen} toggleMenu={toggleMenu} />
-      {/*Không thay đổi phần này*/}
+      
       <SearchMobile isOpen={isSearchOpen} />
     </>
   );

@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import bunnyVector from "../../assets/icons/bunnyVector.svg";
 import Leaf from "../../assets/icons/Leaf.svg";
 import Wheat from "../../assets/icons/Wheat.svg";
@@ -16,6 +17,19 @@ import Tiktok from "../../assets/icons/_Tiktok.svg";
 import Twitter from "../../assets/icons/_Twitter.svg";
 
 const Footer = () => {
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleSubscribe = () => {
+    if (phoneNumber && isChecked) {
+      alert("Đăng ký thành công!");
+      setPhoneNumber("");
+      setIsChecked(false);
+    } else {
+      alert("Vui lòng nhập số điện thoại và đồng ý với điều khoản!");
+    }
+  };
+
   return (
     <div id="footer" className="w-full mx-auto relative">
       {/* Top section - features */}
@@ -68,23 +82,25 @@ const Footer = () => {
             <span>Quà tặng & Bộ sản phẩm</span>
           </div>
           <div className="flex flex-col gap-4 md:w-1/2 w-full font-lato px-3 sm:px-[3em] mt-10 md:mt-0 relative z-10">
-            {/* Changed mx-[3em] to px-3 sm:px-[3em] and added w-full for better tablet support */}
             <span className="text-[24px] font-magnificent">
               Giữ liên lạc với Lumia
             </span>
             <span className="text-[16px] w-full sm:w-[90%]">
-              {/* Changed w-[90%] to w-full sm:w-[90%] for better mobile/tablet support */}
               Đăng ký nhận bản tin Beautya và là người đầu tiên biết về tin tức,
               ưu đãi và lời khuyên chăm sóc da
             </span>
             <div className="flex flex-col md:flex-row gap-2 w-full text-[#CBCBCB] items-center">
               <input
                 className="bg-transparent border-b w-full p-3 focus:outline-none text-[24px] block"
-                /* Added block to ensure visibility */
-                placeholder="Địa chỉ Email"
-                type="text"
+                placeholder="Số điện thoại"
+                type="tel"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
               />
-              <button className="w-full relative top-2 text-[16px] bg-transparent border-solid border-[2px] md:w-[104px] h-12 border-[#CBCBCB] py-2 px-4">
+              <button 
+                className="w-full relative top-2 text-[16px] bg-transparent border-solid border-[2px] md:w-[104px] h-12 border-[#CBCBCB] py-2 px-4"
+                onClick={handleSubscribe}
+              >
                 Subscribe
               </button>
             </div>
@@ -92,16 +108,18 @@ const Footer = () => {
             <div className="flex items-start gap-2 mt-2">
               <input
                 className="mt-1 w-4 min-w-4 h-4"
-                id="email-check"
-                name="email-check"
+                id="phone-check"
+                name="phone-check"
                 type="checkbox"
+                checked={isChecked}
+                onChange={(e) => setIsChecked(e.target.checked)}
               />
-              <label className="hidden md:block text-sm" htmlFor="email-check">
-                Bằng cách gửi email của bạn, bạn đồng ý nhận email quảng cáo từ
+              <label className="hidden md:block text-sm" htmlFor="phone-check">
+                Bằng cách gửi số điện thoại của bạn, bạn đồng ý nhận tin nhắn quảng cáo từ
                 Beautya. Vui lòng xem Chính sách Bảo mật của chúng tôi, bao gồm
                 Thông báo Ưu đãi Tài chính dành cho cư dân CA.
               </label>
-              <label className="md:hidden text-sm" htmlFor="email-check">
+              <label className="md:hidden text-sm" htmlFor="phone-check">
                 Tôi đồng ý với Điều khoản và Điều kiện cũng như Chính sách Bảo
                 mật của Beautya.
               </label>

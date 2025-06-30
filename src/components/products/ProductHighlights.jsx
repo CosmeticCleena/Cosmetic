@@ -19,7 +19,7 @@ const ProductHighlights = () => {
           isReverse={item.isReverse}
         >
           <p
-            className="text-3xl md:text-4xl lg:text-5xl font-magnificent"
+            className="text-3xl md:text-4xl lg:text-5xl font-magnificent text-base/8"
             dangerouslySetInnerHTML={{
               __html: item.content.title,
             }}
