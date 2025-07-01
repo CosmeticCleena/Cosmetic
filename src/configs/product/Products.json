@@ -7,7 +7,7 @@
     "price": 65.0,
     "amount": 30,
     "mainImg": "ProductImg",
-    "images": ["ProductImg0"],
+    "images": ["ProductImg"],
     "categories": ["Công Nghệ Xử Lý", "Sản Phẩm Nổi Bật"],
     "skinConditions": [],
     "featured": [],

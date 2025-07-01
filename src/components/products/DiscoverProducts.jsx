@@ -1,34 +1,10 @@
 import { useState } from "react";
 import DiscoverProduct from "../../assets/images/DiscoverProduct.svg";
 import FeaturedProductCard from "./FeaturedProductCard";
-import SignatureProductImages from "../../configs/signature_products/signature_products";
+import productController from "../../utils/ProductController";
 
 const DiscoverProducts = () => {
-  // Mảng dữ liệu sản phẩm mẫu
-  const featuredProducts = [
-    {
-      id: 1,
-      product_name: "Kem Nám Chân - Brightening Corector Cream",
-      description:
-        "Điều trị nám chân gốc rễ, kích thích tuần hoàn, phục hồi sắc tố melanin, làm sáng da, đều màu chỉ sau 2 tuần. Sản phẩm sử dụng công nghệ phân tử tiên tiến, mang lại hiệu quả gấp 3-5 lần so với phương pháp thông thường.",
-      image: "Signature1",
-    },
-    {
-      id: 15,
-      product_name:
-        "Kem Dưỡng Ban Ngày và Ban Đêm - Anti-Aging Day & Glow Revival Night",
-      description:
-        "Cung cấp độ ẩm lâu dài, giúp da luôn tươi mới và khỏe mạnh. Sản phẩm hỗ trợ quá trình tái tạo da, giảm thâm nám, mờ sạm màu, và cải thiện độ đàn hồi da.",
-      image: "Signature2",
-    },
-    {
-      id: 16,
-      product_name: "Mặt Nạ Dưỡng Ẩm - Moisturizing Mask",
-      description:
-        "Cung cấp độ ẩm tức thì cho da khô và thiếu sức sống, giúp tái tạo da và giảm thiểu dấu hiệu lão hóa.",
-      image: "Signature3",
-    },
-  ];
+  const featuredProducts = productController.getFeatureProducts();
 
   // State để theo dõi slide hiện tại
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -103,7 +79,7 @@ const DiscoverProducts = () => {
               <FeaturedProductCard
                 isAddToCart={false}
                 data={featuredProducts[currentSlide]}
-                image={featuredProducts[currentSlide].image}
+                image={featuredProducts[currentSlide].mainImg}
               />
             </div>
 

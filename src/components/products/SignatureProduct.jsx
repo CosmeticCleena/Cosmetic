@@ -1,10 +1,8 @@
 import RightArrow from "../../assets/icons/RightArrow.svg";
 import { useNavigate } from "react-router-dom";
-import SignatureProductImages from "../../configs/signature_products/signature_products.js";
-
+import { ProductImgs } from "../../configs/product/images.js";
 const SignatureProduct = ({ title, description, id, image }) => {
   const navigate = useNavigate();
-
   return (
     <div
       onClick={() => {
@@ -17,7 +15,7 @@ const SignatureProduct = ({ title, description, id, image }) => {
       {/* Container cho ảnh với chiều cao cố định */}
       <div className="flex-shrink-0 h-[270px] flex items-center justify-center mb-4">
         <img
-          src={SignatureProductImages[image]}
+          src={ProductImgs[image]}
           alt={title}
           className="object-contain max-h-full max-w-full h-auto w-auto"
           loading="lazy"

@@ -10,11 +10,9 @@ import discount from "../../assets/icons/discount.svg";
 import Breadcumbs from "../layout/Breadcumbs";
 
 //images
-import { ProductDetailSliderImgs } from "../../configs/product_details/images";
-
+import { ProductImgs } from "../../configs/product/images";
 const ProductDetailSlider = ({ productData }) => {
   const productImages = productData.images;
-  console.log(productImages);
   const productName = productData.title;
   // State for the current selected image index
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -128,7 +126,6 @@ const ProductDetailSlider = ({ productData }) => {
             <div className="flex-1 flex flex-col justify-between py-1">
               {/* Display only the exact thumbnails from productImages array */}
               {productImages.length === 1 ? (
-                // When there's only one image
                 <div
                   className="ring-2 ring-[#D1AE62] cursor-pointer overflow-hidden"
                   onClick={() => handleThumbnailClick(0)}
@@ -136,7 +133,7 @@ const ProductDetailSlider = ({ productData }) => {
                   <div className="w-20 h-20 overflow-hidden">
                     <img
                       className="w-full h-full object-cover"
-                      src={ProductDetailSliderImgs[productImages[0]]}
+                      src={ProductImgs[productImages[0]]}
                       alt="Product thumbnail"
                       loading="lazy"
                     />
@@ -157,7 +154,7 @@ const ProductDetailSlider = ({ productData }) => {
                     <div className="w-20 h-20 overflow-hidden">
                       <img
                         className="w-full h-full object-cover"
-                        src={ProductDetailSliderImgs[image]}
+                        src={ProductImgs[image]}
                         alt={`Product thumbnail ${index + 1}`}
                         loading="lazy"
                       />
@@ -199,7 +196,7 @@ const ProductDetailSlider = ({ productData }) => {
             <div className="bg-gray-100 w-full h-[300px] sm:h-[400px] md:h-[450px] lg:w-[704px] lg:h-[605px] flex items-center justify-center overflow-hidden">
               <img
                 className="w-full h-full object-contain"
-                src={ProductDetailSliderImgs[productImages[currentImageIndex]]}
+                src={ProductImgs[productImages[currentImageIndex]]}
                 alt="Product Image"
                 loading="lazy"
               />
@@ -233,7 +230,7 @@ const ProductDetailSlider = ({ productData }) => {
                   >
                     <div className="w-20 h-20 overflow-hidden">
                       <img
-                        src={ProductDetailSliderImgs[image]}
+                        src={ProductImgs[image]}
                         alt={`Product view ${index + 1}`}
                         className="w-full h-full object-cover"
                         loading="lazy"
@@ -250,7 +247,11 @@ const ProductDetailSlider = ({ productData }) => {
               <div className="text-[#606060] font-lato py-3 px-4 flex justify-between border-b border-b-[#606060]">
                 <p>{productData.amount} ML</p>
                 <div className="flex gap-1 items-center">
-                  <img src={arrow_drop_down} alt="Dropdown arrow" loading="lazy" />
+                  <img
+                    src={arrow_drop_down}
+                    alt="Dropdown arrow"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -266,7 +267,7 @@ const ProductDetailSlider = ({ productData }) => {
                 </div>
                 <div className="flex items-center gap-4">
                   <span className="w-8 h-8 flex items-center justify-center bg-amber-100 rounded-full mr-2">
-                    <img src={discount} alt="" loading="lazy"/>
+                    <img src={discount} alt="" loading="lazy" />
                   </span>
                   <p>Nhận $2 khi bạn trả lại 5 hộp rỗng</p>
                 </div>

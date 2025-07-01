@@ -5,7 +5,7 @@ import avatar2 from "../../assets/images/NhungBeauty.jpeg";
 import avatar3 from "../../assets/images/TuanAnhSpa.jpeg";
 import avatar4 from "../../assets/images/KimLan.jpeg";
 import avatar5 from "../../assets/images/SpaThanhTu.jpeg";
-import { CommentImages } from "../../configs/product_details/images";
+import { CommentImages } from "../../configs/comment/images";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5];

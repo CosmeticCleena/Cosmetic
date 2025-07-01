@@ -1,8 +1,9 @@
 import React from "react";
-import SIGNATURE_PRODUCTS from "../../configs/SignatureProducts.json";
 import SignatureProduct from "./SignatureProduct";
+import productController from "../../utils/ProductController";
 
 const SignatureProducts = () => {
+  const SIGNATURE_PRODUCTS = productController.getSignatureProducts();
   return (
     <div className="relative w-full">
       <div
@@ -23,7 +24,7 @@ const SignatureProducts = () => {
           <div className="grid grid-cols-12 gap-4 md:gap-6 overflow-x-auto">
             {SIGNATURE_PRODUCTS.map((product, index) => (
               <SignatureProduct
-                image={product.image}
+                image={product.mainImg}
                 key={index}
                 {...product}
                 id={product.id}
