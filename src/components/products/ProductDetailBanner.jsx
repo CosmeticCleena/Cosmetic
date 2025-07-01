@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { ProductDetailsBannerImages } from "../../configs/product_details/images";
+import { ProductImgs } from "../../configs/product/images";
 
 import { useNavigate } from "react-router-dom";
 
@@ -294,10 +294,8 @@ const ProductDetailBanner = ({ banner, isSecondBanner }) => {
                         >
                           <div className="font-magnificent">
                             <SearchProduct
-                              productName={prod.productName}
-                              productImg={
-                                ProductDetailsBannerImages[prod.image]
-                              }
+                              productName={prod.title}
+                              productImg={ProductImgs[prod.mainImg]}
                               description={prod.description}
                               id={prod.id}
                             />
@@ -397,10 +395,8 @@ const ProductDetailBanner = ({ banner, isSecondBanner }) => {
                         <div key={prodIndex} className="product-card">
                           <div className="font-magnificent md:text-sm text-sm">
                             <SearchProduct
-                              productName={prod.productName}
-                              productImg={
-                                ProductDetailsBannerImages[prod.image]
-                              }
+                              productName={prod.title}
+                              productImg={ProductImgs[prod.mainImg]}
                               description={prod.description}
                               id={prod.id}
                             />

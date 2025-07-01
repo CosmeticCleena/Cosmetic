@@ -4,15 +4,15 @@ import ProductDetailSlider from "../components/products/ProductDetailSlider";
 import ProductDetailContent from "../components/products/ProductDetailContent";
 import ProductDetailReviews from "../components/products/ProductDetailReviews";
 import ProductDetailBanner from "../components/products/ProductDetailBanner";
-import DATA_PRODUCT from "../configs/product/Products.json";
-import { BannerObj } from "../configs/product_details/banner";
 import NotFoundPage from "../components/common/NotFoundPage";
 import productController from "../utils/ProductController";
-console.log(productController.getSignatureProducts());
 const ProductDetail = () => {
   const { id } = useParams();
-  const productDetailsData = DATA_PRODUCT.find((prod) => prod.id == id);
-
+  const productDetailsData = productController.findProductById(id);
+  const productDetailsBannerData = {
+    title: "Các Sản Phẩm Khuyến Nghị",
+    products: productController.getSignatureProducts(),
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
@@ -23,8 +23,7 @@ const ProductDetail = () => {
       <ProductDetailContent
         tabContentData={productDetailsData.tabContentData}
       />
-      {/* Các sản phẩm khuyến nghị */}
-      <ProductDetailBanner banner={BannerObj.RecommendedSkincareBanner} />
+      <ProductDetailBanner banner={productDetailsBannerData} />
       <ProductDetailReviews commentArray={productDetailsData.comments} />
     </div>
   ) : (

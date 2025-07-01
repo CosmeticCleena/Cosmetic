@@ -94,6 +94,7 @@ const SearchMobile = ({ isOpen }) => {
         <div className="grid grid-cols-6 gap-3 mt-3">
           {filterData.slice(0, 4).map((item) => (
             <SearchProduct
+              id={item.id}
               key={item.id}
               productImg={ProductImgs[item.mainImg]}
               productName={item.title}

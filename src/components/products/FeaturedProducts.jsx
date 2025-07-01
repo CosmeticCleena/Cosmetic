@@ -1,8 +1,9 @@
 import React from "react";
 import FeaturedProductCard from "./FeaturedProductCard";
-import FEATURED_PRODUCTS from "../../configs/FeaturedProducts.json";
+import productController from "../../utils/ProductController";
 
 const FeaturedProducts = () => {
+  const FEATURED_PRODUCTS = productController.getFeatureProducts();
   return (
     <div className="w-full md:w-[75%] md:mx-auto bg-white py-[60px] font-magnificent">
       <h1 className="text-[40px] text-center mb-8">
@@ -15,7 +16,7 @@ const FeaturedProducts = () => {
               key={index}
               isAddToCart={true}
               data={{ ...product }}
-              image={product.image}
+              image={product.mainImg}
             />
           );
         })}

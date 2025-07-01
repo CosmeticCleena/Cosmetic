@@ -2,11 +2,8 @@ import { useState } from "react";
 import Star from "../../assets/images/products_detail/products_detail_reviews/Star.svg";
 import CheckMarkRound from "../../assets/images/products_detail/products_detail_reviews/CheckMarkRound.svg";
 import MoreOptionMenu from "../../assets/images/products_detail/products_detail_reviews/MoreOptionMenu.svg";
-import {
-  CommentImages,
-  AvatarImages,
-} from "../../configs/product_details/images";
-
+import { CommentImages } from "../../configs/comment/images";
+import { AvatarImages } from "../../configs/avatar/images";
 const ImageSlider = ({ images, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -74,10 +71,23 @@ const Comment = ({ starsNumber, name, avatar, text, postedOn, images }) => {
       <div className="flex justify-between">
         <div className="flex">
           {Array.from({ length: starsNumber }).map((s, index) => {
-            return <img className="" key={index} src={Star} alt="star" loading="lazy" />;
+            return (
+              <img
+                className=""
+                key={index}
+                src={Star}
+                alt="star"
+                loading="lazy"
+              />
+            );
           })}
         </div>
-        <img className="cursor-pointer" src={MoreOptionMenu} alt="" loading="lazy" />
+        <img
+          className="cursor-pointer"
+          src={MoreOptionMenu}
+          alt=""
+          loading="lazy"
+        />
       </div>
       <div className="flex gap-2 items-center">
         <img
