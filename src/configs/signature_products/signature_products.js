@@ -1,7 +1,6 @@
 import ProductImg13 from "../../assets/images/products/product13.svg";
 import ProductImg14 from "../../assets/images/products/product14.svg";
 import ProductImg5 from "../../assets/images/products/product5.svg";
-
 import ProductImg0 from "../../assets/images/products/product.svg";
 
 export const SignatureProductImages = {

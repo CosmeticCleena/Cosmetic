@@ -8,7 +8,7 @@
     "amount": 30,
     "mainImg": "ProductImg",
     "images": ["ProductImg0"],
-    "categories": ["Công Nghệ Xử Lý"],
+    "categories": ["Công Nghệ Xử Lý", "Sản Phẩm Nổi Bật"],
     "skinConditions": [],
     "featured": [],
     "comments": [
@@ -404,7 +404,7 @@
     "amount": 120,
     "mainImg": "ProductImg5",
     "images": ["ProductImg5"],
-    "categories": ["Công Nghệ Phục Hồi"],
+    "categories": ["Công Nghệ Phục Hồi", "Sản Phẩm Nổi Bật"],
     "skinConditions": ["Dehydrated"],
     "featured": ["Best Seller"],
     "comments": [

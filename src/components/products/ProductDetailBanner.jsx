@@ -8,7 +8,6 @@ const SearchProduct = ({
   productImg,
   productName,
   description = "",
-  price = "",
   isSearch = false,
 }) => {
   const navigate = useNavigate();
@@ -300,7 +299,6 @@ const ProductDetailBanner = ({ banner, isSecondBanner }) => {
                                 ProductDetailsBannerImages[prod.image]
                               }
                               description={prod.description}
-                              price={prod.price}
                               id={prod.id}
                             />
                           </div>
@@ -404,7 +402,6 @@ const ProductDetailBanner = ({ banner, isSecondBanner }) => {
                                 ProductDetailsBannerImages[prod.image]
                               }
                               description={prod.description}
-                              price={prod.price}
                               id={prod.id}
                             />
                           </div>
