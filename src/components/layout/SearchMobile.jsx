@@ -91,7 +91,7 @@ const SearchMobile = ({ isOpen }) => {
           </h1>
           <a className="text-[#D1AE62] font-lato">View all</a>
         </div>
-        <div className="grid grid-cols-2 gap-3 mt-3">
+        <div className="grid grid-cols-6 gap-3 mt-3">
           {filterData.slice(0, 4).map((item) => (
             <SearchProduct
               id={item.id}

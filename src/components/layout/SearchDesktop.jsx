@@ -111,7 +111,7 @@ const SearchDesktop = ({ isDesktopSearchOpen, setIsDesktopSearchOpen }) => {
                 </span>
               </div>
 
-              <div className="grid grid-cols-4 gap-6">
+              <div className="grid grid-cols-12 md:flex-row md:gap-6">
                 {filterData.map((item, index) => (
                   <SearchProduct
                     key={index}
