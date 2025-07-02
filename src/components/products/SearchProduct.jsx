@@ -13,33 +13,45 @@ const SearchProduct = ({
   const handleClick = (id) => {
     navigate(`/products/${id}`);
   };
+  
   return (
     <div
-      className="col-span-3 w-full flex flex-col border border-[#DFDFDF] transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2 cursor-pointer"
+      className="w-full flex flex-col border border-[#DFDFDF] transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-2 cursor-pointer bg-white h-full"
       onClick={() => handleClick(id)}
     >
-      <img
-        src={productImg}
-        alt="productSearch0"
-        className="object-cover w-full"
-      />
-      <div className="w-full px-4 py-4 h-full bg-white flex flex-col gap-2">
-        <p
-          className={`text-md ${
-            isSearch ? "lg:text-lg" : "lg:text-2xl"
-          } text-[#D1AE62] font-magnificent`}
-        >
-          {productName}
-        </p>
-        {description && (
+      <div className="w-full aspect-square overflow-hidden">
+        <img
+          src={productImg}
+          alt={productName}
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="flex-1 px-4 py-4 flex flex-col justify-between">
+        <div className="flex flex-col gap-2">
           <p
             className={`text-sm ${
-              isSearch ? "md:text-base" : "md:text-lg"
-            } font-latox text-black leading-tight`}
+              isSearch ? "lg:text-base" : "lg:text-lg"
+            } text-[#D1AE62] font-magnificent line-clamp-2`}
           >
-            {description}
+            {productName}
           </p>
-        )}
+          {description && (
+            <p
+              className={`text-xs ${
+                isSearch ? "md:text-sm" : "md:text-base"
+              } font-latox text-black leading-tight line-clamp-3`}
+            >
+              {description}
+            </p>
+          )}
+        </div>
+        {/* {price && (
+          <div className="mt-2 pt-2 border-t border-gray-100">
+            <p className="text-sm font-semibold text-gray-800">
+              {price}
+            </p>
+          </div>
+        )} */}
       </div>
     </div>
   );

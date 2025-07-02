@@ -9,15 +9,6 @@ import { ProductImgs } from "../configs/product/images";
 import { useState } from "react";
 import SelectBox from "../components/common/SelectBox";
 import FilterMobile from "../components/layout/FilterMobile";
-import ProductBanner1 from "../components/products/ProductBanner1";
-import ProductBanner2 from "../components/products/ProductBanner2";
-import ProductBanner3 from "../components/products/ProductBanner3";
-
-const bannerMap = {
-  ProductBanner1: <ProductBanner1 />,
-  ProductBanner2: <ProductBanner2 />,
-  ProductBanner3: <ProductBanner3 />,
-};
 
 const Product = () => {
   const [filters, setFilters] = useState({
@@ -47,6 +38,9 @@ const Product = () => {
     });
   };
 
+  // Filter out banner items to only show products
+  const productItems = PRODUCTS.filter((item) => !item.isBanner);
+
   return (
     <>
       <FilterMobile
@@ -59,11 +53,11 @@ const Product = () => {
           <h1 className="text-3xl font-magnificent pl-5 py-5 font-thin">
             Chăm sóc da nữ{" "}
             <span className="text-md">
-              ({PRODUCTS.filter((item) => !item.isBanner).length})
+              ({productItems.length})
             </span>
           </h1>
           <div className="hidden md:flex justify-between">
-            <p className="text-2xl font-magnificent">Bộ lọc</p>
+            <p className="text-2xl font-svn-avo">Bộ lọc</p>
             <SelectBox
               title={SELECT_BOX_DATA.title}
               data={SELECT_BOX_DATA.data}
@@ -81,7 +75,7 @@ const Product = () => {
                   className="object-contain w-4 h-4"
                   loading="lazy"
                 />
-                <p className="font-lato text-[#0C0C0C]">Bộ lọc</p>
+                <p className="font-svn-avo text-[#0C0C0C]">Bộ lọc</p>
               </div>
             </div>
             <div className="col-span-6">
@@ -97,27 +91,17 @@ const Product = () => {
               filters={filters}
             />
             <div className="col-span-12 md:col-span-9">
-              <div className="grid grid-cols-6 md:grid-cols-9 gap-2 md:gap-8">
-                {PRODUCTS.map((item) => {
-                  if (item.isBanner) {
-                    return (
-                      <div className={`${item.width}`} key={item.id}>
-                        {bannerMap[item.banner]}
-                      </div>
-                    );
-                  } else {
-                    return (
-                      <SearchProduct
-                        key={item.id}
-                        id={item.id}
-                        productName={item.title}
-                        description={item.description}
-                        price={item.price.toString()}
-                        productImg={ProductImgs[item.mainImg]}
-                      />
-                    );
-                  }
-                })}
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                {productItems.map((item) => (
+                  <SearchProduct
+                    key={item.id}
+                    id={item.id}
+                    productName={item.title}
+                    description={item.description}
+                    price={item.price.toString()}
+                    productImg={ProductImgs[item.mainImg]}
+                  />
+                ))}
               </div>
             </div>
           </div>

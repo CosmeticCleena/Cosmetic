@@ -19,7 +19,7 @@ const CustomerSupport = () => {
         <form className="grid grid-cols-1 md:grid-cols-2 gap-3 font-lato">
           <input
             type="text"
-            placeholder="Your Name*"
+            placeholder="Tên của bạn*"
             className="px-4 py-3 border border-[#D8D8D8] focus:border-[#D1AE62] focus:ring-1 focus:ring-[#D1AE62] focus:text-[#D1AE62] focus:ring-opacity-50 transition duration-200 outline-none text-[#6A6A6A]"
             name="name"
             required
@@ -30,7 +30,7 @@ const CustomerSupport = () => {
             required
           >
             <option value="" disabled selected>
-              Choose Barber Services
+              Chọn dịch vụ
             </option>
             <option value="haircut">Haircut</option>
             <option value="beard-trim">Beard Trim</option>
@@ -39,7 +39,7 @@ const CustomerSupport = () => {
           </select>
           <input
             type="date"
-            placeholder="Enter Date"
+            placeholder="Nhập ngày"
             className="px-4 py-3 border border-[#D8D8D8] focus:border-[#D1AE62] focus:ring-1 focus:ring-[#D1AE62] focus:text-[#D1AE62] focus:ring-opacity-50 transition duration-200 outline-none text-[#6A6A6A]"
             name="date"
             required
@@ -47,11 +47,11 @@ const CustomerSupport = () => {
           <textarea
             name="Message"
             className="order-1 md:order-none px-4 pt-3 pb-12 border border-[#D8D8D8] focus:border-[#D1AE62] focus:ring-1 focus:ring-[#D1AE62] focus:text-[#D1AE62] focus:ring-opacity-50 transition duration-200 outline-none text-[#6A6A6A] md:row-span-2"
-            placeholder="Your Message"
+            placeholder="Lời nhắn của bạn"
           ></textarea>
           <input
             type="email"
-            placeholder="Email address*"
+            placeholder="Email của bạn*"
             className="px-4 py-3 border border-[#D8D8D8] focus:border-[#D1AE62] focus:ring-1 focus:ring-[#D1AE62] focus:text-[#D1AE62] focus:ring-opacity-50 transition duration-200 outline-none text-[#6A6A6A]"
             name="email"
             required

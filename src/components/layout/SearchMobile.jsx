@@ -38,7 +38,7 @@ const SearchMobile = ({ isOpen }) => {
           />
           <input
             type="text"
-            placeholder="what are you looking for?"
+            placeholder="Bạn đang tìm kiếm gì?"
             className="w-full bg-[#FAF9F5] font-lato focus:outline-none placeholder:text-gray-400 placeholder:font-lato"
             onChange={handleSearch}
             onFocus={() => handleFocus(true)}
@@ -49,7 +49,7 @@ const SearchMobile = ({ isOpen }) => {
       <div className="flex flex-col font-magnificent w-[90%] mx-auto mt-5">
         {isFocus && searchValue.length > 0 ? (
           <div className="flex flex-col space-y-2 font-thin">
-            <h1 className="text-xl text-[#0C0C0C]">Suggestion</h1>
+            <h1 className="text-xl text-[#0C0C0C]">Gợi ý</h1>
             <div className="mt-4 flex flex-col gap-1 text-[#404040]">
               {filterData.slice(0, 4).map((item, index) => (
                 <p
@@ -86,7 +86,7 @@ const SearchMobile = ({ isOpen }) => {
         <div className="flex justify-between">
           <h1 className="text-xl text-[#0C0C0C] font-magnificent">
             {searchValue.length > 0
-              ? `Showing ${filterData.length} of ${DATA.length} results`
+              ? `Kết quả tìm thấy: ${filterData.length} trên ${DATA.length}`
               : "Các sản phẩm phổ biến"}
           </h1>
           <a className="text-[#D1AE62] font-lato">View all</a>
