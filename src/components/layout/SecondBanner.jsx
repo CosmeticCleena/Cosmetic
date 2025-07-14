@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import BannerImg2 from "../../assets/images/Banner_2.svg";
+import BannerImg2 from "../../assets/images/Banner_2.webp";
 import Banner from "../common/Banner";
-import QuoteArrow from "../../assets/icons/Quote-Arrows.svg";
 import BannerData from "../../configs/Banners.json";
 
 const SecondBanner = () => {
@@ -10,13 +9,13 @@ const SecondBanner = () => {
 
   const slides = BannerData.SecondBanner;
 
-  const handleDotClick = (index) => {
-    setActiveIndex(index);
-  };
+  // const handleDotClick = (index) => {
+  //   setActiveIndex(index);
+  // };
 
   return (
     <Banner imgSrc={BannerImg2} mt="mt-20">
-      <img
+      {/* <img
         src={QuoteArrow}
         alt="Quote Arrow"
         className="w-[60px] h-[50px] mx-auto"
@@ -40,7 +39,7 @@ const SecondBanner = () => {
             ></button>
           );
         })}
-      </div>
+      </div> */}
     </Banner>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BannerImg1 from "../../assets/images/Banner_6.jpg";
+import BannerImg1 from "../../assets/images/Banner_6.webp";
 import Banner from "../common/Banner";
 import BannerData from "../../configs/Banners.json";
 const FirstBanner = () => {
@@ -13,7 +13,7 @@ const FirstBanner = () => {
 
   return (
     <Banner imgSrc={BannerImg1}>
-      <p className="text-[#D1AE62] text-3xl font-magnificent text-start md:text-center">
+      {/* <p className="text-[#D1AE62] text-3xl font-magnificent text-start md:text-center">
         {slides[activeIndex].title}
       </p>
       <p className="text-center mb-4 text-[#FFFFFF] md:w-[70%] md:mx-auto">
@@ -34,7 +34,7 @@ const FirstBanner = () => {
             ></button>
           );
         })}
-      </div>
+      </div> */}
     </Banner>
   );
 };

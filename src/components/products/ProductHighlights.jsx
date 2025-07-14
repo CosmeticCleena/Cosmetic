@@ -1,7 +1,7 @@
 import React from "react";
 import ProductHighlight from "./ProductHighlight";
-import ProductHighlight1Img from "../../assets/images/ProductHighlight1.svg";
-import ProductHighlight2Img from "../../assets/images/ProductHighlight2.svg";
+import ProductHighlight1Img from "../../assets/images/ProductHighlight1.jpg";
+import ProductHighlight2Img from "../../assets/images/ProductHighlight1.webp";
 import ProductHighlightData from "../../configs/ProductHightlight.json";
 
 const imgSrc = {

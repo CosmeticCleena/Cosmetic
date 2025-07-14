@@ -32,10 +32,10 @@ const CustomerSupport = () => {
             <option value="" disabled selected>
               Chọn dịch vụ
             </option>
-            <option value="haircut">Haircut</option>
-            <option value="beard-trim">Beard Trim</option>
-            <option value="haircut-beard">Haircut & Beard Combo</option>
-            <option value="hot-towel">Hot Towel Shave</option>
+            <option value="haircut">Chống tái nám</option>
+            <option value="beard-trim">Giảm béo</option>
+            <option value="haircut-beard">Gội đầu dưỡng sinh</option>
+            <option value="hot-towel">Chăm sóc da mặt</option>
           </select>
           <input
             type="date"
