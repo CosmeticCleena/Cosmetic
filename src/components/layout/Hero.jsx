@@ -1,9 +1,13 @@
-import React from "react";
+import React, { memo, useCallback } from "react";
 import HeroBg from "../../assets/images/Hero.webp";
 import LinearImage from "../common/LinearImage";
 import HeroData from "../../configs/Hero.json";
 
 const Hero = () => {
+  const handleButtonClick = useCallback(() => {
+    // Add your button click handler here if needed
+    console.log("Hero button clicked");
+  }, []);
   return (
     <LinearImage
       leftColor="from-white/50"
@@ -24,7 +28,10 @@ const Hero = () => {
               </p>
             </div>
             <div className="mt-2">
-              <button className="font-svn-avo bg-gradient-to-r from-[#B08B3B] to-[#EAC980] text-xs sm:text-sm md:text-md px-4 sm:px-6 md:px-8 py-1.5 sm:py-2 md:py-3 transition duration-300 whitespace-nowrap rounded-lg hover:shadow-md transform hover:scale-105">
+              <button 
+                onClick={handleButtonClick}
+                className="font-svn-avo bg-gradient-to-r from-[#B08B3B] to-[#EAC980] text-white text-xs sm:text-sm md:text-md px-4 sm:px-6 md:px-8 py-1.5 sm:py-2 md:py-3 transition duration-300 whitespace-nowrap rounded-lg hover:shadow-md transform hover:scale-105"
+              >
                 {HeroData.buttonText}
               </button>
             </div>
@@ -35,4 +42,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default memo(Hero);

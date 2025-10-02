@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 const LinearImage = ({
   leftColor = "",
@@ -25,4 +25,4 @@ const LinearImage = ({
   );
 };
 
-export default LinearImage;
+export default memo(LinearImage);

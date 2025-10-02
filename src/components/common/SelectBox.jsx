@@ -1,6 +1,16 @@
-import React from "react";
+import React, { memo } from "react";
 
-const SelectBox = ({ title, data }) => {
+// Custom comparison function for memoization
+const arePropsEqual = (prevProps, nextProps) => {
+  return prevProps.title === nextProps.title && 
+         prevProps.data.length === nextProps.data.length &&
+         prevProps.data.every((item, index) => 
+           item.value === nextProps.data[index]?.value && 
+           item.text === nextProps.data[index]?.text
+         );
+};
+
+const SelectBox = memo(({ title, data }) => {
   return (
     <div className="flex text-sm md:text-md items-center border border-gray-300 shadow-sm pl-1 md:pl-5 py-2 bg-white group">
       <span className="mr-2 text-gray-700">{title}:</span>
@@ -27,6 +37,9 @@ const SelectBox = ({ title, data }) => {
       </div>
     </div>
   );
-};
+}, arePropsEqual);
+
+// Add display name for better debugging
+SelectBox.displayName = 'SelectBox';
 
 export default SelectBox;

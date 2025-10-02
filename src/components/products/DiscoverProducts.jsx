@@ -1,32 +1,32 @@
-import { useState } from "react";
+import { useState, memo, useMemo, useCallback } from "react";
 import DiscoverProduct from "../../assets/images/DiscoverProduct.svg";
 import FeaturedProductCard from "./FeaturedProductCard";
 import productController from "../../utils/ProductController";
 
 const DiscoverProducts = () => {
-  const featuredProducts = productController.getFeatureProducts();
+  const featuredProducts = useMemo(() => productController.getFeatureProducts(), []);
 
   // State để theo dõi slide hiện tại
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Hàm xử lý khi nhấp vào nút chấm
-  const handleDotClick = (index) => {
+  const handleDotClick = useCallback((index) => {
     setCurrentSlide(index);
-  };
+  }, []);
 
   // Hàm xử lý chuyển đến slide trước
-  const handlePrevSlide = () => {
+  const handlePrevSlide = useCallback(() => {
     setCurrentSlide((prev) =>
       prev === 0 ? featuredProducts.length - 1 : prev - 1
     );
-  };
+  }, [featuredProducts.length]);
 
   // Hàm xử lý chuyển đến slide kế tiếp
-  const handleNextSlide = () => {
+  const handleNextSlide = useCallback(() => {
     setCurrentSlide((prev) =>
       prev === featuredProducts.length - 1 ? 0 : prev + 1
     );
-  };
+  }, [featuredProducts.length]);
 
   return (
     <div className="w-full md:w-[75%] md:mx-auto font-magnificent mb-6 flex flex-col justify-center mt-20">
@@ -124,4 +124,4 @@ const DiscoverProducts = () => {
   );
 };
 
-export default DiscoverProducts;
+export default memo(DiscoverProducts);

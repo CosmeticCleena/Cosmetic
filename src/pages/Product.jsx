@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, memo, useCallback, useMemo } from "react";
 import Breadcumbs from "../components/layout/Breadcumbs";
 import ProductFilter from "../components/layout/ProductFilter";
 import SearchProduct from "../components/products/SearchProduct";
@@ -6,7 +6,6 @@ import PRODUCTS from "../configs/product/Products.json";
 import SELECT_BOX_DATA from "../configs/product/Sort.json";
 import FilterIcon from "../assets/icons/Filter.svg";
 import { ProductImgs } from "../configs/product/images";
-import { useState } from "react";
 import SelectBox from "../components/common/SelectBox";
 import FilterMobile from "../components/layout/FilterMobile";
 
@@ -18,11 +17,11 @@ const Product = () => {
     price: [],
   });
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const handleFilterToggle = () => {
+  const handleFilterToggle = useCallback(() => {
     setIsFilterOpen((prev) => !prev);
-  };
+  }, []);
 
-  const handleUpdateFilters = (filterType, filterValue, type) => {
+  const handleUpdateFilters = useCallback((filterType, filterValue, type) => {
     setFilters((prevFilters) => {
       const updatedFilters = { ...prevFilters };
       if (type === "add") {
@@ -36,10 +35,44 @@ const Product = () => {
       }
       return updatedFilters;
     });
-  };
+  }, []);
 
-  // Filter out banner items to only show products
-  const productItems = PRODUCTS.filter((item) => !item.isBanner);
+  // Filter out banner items and apply filters
+  const productItems = useMemo(() => {
+    let filtered = PRODUCTS.filter((item) => !item.isBanner);
+    
+    // Apply category filters
+    if (filters.category.length > 0) {
+      filtered = filtered.filter(item => filters.category.includes(item.category));
+    }
+    
+    // Apply skin condition filters
+    if (filters.skinCondition.length > 0) {
+      filtered = filtered.filter(item => 
+        item.skinCondition && filters.skinCondition.some(condition => 
+          item.skinCondition.includes(condition)
+        )
+      );
+    }
+    
+    // Apply featured filters
+    if (filters.featured.length > 0) {
+      filtered = filtered.filter(item => filters.featured.includes(item.featured));
+    }
+    
+    // Apply price filters
+    if (filters.price.length > 0) {
+      filtered = filtered.filter(item => {
+        const itemPrice = parseFloat(item.price);
+        return filters.price.some(priceRange => {
+          const [min, max] = priceRange.split('-').map(Number);
+          return itemPrice >= min && (max ? itemPrice <= max : true);
+        });
+      });
+    }
+    
+    return filtered;
+  }, [filters]);
 
   return (
     <>
@@ -111,4 +144,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default memo(Product);

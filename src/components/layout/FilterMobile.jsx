@@ -1,10 +1,15 @@
-import React from "react";
+import React, { memo } from "react";
 import SidebarBackground from "../common/SidebarBackground";
 import FILTER_DATA from "../../configs/Filters.json";
 import CloseIcon from "../../assets/icons/close.svg";
 import Accordion from "../common/Accordion";
 
-const FilterMobile = ({ isOpen, handleFilterToggle }) => {
+// Custom comparison function for memoization
+const arePropsEqual = (prevProps, nextProps) => {
+  return prevProps.isOpen === nextProps.isOpen;
+};
+
+const FilterMobile = memo(({ isOpen, handleFilterToggle }) => {
   return (
     <SidebarBackground isOpen={isOpen}>
       <div className="flex justify-between w-[90%] items-center mx-auto py-5">
@@ -38,6 +43,8 @@ const FilterMobile = ({ isOpen, handleFilterToggle }) => {
       </div>
     </SidebarBackground>
   );
-};
+});
+
+FilterMobile.displayName = "FilterMobile";
 
 export default FilterMobile;

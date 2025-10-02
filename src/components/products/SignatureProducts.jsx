@@ -1,9 +1,9 @@
-import React from "react";
+import React, { memo, useMemo } from "react";
 import SignatureProduct from "./SignatureProduct";
 import productController from "../../utils/ProductController";
 
 const SignatureProducts = () => {
-  const SIGNATURE_PRODUCTS = productController.getSignatureProducts();
+  const signatureProducts = useMemo(() => productController.getSignatureProducts(), []);
   return (
     <div className="relative w-full">
       <div
@@ -22,7 +22,7 @@ const SignatureProducts = () => {
           </p>
 
           <div className="grid grid-cols-12 gap-4 md:gap-6 overflow-x-auto">
-            {SIGNATURE_PRODUCTS.map((product, index) => (
+            {signatureProducts.map((product, index) => (
               <SignatureProduct
                 image={product.mainImg}
                 key={index}
@@ -37,4 +37,4 @@ const SignatureProducts = () => {
   );
 };
 
-export default SignatureProducts;
+export default memo(SignatureProducts);

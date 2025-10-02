@@ -1,18 +1,25 @@
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useMemo, memo } from "react";
 import ProductDetailSlider from "../components/products/ProductDetailSlider";
 import ProductDetailContent from "../components/products/ProductDetailContent";
 import ProductDetailReviews from "../components/products/ProductDetailReviews";
 import ProductDetailBanner from "../components/products/ProductDetailBanner";
 import NotFoundPage from "../components/common/NotFoundPage";
 import productController from "../utils/ProductController";
+
 const ProductDetail = () => {
   const { id } = useParams();
-  const productDetailsData = productController.findProductById(id);
-  const productDetailsBannerData = {
+
+  // Memoize product details data
+  const productDetailsData = useMemo(() => 
+    productController.findProductById(id), [id]
+  );
+
+  // Memoize banner data
+  const productDetailsBannerData = useMemo(() => ({
     title: "Các Sản Phẩm Khuyến Nghị",
     products: productController.getSignatureProducts(),
-  };
+  }), []);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
@@ -31,4 +38,6 @@ const ProductDetail = () => {
   );
 };
 
-export default ProductDetail;
+ProductDetail.displayName = 'ProductDetail';
+
+export default memo(ProductDetail);

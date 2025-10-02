@@ -1,7 +1,12 @@
-import React from "react";
+import React, { memo } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
-const Breadcumbs = ({ productName = "" }) => {
+// Custom comparison function for memoization
+const arePropsEqual = (prevProps, nextProps) => {
+  return prevProps.productName === nextProps.productName;
+};
+
+const Breadcumbs = memo(({ productName = "" }) => {
   const location = useLocation();
   const pathnames = location.pathname
     .split("/")
@@ -96,6 +101,8 @@ const Breadcumbs = ({ productName = "" }) => {
       </ol>
     </div>
   );
-};
+});
+
+Breadcumbs.displayName = 'Breadcumbs';
 
 export default Breadcumbs;

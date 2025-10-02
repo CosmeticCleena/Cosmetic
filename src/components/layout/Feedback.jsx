@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo, useMemo, useCallback } from "react";
 import FeedbackData from "../../configs/Feedbacks.json";
 import avatar1 from "../../assets/images/MaiLanSpa.jpeg";
 import avatar2 from "../../assets/images/NhungBeauty.jpeg";
@@ -11,30 +11,31 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5];
 
 const Feedback = () => {
+  const reviews = useMemo(() => FeedbackData.review, []);
   const [activeReviewIndex, setActiveReviewIndex] = useState(0);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  const handleDotClick = (index) => {
+  const handleDotClick = useCallback((index) => {
     setActiveReviewIndex(index);
     setActiveImageIndex(0);
-  };
+  }, []);
 
-  const handleImagePrevClick = () => {
-    const currentReview = FeedbackData.review[activeReviewIndex];
+  const handleImagePrevClick = useCallback(() => {
+    const currentReview = reviews[activeReviewIndex];
     setActiveImageIndex((prevIndex) =>
       prevIndex === 0 ? currentReview.images.length - 1 : prevIndex - 1
     );
-  };
+  }, [activeReviewIndex, reviews]);
 
-  const handleImageNextClick = () => {
-    const currentReview = FeedbackData.review[activeReviewIndex];
+  const handleImageNextClick = useCallback(() => {
+    const currentReview = reviews[activeReviewIndex];
     setActiveImageIndex((prevIndex) =>
       prevIndex === currentReview.images.length - 1 ? 0 : prevIndex + 1
     );
-  };
+  }, [activeReviewIndex, reviews]);
 
   const stars = Array.from({ length: 5 }, (_, index) =>
-    index < FeedbackData.review[activeReviewIndex].rating ? (
+    index < reviews[activeReviewIndex].rating ? (
       <svg
         key={index}
         className="w-8 h-8 text-yellow-400"
@@ -149,4 +150,4 @@ const Feedback = () => {
   );
 };
 
-export default Feedback;
+export default memo(Feedback);

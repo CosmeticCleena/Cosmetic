@@ -1,13 +1,11 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, memo, useMemo } from "react";
 import BannerImg2 from "../../assets/images/Banner_2.webp";
 import Banner from "../common/Banner";
 import BannerData from "../../configs/Banners.json";
 
 const SecondBanner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
-  const slides = BannerData.SecondBanner;
+  const slides = useMemo(() => BannerData.SecondBanner, []);
 
   // const handleDotClick = (index) => {
   //   setActiveIndex(index);
@@ -44,4 +42,4 @@ const SecondBanner = () => {
   );
 };
 
-export default SecondBanner;
+export default memo(SecondBanner);

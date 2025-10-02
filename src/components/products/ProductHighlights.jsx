@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo, useMemo } from "react";
 import ProductHighlight from "./ProductHighlight";
 import ProductHighlight1Img from "../../assets/images/ProductHighlight1.jpg";
 import ProductHighlight2Img from "../../assets/images/ProductHighlight1.webp";
@@ -10,16 +10,20 @@ const imgSrc = {
 };
 
 const ProductHighlights = () => {
+  const highlights = useMemo(() => ProductHighlightData.map((item, index) => ({
+    ...item,
+    imgSource: imgSrc[item.imgSrc]
+  })), []);
   return (
     <div id="brand-overview">
-      {ProductHighlightData.map((item, index) => (
+      {highlights.map((item, index) => (
         <ProductHighlight
           key={index}
-          imgSrc={imgSrc[item.imgSrc]}
+          imgSrc={item.imgSource}
           isReverse={item.isReverse}
         >
           <p
-            className="text-3xl md:text-4xl lg:text-5xl font-magnificent text-base/8"
+            className="text-3xl md:text-4xl lg:text-5xl font-magnificent"
             dangerouslySetInnerHTML={{
               __html: item.content.title,
             }}
@@ -36,4 +40,4 @@ const ProductHighlights = () => {
   );
 };
 
-export default ProductHighlights;
+export default memo(ProductHighlights);
